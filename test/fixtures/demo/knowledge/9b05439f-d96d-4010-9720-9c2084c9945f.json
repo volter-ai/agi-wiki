@@ -1,0 +1,795 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_f2db063cd733454f9286fa53fda4d1fd",
+        "label": "LoRA",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_378018a9a4764c4d96a09b2fe283f24e",
+        "label": "QLoRA: Efficient Finetuning of Quantized LLMs",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_c9243a0cb6e44d78b5a296662533eb1e",
+        "label": "QLoRA",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_add98c1269274213a85c6dc5afb51709",
+        "label": "4-bit NormalFloat (NF4)",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_5bfc9c00857949a3b0cda67ba0cf504c",
+        "label": "Double Quantization",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_7001d37780b94b71be9904955796f609",
+        "label": "Paged optimizers",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_84d79448df4b41cb9dca8c3beac80cf0",
+        "label": "Guanaco",
+        "type": "model",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_709a24ac5e5a4715ac30d313edf28032",
+        "label": "ChatGPT",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+        "sourceId": "source_9ebd1fec33c37166a43089bdc8b205dfab3c84f3007d54bd5cabf91a0b9a42a6",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html",
+        "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+        "sha256": "895f76b961315d677e6e8c05a369c5ab88e196106540cb3501a7fbcda41aa4f2",
+        "retrievedAt": "2026-10-05T17:21:40.450Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured proceedings abstract presents the QLoRA authors' own method, experiments, results, and limitations in the first person.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_8aadd78a311d4b0ca762dd4effe3b832",
+        "factId": "fact_81733b01f5a341cf8d708034ad341ec7",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The QLoRA paper describes QLoRA as an efficient fine-tuning approach that reduces memory usage.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_378018a9a4764c4d96a09b2fe283f24e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "property",
+            "value": "definition",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "An efficient fine-tuning approach that reduces memory usage.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 35,
+            "end": 231,
+            "quote": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:11:51.701Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "c1efb628209fd8275193d0557491e9a7e81d7327939555378dcf479ee54664d9"
+      },
+      {
+        "id": "revision_84be4432f4704b76a2e605cbd3557aed",
+        "factId": "fact_91d6f10e983e431ab99b90c1dfee8321",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "QLoRA uses LoRA adapters.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 232,
+            "end": 353,
+            "quote": "QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters~(LoRA).",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:11:51.701Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "103a0b523b593dbf964db64472120d1477597e9febeb6dd70c34f21436a2eaae"
+      },
+      {
+        "id": "revision_4bf589cabd0e4481a2b9437f209b699e",
+        "factId": "fact_3fe3a924bfe74930950ab62fb294b212",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors describe QLoRA as backpropagating gradients through a frozen, four-bit quantized pretrained language model into LoRA adapters.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "property",
+            "value": "method",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Backpropagates gradients through a frozen, four-bit quantized pretrained language model into LoRA adapters.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 232,
+            "end": 353,
+            "quote": "QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters~(LoRA).",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:11:51.701Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "7f284587dd3943eea2ac3fc57eec008da38761cb501a30a88bc5d1e804f4b0b4"
+      },
+      {
+        "id": "revision_dc86c190af43446097c14c95ad2c37aa",
+        "factId": "fact_c9e5f3a3d8dd4b7a9091d67967af5dee",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors report that QLoRA enables fine-tuning a 65-billion-parameter model on a single 48 GB GPU while preserving full 16-bit fine-tuning task performance.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Enables fine-tuning a 65-billion-parameter model on a single 48 GB GPU while preserving full 16-bit fine-tuning task performance.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 35,
+            "end": 231,
+            "quote": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The abstract does not identify the GPU model, tasks, metrics, or detailed comparison conditions; this is a qualitative capability claim, not an independently confirmed benchmark result."
+        ],
+        "createdAt": "2026-10-05T21:11:51.701Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "0f7af7b4c6af99933bac8cc91db010c4d51bd31680e832692f4e781b35242d06"
+      },
+      {
+        "id": "revision_38cf6c0f525f4529aacdf0a2a312f0f9",
+        "factId": "fact_a7577a49ae7842af8d93a817fdfad930",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "QLoRA uses four-bit NormalFloat as a memory-saving innovation.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_add98c1269274213a85c6dc5afb51709"
+          },
+          {
+            "role": "conditions",
+            "value": "Used to save memory without sacrificing performance, according to the authors.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 585,
+            "end": 793,
+            "quote": "QLoRA introduces a number of innovations to save memory without sacrificing performance: (a) 4-bit NormalFloat (NF4), a new data type that is information-theoretically optimal for normally distributed weights",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:11:51.702Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "17a9e234834e9e51cfce4907d2ab26ce2b2964e17a7f4a3df10334cfea2a4a5d"
+      },
+      {
+        "id": "revision_2a261b5c6aaa48e093a24408f577f84c",
+        "factId": "fact_6a438da66b4044c2a1e02b3ff9f66e53",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors describe four-bit NormalFloat as information-theoretically optimal for normally distributed weights.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_add98c1269274213a85c6dc5afb51709"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Information-theoretically optimal for normally distributed weights.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Normally distributed weights.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 674,
+            "end": 793,
+            "quote": "(a) 4-bit NormalFloat (NF4), a new data type that is information-theoretically optimal for normally distributed weights",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:11:51.702Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "5282530b2fd591b24ee78d7653d400e3f265b1ece283414a7ff2e94ee80de8d5"
+      },
+      {
+        "id": "revision_b56cbd0ceb3c489495c2c312b8309d36",
+        "factId": "fact_2fd32750133f4690bf7b600609a7bb78",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "QLoRA uses double quantization to reduce the average memory footprint by quantizing quantization constants.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_5bfc9c00857949a3b0cda67ba0cf504c"
+          },
+          {
+            "role": "conditions",
+            "value": "Reduces the average memory footprint by quantizing quantization constants.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 585,
+            "end": 948,
+            "quote": "QLoRA introduces a number of innovations to save memory without sacrificing performance: (a) 4-bit NormalFloat (NF4), a new data type that is information-theoretically optimal for normally distributed weights (b) Double Quantization to reduce the average memory footprint by quantizing the quantization constants, and (c) Paged Optimziers to manage memory spikes.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:11:51.702Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "fe9bd5bbaffdb3d6bbd3583f4d86a61ac4fd8a6e2e060375866808c9464aa60d"
+      },
+      {
+        "id": "revision_53749152162748218568d0bcdf550c55",
+        "factId": "fact_7dabd9f1dde4412d8dd8e89a960566a0",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "QLoRA uses paged optimizers to manage memory spikes.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_7001d37780b94b71be9904955796f609"
+          },
+          {
+            "role": "conditions",
+            "value": "Used to manage memory spikes.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 585,
+            "end": 948,
+            "quote": "QLoRA introduces a number of innovations to save memory without sacrificing performance: (a) 4-bit NormalFloat (NF4), a new data type that is information-theoretically optimal for normally distributed weights (b) Double Quantization to reduce the average memory footprint by quantizing the quantization constants, and (c) Paged Optimziers to manage memory spikes.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:11:51.702Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "e6b5a26ecc381beb63e6f6d801b76ef9196d1ff979a0f2edef6e4c992b75593b"
+      },
+      {
+        "id": "revision_45f0c8d3b7ef4e95b100c30103575702",
+        "factId": "fact_1931ea76614b474a8ce44975a185090b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The QLoRA paper describes using QLoRA to fine-tune more than 1,000 models.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_378018a9a4764c4d96a09b2fe283f24e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "conditions",
+            "value": "Used to fine-tune more than 1,000 models.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 949,
+            "end": 1251,
+            "quote": "We use QLoRA to finetune more than 1,000 models, providing a detailed analysis of instruction following and chatbot performance across 8 instruction datasets, multiple model types (LLaMA, T5), and model scales that would be infeasible to run with regular finetuning (e.g. 33B and 65B parameter models).",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:11:51.702Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "982053b830d404309a354edda3c60169864194e0243318efa8079c1f58c4055f"
+      },
+      {
+        "id": "revision_c44ba8dba7934b5cb4438fdd1f6de7e7",
+        "factId": "fact_bde3120f82f845eaab3cd1096f41bd2f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The QLoRA paper describes analyzing instruction-following and chatbot performance across eight instruction datasets.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_378018a9a4764c4d96a09b2fe283f24e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "conditions",
+            "value": "Analysis of instruction-following and chatbot performance across eight instruction datasets.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 949,
+            "end": 1251,
+            "quote": "We use QLoRA to finetune more than 1,000 models, providing a detailed analysis of instruction following and chatbot performance across 8 instruction datasets, multiple model types (LLaMA, T5), and model scales that would be infeasible to run with regular finetuning (e.g. 33B and 65B parameter models).",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The abstract does not name the eight instruction datasets."
+        ],
+        "createdAt": "2026-10-05T21:11:51.702Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "a7edc2332f3c99e7398e7b134867320e04486fbb7c5993e26d690b483f529117"
+      },
+      {
+        "id": "revision_ffab8349b4fc4d66a6c4fbef52a32afc",
+        "factId": "fact_32ef0830ab1849a08d022fdea5208394",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The QLoRA paper describes analysis involving LLaMA and T5 model types.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_378018a9a4764c4d96a09b2fe283f24e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "conditions",
+            "value": "Analysis involving multiple model types, including LLaMA and T5.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 949,
+            "end": 1251,
+            "quote": "We use QLoRA to finetune more than 1,000 models, providing a detailed analysis of instruction following and chatbot performance across 8 instruction datasets, multiple model types (LLaMA, T5), and model scales that would be infeasible to run with regular finetuning (e.g. 33B and 65B parameter models).",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:11:51.702Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "5d822856c9e0828b6f44ba255bdec61ebf6418520ebaa5716e89c007d15997df"
+      },
+      {
+        "id": "revision_b83083f0200f4c1e9faea26340601a5b",
+        "factId": "fact_cbea985a2fd04c92bb6beea81081ccfb",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The QLoRA paper describes chatbot-performance analysis based on human and GPT-4 evaluations.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_378018a9a4764c4d96a09b2fe283f24e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "conditions",
+            "value": "Chatbot-performance analysis based on both human and GPT-4 evaluations.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 1414,
+            "end": 1601,
+            "quote": "We provide a detailed analysis of chatbot performance based on both human and GPT-4 evaluations, showing that GPT-4 evaluations are a cheap and reasonable alternative to human evaluation.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:11:51.702Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "91f554865029f179620282f936184fcb0a0c5acff8aa669c1762e968462f8730"
+      },
+      {
+        "id": "revision_ef66bd27640744dd94500823dfdc7c51",
+        "factId": "fact_fd62bbefda614f80ac39d16901ccfe3f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The QLoRA authors report that contemporary chatbot benchmarks were not trustworthy for accurately evaluating chatbot performance levels.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_378018a9a4764c4d96a09b2fe283f24e"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Reports that contemporary chatbot benchmarks were not trustworthy for accurately evaluating chatbot performance levels.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 1602,
+            "end": 1733,
+            "quote": "Furthermore, we find that current chatbot benchmarks are not trustworthy to accurately evaluate the performance levels of chatbots.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The abstract does not specify which benchmarks this caution covers."
+        ],
+        "createdAt": "2026-10-05T21:11:51.702Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "cf12d858274037dd46431318d634cca3c4ccd12173aee99f0504beb234e44ba1"
+      },
+      {
+        "id": "revision_676df78f30d74c59b91846a7f13b936d",
+        "factId": "fact_8e607fa23c4843e09a5c2509fa159f71",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The QLoRA paper describes a lemon-picked analysis of where Guanaco fails compared with ChatGPT.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_378018a9a4764c4d96a09b2fe283f24e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_84d79448df4b41cb9dca8c3beac80cf0"
+          },
+          {
+            "role": "conditions",
+            "value": "A lemon-picked analysis of failures compared with ChatGPT.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 1734,
+            "end": 1811,
+            "quote": "A lemon-picked analysis demonstrates where Guanaco fails compared to ChatGPT.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The comparison is explicitly lemon-picked rather than presented as a representative failure rate."
+        ],
+        "createdAt": "2026-10-05T21:11:51.702Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "7bd1e1be277dcffe55504663bb26738cd977e2b625240fabc6c258b45a11bd34"
+      },
+      {
+        "id": "revision_98185c76f4bd42589db894596d9fe8e1",
+        "factId": "fact_2b6456fbe67d40499d874e60e9d2961e",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Guanaco is compared with ChatGPT in the authors' lemon-picked failure analysis.",
+        "predicate": "related_to",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_84d79448df4b41cb9dca8c3beac80cf0"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_709a24ac5e5a4715ac30d313edf28032"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 1734,
+            "end": 1811,
+            "quote": "A lemon-picked analysis demonstrates where Guanaco fails compared to ChatGPT.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:11:51.702Z",
+        "extractionJobId": "9b05439f-d96d-4010-9720-9c2084c9945f",
+        "digest": "b2f91db091cf68ac4756a34d0100a4559dd28f2ef3a8277ab35ea3526a2b2c67"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_8aadd78a311d4b0ca762dd4effe3b832",
+        "outcome": "supported",
+        "reason": "The captured proceedings abstract is primary evidence: the authors present their own approach and findings. Its opening sentence explicitly describes QLoRA as an efficient fine-tuning approach that reduces memory usage. The statement and descriptive fields retain this qualitative, attributed characterization without asserting a quantified result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_84be4432f4704b76a2e605cbd3557aed",
+        "outcome": "unsupported",
+        "reason": "Backpropagation into Low Rank Adapters supports use of LoRA. However, the statement presents that use without the reported modality and author attribution encoded in the fields, so the sentence and schematic assertion do not precisely match.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_4bf589cabd0e4481a2b9437f209b699e",
+        "outcome": "supported",
+        "reason": "The quoted mechanism explicitly includes gradients passing through a frozen, four-bit quantized pretrained language model into LoRA adapters. The statement and method value express the same mechanism and preserve attribution to the authors.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_dc86c190af43446097c14c95ad2c37aa",
+        "outcome": "unsupported",
+        "reason": "The abstract reports this capability, but the schematic hides a hardware-constrained performance comparison in a generic capability text value. Model size, GPU count, memory capacity, and precision are not typed numerical arguments with units. Tasks, metrics, and comparison conditions are unavailable; listing their absence in uncertainties does not make the performance assertion eligible under the supplied philosophy.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_38cf6c0f525f4529aacdf0a2a312f0f9",
+        "outcome": "unsupported",
+        "reason": "The source lists NF4 among memory-saving innovations, but the structured conditions additionally assert 'without sacrificing performance,' which the sentence does not express. The sentence also omits the fields' explicit author attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_2a261b5c6aaa48e093a24408f577f84c",
+        "outcome": "supported",
+        "reason": "The quote explicitly calls NF4 information-theoretically optimal for normally distributed weights. Both the sentence and fields retain that material distribution condition and frame optimality as the authors' characterization, not an independently established result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_b56cbd0ceb3c489495c2c312b8309d36",
+        "outcome": "unsupported",
+        "reason": "The source describes double quantization's purpose as reducing average memory footprint by quantizing constants. The statement gives that purpose, whereas the conditions field asserts that it reduces memory footprint, and the sentence omits the encoded author attribution. Purpose and an attributed achieved effect are not precisely the same assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_53749152162748218568d0bcdf550c55",
+        "outcome": "unsupported",
+        "reason": "The abstract explicitly lists paged optimizers to manage memory spikes, supporting the technical content. Nevertheless, the sentence states their use directly rather than expressing the reported modality and author attribution present in the schematic fields.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_45f0c8d3b7ef4e95b100c30103575702",
+        "outcome": "unsupported",
+        "reason": "The source explicitly reports fine-tuning more than 1,000 models, but the schematic stores the count and lower-bound relationship solely in a text conditions field. It does not provide the typed numerical count and explicit unit required by the philosophy.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_c44ba8dba7934b5cb4438fdd1f6de7e7",
+        "outcome": "unsupported",
+        "reason": "The quoted study scope supports analysis across eight instruction datasets, but eight is encoded only as prose rather than a typed dataset count. In addition, the structured object is the QLoRA technique, while the sentence describes a performance analysis; the generic description relationship does not precisely encode that study-scope assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_ffab8349b4fc4d66a6c4fbef52a32afc",
+        "outcome": "unsupported",
+        "reason": "LLaMA and T5 are explicitly named in the source, but they appear only in a text conditions value rather than as typed participants in the analysis. The predicate instead relates the paper to QLoRA, a different object from the model-type analysis expressed by the sentence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_b83083f0200f4c1e9faea26340601a5b",
+        "outcome": "unsupported",
+        "reason": "The quote supports an attributed chatbot-performance analysis using human and GPT-4 evaluations. The schematic instead makes QLoRA the object of 'describes' and places the actual analysis relationship entirely in conditions. It therefore does not precisely encode the assertion expressed by the sentence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_ef66bd27640744dd94500823dfdc7c51",
+        "outcome": "unsupported",
+        "reason": "The abstract supports the authors' caution about then-current chatbot benchmarks. The schematic, however, assigns a limitation property to the paper rather than representing the authors' report about benchmarks. A text value beginning 'Reports that' does not resolve that difference in subject and relationship.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_676df78f30d74c59b91846a7f13b936d",
+        "outcome": "supported",
+        "reason": "The exact quote describes an explicitly lemon-picked analysis of Guanaco failures compared with ChatGPT. The paper-to-Guanaco description and its conditions retain the comparator, failure focus, selection qualification, and author attribution without generalizing to representative performance.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      },
+      {
+        "revisionId": "revision_98185c76f4bd42589db894596d9fe8e1",
+        "outcome": "unsupported",
+        "reason": "The generic related_to predicate encodes only a relationship between Guanaco and ChatGPT. It omits the comparison type, failure-analysis context, and material lemon-picked qualification expressed in the sentence and source.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:12:41.548Z"
+      }
+    ],
+    "approvals": []
+  }
+}

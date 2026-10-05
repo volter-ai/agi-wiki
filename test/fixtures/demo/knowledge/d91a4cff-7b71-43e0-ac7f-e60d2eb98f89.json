@@ -1,0 +1,873 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_f2d5851eaf504cc58866aeb8431c45f9",
+        "label": "NVIDIA H100",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+        "sourceId": "source_5b14cbf37f4f5a9af4b9fc17d315052c72183d86d8a2f12bdca3defc7a83aca5",
+        "url": "https://developer.nvidia.com/blog/?p=45555",
+        "title": "NVIDIA Hopper Architecture In-Depth | NVIDIA Technical Blog",
+        "sha256": "bb2d19fedbe921ad4e827e485c85bc5831cc761433c4aca30bd1c89db29a1c12",
+        "retrievedAt": "2026-10-05T17:26:37.915Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "NVIDIA's technical blog provides its own H100 architecture and configuration specifications; claims below use the authored article rather than its AI-generated summary and remain attributed to NVIDIA.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_83ca86cbea094fd6a39fd78f882666b2",
+        "factId": "fact_01af280322754b178fbf4732d4b8b474",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 adds thread block clusters as a new level in the CUDA thread group hierarchy.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Thread block clusters added as a new level in the CUDA thread group hierarchy",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 11434,
+            "end": 11526,
+            "quote": "H100 grows the CUDA thread group hierarchy with a new level called the thread block cluster.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "170f153ed2a23a56f99157fb3ab7367951ed4acca92101f5a46c51f3f8364207"
+      },
+      {
+        "id": "revision_b7f746c39cef433b8da76689d00f96eb",
+        "factId": "fact_ea13449b5c774678a6f193638316f60f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 guarantees concurrent scheduling of thread blocks within a cluster.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Guaranteed concurrent scheduling of thread blocks within a cluster",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 11434,
+            "end": 11697,
+            "quote": "H100 grows the CUDA thread group hierarchy with a new level called the thread block cluster. A cluster is a group of thread blocks that are guaranteed to be concurrently scheduled, and enable efficient cooperation and data sharing for threads across multiple SMs.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "5178469ce390a6cbc4739bd65d47ee19a4175bd69d863de216f207907ff9cca3"
+      },
+      {
+        "id": "revision_4a088fc43fa847158acda57b5a08e674",
+        "factId": "fact_1f967d23276f4e099fd7ba7c77bbe847",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's thread block clusters enable synchronization among thread blocks running concurrently across multiple streaming multiprocessors.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Thread block clusters enable synchronization among thread blocks running concurrently across multiple streaming multiprocessors",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6011,
+            "end": 6150,
+            "quote": "Clusters enable multiple thread blocks running concurrently across multiple SMs to synchronize and collaboratively fetch and exchange data.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "94aed022f6114db549d315c9679ce10d8fc68d86aecda482d88b6683d85ca9ed"
+      },
+      {
+        "id": "revision_95fd0bb794fd4fadae7e791eeceeccc2",
+        "factId": "fact_8da683bef8294804bd34bd2a2ca8624e",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's thread block clusters enable collaborative data fetching by thread blocks running concurrently across multiple streaming multiprocessors.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Thread block clusters enable collaborative data fetching by thread blocks running concurrently across multiple streaming multiprocessors",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6011,
+            "end": 6150,
+            "quote": "Clusters enable multiple thread blocks running concurrently across multiple SMs to synchronize and collaboratively fetch and exchange data.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "4d0987c031ef8d61206e843146cf22677d596cc78d31d7bb50b4f253b166e31c"
+      },
+      {
+        "id": "revision_736687b3cdab44ec8abdadf7445730d9",
+        "factId": "fact_e9dd522adf2846359bafc07a128b58ad",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's thread block clusters enable data exchange among thread blocks running concurrently across multiple streaming multiprocessors.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Thread block clusters enable data exchange among thread blocks running concurrently across multiple streaming multiprocessors",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6011,
+            "end": 6150,
+            "quote": "Clusters enable multiple thread blocks running concurrently across multiple SMs to synchronize and collaboratively fetch and exchange data.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "0a90041f566e0fc3089b76dc77c6aa00dc3cbd94da4335dd4498451ae63b1bc9"
+      },
+      {
+        "id": "revision_09fc4892851e4ef4bc8362a94cfca2ac",
+        "factId": "fact_b126d159b58f46d6b36a414ebf331379",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's asynchronous transaction barriers synchronize general-purpose CUDA threads and on-chip accelerators within a cluster, including across separate streaming multiprocessors.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Asynchronous transaction barriers synchronize general-purpose CUDA threads and on-chip accelerators within a cluster, including across separate streaming multiprocessors",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 12072,
+            "end": 12256,
+            "quote": "NVIDIA asynchronous transaction barriers enables general-purpose CUDA threads and on-chip accelerators within a cluster to synchronize efficiently, even if they reside on separate SMs.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "53eee8b8b26787c55a10531a6a8e144908ca38518046dfc4ea7fdae371046fc0"
+      },
+      {
+        "id": "revision_1ca117d668c345d58e5f3e80b41c8e77",
+        "factId": "fact_e5be8a3d5de3466390118b5e98693edd",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's asynchronous transaction barrier supports atomic data movement.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Asynchronous transaction barrier supports atomic data movement",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6540,
+            "end": 6644,
+            "quote": "There is also a new asynchronous transaction barrier for doing atomic data movement and synchronization.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "acb1ad253a14d0fb4856b1066e2f055979d3be25b76e9231d5beb35ad1389d3e"
+      },
+      {
+        "id": "revision_c8beee246b61417b89ce1e6d78355709",
+        "factId": "fact_107f2ed9d64e4b608484312b5b945bc2",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA's launch article states that NVLink Switch System technology was not yet available with NVIDIA H100 systems.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "availability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "NVLink Switch System technology not yet available with H100 systems at the time of the launch article",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 3560,
+            "end": 3685,
+            "quote": "NVLink Switch System technology is not currently available with H100 systems, but systems and availability will be announced.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This records launch-time availability, not present-day availability."
+        ],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "55a51c7cbeac18d19b6e43ec65b388319b77daeac8cd073e407ed14afca95c29"
+      },
+      {
+        "id": "revision_ba6c140da5e54534a6c0b86360e403df",
+        "factId": "fact_83e79ca98ac84ebe81b5c2b98d359139",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies support for up to seven individual GPU instances on NVIDIA H100 with second-generation Multi-Instance GPU technology.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "partition_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "7",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Maximum supported individual GPU instances with second-generation Multi-Instance GPU technology",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7487,
+            "end": 7843,
+            "quote": "Second-generation Multi-Instance GPU (MIG) technology provides approximately 3x more compute capacity and nearly 2x more memory bandwidth per GPU instance compared to A100. Confidential Computing capability with MIG-level TEE is now provided for the first time. Up to seven individual GPU instances are supported, each with dedicated NVDEC and NVJPG units.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "7846a5124f6274a5f947bbdb80f72f36bb5088bbb9c53d7ab66dd9875b1a2aa1"
+      },
+      {
+        "id": "revision_ac24a21820de4e65a6506ad9e0b521f2",
+        "factId": "fact_42b80604309b40cd931c9e43a36bf682",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that each NVIDIA H100 MIG instance has dedicated NVDEC units.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Dedicated NVDEC units for each MIG instance",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7749,
+            "end": 7843,
+            "quote": "Up to seven individual GPU instances are supported, each with dedicated NVDEC and NVJPG units.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "fe87c104f3cd81effe2a0b534337a40e483de4c5914378d1102c8c97043445db"
+      },
+      {
+        "id": "revision_7c4cd67109df49818d3649d20429df55",
+        "factId": "fact_92b28c8bc6974dcd81301883b18cc8b5",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that each NVIDIA H100 MIG instance has dedicated NVJPG units.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Dedicated NVJPG units for each MIG instance",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7749,
+            "end": 7843,
+            "quote": "Up to seven individual GPU instances are supported, each with dedicated NVDEC and NVJPG units.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "911262c970d7748ffe6a906ffca8902aa107f8352f6cd80ee10b8a6a94fbf390"
+      },
+      {
+        "id": "revision_dc734268ba064e648b5b43fb9b057d07",
+        "factId": "fact_9e4fe2772c704a459e60f03e3f2ab93f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that each NVIDIA H100 MIG instance includes its own set of performance monitors.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Each MIG instance includes its own set of performance monitors",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7844,
+            "end": 7945,
+            "quote": "Each instance now includes its own set of performance monitors that work with NVIDIA developer tools.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "7c706309a8870daef84e4d5c2de525b1f5f4c9fd5d3a38a91c5354b900767b3a"
+      },
+      {
+        "id": "revision_be5fa11a6ba54fafa3e0cce118cbfb89",
+        "factId": "fact_6b2354423e9d4d21a7010cfee8ef4721",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's per-instance MIG performance monitors work with NVIDIA developer tools.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Per-instance MIG performance monitors work with NVIDIA developer tools",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7844,
+            "end": 7945,
+            "quote": "Each instance now includes its own set of performance monitors that work with NVIDIA developer tools.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.975Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "b49607722b0e1cddfac47447bce74647fa78950ba8a7f9d99fca0dcb0225e7b3"
+      },
+      {
+        "id": "revision_ded9057445b44e4286cb334130dbd901",
+        "factId": "fact_34d1f76f81f348b48685127edaec15b1",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's native confidential computing extends the trusted execution environment with CPUs to the GPU at full PCIe line rate.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Native confidential computing extends the trusted execution environment with CPUs to the GPU at full PCIe line rate",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 8157,
+            "end": 8310,
+            "quote": "H100 implements the world’s first native Confidential Computing GPU and extends the trusted execution environment (TEE) with CPUs at full PCIe line rate.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The passage provides no independent validation of the line-rate claim."
+        ],
+        "createdAt": "2026-10-05T21:32:04.975Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "7811f73aa1e8986818eebcf6784e446a33b6e2da2703527437fc80962078dadb"
+      },
+      {
+        "id": "revision_7c9635f78b7b418e89f85dca9ac3c565",
+        "factId": "fact_85202da689ca45b8838d9edbafe6db9c",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's confidential-computing support protects user data.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Confidential-computing support protects user data",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7946,
+            "end": 8156,
+            "quote": "New Confidential Computing support protects user data, defends against hardware and software attacks, and better isolates and protects virtual machines (VMs) from each other in virtualized and MIG environments.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The passage does not specify a threat model or independently validate the security claim."
+        ],
+        "createdAt": "2026-10-05T21:32:04.975Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "401960a89eb4a0a30ae18115006c403d8e8021605491cdec48c92a29e3ebe370"
+      },
+      {
+        "id": "revision_0c27fcd34c614276a264690d94e1f03a",
+        "factId": "fact_20dcbab52a424795afb2c30b6c1fa6af",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's confidential-computing support improves isolation between virtual machines in virtualized and MIG environments.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Confidential-computing support improves isolation between virtual machines",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Virtualized and MIG environments",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7946,
+            "end": 8156,
+            "quote": "New Confidential Computing support protects user data, defends against hardware and software attacks, and better isolates and protects virtual machines (VMs) from each other in virtualized and MIG environments.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The passage does not identify the comparison baseline or provide security validation."
+        ],
+        "createdAt": "2026-10-05T21:32:04.975Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "187fdb85b6667d4dac000510f490bc62e469f4d9ced426f30f40cbdf8250ce3a"
+      },
+      {
+        "id": "revision_ea790b932aa547a684ecf263f5d2064c",
+        "factId": "fact_fd6fbd0803f249869fec91dccc97b1cb",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's confidential-computing support improves protection of virtual machines from one another in virtualized and MIG environments.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Confidential-computing support improves protection of virtual machines from one another",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Virtualized and MIG environments",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7946,
+            "end": 8156,
+            "quote": "New Confidential Computing support protects user data, defends against hardware and software attacks, and better isolates and protects virtual machines (VMs) from each other in virtualized and MIG environments.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The passage does not identify the comparison baseline or provide security validation."
+        ],
+        "createdAt": "2026-10-05T21:32:04.975Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "7bdee36b62d710dd3c067dc208170d36476f003a0cef79478c9943a1bbd040fd"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_83ca86cbea094fd6a39fd78f882666b2",
+        "outcome": "supported",
+        "reason": "The authored NVIDIA article explicitly says H100 adds the thread block cluster level to the CUDA thread group hierarchy. The architecture property expresses that same single assertion with manufacturer attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_b7f746c39cef433b8da76689d00f96eb",
+        "outcome": "supported",
+        "reason": "The quoted H100 passage explicitly guarantees concurrent scheduling of thread blocks within a cluster. Both the statement and capability value preserve the cluster scope and NVIDIA attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_4a088fc43fa847158acda57b5a08e674",
+        "outcome": "supported",
+        "reason": "The source says clusters enable concurrently running thread blocks across multiple SMs to synchronize. The surrounding H100 feature discussion establishes the subject, and the statement and fields retain the concurrency and cross-SM conditions.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_95fd0bb794fd4fadae7e791eeceeccc2",
+        "outcome": "supported",
+        "reason": "Collaborative fetching is expressly included in the quoted cluster capability. The revision isolates that capability while preserving concurrently running blocks, multiple streaming multiprocessors, and manufacturer attribution in its schematic representation.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_736687b3cdab44ec8abdadf7445730d9",
+        "outcome": "supported",
+        "reason": "The quoted passage explicitly includes data exchange among concurrently running thread blocks across multiple SMs. The statement and structured capability express the same attributed assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_09fc4892851e4ef4bc8362a94cfca2ac",
+        "outcome": "supported",
+        "reason": "NVIDIA explicitly describes asynchronous transaction barriers enabling synchronization of general-purpose CUDA threads and on-chip accelerators within a cluster, even on separate SMs. Both representations retain these participants and scope.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_1ca117d668c345d58e5f3e80b41c8e77",
+        "outcome": "supported",
+        "reason": "The authored H100 feature discussion describes an asynchronous transaction barrier for atomic data movement and synchronization. This revision isolates atomic data movement as one attributed capability without asserting a measured result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_c8beee246b61417b89ce1e6d78355709",
+        "outcome": "supported",
+        "reason": "The quote expressly states that NVLink Switch System technology is not currently available with H100 systems. The article's dated launch context supports the launch-time restriction, which appears in both the statement and availability value rather than being presented as current availability.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_ba6c140da5e54534a6c0b86360e403df",
+        "outcome": "supported",
+        "reason": "The H100 second-generation MIG passage explicitly supports up to seven individual GPU instances. The numeric value, count unit, and maximum-supported condition correctly represent the upper bound and technology scope expressed in the statement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_ac24a21820de4e65a6506ad9e0b521f2",
+        "outcome": "supported",
+        "reason": "The quote states that each supported GPU instance has dedicated NVDEC units, and the surrounding paragraph identifies H100 MIG instances. The architecture value and statement express that same attributed per-instance resource assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_7c4cd67109df49818d3649d20429df55",
+        "outcome": "supported",
+        "reason": "The quoted sentence explicitly assigns dedicated NVJPG units to each instance in the H100 MIG discussion. The statement and architecture field preserve that scope without adding an unevidenced functional expansion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_dc734268ba064e648b5b43fb9b057d07",
+        "outcome": "supported",
+        "reason": "The source expressly says each instance includes its own set of performance monitors. The preceding MIG context establishes the instance identity, and both representations retain the per-instance ownership claim and NVIDIA attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_be5fa11a6ba54fafa3e0cce118cbfb89",
+        "outcome": "supported",
+        "reason": "The quoted sentence explicitly says the per-instance performance monitors work with NVIDIA developer tools. This is faithfully represented as a single attributed compatibility capability.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_ded9057445b44e4286cb334130dbd901",
+        "outcome": "supported",
+        "reason": "The source describes H100 as a native confidential-computing GPU extending the TEE with CPUs at full PCIe line rate. The statement and capability value preserve that qualification and attribute it to NVIDIA; they do not claim independent validation or repeat the separate world-first assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_7c9635f78b7b418e89f85dca9ac3c565",
+        "outcome": "supported",
+        "reason": "Protecting user data is an explicit NVIDIA claim in the authored H100 confidential-computing passage. The revision represents that claim as reported, without inventing a threat model or asserting independently demonstrated security.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_0c27fcd34c614276a264690d94e1f03a",
+        "outcome": "supported",
+        "reason": "The source claims better isolation between VMs in virtualized and MIG environments. The revision preserves that qualitative manufacturer claim and expresses both environments in the statement and conditions field without inventing a comparison baseline.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_ea790b932aa547a684ecf263f5d2064c",
+        "outcome": "supported",
+        "reason": "NVIDIA's passage claims better protection of VMs from each other in virtualized and MIG environments. The statement and fields retain this relationship, its environment restrictions, and its reported status without asserting independent security validation.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      }
+    ],
+    "approvals": []
+  }
+}

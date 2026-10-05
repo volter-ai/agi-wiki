@@ -1,0 +1,140 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_f2db063cd733454f9286fa53fda4d1fd",
+        "label": "LoRA",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_cc028381d0e9423abfcf4dd8789cec9c",
+        "label": "LoRA vs Full Fine-tuning: An Illusion of Equivalence",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_b8d9b65dc78342b6a660f50525a770f2",
+        "label": "Intruder dimensions",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+        "sourceId": "source_ab11278e89739afa51a0589177ac1d762aa3e066b45fdaac351aff469a54ce52",
+        "url": "https://arxiv.org/abs/2410.21228",
+        "title": "[2410.21228] LoRA vs Full Fine-tuning: An Illusion of Equivalence",
+        "sha256": "cee3d3ddac2c914371478d93625f4fd2e8143a37cd2170330607d015a9b98cde",
+        "retrievedAt": "2026-10-05T17:21:39.126Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured arXiv record contains the authors' abstract reporting their own spectral analysis and interventions, together with authorship and submission history; it is primary evidence of their reported findings, not independent confirmation.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_30de6862b8b5432fbb2061ee645d895f",
+        "factId": "fact_3a8e5509f74f432e8a9d0b66e4e3d87b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The comparison paper examines LoRA.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_cc028381d0e9423abfcf4dd8789cec9c"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Reece Shuttleworth and coauthors",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 745,
+            "end": 896,
+            "quote": "We study how LoRA and full-finetuning change pre-trained models by analyzing the model's weight matrices through the lens of their spectral properties.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:16:17.278Z",
+        "extractionJobId": "2bd44333-09aa-48a4-830d-8e71e09468aa",
+        "digest": "5d385acae7731dfca2b70c1ec5479b17588f54bb9de810fbaf0d12f1060fc537"
+      },
+      {
+        "id": "revision_ffcdafa8b7fb493c9f967b26d7ee9bd5",
+        "factId": "fact_c7519f42800a43f0b104ce193488b880",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The comparison paper associates intruder dimensions with LoRA.",
+        "predicate": "related_to",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_b8d9b65dc78342b6a660f50525a770f2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Reece Shuttleworth and coauthors",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 897,
+            "end": 1194,
+            "quote": "We find that LoRA and full fine-tuning yield weight matrices whose singular value decompositions exhibit very different structure: weight matrices trained with LoRA have new, high-ranking singular vectors, which we call \\emph{intruder dimensions}, while those trained with full fine-tuning do not.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:16:17.279Z",
+        "extractionJobId": "2bd44333-09aa-48a4-830d-8e71e09468aa",
+        "digest": "13c364de213aaf8b074e83f0dcad3535cd0282a073006bd950a2453a632015f4"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_30de6862b8b5432fbb2061ee645d895f",
+        "outcome": "supported",
+        "reason": "The authors' abstract is primary evidence of their own study and explicitly states, 'We study how LoRA and full-finetuning change pre-trained models.' This supports the single paper-describes-LoRA assertion expressed in both the sentence and the arguments. Attribution to Shuttleworth and coauthors is consistent with the captured authorship. This is a claim about the paper's subject matter, not an experimental result requiring additional evaluation conditions.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:16:31.013Z"
+      },
+      {
+        "revisionId": "revision_ffcdafa8b7fb493c9f967b26d7ee9bd5",
+        "outcome": "supported",
+        "reason": "The quoted abstract explicitly identifies new, high-ranking singular vectors in LoRA-trained weight matrices as 'intruder dimensions,' supporting the limited, attributed association between intruder dimensions and LoRA. The sentence and related_to arguments express that same association without asserting a measured effect, causality, or equivalence with full fine-tuning. The capture is the authors' own abstract and supports the supplied attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:16:31.013Z"
+      }
+    ],
+    "approvals": []
+  }
+}

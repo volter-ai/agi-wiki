@@ -1,0 +1,805 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_f2d5851eaf504cc58866aeb8431c45f9",
+        "label": "NVIDIA H100",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+        "sourceId": "source_5b14cbf37f4f5a9af4b9fc17d315052c72183d86d8a2f12bdca3defc7a83aca5",
+        "url": "https://developer.nvidia.com/blog/?p=45555",
+        "title": "NVIDIA Hopper Architecture In-Depth | NVIDIA Technical Blog",
+        "sha256": "bb2d19fedbe921ad4e827e485c85bc5831cc761433c4aca30bd1c89db29a1c12",
+        "retrievedAt": "2026-10-05T17:26:37.915Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "NVIDIA's technical blog provides its own H100 architecture and configuration specifications; claims below use the authored article rather than its AI-generated summary and remain attributed to NVIDIA.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_682821d5945549bea2b676c4c97b11d9",
+        "factId": "fact_b616df830729402683d5447e6f4205d1",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's transformer engine combines software with custom Hopper Tensor Core technology to accelerate transformer training and inference.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Transformer engine combining software with custom NVIDIA Hopper Tensor Core technology for transformer training and inference",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6645,
+            "end": 6824,
+            "quote": "New transformer engine uses a combination of software and custom NVIDIA Hopper Tensor Core technology designed specifically to accelerate transformer model training and inference.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.602Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "0a8d71361d9c1735610f636f99d25d0d96674ebf8517b9fcccad22060a2dfdad"
+      },
+      {
+        "id": "revision_cd4648d1dbdd41a6808cf22e82c05ac3",
+        "factId": "fact_9407bc0172e74e35ae5791210c0c69b9",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's transformer engine dynamically chooses between FP8 and 16-bit calculations.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Dynamic selection between FP8 and 16-bit calculations by the transformer engine",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6825,
+            "end": 7159,
+            "quote": "The transformer engine intelligently manages and dynamically chooses between FP8 and 16-bit calculations, automatically handling re-casting and scaling between FP8 and 16-bit in each layer to deliver up to 9x faster AI training and up to 30x faster AI inference speedups on large language models compared to the prior generation A100.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.602Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "7a158cb64eec286f0bab530fb5083822b0128dd3599dd9fa8c433c4febb1dd3b"
+      },
+      {
+        "id": "revision_5965e1ac297c484295902b4b32811387",
+        "factId": "fact_f6365d3023784acab6cc33226ecc7e46",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's transformer engine automatically handles re-casting and scaling between FP8 and 16-bit in each layer.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Automatic re-casting and scaling between FP8 and 16-bit in each layer by the transformer engine",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6825,
+            "end": 7159,
+            "quote": "The transformer engine intelligently manages and dynamically chooses between FP8 and 16-bit calculations, automatically handling re-casting and scaling between FP8 and 16-bit in each layer to deliver up to 9x faster AI training and up to 30x faster AI inference speedups on large language models compared to the prior generation A100.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.602Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "0e7db91c58d5453d2c4898f58a5fd718a2b4c8d18d25e920a4077641d9e07edf"
+      },
+      {
+        "id": "revision_2eee6275797343de97a382a509cdb493",
+        "factId": "fact_1394e5c5508f4e1f9beb590398aab723",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA labels its NVIDIA H100 launch performance numbers preliminary, based on current expectations and subject to change in shipping products.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Launch performance numbers are preliminary, based on current expectations and subject to change in shipping products.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 2982,
+            "end": 3160,
+            "quote": "Figure 2. H100 enables next-generation AI and HPC breakthroughs All performance numbers are preliminary, based on current expectations and subject to change in shipping products.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The source does not independently confirm the launch performance estimates."
+        ],
+        "createdAt": "2026-10-05T20:56:54.603Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "21d4a8deb8acbc75fb60915eac9b4362d8b0c20aaa5fd19debacb932c9e98aa7"
+      },
+      {
+        "id": "revision_287a9fd00385482886025b062d0125ad",
+        "factId": "fact_8048484b79d34908bfcf8112c3a5177a",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA describes its launch comparison configuration as using an NDR InfiniBand network for the NVIDIA H100 cluster, with NVLink Switch System where indicated, versus an HDR InfiniBand network for the A100 cluster.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "configuration",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "H100 cluster: NDR InfiniBand network with NVLink Switch System where indicated; A100 comparison cluster: HDR InfiniBand network.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Figure 2 launch comparisons; performance numbers preliminary, based on current expectations and subject to change in shipping products.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 3046,
+            "end": 3262,
+            "quote": "All performance numbers are preliminary, based on current expectations and subject to change in shipping products. A100 cluster: HDR IB network. H100 cluster: NDR IB network with NVLink Switch System where indicated.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The source states that NVLink Switch System technology was not currently available with H100 systems."
+        ],
+        "createdAt": "2026-10-05T20:56:54.603Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "7bd45ab9ecd493eff90c4e741a7b507aea92776f82c3e9c710ca89f6ac9ee4f7"
+      },
+      {
+        "id": "revision_d41a65b9b6b947cda1b237e6366f5e81",
+        "factId": "fact_edd64243da1a4ed4bfec7b40ae80eae0",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 introduces DPX instructions to accelerate dynamic-programming algorithms.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "DPX instructions for accelerating dynamic-programming algorithms",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 5229,
+            "end": 5521,
+            "quote": "New DPX Instructions accelerate dynamic programming algorithms by up to 7x over the A100 GPU. Two examples include the Smith-Waterman algorithm for genomics processing, and the Floyd-Warshall algorithm used to find optimal routes for a fleet of robots through a dynamic warehouse environment.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.603Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "0f005cc98e23779bd462869f12a82406beb76e3b1f48ade7fdb72584b24454f0"
+      },
+      {
+        "id": "revision_7a1a26a1a6b84e73ba99971d4e1e71bc",
+        "factId": "fact_caa14719d7734569a05c4a991dd49b55",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA identifies Smith-Waterman genomics processing as an application of NVIDIA H100's DPX instructions.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "purpose",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "DPX acceleration of the Smith-Waterman algorithm for genomics processing",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 5229,
+            "end": 5521,
+            "quote": "New DPX Instructions accelerate dynamic programming algorithms by up to 7x over the A100 GPU. Two examples include the Smith-Waterman algorithm for genomics processing, and the Floyd-Warshall algorithm used to find optimal routes for a fleet of robots through a dynamic warehouse environment.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.603Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "950737b23f9cf83e3782304747bb928696dd94afa8faefc9d4f3c03fb423ab3f"
+      },
+      {
+        "id": "revision_2f64f30abbdb40ba875c5cc232b7bee0",
+        "factId": "fact_a711a17c4f8d48988d0490d562f6f8e6",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA identifies Floyd-Warshall route finding for robot fleets in dynamic warehouses as an application of NVIDIA H100's DPX instructions.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "purpose",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "DPX acceleration of Floyd-Warshall optimal-route finding for a fleet of robots in a dynamic warehouse environment",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 5229,
+            "end": 5521,
+            "quote": "New DPX Instructions accelerate dynamic programming algorithms by up to 7x over the A100 GPU. Two examples include the Smith-Waterman algorithm for genomics processing, and the Floyd-Warshall algorithm used to find optimal routes for a fleet of robots through a dynamic warehouse environment.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.603Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "af35daefa0c59ac842e4ecef08878e2ab818990743f1d8439a366f4cc778f593"
+      },
+      {
+        "id": "revision_902eb7a411d64b8d9734df61defd5a4e",
+        "factId": "fact_01c0178a142140659d7af1633484ca5e",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 adds thread block clusters to the CUDA thread-group hierarchy.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "New thread block cluster level in the CUDA thread-group hierarchy",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 11434,
+            "end": 11526,
+            "quote": "H100 grows the CUDA thread group hierarchy with a new level called the thread block cluster.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.603Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "a5079b17a02206cc7308cbe553cde5968a0519c6ad81e87589a22a7992d876c0"
+      },
+      {
+        "id": "revision_b87307d1b008420591f11c1ac9d6ed48",
+        "factId": "fact_c5e2349a7cca4a5087786f7fbeddfd3c",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 guarantees concurrent scheduling of the thread blocks in a cluster.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Guaranteed concurrent scheduling of thread blocks within a thread block cluster",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 11434,
+            "end": 11697,
+            "quote": "H100 grows the CUDA thread group hierarchy with a new level called the thread block cluster. A cluster is a group of thread blocks that are guaranteed to be concurrently scheduled, and enable efficient cooperation and data sharing for threads across multiple SMs.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.603Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "a119597dc42c1e20045bcc269d66484db7adc6330b9a22391575014d669a5f83"
+      },
+      {
+        "id": "revision_0931a4458b234613a4a601963d88a01b",
+        "factId": "fact_749b4b8353374a93814916fc5b0c7101",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's thread block clusters enable concurrently running blocks across multiple streaming multiprocessors to synchronize and collaboratively fetch and exchange data.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Cluster-level synchronization and collaborative data fetching and exchange among concurrently running thread blocks across multiple streaming multiprocessors",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6011,
+            "end": 6150,
+            "quote": "Clusters enable multiple thread blocks running concurrently across multiple SMs to synchronize and collaboratively fetch and exchange data.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.603Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "6542c762e5eb7a0c30b4604db1c7bbcc0dac0fc73657352c3a97b696124d706f"
+      },
+      {
+        "id": "revision_7fe242906e794e519f227a6c79701885",
+        "factId": "fact_ff6e344fffba4001af26a05dc207cba2",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's distributed shared memory permits direct communication between streaming multiprocessors for loads, stores and atomics across their shared-memory blocks.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Distributed shared memory enables direct SM-to-SM communication for loads, stores and atomics across multiple SM shared-memory blocks.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6151,
+            "end": 6286,
+            "quote": "Distributed shared memory allows direct SM-to-SM communications for loads, stores, and atomics across multiple SM shared memory blocks.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.603Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "b636bcd3eba20712c3cc342b4f052f966ab787e5078d8e2366756c8b1d55f505"
+      },
+      {
+        "id": "revision_a6182bf889ed4337b195edaf9327dd99",
+        "factId": "fact_399d863aaee14c909da04d2e8e9cd04b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's Tensor Memory Accelerator transfers large data blocks between global memory and shared memory.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Tensor Memory Accelerator transfers large blocks of data between global memory and shared memory.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6287,
+            "end": 6465,
+            "quote": "New asynchronous execution features include a new Tensor Memory Accelerator (TMA) unit that can transfer large blocks of data efficiently between global memory and shared memory.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.604Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "f6b99e4400caedbc5d43e61dd1586d4e1982dd0eecffa7bbc0267cc79b46f767"
+      },
+      {
+        "id": "revision_c091ec396ea74fa1ba260c840aca73a2",
+        "factId": "fact_cec8b7ddc5e64e61a2fd676606d2d381",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's Tensor Memory Accelerator supports asynchronous copies between thread blocks within a cluster.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Tensor Memory Accelerator supports asynchronous copies between thread blocks in a cluster.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6287,
+            "end": 6539,
+            "quote": "New asynchronous execution features include a new Tensor Memory Accelerator (TMA) unit that can transfer large blocks of data efficiently between global memory and shared memory. TMA also supports asynchronous copies between thread blocks in a cluster.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.604Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "672224f966eb444b4913239dc7d06a8ef5483b3ec1931e38bd49986a67ee3fa4"
+      },
+      {
+        "id": "revision_3bce47c7cf2544078abcaf0b8ae02e66",
+        "factId": "fact_796013d3e6f4444ebe523f5b22091bf3",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's asynchronous transaction barriers synchronize general-purpose CUDA threads and on-chip accelerators within a cluster even when they reside on separate streaming multiprocessors.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Asynchronous transaction barriers synchronize general-purpose CUDA threads and on-chip accelerators within a cluster, including across separate streaming multiprocessors.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 11827,
+            "end": 12256,
+            "quote": "Orchestrating the growing number of on-chip accelerators and diverse groups of general-purpose threads requires synchronization. For example, threads and accelerators that consume outputs must wait on threads and accelerators that produce them. NVIDIA asynchronous transaction barriers enables general-purpose CUDA threads and on-chip accelerators within a cluster to synchronize efficiently, even if they reside on separate SMs.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.604Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "4603c12e6a7ba8617a6303200e806e4a54b54e9d2160f024af375a68d355a7ba"
+      },
+      {
+        "id": "revision_cf618b4707934b7aa4900f9c93e11bff",
+        "factId": "fact_e88e22c8ecff4b16ab2d227e2fb2d15c",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 includes an asynchronous transaction barrier for atomic data movement and synchronization.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Asynchronous transaction barrier for atomic data movement and synchronization",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6466,
+            "end": 6644,
+            "quote": "TMA also supports asynchronous copies between thread blocks in a cluster. There is also a new asynchronous transaction barrier for doing atomic data movement and synchronization.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.604Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "668d0c0483e62215039769fc31e5efb109443fbc6e36da182ab4a1e179c14d51"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_682821d5945549bea2b676c4c97b11d9",
+        "outcome": "unsupported",
+        "reason": "The authored NVIDIA article is primary evidence and explicitly describes the software/Tensor Core combination and its acceleration purpose. However, the statement includes the purpose of accelerating training and inference, whereas the architecture value says only 'for transformer training and inference.' The structured fields do not explicitly preserve the whole assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_cd4648d1dbdd41a6808cf22e82c05ac3",
+        "outcome": "supported",
+        "reason": "The authored feature summary explicitly says the transformer engine dynamically chooses between FP8 and 16-bit calculations. The H100 context, capability value and NVIDIA attribution match this single assertion; no numerical speedup is asserted.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_5965e1ac297c484295902b4b32811387",
+        "outcome": "unsupported",
+        "reason": "The quote supports both automatic re-casting and automatic scaling between FP8 and 16-bit in each layer, with NVIDIA attribution. Nevertheless, the revision bundles two independently assertable operations into one capability factoid rather than expressing precisely one assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_2eee6275797343de97a382a509cdb493",
+        "outcome": "supported",
+        "reason": "The Figure 2 caption explicitly qualifies the performance numbers as preliminary, based on current expectations and subject to change in shipping products. The statement and limitation value retain that complete qualification as NVIDIA's characterization, not an independently verified performance result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_287a9fd00385482886025b062d0125ad",
+        "outcome": "unsupported",
+        "reason": "The caption supports the HDR IB versus NDR IB configurations and 'where indicated' restriction on NVLink Switch System. However, the structured conditions additionally specify Figure 2 and preliminary, expectation-based performance subject to change in shipping products; those qualifications are not expressed in the statement. The sentence and fields therefore do not express the same complete assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_d41a65b9b6b947cda1b237e6366f5e81",
+        "outcome": "unsupported",
+        "reason": "The article identifies 'New DPX Instructions' for accelerating dynamic programming. The statement asserts their introduction by H100, but the structured capability value records only their function, not that they are newly introduced. That additional architectural qualification is absent from the fields.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_7a1a26a1a6b84e73ba99971d4e1e71bc",
+        "outcome": "unsupported",
+        "reason": "The source names Smith-Waterman genomics processing as an example of the algorithms accelerated by DPX. The sentence records an application-example relationship, while the fields use a generic H100 'purpose' property and assert 'DPX acceleration.' This does not explicitly encode the same application relationship and adds acceleration wording absent from the sentence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_2f64f30abbdb40ba875c5cc232b7bee0",
+        "outcome": "unsupported",
+        "reason": "The source gives Floyd-Warshall optimal routing for a robot fleet through a dynamic warehouse as an example. The sentence asserts an application relationship and says only route finding, whereas the generic purpose value asserts DPX acceleration and optimal-route finding. Those fields and the sentence are not equivalent.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_902eb7a411d64b8d9734df61defd5a4e",
+        "outcome": "supported",
+        "reason": "The quote explicitly says H100 grows the CUDA thread-group hierarchy with a new thread block cluster level. The architecture value preserves the new level, hierarchy and H100 subject, and the statement retains NVIDIA attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_b87307d1b008420591f11c1ac9d6ed48",
+        "outcome": "supported",
+        "reason": "In the H100 hierarchy discussion, the source explicitly guarantees concurrent scheduling of a cluster's thread blocks. The capability value and attributed statement preserve that guarantee and its within-cluster scope.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_0931a4458b234613a4a601963d88a01b",
+        "outcome": "unsupported",
+        "reason": "The source supports synchronization, collaborative fetching and data exchange among concurrently running blocks across multiple SMs. The revision nevertheless combines those distinct capabilities into one statement and one capability value, contrary to the single-assertion requirement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_7fe242906e794e519f227a6c79701885",
+        "outcome": "supported",
+        "reason": "The quote explicitly describes direct SM-to-SM communication through distributed shared memory across multiple SM shared-memory blocks. Loads, stores and atomics specify the supported operation classes for this communication capability and appear in both the statement and fields. H100 context and NVIDIA attribution are preserved.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_a6182bf889ed4337b195edaf9327dd99",
+        "outcome": "supported",
+        "reason": "The authored H100 summary states that TMA can transfer large data blocks between global and shared memory. The sentence and capability value describe that same transfer capability without importing the source's separate efficiency claim.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_c091ec396ea74fa1ba260c840aca73a2",
+        "outcome": "supported",
+        "reason": "The quote explicitly says TMA supports asynchronous copies between thread blocks in a cluster. The H100 subject, asynchronous operation, endpoints, cluster restriction and NVIDIA attribution are retained in both representations.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_3bce47c7cf2544078abcaf0b8ae02e66",
+        "outcome": "supported",
+        "reason": "The source explicitly describes asynchronous transaction barriers enabling general-purpose CUDA threads and on-chip accelerators within a cluster to synchronize even across separate SMs. Both the statement and capability value preserve the participants and scope without claiming independent verification.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_cf618b4707934b7aa4900f9c93e11bff",
+        "outcome": "unsupported",
+        "reason": "The source explicitly describes a barrier for atomic data movement and synchronization, but this revision combines those two functions into one factoid. Evidence for both functions does not satisfy the requirement that each revision express precisely one assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      }
+    ],
+    "approvals": []
+  }
+}

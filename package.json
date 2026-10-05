@@ -1,0 +1,52 @@
+{
+  "name": "wiki-chat",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "start": "NODE_ENV=production tsx server/index.ts",
+    "test": "tsx --test test/*.test.ts",
+    "community:build": "vite build --mode community --outDir community/public",
+    "community:migrate": "wrangler d1 migrations apply wikichat-community --local --config community/wrangler.jsonc",
+    "community:dev": "wrangler dev --config community/wrangler.jsonc",
+    "community:check": "wrangler deploy --dry-run --config community/wrangler.jsonc",
+    "pages:build": "tsx github/build-catalog.ts && vite build --mode pages --base=./ --outDir pages-dist && tsx github/secure-pages.ts",
+    "review:prepare": "tsx github/review.ts prepare",
+    "review:approve": "tsx github/review.ts approve",
+    "github:setup-ledger": "tsx github/setup-ledger.ts",
+    "subject:fork": "tsx github/fork-subject.ts",
+    "knowledge:review": "tsx github/knowledge-review.ts",
+    "knowledge:export": "tsx github/knowledge-export.ts",
+    "demo:migrate": "tsx server/migrate-demo.ts"
+  },
+  "dependencies": {
+    "@napi-rs/keyring": "2.1.0",
+    "express": "^5.1.0",
+    "ipaddr.js": "2.5.0",
+    "jose": "^6.1.0",
+    "linkedom": "0.18.13",
+    "openai": "^7.27.0",
+    "proper-lockfile": "^4.1.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261003.1",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "@types/proper-lockfile": "^4.1.4",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0",
+    "vite": "^7.0.0",
+    "wrangler": "^4.147.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

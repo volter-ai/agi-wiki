@@ -1,0 +1,800 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_695b87e6ab3a473785d7167ecd4accde",
+        "label": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_f2db063cd733454f9286fa53fda4d1fd",
+        "label": "LoRA",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_23c6c5bd15ac44829c7fdffc07b0e52b",
+        "label": "loralib",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+        "sourceId": "source_2835ff1fe97b6a283adda2be28fafd4bfce40d7a5cf690e5e6ed381a3b7cdaf7",
+        "url": "https://github.com/microsoft/LoRA",
+        "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" · GitHub",
+        "sha256": "c9daba3985ec9c0d75e3264d07a9e51974a6129bc9aad3eec7f7abf650b5a05d",
+        "retrievedAt": "2026-10-05T17:21:40.047Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured project repository supplies the authors' implementation, method description, experimental reports, and citation for their own paper.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_df5e8674f6f84e89a4d88a2859dbb274",
+        "factId": "fact_5bce82be8a674f46867f573ba9d136de",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models announced in February 2023 that Hugging Face's Parameter-Efficient Fine-Tuning library supported LoRA.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "availability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Supported by Hugging Face's Parameter-Efficient Fine-Tuning (PEFT) library.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "time": {
+          "start": "2023-02",
+          "end": "2023-02",
+          "precision": "month",
+          "basis": "The announcement is labeled Update 2/2023."
+        },
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 555,
+            "end": 679,
+            "quote": "Update 2/2023: LoRA is now supported by the State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) library by Hugging Face.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:46:28.851Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "03936709a2d1f7b35c604324fe7e7bba8b25fef894ef24ff1ef5eafa0580ccc6"
+      },
+      {
+        "id": "revision_dddb2aa18916431083d25d2634a7395d",
+        "factId": "fact_5ffb91a27e964066b454082e0f6e048d",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models documents marking only LoRA parameters as trainable before the training loop.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "The default training workflow marks only LoRA parameters as trainable before the training loop.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 4768,
+            "end": 5018,
+            "quote": "Before the training loop begins, mark only LoRA parameters as trainable. import loralib as lora model = BigModel() # This sets requires_grad to False for all parameters without the string \"lora_\" in their names lora.mark_only_lora_as_trainable(model)",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:46:28.851Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "0726e9dcdf229daa2e0cfa544b5aeffbc4fbc6d26a3d7f874ea872c40675c393"
+      },
+      {
+        "id": "revision_64e99ec67b6e449288b2a8208f33ac9f",
+        "factId": "fact_f62cc46fafd1427fa2a8d72d463e988b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models documents saving a checkpoint containing only LoRA parameters rather than the entire model state.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "The default checkpoint workflow saves lora_state_dict(model), containing only LoRA parameters, instead of model.state_dict().",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 5064,
+            "end": 5295,
+            "quote": "When saving a checkpoint, generate a state_dict that only contains LoRA parameters. # ===== Before ===== # torch.save(model.state_dict(), checkpoint_path) # ===== After ===== torch.save(lora.lora_state_dict(model), checkpoint_path)",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:46:28.851Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "79c23a33aefd79abea660bc0e58643be28eb95e1f6ac1925ee2e3fcdc4873f28"
+      },
+      {
+        "id": "revision_df9edb356a764138984f0b51aa573c6a",
+        "factId": "fact_70b90f9c30fe4ef98c27334cfe2942eb",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models states that using its LoRA checkpoints still requires the original pretrained checkpoint from Hugging Face.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Using the supplied LoRA checkpoints still requires the original pretrained checkpoint from Hugging Face.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 1953,
+            "end": 2056,
+            "quote": "Note: You still need the original pre-trained checkpoint from Hugging Face to use the LoRA checkpoints.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:46:28.851Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "0091fae9b45c13b83c8634f69c6380defcf3e33ebf5b6455f077da51b46ab603"
+      },
+      {
+        "id": "revision_be8339306add47baa45547da5fbede4d",
+        "factId": "fact_e4790acb17934267bee262bfe3d619fa",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models documents loading the pretrained checkpoint before the LoRA checkpoint with strict=False for both loads.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Load the pretrained checkpoint first and the LoRA checkpoint second using load_state_dict with strict=False for both.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 5296,
+            "end": 5578,
+            "quote": "When loading a checkpoint using load_state_dict, be sure to set strict=False. # Load the pretrained checkpoint first model.load_state_dict(torch.load('ckpt_pretrained.pt'), strict=False) # Then load the LoRA checkpoint model.load_state_dict(torch.load('ckpt_lora.pt'), strict=False)",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:46:28.852Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "6cca8a864c8cede04bab8ac203061c01f2b1fc360465ee4688b5ed75e3a3e08d"
+      },
+      {
+        "id": "revision_4be596eb47a1454dad57270a7963bad7",
+        "factId": "fact_7be9ee1b3efc462ebc4aef54746ce5d4",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models reports that reduced storage requirements enable efficient task switching during deployment.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Reduced storage requirements for task-specific adaptations enable efficient task switching during deployment.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 680,
+            "end": 1006,
+            "quote": "LoRA reduces the number of trainable parameters by learning pairs of rank-decompostion matrices while freezing the original weights. This vastly reduces the storage requirement for large language models adapted to specific tasks and enables efficient task-switching during deployment all without introducing inference latency.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:46:28.852Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "bf8d3b4c5a48b496f3d50c8a33080c939348cb50d22d0e3655ba5f09a43b43ed"
+      },
+      {
+        "id": "revision_5a5f0f0092b44ec0b96e38cfb9bb85eb",
+        "factId": "fact_f3a118bc201f4800b39c60434b1e0950",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models documents that calling model.eval() triggers merging LoRA parameters with corresponding pretrained weights unless automatic merging is disabled.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Calling model.eval() merges LoRA parameters with corresponding pretrained weights.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Automatic merging has not been disabled with merge_weights=False.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 7845,
+            "end": 8133,
+            "quote": "Calling model.eval() will trigger the merging of LoRA parameters with the corresponding pretrained ones, which eliminates additional latency for subsequent forward passes. Calling model.train() again will undo the merge. This can be disabled by passing merge_weights=False to LoRA layers.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:46:28.852Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "f4e9f16e4f0977260128f593b70c4e5d300417725975d005ae476310fd778e40"
+      },
+      {
+        "id": "revision_26aa5b5d7c554c1a83cfc5cfc3c5e444",
+        "factId": "fact_03f385d548864562990459b4b4b2e408",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models reports that merging LoRA parameters into pretrained weights eliminates additional latency in subsequent forward passes.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Eliminates additional adaptation latency in subsequent forward passes.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "LoRA parameters have been merged with corresponding pretrained weights through model.eval().",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 7845,
+            "end": 8016,
+            "quote": "Calling model.eval() will trigger the merging of LoRA parameters with the corresponding pretrained ones, which eliminates additional latency for subsequent forward passes.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This is an implementation claim, not an independently confirmed latency measurement."
+        ],
+        "createdAt": "2026-10-05T20:46:28.852Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "18fb23f58c2b0df9a34b76112a20a95e2fb7adad66e368416a59a4d5519b8b39"
+      },
+      {
+        "id": "revision_a10b6924c33b4444874b004f5965dd86",
+        "factId": "fact_b512db186f9b411794b0e1672ee97454",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models documents that calling model.train() again reverses the evaluation-mode weight merge.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Calling model.train() again undoes the weight merge triggered by model.eval().",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 7845,
+            "end": 8065,
+            "quote": "Calling model.eval() will trigger the merging of LoRA parameters with the corresponding pretrained ones, which eliminates additional latency for subsequent forward passes. Calling model.train() again will undo the merge.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:46:28.852Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "b9ca0f355bb87de9e9aff15e4d82d40bc2e6e1c3416bbddfa30b79dff174be7e"
+      },
+      {
+        "id": "revision_150d372e85084acbbc5e00bf81084ff7",
+        "factId": "fact_d024f1f0001c43e89d790d6881cd1889",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models documents disabling automatic weight merging by passing merge_weights=False to LoRA layers.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Automatic weight merging can be disabled by passing merge_weights=False to LoRA layers.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 7845,
+            "end": 8133,
+            "quote": "Calling model.eval() will trigger the merging of LoRA parameters with the corresponding pretrained ones, which eliminates additional latency for subsequent forward passes. Calling model.train() again will undo the merge. This can be disabled by passing merge_weights=False to LoRA layers.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:46:28.852Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "1ec67dde2bb021521deb094c7ae86d83e62eb27e6a26eec5e7634548a5e87001"
+      },
+      {
+        "id": "revision_b7eea2280bf148fbab698b3f455484ff",
+        "factId": "fact_d10442ad8abe463ca2d9f257f6ed4bec",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models documents optional bias training alongside LoRA through the all or lora_only bias settings.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Bias vectors can optionally be trained alongside LoRA by passing all or lora_only to the bias argument of mark_only_lora_as_trainable.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 6862,
+            "end": 7226,
+            "quote": "Training bias vectors in tandem with LoRA might be a cost-efficient way to squeeze out extra task performance (if you tune the learning rate carefully). While we did not study its effect thoroughly in our paper, we make it easy to try in lora. You can mark some biases as trainable by passing \"all\" or \"lora_only\" to bias= when calling mark_only_lora_as_trainable.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:46:28.852Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "3a7a93211909a7e6d23b069c7a10484089bd897143c7ce745b1528709ae7a2d5"
+      },
+      {
+        "id": "revision_2c359d05466c400fba304ae8b1363ae0",
+        "factId": "fact_f8cadd84d1d74f3c9c6d68a4a2bf8b05",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors state that LoRA: Low-Rank Adaptation of Large Language Models did not thoroughly study the effects of training bias vectors alongside LoRA.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Did not thoroughly study the effects of training bias vectors alongside LoRA.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository authors",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 6862,
+            "end": 7105,
+            "quote": "Training bias vectors in tandem with LoRA might be a cost-efficient way to squeeze out extra task performance (if you tune the learning rate carefully). While we did not study its effect thoroughly in our paper, we make it easy to try in lora.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:46:28.852Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "4e32889d61bf44ec0e1dd5c48df885d5deee5dd40a5ace38ca3605c7f333cb3b"
+      },
+      {
+        "id": "revision_2be06cbb8c4b4373a550702fd5158cb9",
+        "factId": "fact_c644d6efd96d44ffba9c1a509141b511",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models documents using the corresponding bias setting when saving checkpoints after optional bias training.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "When optionally training biases, pass the corresponding bias argument to lora_state_dict when saving a checkpoint.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 7106,
+            "end": 7321,
+            "quote": "You can mark some biases as trainable by passing \"all\" or \"lora_only\" to bias= when calling mark_only_lora_as_trainable. Remember to pass the corresponding bias= argument to lora_state_dict when saving a checkpoint.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:46:28.852Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "1a48b9c4b66db96f420c5a172efec9313b87f277b7cc4e9451ca5fc8f64a40a8"
+      },
+      {
+        "id": "revision_3038ba6609a04f369f86119f6c2553f4",
+        "factId": "fact_92d64026b5ea45cf9ef475934a718710",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models reports results comparable or superior to full fine-tuning on GLUE with RoBERTa base and large and DeBERTa XXL while training and storing only a fraction of the parameters.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Reported results comparable or superior to full fine-tuning while training and storing only a fraction of the parameters.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "GLUE experiments using RoBERTa base and large and DeBERTa XXL; fine-tuning baseline numbers were taken from Liu et al. (2019) and He et al. (2020), and the repository includes confidence intervals for its own experiments.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository authors",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 1113,
+            "end": 1343,
+            "quote": "We obtain result comparable or superior to full finetuning on the GLUE benchmark using RoBERTa (Liu et al., 2019) base and large and DeBERTa (He et al., 2020) XXL 1.5B, while only training and storing a fraction of the parameters.",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 2057,
+            "end": 2270,
+            "quote": "Fine-tuning numbers are taken from Liu et al. (2019) and He et al. (2020). We include confidence intervals on results from our experiments. Please follow the instructions in examples/NLU/ to reproduce our results.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The qualitative comparison is the authors' summary, not a claim of superiority on every GLUE task or independent confirmation of the cited baselines."
+        ],
+        "createdAt": "2026-10-05T20:46:28.852Z",
+        "extractionJobId": "97cd97e3-c10e-4906-9c47-6551b40c6421",
+        "digest": "363f204cfd00efed4ff3cc3df41b51b4f5570e2b06f3c3a009e1f0c7e0c71a2a"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_df5e8674f6f84e89a4d88a2859dbb274",
+        "outcome": "supported",
+        "reason": "The authors' implementation repository is primary evidence. Its dated 'Update 2/2023' explicitly announces PEFT support for LoRA. The reported availability, attribution, paper association, and February 2023 announcement bounds match the statement without asserting an initial release date.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_dddb2aa18916431083d25d2634a7395d",
+        "outcome": "unsupported",
+        "reason": "The quote documents marking only LoRA parameters trainable before training. However, the structured value additionally labels this the 'default' workflow, a qualification absent from the statement. The capture also documents optional bias training, making the workflow qualification meaningful.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_64e99ec67b6e449288b2a8208f33ac9f",
+        "outcome": "unsupported",
+        "reason": "The quoted example supports saving only LoRA parameters instead of the entire state. The fields additionally specify a default workflow and the particular lora_state_dict(model) versus model.state_dict() calls; the statement does not express those implementation specifications. The statement and fields therefore do not express precisely the same assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_df9edb356a764138984f0b51aa573c6a",
+        "outcome": "supported",
+        "reason": "The exact note explicitly requires the original pretrained Hugging Face checkpoint to use the supplied LoRA checkpoints. Both representations retain that scope and report the repository's dependency statement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_be8339306add47baa45547da5fbede4d",
+        "outcome": "supported",
+        "reason": "The quoted loading procedure explicitly loads the pretrained checkpoint first and the LoRA checkpoint second, with strict=False in both load_state_dict calls. The statement and fields represent this single qualified loading procedure with source attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_4be596eb47a1454dad57270a7963bad7",
+        "outcome": "uncertain",
+        "reason": "The source says the LoRA approach reduces storage and enables efficient task switching; it does not explicitly say that reduced storage itself causes efficient switching. The revision assigns that causal role to storage reduction. Its fields also specify task-specific adaptations where the statement leaves the storage scope unspecified.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_5a5f0f0092b44ec0b96e38cfb9bb85eb",
+        "outcome": "unsupported",
+        "reason": "The capture supports evaluation-triggered merging and the disabling exception. However, the structured condition specifies disabling with merge_weights=False, while the statement expresses only generic disabling. Under the required exact sentence-field correspondence, that particular configuration condition is not fully rendered.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_26aa5b5d7c554c1a83cfc5cfc3c5e444",
+        "outcome": "unsupported",
+        "reason": "The quoted repository claim supports the latency benefit of evaluation-triggered merging as an attributed implementation claim, not a measured independent result. The fields explicitly condition the benefit on merging through model.eval(), but the statement omits that condition and describes merging generally.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_a10b6924c33b4444874b004f5965dd86",
+        "outcome": "supported",
+        "reason": "The source explicitly says calling model.train() again undoes the preceding model.eval() merge. Both statement and structured value describe reversal of that existing evaluation-mode merge, with attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_150d372e85084acbbc5e00bf81084ff7",
+        "outcome": "supported",
+        "reason": "The exact passage identifies merge_weights=False on LoRA layers as the way to disable automatic merging. The statement and fields express the same documented configuration behavior.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_b7eea2280bf148fbab698b3f455484ff",
+        "outcome": "unsupported",
+        "reason": "Optional bias training with all or lora_only is evidenced. However, the structured value specifies passing those settings to mark_only_lora_as_trainable, while the statement does not identify that API. That implementation specification is not expressed in both representations.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_2c359d05466c400fba304ae8b1363ae0",
+        "outcome": "supported",
+        "reason": "The authors explicitly state that they did not thoroughly study the effect of training bias vectors alongside LoRA in their paper. The statement and structured limitation preserve that qualified admission without claiming the option was entirely unstudied.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_2be06cbb8c4b4373a550702fd5158cb9",
+        "outcome": "unsupported",
+        "reason": "The source instructs users to pass the corresponding bias argument to lora_state_dict when saving. The structured value includes that particular function, whereas the statement describes checkpoint saving without it. The full implementation specification is therefore not rendered in the statement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      },
+      {
+        "revisionId": "revision_3038ba6609a04f369f86119f6c2553f4",
+        "outcome": "unsupported",
+        "reason": "The authors' qualitative GLUE comparison is quoted accurately and attributed, but the structured conditions add baseline provenance and the inclusion of confidence intervals, neither of which appears in the statement. Those are additional factual assertions, not merely evaluation conditions. The revision also bundles comparative performance and parameter training/storage reductions rather than expressing one schematic assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:47:24.415Z"
+      }
+    ],
+    "approvals": []
+  }
+}

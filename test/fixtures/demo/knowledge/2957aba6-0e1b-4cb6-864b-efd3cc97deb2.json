@@ -1,0 +1,722 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_f2d5851eaf504cc58866aeb8431c45f9",
+        "label": "NVIDIA H100",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_145499d33e63408c98da1f7527909f7f",
+        "label": "brae H100 CFD benchmark",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_6b17f23b57f04306ab2f9b11699436c9",
+        "label": "brae",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_b44165c4598b4a079c3fd7eee206efb9",
+        "label": "OpenFOAM + AMGX",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_903c8bb703d94f7d960dd764fceb8354",
+        "label": "OpenFOAM + PETSc-GPU",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_238bab53ea094bc699fdb787752519e9",
+        "label": "SPUMA",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+        "sourceId": "source_5bf07b4b9fb7b07c04105263e95939b50977e01114bfd269aa1a0202ce4fd51d",
+        "url": "https://github.com/simd-ai/brae/blob/main/bench/H100/H100_GPU_COMPARISON_REPORT.md",
+        "title": "brae/bench/H100/H100_GPU_COMPARISON_REPORT.md at main · simd-ai/brae · GitHub",
+        "sha256": "53b78b1ba8f75a305bed300dd7a0affa7983b2dd2f7e61afe04e16a2e9d6ba10",
+        "retrievedAt": "2026-10-05T17:26:55.450Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The brae repository report presents its own same-machine CFD measurements, runner configurations, reproduction instructions, and experimental caveats; its results are project-reported rather than independently confirmed.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_98317030c603445e9eae0dfe5f99522e",
+        "factId": "fact_fa3517d7ec7243f899498a6c7d9ea506",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The brae project reports that its CFD benchmark compared implementations on one NVIDIA H100 PCIe GPU with 80 GB of memory.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_145499d33e63408c98da1f7527909f7f"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "conditions",
+            "value": "One PCIe GPU with 80 GB of memory; identical case, schemes, solver tolerances, and convergence criteria.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "brae project benchmark report",
+        "evidence": [
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 39,
+            "end": 297,
+            "quote": "A same-hardware comparison of the brae device-resident CFD engine against the other common ways to run OpenFOAM-class CFD on a GPU, all on one NVIDIA H100 PCIe (80 GB), on an identical case with identical schemes, solver tolerances, and convergence criteria.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This is a project-reported software comparison, not independent confirmation of general H100 performance."
+        ],
+        "createdAt": "2026-10-05T21:21:53.633Z",
+        "extractionJobId": "2957aba6-0e1b-4cb6-864b-efd3cc97deb2",
+        "digest": "e6c7495e3a9e54c11b406a622c2e86b650aee27e07de302ca0b85850fb9779f2"
+      },
+      {
+        "id": "revision_97c0b78f372c4dd0bbada65b6821cbcb",
+        "factId": "fact_03d4b0cba9424c0faa6843ff864c131a",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The benchmark used brae with its mesh, fields, SIMPLE loop, and all linear solves resident on one GPU.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_145499d33e63408c98da1f7527909f7f"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_6b17f23b57f04306ab2f9b11699436c9"
+          },
+          {
+            "role": "conditions",
+            "value": "One GPU; mesh, fields, SIMPLE loop, and all linear solves fully device-resident.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "brae project benchmark report",
+        "evidence": [
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 3952,
+            "end": 4072,
+            "quote": "Runner configurations: brae, 1 GPU, fully device-resident (mesh, fields, SIMPLE loop, and all linear solves on the GPU).",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:21:53.633Z",
+        "extractionJobId": "2957aba6-0e1b-4cb6-864b-efd3cc97deb2",
+        "digest": "ce543b63cfea53d1c373e595819cef19eef782c960c84880339a3823c9302347"
+      },
+      {
+        "id": "revision_4bf85fdaca9f4cb88996465d3dc50204",
+        "factId": "fact_ef134410babc4688b642e075632ad9c1",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The benchmark's OpenFOAM + PETSc-GPU runner used one CPU core and offloaded only the pressure solve to the GPU.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_145499d33e63408c98da1f7527909f7f"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_903c8bb703d94f7d960dd764fceb8354"
+          },
+          {
+            "role": "conditions",
+            "value": "One CPU core plus GPU; PETSc CG + GAMG on cuSPARSE via petsc4Foam; only the pressure solve offloaded.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "brae project benchmark report",
+        "evidence": [
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 4204,
+            "end": 4380,
+            "quote": "OpenFOAM + PETSc-GPU, 1 CPU core + GPU; PETSc CG + GAMG on cuSPARSE (mat_type aijcusparse, pc_type gamg, -use_gpu_aware_mpi 0) via petsc4Foam. Offloads only the pressure solve.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:21:53.633Z",
+        "extractionJobId": "2957aba6-0e1b-4cb6-864b-efd3cc97deb2",
+        "digest": "bb2d092714295f1d2cbd0032bcbebd9879f1c3d0cef6b0d547f7acf86767f1a0"
+      },
+      {
+        "id": "revision_d870b9bf4c1b4c5a96dec851bc2f4f3d",
+        "factId": "fact_4e3d88e22d69400ea0f4ff25d30963d0",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The benchmark's OpenFOAM + AMGX runner used one CPU core and offloaded only the pressure solve to the GPU.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_145499d33e63408c98da1f7527909f7f"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_b44165c4598b4a079c3fd7eee206efb9"
+          },
+          {
+            "role": "conditions",
+            "value": "One CPU core plus GPU; in-repository amgxFoam solver with PCG + aggregation AMG; only the pressure solve offloaded.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "brae project benchmark report",
+        "evidence": [
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 4381,
+            "end": 4524,
+            "quote": "OpenFOAM + AMGX, 1 CPU core + GPU; the in-repo amgxFoam solver (LDU→CSR + AMGX C API), PCG + aggregation AMG. Offloads only the pressure solve.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:21:53.633Z",
+        "extractionJobId": "2957aba6-0e1b-4cb6-864b-efd3cc97deb2",
+        "digest": "0c17d730c740b73874fca0f9f99158f13430171762a0acfcf367377a46e29544"
+      },
+      {
+        "id": "revision_efb1d4d94d644fc98be2453ee7d46158",
+        "factId": "fact_2601e6c195404f0f949566035c927f16",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The benchmark used SPUMA with the whole SIMPLE loop on the GPU and twoStageGaussSeidel GPU smoothers.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_145499d33e63408c98da1f7527909f7f"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_238bab53ea094bc699fdb787752519e9"
+          },
+          {
+            "role": "conditions",
+            "value": "Whole SIMPLE loop on GPU through generic wrapper kernels on managed memory; twoStageGaussSeidel GPU smoothers.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "brae project benchmark report",
+        "evidence": [
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 4525,
+            "end": 4844,
+            "quote": "SPUMA, the whole SIMPLE loop on the GPU via generic wrapper kernels on unified (managed) memory, run as simpleFoam -pool fixedSizeMemoryPool -poolSize <GB> with SPUMA's twoStageGaussSeidel GPU smoothers (required on a discrete GPU, see §5; the default GaussSeidel runs on the CPU and thrashes managed memory over PCIe).",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:21:53.633Z",
+        "extractionJobId": "2957aba6-0e1b-4cb6-864b-efd3cc97deb2",
+        "digest": "9fc0e766ed8c614111d1fd943c41b8bfb439ca0da440011fbee9fc3c08d7e8d8"
+      },
+      {
+        "id": "revision_97193fbdda83489da1f250942652b1d9",
+        "factId": "fact_821997843ba4456c804d11ad471f3551",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The brae project reports 263.5 milliseconds per SIMPLE iteration for brae on its 4.89-million-cell laminar workload using one H100 PCIe GPU.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_6b17f23b57f04306ab2f9b11699436c9"
+          },
+          {
+            "role": "property",
+            "value": "latency",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "263.5",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "milliseconds",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Wall time per SIMPLE iteration; laminar scaled pitzDaily, 4.89 million cells, fixed iterations, partition excluded; one H100 PCIe 80 GB GPU; device-resident runner.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "brae project benchmark report",
+        "evidence": [
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 874,
+            "end": 1257,
+            "quote": "Headline result Per-SIMPLE-iteration wall time at 4.89 M cells (laminar scaled pitzDaily), lower is better: runner ms / iteration brae is brae, device-resident 263.5 - OpenFOAM, 24 CPU cores (reference) 647.7 2.5× faster SPUMA, device-resident OpenFOAM-GPU port 1022.2 3.9× faster OpenFOAM + AMGX, GPU offload 6795.7 25.8× faster OpenFOAM + PETSc-GPU, GPU offload 7897.1 30.0× faster",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 5802,
+            "end": 5880,
+            "quote": "4. Performance Laminar scaled pitzDaily, fixed iterations, partition excluded.",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 39,
+            "end": 297,
+            "quote": "A same-hardware comparison of the brae device-resident CFD engine against the other common ways to run OpenFOAM-class CFD on a GPU, all on one NVIDIA H100 PCIe (80 GB), on an identical case with identical schemes, solver tolerances, and convergence criteria.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "Project-reported timing for this workload and configuration; not a general GPU performance guarantee."
+        ],
+        "createdAt": "2026-10-05T21:21:53.633Z",
+        "extractionJobId": "2957aba6-0e1b-4cb6-864b-efd3cc97deb2",
+        "digest": "0baf68628b546cd3eda687a7e5511d2adaaa7c0142a0533c2a643adb21128278"
+      },
+      {
+        "id": "revision_b6acd0c0c2b1445cbb0680ab6c6227c7",
+        "factId": "fact_f0307da66eb64c41b0a1a84fa466f664",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The brae project reports 6795.7 milliseconds per SIMPLE iteration for OpenFOAM + AMGX on its 4.89-million-cell laminar H100 PCIe workload.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_b44165c4598b4a079c3fd7eee206efb9"
+          },
+          {
+            "role": "property",
+            "value": "latency",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "6795.7",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "milliseconds",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Wall time per SIMPLE iteration; laminar scaled pitzDaily, 4.89 million cells, fixed iterations, partition excluded; benchmark's one-CPU-core, single-H100-PCIe pressure-solve offload configuration.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "brae project benchmark report",
+        "evidence": [
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 5802,
+            "end": 6133,
+            "quote": "4. Performance Laminar scaled pitzDaily, fixed iterations, partition excluded. Reproduce with ./run_benchmark.sh. Wall time per SIMPLE iteration (ms): cells brae OpenFOAM-CPU (24c) SPUMA OpenFOAM+AMGX OpenFOAM+PETSc-GPU 440 k 26.2 47.0 164.7 366.3 346.9 2.07 M 97.4 222.4 453.4 1969.6 2311.3 4.89 M 263.5 647.7 1022.2 6795.7 7897.1",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 4381,
+            "end": 4524,
+            "quote": "OpenFOAM + AMGX, 1 CPU core + GPU; the in-repo amgxFoam solver (LDU→CSR + AMGX C API), PCG + aggregation AMG. Offloads only the pressure solve.",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 1684,
+            "end": 1773,
+            "quote": "GPU NVIDIA H100 PCIe, 80 GB (81559 MiB HBM2e), compute capability sm_90, 350 W, PCIe Gen5",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "Project-reported timing for the specified offload configuration, not all possible AMGX configurations."
+        ],
+        "createdAt": "2026-10-05T21:21:53.634Z",
+        "extractionJobId": "2957aba6-0e1b-4cb6-864b-efd3cc97deb2",
+        "digest": "8b7018fe0d559bef23f655bfc72b4150a53b52cf1cf7097f034c3267b50ed4f0"
+      },
+      {
+        "id": "revision_e3248c27e46543d48af03416277f3e07",
+        "factId": "fact_e308278da9aa49c8be6885ec3c27ab6b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The brae project reports 7897.1 milliseconds per SIMPLE iteration for OpenFOAM + PETSc-GPU on its 4.89-million-cell laminar H100 PCIe workload.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_903c8bb703d94f7d960dd764fceb8354"
+          },
+          {
+            "role": "property",
+            "value": "latency",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "7897.1",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "milliseconds",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Wall time per SIMPLE iteration; laminar scaled pitzDaily, 4.89 million cells, fixed iterations, partition excluded; benchmark's one-CPU-core, single-H100-PCIe pressure-solve offload configuration.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "brae project benchmark report",
+        "evidence": [
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 5802,
+            "end": 6133,
+            "quote": "4. Performance Laminar scaled pitzDaily, fixed iterations, partition excluded. Reproduce with ./run_benchmark.sh. Wall time per SIMPLE iteration (ms): cells brae OpenFOAM-CPU (24c) SPUMA OpenFOAM+AMGX OpenFOAM+PETSc-GPU 440 k 26.2 47.0 164.7 366.3 346.9 2.07 M 97.4 222.4 453.4 1969.6 2311.3 4.89 M 263.5 647.7 1022.2 6795.7 7897.1",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 4204,
+            "end": 4380,
+            "quote": "OpenFOAM + PETSc-GPU, 1 CPU core + GPU; PETSc CG + GAMG on cuSPARSE (mat_type aijcusparse, pc_type gamg, -use_gpu_aware_mpi 0) via petsc4Foam. Offloads only the pressure solve.",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 1684,
+            "end": 1773,
+            "quote": "GPU NVIDIA H100 PCIe, 80 GB (81559 MiB HBM2e), compute capability sm_90, 350 W, PCIe Gen5",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "Project-reported timing for the specified offload configuration, not all possible PETSc configurations."
+        ],
+        "createdAt": "2026-10-05T21:21:53.634Z",
+        "extractionJobId": "2957aba6-0e1b-4cb6-864b-efd3cc97deb2",
+        "digest": "d10cd7d544744cd72ef0dd09d6387d570dfc0775f0d3d8115e32c92ddb3da2ef"
+      },
+      {
+        "id": "revision_a52262af7bf049d2a3e5c2d7d8bf7ae2",
+        "factId": "fact_46a071449d304b7f9795330dbdbb07bf",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The report characterizes its laminar, physically unsteady performance case as a timing workload rather than a field-comparison test.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_145499d33e63408c98da1f7527909f7f"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "The laminar performance case is physically unsteady and measures identical work per iteration, not field accuracy.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "brae project benchmark report",
+        "evidence": [
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 12943,
+            "end": 13087,
+            "quote": "The performance case is laminar and physically unsteady, so it is a timing workload (identical work per iteration), not a field-comparison case.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:21:53.634Z",
+        "extractionJobId": "2957aba6-0e1b-4cb6-864b-efd3cc97deb2",
+        "digest": "700f87a2785caec296d356d7becbb2fd6650c041374064b340a4c76ba86450fe"
+      },
+      {
+        "id": "revision_9ad707c86d27478e9d44939b757a53e6",
+        "factId": "fact_600a66bb4a0d4f91b1fbce1ba3b8ca07",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The benchmark separately tests accuracy on the stock turbulent pitzDaily case using cell-by-cell relative L2 comparisons against brae after 2000 SIMPLE iterations.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_145499d33e63408c98da1f7527909f7f"
+          },
+          {
+            "role": "property",
+            "value": "definition",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Separate accuracy test on unchanged stock turbulent pitzDaily with kEpsilon and 12,225 cells; fixed 2000 SIMPLE iterations with residualControl removed; cell-by-cell U, p, and k relative L2 comparisons against brae with a less-than-1-percent pass threshold.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "brae project benchmark report",
+        "evidence": [
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 2776,
+            "end": 3149,
+            "quote": "Accuracy case, the stock turbulent pitzDaily tutorial (kEpsilon, 12 225 cells), unchanged. It converges to a steady field. Every runner executes a fixed 2 000 SIMPLE iterations (residualControl removed, so all stop at the same iteration with the field settled), and each runner's U / p / k field is compared cell-by-cell to brae's (relative L2 norm), with a < 1 % pass bar.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This accuracy protocol is separate from the scaled laminar timing workload."
+        ],
+        "createdAt": "2026-10-05T21:21:53.634Z",
+        "extractionJobId": "2957aba6-0e1b-4cb6-864b-efd3cc97deb2",
+        "digest": "58b775126782dcb73dd64de1e878fd23548df5499bec2c41c4b87b99441d0941"
+      },
+      {
+        "id": "revision_e3e972f11c3e444bb8b6756ba9fcf9b1",
+        "factId": "fact_5b6c3d6ef21f41cfb06afbedefd2f827",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The report cautions that its OpenFOAM CPU reference uses 24 vCPUs in a KVM guest and is not a cost-matched comparison.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_145499d33e63408c98da1f7527909f7f"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "OpenFOAM-CPU is a host reference using 24 vCPUs in a KVM guest, not a cost-matched comparison.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "brae project benchmark report",
+        "evidence": [
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 12741,
+            "end": 12942,
+            "quote": "OpenFOAM-CPU is a host-CPU reference, not a cost-matched comparison. It runs on 24 vCPUs of a KVM guest; a bare-metal EPYC would be faster, so the ~2.2-2.5× brae-vs-CPU margin is indicative, not exact.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:21:53.634Z",
+        "extractionJobId": "2957aba6-0e1b-4cb6-864b-efd3cc97deb2",
+        "digest": "745aa0a3195f99a1944c605d89e391cfffb4ef00100754ba578fe6a9e6409546"
+      },
+      {
+        "id": "revision_8dff6aebe42945d2a5a31c1307fed76d",
+        "factId": "fact_cd2bda0ef9974af78ac17db0509fc0ba",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The report considers its approximate 2.2–2.5-fold brae speed advantage over the CPU reference indicative rather than exact because it expects a bare-metal EPYC to be faster.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_145499d33e63408c98da1f7527909f7f"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "The approximate 2.2–2.5-fold brae-versus-CPU timing margin is indicative, not exact, because the report expects bare-metal EPYC execution to be faster than its virtualized CPU reference.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "brae project benchmark report",
+        "evidence": [
+          {
+            "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+            "start": 12810,
+            "end": 12942,
+            "quote": "It runs on 24 vCPUs of a KVM guest; a bare-metal EPYC would be faster, so the ~2.2-2.5× brae-vs-CPU margin is indicative, not exact.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The captured report does not provide a measured bare-metal comparison."
+        ],
+        "createdAt": "2026-10-05T21:21:53.635Z",
+        "extractionJobId": "2957aba6-0e1b-4cb6-864b-efd3cc97deb2",
+        "digest": "5c12342b952ea51c9f55273682214e1fe9d8a479649b57a836bccea02db2ce54"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_98317030c603445e9eae0dfe5f99522e",
+        "outcome": "unsupported",
+        "reason": "The repository report qualifies as primary project-reported evidence and supports the stated hardware. However, the structured conditions also assert identical cases, schemes, solver tolerances, and convergence criteria, none of which the sentence expresses. The sentence and schematic assertion are not equivalent.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:22:35.556Z"
+      },
+      {
+        "revisionId": "revision_97c0b78f372c4dd0bbada65b6821cbcb",
+        "outcome": "supported",
+        "reason": "The runner-configuration quote explicitly describes brae on one GPU with its mesh, fields, SIMPLE loop, and all linear solves fully device-resident. The uses relationship and configuration conditions match the sentence. The structured attribution appropriately identifies this as the project's report of its benchmark configuration.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:22:35.556Z"
+      },
+      {
+        "revisionId": "revision_4bf85fdaca9f4cb88996465d3dc50204",
+        "outcome": "unsupported",
+        "reason": "The quote supports one CPU core and pressure-solve-only GPU offloading. However, the structured conditions additionally specify PETSc CG + GAMG on cuSPARSE via petsc4Foam. Those implementation conditions are absent from the sentence, so the two representations do not express precisely the same assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:22:35.556Z"
+      },
+      {
+        "revisionId": "revision_d870b9bf4c1b4c5a96dec851bc2f4f3d",
+        "outcome": "unsupported",
+        "reason": "The quote supports one CPU core and pressure-solve-only GPU offloading, but the structured conditions additionally assert use of the in-repository amgxFoam solver with PCG + aggregation AMG. The sentence omits those conditions.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:22:35.556Z"
+      },
+      {
+        "revisionId": "revision_efb1d4d94d644fc98be2453ee7d46158",
+        "outcome": "unsupported",
+        "reason": "The source supports the whole SIMPLE loop running on the GPU with twoStageGaussSeidel GPU smoothers. The structured conditions additionally specify generic wrapper kernels and managed memory, which the sentence does not express.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:22:35.556Z"
+      },
+      {
+        "revisionId": "revision_97193fbdda83489da1f250942652b1d9",
+        "outcome": "unsupported",
+        "reason": "The report provides the attributed 263.5-millisecond result, but the sentence omits material conditions present in the structure: scaled pitzDaily, fixed iterations, partition exclusion, device-resident execution, and 80 GB GPU memory. The captured method also specifies pressure tolerance 1e-6 / relTol 0.1, which neither representation includes. A correct table value does not establish a fully qualified schematic result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:22:35.556Z"
+      },
+      {
+        "revisionId": "revision_b6acd0c0c2b1445cbb0680ab6c6227c7",
+        "outcome": "unsupported",
+        "reason": "The performance table reports 6795.7 milliseconds for this runner at 4.89 million cells. However, the sentence omits structured evaluation conditions including scaled pitzDaily, fixed iterations, partition exclusion, and the one-CPU-core, single-GPU pressure-solve-only configuration. The source's pressure-tolerance conditions are also absent from both representations.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:22:35.556Z"
+      },
+      {
+        "revisionId": "revision_e3248c27e46543d48af03416277f3e07",
+        "outcome": "unsupported",
+        "reason": "The performance table reports 7897.1 milliseconds for this runner at 4.89 million cells. The sentence nevertheless omits structured conditions including scaled pitzDaily, fixed iterations, partition exclusion, and the one-CPU-core, single-GPU pressure-solve-only configuration. Neither representation includes the pressure-tolerance conditions specified by the source.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:22:35.556Z"
+      },
+      {
+        "revisionId": "revision_a52262af7bf049d2a3e5c2d7d8bf7ae2",
+        "outcome": "unsupported",
+        "reason": "The quoted caveat supports the distinction between a laminar, physically unsteady timing workload and a field-comparison case. However, the structured value additionally asserts identical work per iteration. Calling something a timing workload does not explicitly express that evaluation condition, so the sentence omits part of the schematic assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:22:35.556Z"
+      },
+      {
+        "revisionId": "revision_9ad707c86d27478e9d44939b757a53e6",
+        "outcome": "unsupported",
+        "reason": "The evidence describes an accuracy-testing protocol, not a generic definition of the benchmark. The definition property conceals that relationship. Its value also includes conditions absent from the sentence: unchanged kEpsilon configuration, 12,225 cells, residualControl removal, U/p/k fields, and the less-than-1-percent pass threshold. Numerical protocol parameters are embedded in text rather than typed numerical fields.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:22:35.556Z"
+      },
+      {
+        "revisionId": "revision_e3e972f11c3e444bb8b6756ba9fcf9b1",
+        "outcome": "unsupported",
+        "reason": "The source explicitly supports both the virtualized 24-vCPU configuration and the non-cost-matched caveat. Nevertheless, this revision bundles a hardware/execution configuration assertion and a comparison limitation into one free-text limitation value rather than one typed factoid. The vCPU count is also embedded in text rather than represented as a typed numerical quantity.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:22:35.556Z"
+      },
+      {
+        "revisionId": "revision_8dff6aebe42945d2a5a31c1307fed76d",
+        "outcome": "unsupported",
+        "reason": "The source supports attributing the indicative-not-exact judgment and expected bare-metal improvement to the report; it does not provide a measured bare-metal comparison. However, the revision embeds the numerical 2.2–2.5-fold timing margin in a text-valued limitation instead of typed numerical fields with explicit evaluation conditions. The structure also explicitly compares bare-metal execution with a virtualized reference, while the sentence leaves virtualization unstated.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:22:35.556Z"
+      }
+    ],
+    "approvals": []
+  }
+}

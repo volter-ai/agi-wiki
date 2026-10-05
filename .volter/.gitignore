@@ -1,0 +1,4 @@
+*
+!.gitignore
+!world.json
+!handlers/

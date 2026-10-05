@@ -1,0 +1,658 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_131d5305be264149b2c500e137df37c7",
+        "label": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_4fb81f339c804ecbb97a28ea23b76ba2",
+        "label": "SWE-bench",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_e62573cf5b054b0d9a15bf41025f525a",
+        "label": "SWE-Llama",
+        "type": "model",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_e4773c2b057b46b3b1f9f904202eb736",
+        "label": "Editing an existing codebase to address an issue",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_32a1c83025dd4531b4b8458defded008",
+        "label": "Understanding and coordinating changes across functions, classes and files",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_a596319cd6b7468e98d3a15df3ac5d93",
+        "label": "Interaction with execution environments",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_6cff3ef3b5a948b19c56a725ab9ada2e",
+        "label": "Processing extremely long contexts",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_b6ab243e57b6450da752ffce15e42894",
+        "label": "Complex reasoning",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_edd58bcd69734945bd6579de94371bfc",
+        "label": "Effective evaluation of language models",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_4f06a63a017a44c1bc06904226ecea2e",
+        "label": "Study of frontier language-model capabilities",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_54dfb99dc9fa407787844cfa8c46efb2",
+        "label": "Advances on SWE-bench",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_dc5c3a26c8904e839784a570d3b6219b",
+        "label": "Real GitHub issues and corresponding pull requests",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_218e8ccb91f645a1b6956cd560c3961a",
+        "label": "State-of-the-art proprietary models evaluated in the SWE-bench paper",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+        "sourceId": "source_3e4a5dea3aec490fe3b7bc9536c9ac06c9758b4b3d572ac667536f95fbf38fc0",
+        "url": "https://arxiv.org/abs/2310.06770",
+        "title": "[2310.06770] SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+        "sha256": "30dfc7ef044a54b964fe2278d679bb47a5014be083384e44b2ae387427b99535",
+        "retrievedAt": "2026-10-05T18:09:57.596Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured arXiv record contains the authors' own abstract introducing SWE-bench and reporting their evaluations. It is an arXiv preprint record for version 3, revised 11 November 2024; the comments mention ICLR 2024, but the capture alone does not establish peer-review status. Evaluation results are author-reported, not independent replication.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_9ab5dec360a74e7b98e2025a02dd8cc8",
+        "factId": "fact_e57425d262234f69bd03ea1511fd78e9",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "According to the paper authors, resolving SWE-bench issues in the supplied codebase requires editing the existing codebase to address the described issue.",
+        "predicate": "requires",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_e4773c2b057b46b3b1f9f904202eb736"
+          },
+          {
+            "role": "conditions",
+            "value": "resolving SWE-bench issues in the supplied codebase",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1028,
+            "end": 1172,
+            "quote": "Given a codebase along with a description of an issue to be resolved, a language model is tasked with editing the codebase to address the issue.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.819Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "9b1cf2bf625b7779dbc6d4a1793e5ea0abc61f29549e63221cc6970be400faa1"
+      },
+      {
+        "id": "revision_7321965dbcee40b19291f2a6b2b3041a",
+        "factId": "fact_4bce266e68aa4abfb2bc86ab05a0deca",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "According to the paper authors, resolving SWE-bench issues frequently requires understanding and coordinating simultaneous changes across functions, classes, and files.",
+        "predicate": "requires",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_32a1c83025dd4531b4b8458defded008"
+          },
+          {
+            "role": "conditions",
+            "value": "resolving SWE-bench issues frequently",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1173,
+            "end": 1506,
+            "quote": "Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.820Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "89430ccd21e151dca4c9b2f5148ddd248d0238877e69255db19a5c5b1cdc555c"
+      },
+      {
+        "id": "revision_1b559611b0bf464a88346a3a4643003c",
+        "factId": "fact_befd41ce111044e3b853157683961fa2",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "According to the paper authors, resolving SWE-bench issues in the described software-engineering task requires interaction with execution environments.",
+        "predicate": "requires",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_a596319cd6b7468e98d3a15df3ac5d93"
+          },
+          {
+            "role": "conditions",
+            "value": "resolving SWE-bench issues in the described software-engineering task",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1173,
+            "end": 1506,
+            "quote": "Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.820Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "aa6755de78614042811ede8f0fbe95b40d65a6934f09a669eb17c773fba130e9"
+      },
+      {
+        "id": "revision_377913567c7140b0918ea328efead25a",
+        "factId": "fact_02f81689f32449c190817e7c4d01cfd4",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "According to the paper authors, resolving SWE-bench issues in the described software-engineering task requires processing extremely long contexts.",
+        "predicate": "requires",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_6cff3ef3b5a948b19c56a725ab9ada2e"
+          },
+          {
+            "role": "conditions",
+            "value": "resolving SWE-bench issues in the described software-engineering task",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1173,
+            "end": 1506,
+            "quote": "Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.820Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "317e84fd97f337180f97f33a919f6cdee9cac6b8dab603b9b7aa90c0b8df92bb"
+      },
+      {
+        "id": "revision_26532afb5a2148d4965f14c018900786",
+        "factId": "fact_bbb5b83a45fb4ac6a5726e4f99a8dc05",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "According to the paper authors, resolving SWE-bench issues in the described software-engineering task requires complex reasoning beyond traditional code-generation task demands.",
+        "predicate": "requires",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_b6ab243e57b6450da752ffce15e42894"
+          },
+          {
+            "role": "conditions",
+            "value": "resolving SWE-bench issues in the described software-engineering task",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1173,
+            "end": 1506,
+            "quote": "Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.820Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "d1c2f1c99287c5b18663d27f654e41303ba258810f03aa496eaac4e2dfa6c800"
+      },
+      {
+        "id": "revision_c2f3a0de71614c379db7571521401c7e",
+        "factId": "fact_0abd692fb62e40bfaefba42f8947cb22",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench authors describe effective language-model evaluation as outpaced by language models.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_edd58bcd69734945bd6579de94371bfc"
+          },
+          {
+            "role": "conditions",
+            "value": "outpaced by language models",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 500,
+            "end": 665,
+            "quote": "Language models have outpaced our ability to evaluate them effectively, but for their future development it is essential to study the frontier of their capabilities.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.820Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "f531e3fb26038f39356cbcbc50acf212d55b08b5d0e03c5ec909467ef58a2ba9"
+      },
+      {
+        "id": "revision_8aa2a3e5f34e4c3795dd99aa7109eeb3",
+        "factId": "fact_70ddc23cba054cbe9bc08cb5bd5e7101",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench authors describe studying frontier language-model capabilities as essential for future language-model development.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_4f06a63a017a44c1bc06904226ecea2e"
+          },
+          {
+            "role": "conditions",
+            "value": "essential for future language-model development",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 500,
+            "end": 665,
+            "quote": "Language models have outpaced our ability to evaluate them effectively, but for their future development it is essential to study the frontier of their capabilities.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.820Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "1dfe5db5e667e2d7b33eee9c58d1ae5067a4b81057a3c865fd4fc14630266166"
+      },
+      {
+        "id": "revision_ad7b529c2be748acbe3913599aa28b62",
+        "factId": "fact_5ae2af9f9afc4066ab89cab9199d5f9a",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench paper describes advances on SWE-bench as steps toward more practical, intelligent, and autonomous language models.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_54dfb99dc9fa407787844cfa8c46efb2"
+          },
+          {
+            "role": "conditions",
+            "value": "steps toward more practical, intelligent, and autonomous language models",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1731,
+            "end": 1834,
+            "quote": "Advances on SWE-bench represent steps towards LMs that are more practical, intelligent, and autonomous.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.821Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "917914f57ce05fe9cb699dfbcd5733cc820914d90dac5eecf6167e92208b4929"
+      },
+      {
+        "id": "revision_16f77e764a5c4bed83e237126c8acd91",
+        "factId": "fact_df2b5215e8e04dfa8d348758fa24ee26",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "According to its authors, SWE-bench uses real GitHub issues and corresponding pull requests as its problem sources across Python repositories.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_dc5c3a26c8904e839784a570d3b6219b"
+          },
+          {
+            "role": "conditions",
+            "value": "problem sources across Python repositories",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 825,
+            "end": 1027,
+            "quote": "we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.821Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "43c8fccab55185d444c717c1f26b681fd06a72faeec87fae6940a437b2dd9bdd"
+      },
+      {
+        "id": "revision_c476e7ac712c4a22a11fc34e716fbc1f",
+        "factId": "fact_efad801c673648acbf3bed1dba5d612d",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The paper qualitatively describes SWE-Llama as resolving only the simplest issues in its original SWE-bench evaluations.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_e62573cf5b054b0d9a15bf41025f525a"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "can resolve only the simplest issues",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "qualitative characterization in the original SWE-bench evaluations",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1507,
+            "end": 1646,
+            "quote": "Our evaluations show that both state-of-the-art proprietary models and our fine-tuned model SWE-Llama can resolve only the simplest issues.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The captured abstract does not operationally define \"simplest\"; this is the authors’ qualitative characterization."
+        ],
+        "createdAt": "2026-10-05T21:56:41.821Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "e121813943acf75e2efdea0bb0ef9e687eeccea1b0523bf7f3793964022b7d8b"
+      },
+      {
+        "id": "revision_3ae70e9ab0f145fc954b060bed99883c",
+        "factId": "fact_570d0c0259d14011a2c915ff7ae6433e",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The paper qualitatively describes the evaluated state-of-the-art proprietary models as resolving only the simplest issues in its original SWE-bench evaluations.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_218e8ccb91f645a1b6956cd560c3961a"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "can resolve only the simplest issues",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "qualitative characterization in the original SWE-bench evaluations",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1507,
+            "end": 1646,
+            "quote": "Our evaluations show that both state-of-the-art proprietary models and our fine-tuned model SWE-Llama can resolve only the simplest issues.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The captured abstract does not operationally define \"simplest\"; this is the authors’ qualitative characterization."
+        ],
+        "createdAt": "2026-10-05T21:56:41.821Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "98810b2043800c5b3243485eb2c56b24f64112fc400899195241a5c95fd85da6"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_9ab5dec360a74e7b98e2025a02dd8cc8",
+        "outcome": "supported",
+        "reason": "The authors’ primary abstract explicitly tasks the model with editing the supplied codebase to address the described issue, supporting the attributed requirement and its conditions.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_7321965dbcee40b19291f2a6b2b3041a",
+        "outcome": "supported",
+        "reason": "The quoted primary abstract explicitly states that resolving issues frequently requires coordinating simultaneous changes across functions, classes and files. The revision retains the frequency qualification and attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_1b559611b0bf464a88346a3a4643003c",
+        "outcome": "unsupported",
+        "reason": "The quoted passage describes frequently arising issue-resolution demands and says these call for interaction with execution environments. The revision encodes an unqualified requirement for resolving SWE-bench issues rather than retaining that qualification.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_377913567c7140b0918ea328efead25a",
+        "outcome": "unsupported",
+        "reason": "The source links processing extremely long contexts to frequently arising demands. The statement and structured conditions omit that qualification and instead encode a general requirement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_26532afb5a2148d4965f14c018900786",
+        "outcome": "unsupported",
+        "reason": "The revision turns the qualified source characterization into an unqualified requirement. In addition, the structured object records only complex reasoning, not the statement’s comparison with traditional code-generation demands.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_c2f3a0de71614c379db7571521401c7e",
+        "outcome": "supported",
+        "reason": "The primary abstract states that language models have outpaced the authors’ ability to evaluate them effectively. The revision represents this as an attributed qualitative characterization, not a measured result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_8aa2a3e5f34e4c3795dd99aa7109eeb3",
+        "outcome": "supported",
+        "reason": "The quote explicitly calls studying the frontier of language-model capabilities essential for their future development, supporting the described concept, characterization and attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_ad7b529c2be748acbe3913599aa28b62",
+        "outcome": "supported",
+        "reason": "The authors explicitly characterize advances on SWE-bench as steps toward more practical, intelligent and autonomous language models. The revision preserves this as their characterization without claiming independent measurement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_16f77e764a5c4bed83e237126c8acd91",
+        "outcome": "supported",
+        "reason": "The primary abstract explicitly identifies real GitHub issues and corresponding pull requests across Python repositories as the sources of SWE-bench problems.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_c476e7ac712c4a22a11fc34e716fbc1f",
+        "outcome": "supported",
+        "reason": "The authors explicitly say their evaluations show SWE-Llama can resolve only the simplest issues. The revision accurately encodes an attributed qualitative limitation without inventing a difficulty threshold, numeric measurement or replication.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_3ae70e9ab0f145fc954b060bed99883c",
+        "outcome": "supported",
+        "reason": "The same primary passage explicitly applies the simplest-issues characterization to the evaluated state-of-the-art proprietary models. The revision preserves the evaluation scope and qualitative attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      }
+    ],
+    "approvals": []
+  }
+}

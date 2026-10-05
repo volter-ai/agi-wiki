@@ -1,0 +1,381 @@
+{
+  "version": 1,
+  "id": "ai",
+  "title": "AI Wiki",
+  "description": "An encyclopedia of artificial intelligence: people, research, organizations, systems and their impact.",
+  "scope": "Artificial intelligence research, industry, applications, computing infrastructure, governance and history.",
+  "philosophyId": "schematic",
+  "categories": [
+    {
+      "id": "researchers",
+      "name": "Researchers",
+      "topics": [
+        {
+          "title": "Geoffrey Hinton"
+        },
+        {
+          "title": "Yoshua Bengio"
+        },
+        {
+          "title": "Yann LeCun"
+        },
+        {
+          "title": "Fei-Fei Li"
+        },
+        {
+          "title": "Demis Hassabis"
+        },
+        {
+          "title": "Ilya Sutskever"
+        },
+        {
+          "title": "Daphne Koller"
+        },
+        {
+          "title": "Richard Sutton"
+        }
+      ]
+    },
+    {
+      "id": "papers",
+      "name": "Papers",
+      "topics": [
+        {
+          "title": "Attention Is All You Need"
+        },
+        {
+          "title": "Language Models are Few-Shot Learners"
+        },
+        {
+          "title": "Training language models to follow instructions with human feedback"
+        },
+        {
+          "title": "Direct Preference Optimization"
+        },
+        {
+          "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+          "startingSources": [
+            "https://github.com/microsoft/LoRA",
+            "https://arxiv.org/abs/2106.09685"
+          ]
+        },
+        {
+          "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+        },
+        {
+          "title": "Denoising Diffusion Probabilistic Models"
+        },
+        {
+          "title": "Scaling Laws for Neural Language Models"
+        }
+      ]
+    },
+    {
+      "id": "research-directions",
+      "name": "Research directions",
+      "topics": [
+        {
+          "title": "AI interpretability"
+        },
+        {
+          "title": "AI alignment"
+        },
+        {
+          "title": "Mechanistic interpretability"
+        },
+        {
+          "title": "World models in artificial intelligence"
+        },
+        {
+          "title": "Embodied artificial intelligence"
+        },
+        {
+          "title": "AI agents"
+        },
+        {
+          "title": "Test-time compute"
+        },
+        {
+          "title": "Multimodal learning"
+        }
+      ]
+    },
+    {
+      "id": "labs",
+      "name": "Labs",
+      "topics": [
+        {
+          "title": "OpenAI"
+        },
+        {
+          "title": "Google DeepMind"
+        },
+        {
+          "title": "Anthropic"
+        },
+        {
+          "title": "Meta FAIR"
+        },
+        {
+          "title": "Stanford AI Lab"
+        },
+        {
+          "title": "Berkeley Artificial Intelligence Research"
+        },
+        {
+          "title": "Allen Institute for AI"
+        },
+        {
+          "title": "Mila Quebec AI Institute"
+        }
+      ]
+    },
+    {
+      "id": "startups",
+      "name": "Startups and companies",
+      "topics": [
+        {
+          "title": "Mistral AI"
+        },
+        {
+          "title": "Cohere"
+        },
+        {
+          "title": "Hugging Face"
+        },
+        {
+          "title": "Perplexity AI"
+        },
+        {
+          "title": "Together AI"
+        },
+        {
+          "title": "CoreWeave"
+        },
+        {
+          "title": "Cerebras Systems"
+        },
+        {
+          "title": "Groq"
+        }
+      ]
+    },
+    {
+      "id": "products",
+      "name": "Products",
+      "topics": [
+        {
+          "title": "ChatGPT"
+        },
+        {
+          "title": "Claude AI assistant"
+        },
+        {
+          "title": "Google Gemini assistant"
+        },
+        {
+          "title": "GitHub Copilot"
+        },
+        {
+          "title": "Cursor code editor"
+        },
+        {
+          "title": "Ollama"
+        },
+        {
+          "title": "vLLM"
+        },
+        {
+          "title": "ComfyUI"
+        }
+      ]
+    },
+    {
+      "id": "models",
+      "name": "Models",
+      "topics": [
+        {
+          "title": "GPT-4"
+        },
+        {
+          "title": "Llama 3"
+        },
+        {
+          "title": "DeepSeek-R1"
+        },
+        {
+          "title": "Qwen2.5"
+        },
+        {
+          "title": "Gemma 2"
+        },
+        {
+          "title": "Stable Diffusion"
+        },
+        {
+          "title": "Whisper speech recognition"
+        },
+        {
+          "title": "AlphaFold 2"
+        }
+      ]
+    },
+    {
+      "id": "benchmarks",
+      "name": "Benchmarks",
+      "topics": [
+        {
+          "title": "MMLU"
+        },
+        {
+          "title": "SWE-bench",
+          "startingSources": [
+            "https://www.swebench.com/",
+            "https://arxiv.org/abs/2310.06770"
+          ]
+        },
+        {
+          "title": "HumanEval"
+        },
+        {
+          "title": "GPQA"
+        },
+        {
+          "title": "ARC-AGI"
+        },
+        {
+          "title": "HELM language model evaluation"
+        },
+        {
+          "title": "MLPerf"
+        },
+        {
+          "title": "BIG-bench"
+        }
+      ]
+    },
+    {
+      "id": "techniques",
+      "name": "Techniques",
+      "topics": [
+        {
+          "title": "Transformer neural networks"
+        },
+        {
+          "title": "Reinforcement learning from human feedback"
+        },
+        {
+          "title": "Retrieval-augmented generation"
+        },
+        {
+          "title": "Mixture of experts"
+        },
+        {
+          "title": "Knowledge distillation"
+        },
+        {
+          "title": "Low-rank adaptation"
+        },
+        {
+          "title": "Speculative decoding"
+        },
+        {
+          "title": "Model quantization"
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "name": "Hardware",
+      "topics": [
+        {
+          "title": "NVIDIA H100",
+          "startingSources": [
+            "https://www.nvidia.com/en-us/data-center/h100/"
+          ]
+        },
+        {
+          "title": "NVIDIA B200"
+        },
+        {
+          "title": "AMD Instinct MI300X"
+        },
+        {
+          "title": "Google TPU"
+        },
+        {
+          "title": "AWS Trainium"
+        },
+        {
+          "title": "High bandwidth memory for AI"
+        },
+        {
+          "title": "NVLink"
+        },
+        {
+          "title": "AI inference accelerators"
+        }
+      ]
+    },
+    {
+      "id": "law-and-policy",
+      "name": "Law and policy",
+      "topics": [
+        {
+          "title": "European Union AI Act"
+        },
+        {
+          "title": "Colorado Artificial Intelligence Act"
+        },
+        {
+          "title": "NIST AI Risk Management Framework"
+        },
+        {
+          "title": "AI copyright litigation"
+        },
+        {
+          "title": "AI chip export controls"
+        },
+        {
+          "title": "AI model licensing"
+        },
+        {
+          "title": "AI training data privacy"
+        },
+        {
+          "title": "AI safety evaluations"
+        }
+      ]
+    },
+    {
+      "id": "data-and-infrastructure",
+      "name": "Data and infrastructure",
+      "topics": [
+        {
+          "title": "ImageNet"
+        },
+        {
+          "title": "The Pile dataset"
+        },
+        {
+          "title": "LAION datasets"
+        },
+        {
+          "title": "Common Crawl"
+        },
+        {
+          "title": "FineWeb"
+        },
+        {
+          "title": "Model Context Protocol"
+        },
+        {
+          "title": "Distributed model training"
+        },
+        {
+          "title": "Synthetic training data"
+        }
+      ]
+    }
+  ]
+}

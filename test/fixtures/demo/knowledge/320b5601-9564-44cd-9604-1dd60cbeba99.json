@@ -1,0 +1,1019 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_131d5305be264149b2c500e137df37c7",
+        "label": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_4fb81f339c804ecbb97a28ea23b76ba2",
+        "label": "SWE-bench",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_1d18bd83c7d343ddaf0358bae3f137de",
+        "label": "Carlos E. Jimenez",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_cb837acbc75e47f09a6544e37d4e9f2a",
+        "label": "John Yang",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_c22e916922dd4bf4a5df63ec6f36bf1e",
+        "label": "Alexander Wettig",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_5ee135ba75ab484a9347e90be049beeb",
+        "label": "Shunyu Yao",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_defb6e79fc594ec8aae20feccb59886e",
+        "label": "Kexin Pei",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_b32c5bbc64d84f68a799c37831889ef2",
+        "label": "Ofir Press",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_20d5954cac774e169fc6a10927668981",
+        "label": "Karthik Narasimhan",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+        "sourceId": "source_3e4a5dea3aec490fe3b7bc9536c9ac06c9758b4b3d572ac667536f95fbf38fc0",
+        "url": "https://arxiv.org/abs/2310.06770",
+        "title": "[2310.06770] SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+        "sha256": "30dfc7ef044a54b964fe2278d679bb47a5014be083384e44b2ae387427b99535",
+        "retrievedAt": "2026-10-05T18:09:57.596Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured arXiv record contains the authors' own abstract introducing SWE-bench and reporting their evaluations. It is an arXiv preprint record for version 3, revised 11 November 2024; the comments mention ICLR 2024, but the capture alone does not establish peer-review status. Evaluation results are author-reported, not independent replication.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_110bce8156294537b2add4e7099c6960",
+        "factId": "fact_2e713ce38b304ceeb071e71d5c09402c",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench is an evaluation framework for language models using software engineering problems drawn from real GitHub issues and corresponding pull requests.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "definition",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "An evaluation framework for language models using software engineering problems drawn from real GitHub issues and corresponding pull requests.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 812,
+            "end": 1027,
+            "quote": "To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.171Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "2bd742e781e3fd17453d6e834be7885d9e32b2db6ad2d0575be067ff87ecad82"
+      },
+      {
+        "id": "revision_2ec6338c984b45e399d7c896b3cc459a",
+        "factId": "fact_bd07403c50d941db876e577c36ccb157",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench benchmark described in the paper contains 2,294 software engineering problems.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "problem_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "2294",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 812,
+            "end": 1027,
+            "quote": "To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "7ce0e5afae04677d3dd9ed8b09116a90b7d60a020dbf66f8e652a339dafd43ca"
+      },
+      {
+        "id": "revision_249f3e5dc09e45349a94087bec8af52f",
+        "factId": "fact_00a373cd184c49c993fe540df9a1e82b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench benchmark described in the paper draws its problems from 12 popular Python repositories.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "repository_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "12",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Popular Python repositories from which the benchmark's problems are drawn.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 812,
+            "end": 1027,
+            "quote": "To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "a536b044e0a2563ea651ebc1af33fdac39002154d743a2bf0cfba1f2765abe74"
+      },
+      {
+        "id": "revision_39135e549495466ea54ab245f01175f6",
+        "factId": "fact_6bfa1db451684441b6f06ef095085926",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Each SWE-bench task provides a codebase and a description of an issue to be resolved.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "task_input",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "A codebase and a description of an issue to be resolved.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1028,
+            "end": 1172,
+            "quote": "Given a codebase along with a description of an issue to be resolved, a language model is tasked with editing the codebase to address the issue.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "518ddb4f70575164f29903a036510e54d20654e7bed56f7260b2f769b65e5e3d"
+      },
+      {
+        "id": "revision_32ef0b4f588e494aa9625d3a00d30d40",
+        "factId": "fact_57d250fb504e484592c3e1c0b3048c5e",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench tasks ask a language model to edit the supplied codebase to address the described issue.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "task_output",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Edits to the supplied codebase that address the described issue.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1028,
+            "end": 1172,
+            "quote": "Given a codebase along with a description of an issue to be resolved, a language model is tasked with editing the codebase to address the issue.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "f024bc01179831c399bb3344dff5a181b2cffb60f86d0af7c1218267ae62467d"
+      },
+      {
+        "id": "revision_8dced03f6d5b47fe849d00e5f653c3cb",
+        "factId": "fact_8422531d47ad4db5ace8de63d7dd73a3",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors report that resolving SWE-bench issues frequently requires understanding and coordinating simultaneous changes across multiple functions, classes, and files.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "definition",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "An issue-resolution benchmark whose tasks frequently require understanding and coordinating simultaneous changes across multiple functions, classes, and files.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The SWE-bench paper's authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1173,
+            "end": 1506,
+            "quote": "Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "722177a0cd50fdf712e34e00e0a08f42c3873386a3510df252b249ea0b0f105c"
+      },
+      {
+        "id": "revision_cd94739c2ba746ccbfa3524287a8347b",
+        "factId": "fact_6ee715c252ee4d47833f3aec928c3129",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors characterize SWE-bench as calling for interaction with execution environments, extremely long-context processing, and complex reasoning beyond traditional code generation.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "purpose",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Testing models through issue resolution that calls for interaction with execution environments, extremely long-context processing, and complex reasoning beyond traditional code generation.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The SWE-bench paper's authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1173,
+            "end": 1506,
+            "quote": "Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "c270a2d948a9fbe006556022516cab22c85a0ca6b9980cab34c7cc7b295b3cb6"
+      },
+      {
+        "id": "revision_2e39a3a66c1f4e7e89ec867271e12567",
+        "factId": "fact_9a6fa87ead82455fa29545d2b6d1ecd9",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench paper describes the SWE-bench evaluation framework.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 812,
+            "end": 1027,
+            "quote": "To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "8ad0eb9381b3f2baff32ce53068293c1f46a22989f4a80b031a5ab201a2e543d"
+      },
+      {
+        "id": "revision_00e11c0dc56e470fa8b70646f0c38f0e",
+        "factId": "fact_ed7a26d01b69412b88a8d195febf4f18",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Carlos E. Jimenez coauthored the SWE-bench paper.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_1d18bd83c7d343ddaf0358bae3f137de"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 214,
+            "end": 323,
+            "quote": "Authors:Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "20ec918bdc7e91501f3f3967883823c250a5c46712d3f7780d848c95254893de"
+      },
+      {
+        "id": "revision_7742d6e428d749d4a02690447d001c2f",
+        "factId": "fact_ccef3861d13249a0b0dbdc4b882bb66b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "John Yang coauthored the SWE-bench paper.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_cb837acbc75e47f09a6544e37d4e9f2a"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 214,
+            "end": 323,
+            "quote": "Authors:Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "8c78ef34e253b9b13c3b0ae7d8ca821b5cde5b21c65036267de64131ac369fa4"
+      },
+      {
+        "id": "revision_6db2d3153db34c438b4ecc554c455784",
+        "factId": "fact_c59999d5eed54a20b8c90df0963c2c92",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Alexander Wettig coauthored the SWE-bench paper.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_c22e916922dd4bf4a5df63ec6f36bf1e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 214,
+            "end": 323,
+            "quote": "Authors:Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "e0918946c3bc998cb5089ef14f4a902fa7fd0063af724f3030fb7192b8363b57"
+      },
+      {
+        "id": "revision_62ac6b80f7624c98adc6dac3280ad03e",
+        "factId": "fact_0c04238659bf42f3a4e1c4c1623d7786",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Shunyu Yao coauthored the SWE-bench paper.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_5ee135ba75ab484a9347e90be049beeb"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 214,
+            "end": 323,
+            "quote": "Authors:Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.173Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "398403d5690d9938e553fcc232305e783eaf3a2bce89ba7bdfbaadda6101e53b"
+      },
+      {
+        "id": "revision_744b78fb18d24f57986465177ca0c176",
+        "factId": "fact_720345ba8b2945a99d77357a1296c47d",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Kexin Pei coauthored the SWE-bench paper.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_defb6e79fc594ec8aae20feccb59886e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 214,
+            "end": 323,
+            "quote": "Authors:Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.173Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "4d72201d56a54fad82f6ad4d39ba0f9d23886185edd9f1789c2c78f7e20bea08"
+      },
+      {
+        "id": "revision_4855bc8fe63346349359d77c6a8894fb",
+        "factId": "fact_f5d0adf8295b47b8b03a8ccca60dcbf1",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Ofir Press coauthored the SWE-bench paper.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_b32c5bbc64d84f68a799c37831889ef2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 214,
+            "end": 323,
+            "quote": "Authors:Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.173Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "839fbf29edd0f3e698812406018d4fb9518384f52003a9d8c290a13a466791a5"
+      },
+      {
+        "id": "revision_701e643844fb48dea7e58d9332ec7ca3",
+        "factId": "fact_d30ebc6956c849e3a0e5fa0979ae9b80",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Karthik Narasimhan coauthored the SWE-bench paper.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_20d5954cac774e169fc6a10927668981"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 214,
+            "end": 323,
+            "quote": "Authors:Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.173Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "61f746fcd8863c1f73d9f3ed537c7b4272a7a25296a142ae0605fff63ae6d4ea"
+      },
+      {
+        "id": "revision_e6a37d1cd5464747897392dad777de6f",
+        "factId": "fact_9e3068dc932e45c595f9669c881745a7",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench paper's first arXiv version was submitted on October 10, 2023.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "property",
+            "value": "publication_status",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "First arXiv version submitted.",
+            "valueType": "text"
+          },
+          {
+            "role": "version",
+            "value": "v1",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "time": {
+          "start": "2023-10-10",
+          "precision": "day",
+          "basis": "arXiv submission history for v1"
+        },
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 2268,
+            "end": 2313,
+            "quote": "[v1] Tue, 10 Oct 2023 16:47:29 UTC (2,003 KB)",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.173Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "04aed77569323d05ffb47b65bad232151971ff4c57a985f7b3d2fa6fe7f37b9f"
+      },
+      {
+        "id": "revision_4493610034df40c7916aa349bf435100",
+        "factId": "fact_bfe6f478e10f4ef3ae4670521e7da099",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench paper's third arXiv version was submitted on November 11, 2024.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "property",
+            "value": "publication_status",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Third arXiv version submitted.",
+            "valueType": "text"
+          },
+          {
+            "role": "version",
+            "value": "v3",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "time": {
+          "start": "2024-11-11",
+          "precision": "day",
+          "basis": "arXiv submission history for v3"
+        },
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 2359,
+            "end": 2404,
+            "quote": "[v3] Mon, 11 Nov 2024 23:05:04 UTC (2,398 KB)",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.173Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "c4dae661af57be586f0075deba7b8c370deb0a6df82703e09f2fb06681ea8c45"
+      },
+      {
+        "id": "revision_f4740ba759174d679d7a312966ad6eb3",
+        "factId": "fact_4a5f188d1acb4bc7a94eef976a87c7a5",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors frame SWE-bench as using real-world software engineering as a rich, sustainable, and challenging testbed for evaluating the next generation of language models.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "purpose",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Using real-world software engineering as a rich, sustainable, and challenging testbed for evaluating the next generation of language models.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The SWE-bench paper's authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 666,
+            "end": 811,
+            "quote": "We find real-world software engineering to be a rich, sustainable, and challenging testbed for evaluating the next generation of language models.",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 812,
+            "end": 1027,
+            "quote": "To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.173Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "469293c1c1cd8511f7890f776f0faabca5fafe2ecc49838484ebd9f6826218e8"
+      },
+      {
+        "id": "revision_5a6375ab89b445df90c46bbfbac60a90",
+        "factId": "fact_2ae1cbfb86a54614abe16138e3f5b9fe",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors motivate the SWE-bench paper by arguing that language models have outpaced effective evaluation and that studying the frontier of their capabilities is essential for future development.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "property",
+            "value": "purpose",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Studying the frontier of language-model capabilities for future development, motivated by language models outpacing the ability to evaluate them effectively.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The SWE-bench paper's authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 500,
+            "end": 665,
+            "quote": "Language models have outpaced our ability to evaluate them effectively, but for their future development it is essential to study the frontier of their capabilities.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.173Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "604d04589fc3a37ec0a2c85b0889f07c7e6172cf62cb4e6346eb6a8acd47e8d0"
+      },
+      {
+        "id": "revision_8bc3d9c03bbe4ff4b01b5cf924dce067",
+        "factId": "fact_8811a6601fc3405dbcd143a9c9c91ce6",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors present advances on SWE-bench as steps toward more practical, intelligent, and autonomous language models.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "purpose",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Supporting progress toward more practical, intelligent, and autonomous language models.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The SWE-bench paper's authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1731,
+            "end": 1834,
+            "quote": "Advances on SWE-bench represent steps towards LMs that are more practical, intelligent, and autonomous.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.173Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "8214719bc1db9e09491f88f48506897692171a5a2497232d5d8b593b28608f52"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_110bce8156294537b2add4e7099c6960",
+        "outcome": "supported",
+        "reason": "The authors' original abstract qualifies as primary evidence. It defines SWE-bench as an evaluation framework using real GitHub issues and corresponding pull requests; the surrounding text establishes language-model evaluation. The definition field expresses that same assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_2ec6338c984b45e399d7c896b3cc459a",
+        "outcome": "supported",
+        "reason": "The introducing abstract explicitly gives 2,294 software engineering problems. The numeric problem_count and count unit match the statement about the benchmark described there; this is a dataset description, not an experimental performance result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_249f3e5dc09e45349a94087bec8af52f",
+        "outcome": "supported",
+        "reason": "The quote explicitly specifies 12 popular Python repositories. The numeric count, unit, and conditions preserve both the repository qualification and their relationship to the benchmark's problems.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_39135e549495466ea54ab245f01175f6",
+        "outcome": "supported",
+        "reason": "The abstract describes the task input as a codebase together with an issue description. The task_input field faithfully represents that general task specification.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_32ef0b4f588e494aa9625d3a00d30d40",
+        "outcome": "unsupported",
+        "reason": "The source supports asking a language model to edit a codebase, but the fields specify only task_output as edits that address an issue. They do not explicitly encode the language-model actor or distinguish the requested action from successful issue-addressing output. The sentence and fields therefore do not express precisely the same assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_8dced03f6d5b47fe849d00e5f653c3cb",
+        "outcome": "unsupported",
+        "reason": "The quotation supports the attributed, qualified account of frequent coordinated changes. However, the structure recasts a claim about task requirements as a generic definition property. This conceals the actual requirement relationship rather than schematically representing it.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_cd94739c2ba746ccbfa3524287a8347b",
+        "outcome": "unsupported",
+        "reason": "The source describes demands arising from issue resolution, not a separate purpose assertion. The purpose field adds 'Testing models through issue resolution' and substitutes intended purpose for the sentence's characterization of task demands.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_2e39a3a66c1f4e7e89ec867271e12567",
+        "outcome": "supported",
+        "reason": "The paper's own abstract introduces and describes SWE-bench. The paper and benchmark entities are identifiable in the capture, and the describes relation matches the sentence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_00e11c0dc56e470fa8b70646f0c38f0e",
+        "outcome": "supported",
+        "reason": "The captured paper record explicitly lists Carlos E. Jimenez among its authors, supporting the person-to-paper authored relation.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_7742d6e428d749d4a02690447d001c2f",
+        "outcome": "supported",
+        "reason": "The captured paper record explicitly lists John Yang among its authors, supporting the stated authorship and entity roles.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_6db2d3153db34c438b4ecc554c455784",
+        "outcome": "supported",
+        "reason": "Alexander Wettig appears in the quoted author list for this paper. The statement and authored relation match that evidence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_62ac6b80f7624c98adc6dac3280ad03e",
+        "outcome": "supported",
+        "reason": "Shunyu Yao appears in the quoted author list for this paper, directly supporting the specified person-to-paper relation.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_744b78fb18d24f57986465177ca0c176",
+        "outcome": "supported",
+        "reason": "The quoted record names Kexin Pei as an author of the identified SWE-bench paper. No additional identity inference is needed.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_4855bc8fe63346349359d77c6a8894fb",
+        "outcome": "supported",
+        "reason": "The author list directly establishes Ofir Press's coauthorship of this paper, matching the structured relation.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_701e643844fb48dea7e58d9332ec7ca3",
+        "outcome": "supported",
+        "reason": "Karthik Narasimhan is explicitly listed as an author of the identified paper, supporting the sentence and authored relation.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_e6a37d1cd5464747897392dad777de6f",
+        "outcome": "supported",
+        "reason": "The submission history gives v1 as October 10, 2023, and the header explicitly calls this the submission date. The version, submission status, and day-precision date agree without asserting a public posting time.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_4493610034df40c7916aa349bf435100",
+        "outcome": "supported",
+        "reason": "The arXiv submission history dates v3 to November 11, 2024. The statement and fields consistently describe third-version submission at day precision, not an independently established public release time.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_f4740ba759174d679d7a312966ad6eb3",
+        "outcome": "supported",
+        "reason": "The authors call real-world software engineering a rich, sustainable, challenging evaluation testbed and immediately introduce SWE-bench 'To this end.' Together these passages support the attributed evaluation purpose, including its qualifications, as represented in both sentence and fields.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_5a6375ab89b445df90c46bbfbac60a90",
+        "outcome": "unsupported",
+        "reason": "The sentence combines an assertion that models have outpaced evaluation with an assertion that frontier study is essential for development. A generic purpose property does not separately encode those claims and omits the sentence's essentiality qualification. Attribution does not remedy the compound claim or structural mismatch.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_8bc3d9c03bbe4ff4b01b5cf924dce067",
+        "outcome": "unsupported",
+        "reason": "The source and sentence characterize advances on SWE-bench as steps toward particular model capabilities. The fields instead assign SWE-bench a purpose of supporting progress. That replaces the asserted relationship involving advances with a different, generic purpose relationship.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      }
+    ],
+    "approvals": []
+  }
+}

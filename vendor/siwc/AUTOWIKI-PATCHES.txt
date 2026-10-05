@@ -1,0 +1,13 @@
+AutoWiki keeps the upstream license and pinned revision. Two local extensions:
+- ChatGPTClient.withAccessToken executes a local callback through the devkit's
+  existing authenticated/refresh/cancellation wrapper. AutoWiki uses it only to
+  start its private app-server child. It is never exposed over HTTP.
+- StreamResponseOptions.onUsage forwards response.completed usage metadata so
+  the engine comparison can measure reported tokens without changing requests.
+No OAuth exchange, refresh, encryption, scope, or response-completion semantics
+were changed. These files are no longer described as an unchanged upstream copy.
+
+Independent research adds an opt-in fixed web_search tool with Wikipedia domains
+blocked, tool-source events, and a tool-progress callback. No arbitrary tool schema
+is accepted. store:false, stream:true, terminal completion and OAuth behavior are
+unchanged. Search is subject to account policy; unsupported max_tool_calls is omitted.

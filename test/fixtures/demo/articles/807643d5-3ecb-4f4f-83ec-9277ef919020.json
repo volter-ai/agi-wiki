@@ -1,0 +1,680 @@
+{
+  "title": "NVIDIA H100",
+  "markdown": "NVIDIA identifies NVIDIA H100 as its ninth-generation data-center GPU [2](#source-2).\n\nNVIDIA states that NVIDIA H100 is based on the NVIDIA Hopper architecture [2](#source-2).\n\nNVIDIA describes NVIDIA H100 as designed for large-scale AI and high-performance computing [2](#source-2).\n\nNVIDIA announced NVIDIA H100 on March 22, 2022 [3](#source-3).\n\nNVIDIA states that NVIDIA H100 uses the NVIDIA Hopper architecture [3](#source-3).\n\nNVIDIA states that NVIDIA H100 incorporates fourth-generation Tensor Cores [2](#source-2).\n\nNVIDIA states that NVIDIA H100 uses the H100 Transformer Engine [2](#source-2).\n\nNVIDIA describes NVIDIA H100 as introducing DPX instructions for accelerating dynamic-programming algorithms [2](#source-2).\n\nNVIDIA specifies fourth-generation NVIDIA NVLink for NVIDIA H100 [2](#source-2).\n\nNVIDIA describes NVIDIA H100 as using second-generation Multi-Instance GPU technology [2](#source-2).\n\n## Specifications and configurations\n\nNVIDIA states that the NVIDIA Hopper architecture is named after Grace Hopper [3](#source-3).\n\nNVIDIA announced that H100 would come in SXM and PCIe form factors [3](#source-3).\n\nNVIDIA projected H100 availability starting in the third quarter of 2022 [3](#source-3).\n\nNVIDIA reports that the GH100 chip powering NVIDIA H100 contains 80 billion transistors [2](#source-2).\n\nNVIDIA reports a die area of 814 square millimeters for the GH100 chip powering NVIDIA H100 [2](#source-2).\n\nNVIDIA states that the GH100 chip powering NVIDIA H100 uses a TSMC 4N process customized for NVIDIA [2](#source-2).\n\nNVIDIA specifies 132 streaming multiprocessors for NVIDIA H100 in its SXM5 configuration [2](#source-2).\n\nNVIDIA specifies 16,896 FP32 CUDA cores for NVIDIA H100 in its SXM5 configuration [2](#source-2).\n\nNVIDIA specifies 528 fourth-generation Tensor Cores for NVIDIA H100 in its SXM5 configuration [2](#source-2).\n\nNVIDIA specifies 80 gigabytes of HBM3 memory for NVIDIA H100 in its SXM5 configuration [2](#source-2).\n\nNVIDIA specifies 114 streaming multiprocessors for NVIDIA H100 in its PCIe Gen 5 board configuration [2](#source-2).\n\nNVIDIA specifies 14,592 FP32 CUDA cores for NVIDIA H100 in its PCIe Gen 5 board configuration [2](#source-2).\n\nNVIDIA specifies 456 fourth-generation Tensor Cores for NVIDIA H100 in its PCIe Gen 5 board configuration [2](#source-2).\n\nNVIDIA specifies 80 gigabytes of HBM2e memory for NVIDIA H100 in its PCIe Gen 5 board configuration [2](#source-2).\n\nNVIDIA specifies a 50-megabyte L2 cache for NVIDIA H100 in its SXM5 configuration [2](#source-2).\n\nNVIDIA specifies a 50-megabyte L2 cache for NVIDIA H100 in its PCIe Gen 5 board configuration [2](#source-2).\n\n## Capabilities and deployment\n\nNVIDIA describes FP8 as a new data type for NVIDIA H100's fourth-generation Tensor Cores [2](#source-2).\n\nNVIDIA states that the H100 Transformer Engine dynamically chooses between FP8 and 16-bit calculations [2](#source-2).\n\nNVIDIA states that the H100 Transformer Engine combines software with custom NVIDIA Hopper Tensor Core technology [2](#source-2).\n\nNVIDIA states that the H100 Transformer Engine automatically handles re-casting between FP8 and 16-bit in each layer [2](#source-2).\n\nNVIDIA states that the H100 Transformer Engine automatically handles scaling between FP8 and 16-bit in each layer [2](#source-2).\n\nNVIDIA labels its NVIDIA H100 launch performance numbers preliminary, based on current expectations and subject to change in shipping products [2](#source-2).\n\nNVIDIA's Figure 2 launch comparison specifies an NDR InfiniBand network for the NVIDIA H100 cluster, with NVLink Switch System where indicated [2](#source-2).\n\nNVIDIA's Figure 2 launch comparison of NVIDIA H100 uses an A100 baseline cluster with an HDR InfiniBand network [2](#source-2).\n\nNVIDIA's launch comparison of NVIDIA H100 uses workload-dependent GPU counts [2](#source-2).\n\nNVIDIA's launch MT-NLG comparison uses different batch sizes for NVIDIA H100 and A100 [2](#source-2).\n\nNVIDIA states that NVIDIA H100's DPX instructions accelerate Smith-Waterman genomics processing [2](#source-2).\n\nNVIDIA states that NVIDIA H100's DPX instructions accelerate Floyd-Warshall optimal-route finding for robot fleets in dynamic warehouses [2](#source-2).\n\nNVIDIA states that NVIDIA H100 adds thread block clusters as a new level in the CUDA thread group hierarchy [2](#source-2).\n\nNVIDIA states that NVIDIA H100 guarantees concurrent scheduling of thread blocks within a cluster [2](#source-2).\n\nNVIDIA states that NVIDIA H100's thread block clusters enable synchronization among thread blocks running concurrently across multiple streaming multiprocessors [2](#source-2).\n\nNVIDIA states that NVIDIA H100's thread block clusters enable collaborative data fetching by thread blocks running concurrently across multiple streaming multiprocessors [2](#source-2).\n\nNVIDIA states that NVIDIA H100's thread block clusters enable data exchange among thread blocks running concurrently across multiple streaming multiprocessors [2](#source-2).\n\nNVIDIA states that NVIDIA H100's distributed shared memory permits direct communication between streaming multiprocessors for loads, stores and atomics across their shared-memory blocks [2](#source-2).\n\nNVIDIA states that NVIDIA H100's Tensor Memory Accelerator transfers large data blocks between global memory and shared memory [2](#source-2).\n\nNVIDIA states that NVIDIA H100's Tensor Memory Accelerator supports asynchronous copies between thread blocks within a cluster [2](#source-2).\n\nNVIDIA states that NVIDIA H100's asynchronous transaction barriers synchronize general-purpose CUDA threads and on-chip accelerators within a cluster, including across separate streaming multiprocessors [2](#source-2).\n\nNVIDIA states that NVIDIA H100's asynchronous transaction barrier supports atomic data movement [2](#source-2).\n\nNVIDIA specifies fourth-generation NVIDIA NVLink for NVIDIA H100 [2](#source-2).\n\nNVIDIA specifies 900 gigabytes per second of total multi-GPU input/output bandwidth for NVIDIA H100's fourth-generation NVLink [2](#source-2).\n\nNVIDIA states that NVIDIA H100 supports PCIe Gen 5 [2](#source-2).\n\nNVIDIA specifies 128 gigabytes per second of total bidirectional bandwidth for NVIDIA H100's PCIe Gen 5 interface [2](#source-2).\n\nNVIDIA's launch article states that NVLink Switch System technology was not yet available with NVIDIA H100 systems [2](#source-2).\n\nNVIDIA describes DGX H100 as using NVIDIA H100 GPUs [3](#source-3).\n\nNVIDIA states that DGX H100 uses fourth-generation NVLink to connect its GPUs [3](#source-3).\n\nNVIDIA states that DGX H100 uses NVSwitch to connect its H100 GPUs over NVLink [3](#source-3).\n\nNVIDIA states that the Grace Hopper Superchip uses the NVIDIA Hopper architecture for its GPU [3](#source-3).\n\nNVIDIA states that the Grace Hopper Superchip uses a NVIDIA Grace CPU [3](#source-3).\n\nNVIDIA states that the Grace Hopper Superchip uses NVLink-C2C to interconnect its CPU and GPU [3](#source-3).\n\nNVIDIA describes the Grace Hopper Superchip as designed for giant-scale HPC and AI applications [3](#source-3).\n\nNVIDIA specifies support for up to seven individual GPU instances on NVIDIA H100 with second-generation Multi-Instance GPU technology [2](#source-2).\n\nNVIDIA states that each NVIDIA H100 MIG instance has dedicated NVDEC units [2](#source-2).\n\nNVIDIA states that each NVIDIA H100 MIG instance has dedicated NVJPG units [2](#source-2).\n\nNVIDIA states that each NVIDIA H100 MIG instance includes its own set of performance monitors [2](#source-2).\n\nNVIDIA states that NVIDIA H100's native confidential computing extends the trusted execution environment with CPUs to the GPU at full PCIe line rate [2](#source-2).\n\nNVIDIA states that NVIDIA H100's confidential-computing support protects user data [2](#source-2).\n\nNVIDIA states that NVIDIA H100's confidential-computing support improves isolation between virtual machines in virtualized and MIG environments [2](#source-2).\n\nNVIDIA states that NVIDIA H100's confidential-computing support improves protection of virtual machines from one another in virtualized and MIG environments [2](#source-2).\n\n## Evaluation and limitations\n\nAditya Ujeniya coauthored the H100/H200 power-capping paper [4](#source-4).\n\nThe power-capping paper describes an investigation of how NVIDIA H100 manages memory power consumption at various power-cap levels [4](#source-4).\n\nThe power-capping paper describes an investigation of how NVIDIA H200 manages memory power consumption at various power-cap levels [4](#source-4).\n\nUjeniya and colleagues describe the NVIDIA H100 configuration in their H100/H200 study as having HBM2e memory [4](#source-4).\n\nIn their July 15, 2026 revision, Ujeniya and colleagues report higher efficiency for H200 with HBM3e than NVIDIA H100 with HBM2e for memory-bound applications across varying power caps, in an evaluation using memory-bound TheBandwidthBenchmark [4](#source-4).\n\nThe brae project reports using a single PCIe NVIDIA H100 for its CFD benchmark [1](#source-1).\n\nThe brae project specifies 80 gigabytes of memory for the PCIe NVIDIA H100 used in its CFD benchmark [1](#source-1).\n\nThe report describes brae's benchmark configuration as keeping the mesh, fields, SIMPLE loop, and all linear solves resident on the GPU [1](#source-1).\n\nThe report characterizes the benchmark's laminar, physically unsteady performance case as a timing workload with identical work per iteration rather than a field-comparison case [1](#source-1).\n\nThe report states that field accuracy in the brae H100 CFD benchmark is validated separately on a converged turbulent case [1](#source-1).\n\nThe report cautions that the OpenFOAM-CPU reference in the brae H100 CFD benchmark is not a cost-matched comparison [1](#source-1).\n\nThe report cautions that brae's speed margin over the virtualized OpenFOAM-CPU reference is indicative rather than exact because it expects a bare-metal EPYC to be faster [1](#source-1).",
+  "id": "807643d5-3ecb-4f4f-83ec-9277ef919020",
+  "topic": "NVIDIA H100",
+  "subjectId": "ai",
+  "sources": [
+    {
+      "id": 1,
+      "captureId": "capture_1c6a9b28c670fe51309e1748a0e098e4cb3f9ae642b94f31a231b95069934e21",
+      "title": "brae/bench/H100/H100_GPU_COMPARISON_REPORT.md at main · simd-ai/brae · GitHub",
+      "url": "https://github.com/simd-ai/brae/blob/main/bench/H100/H100_GPU_COMPARISON_REPORT.md",
+      "extract": "",
+      "evidenceType": "primary",
+      "selectionReason": "The brae repository report presents its own same-machine CFD measurements, runner configurations, reproduction instructions, and experimental caveats; its results are project-reported rather than independently confirmed.",
+      "retrievedAt": "2026-10-05T17:26:55.450Z"
+    },
+    {
+      "id": 2,
+      "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+      "title": "NVIDIA Hopper Architecture In-Depth | NVIDIA Technical Blog",
+      "url": "https://developer.nvidia.com/blog/?p=45555",
+      "extract": "",
+      "evidenceType": "primary",
+      "selectionReason": "NVIDIA's technical blog provides its own H100 architecture and configuration specifications; claims below use the authored article rather than its AI-generated summary and remain attributed to NVIDIA.",
+      "retrievedAt": "2026-10-05T17:26:37.915Z"
+    },
+    {
+      "id": 3,
+      "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+      "title": "NVIDIA Announces Hopper Architecture, the Next Generation of Accelerated Computing | NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-hopper-architecture-the-next-generation-of-accelerated-computing",
+      "extract": "",
+      "evidenceType": "primary",
+      "selectionReason": "This is NVIDIA's own announcement of Hopper and H100, providing firsthand evidence of its announcements and stated specifications, expectations, and performance claims, not independent verification.",
+      "retrievedAt": "2026-10-05T18:19:19.880Z"
+    },
+    {
+      "id": 4,
+      "captureId": "capture_dadea49e7a11efeb2dc360df227af05a806a2ad98375fb2f6d34b29870014b34",
+      "title": "[2604.11391] Architectural Trade-offs in the Energy-Efficient Era: A Comparative Study of power-capping NVIDIA H100 and H200",
+      "url": "https://arxiv.org/abs/2604.11391",
+      "extract": "",
+      "evidenceType": "primary",
+      "selectionReason": "The captured arXiv record contains the researchers' own abstract describing their comparative study and observations, along with authorship and revision metadata; the results are author reports, not independent confirmation.",
+      "retrievedAt": "2026-10-05T17:26:38.110Z"
+    }
+  ],
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "createdAt": "2026-10-05T21:40:28.230Z",
+  "model": "gpt-6-astra",
+  "knowledge": {
+    "ontologyVersion": 1,
+    "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9",
+    "policyKey": "schematic@2:a03d324da4918f92",
+    "mode": "preview",
+    "dependencies": [
+      {
+        "factId": "fact_2c858bc2ab964713ac114957629111ac",
+        "revisionId": "revision_c051b1248e254052839cee9f61b69255",
+        "digest": "76ebeb22d1260778c360ff58f865345f14a64c6880405c1eeaa913fae78e9b2a"
+      },
+      {
+        "factId": "fact_1d29454dd060486e84a9f7f777069377",
+        "revisionId": "revision_ad93e3e951ff4a29af9c2e02c76fb155",
+        "digest": "3001b7a959f69a683fada6e440c3c45f7976f36fd913f2938f354de6c24f171a"
+      },
+      {
+        "factId": "fact_c36fc30a93e240bf920cee8712c64941",
+        "revisionId": "revision_48b8c36377564eafae4727448932c0ed",
+        "digest": "be4108c63f967df0ed29e8b9804faf062feabef82540d596fe78ab991edc7876"
+      },
+      {
+        "factId": "fact_e71ddd9f26b04ec08484b0122e9362c7",
+        "revisionId": "revision_a347c44ea5c84d648262549fed36b47e",
+        "digest": "d36b784a5be1348229bdc6bb1f21a4895dbf8c76c92d81b91c602cb82edc05bd"
+      },
+      {
+        "factId": "fact_cd34143a0dcf43b683c12ba976d526d1",
+        "revisionId": "revision_5534a912dc9e4cb2b9a83105f520d2f8",
+        "digest": "185cbb92b80f511f688a03c08aca945953f2978eb2e59a678f7ed7fca6e11e39"
+      },
+      {
+        "factId": "fact_b0724ed200ef4583bf4a2197d0087248",
+        "revisionId": "revision_1e6e100f0624449a9c88671acfdc8443",
+        "digest": "b74c5e15a8d67dc2da70192694da7b3cb508c27a816f863b36a373466d313056"
+      },
+      {
+        "factId": "fact_a03a3ebfbceb4cab8608cc3772e1adf7",
+        "revisionId": "revision_32666fd3064543f995a10c04aea75b89",
+        "digest": "a002fc08890a6a12e9761941d3507a2682026d55f9cafb6c85ca0174fd325e3f"
+      },
+      {
+        "factId": "fact_1f22689587b046e6bba60aeb7343cc01",
+        "revisionId": "revision_600620d1dcac41b28ec805c5e0b39e20",
+        "digest": "6b73168ecb9b00a4b88d3c1a13573579db7407e1e44973b457470e0e6e07dbe9"
+      },
+      {
+        "factId": "fact_36a447ef49aa45cf9724fece4017ad4e",
+        "revisionId": "revision_200ebecff6d64d1da15de7b7cab2413f",
+        "digest": "5734b48e73a62d5ab549112918c0564f7f768a8666b7579b885d1f9cbe8948d6"
+      },
+      {
+        "factId": "fact_6f20e346d55443638827ce32f6d71341",
+        "revisionId": "revision_24e0500630ab4108b39096883a337d30",
+        "digest": "2b19d53e2887f913fa0f271ece6fb062e2bfd4d63563c35e4bf88dbbc3fe4d1e"
+      },
+      {
+        "factId": "fact_ec719f7da64843b5bee9108ac7537196",
+        "revisionId": "revision_67763ec2d85e49cb90c1bae83710aecf",
+        "digest": "9b14adeddf008448451cf98032a35be506b096528b54f7adf16b9035ce23ad31"
+      },
+      {
+        "factId": "fact_444ed501c3b743b3870124aa3f23d5ea",
+        "revisionId": "revision_4ffa2f038beb42318ad4e9fea5f8eec4",
+        "digest": "e923e76e975ebee28c08c80109ae20ae620f645db0d348a2a7c8e85fc22ba836"
+      },
+      {
+        "factId": "fact_ab8c9fba4c9840478a5f86b708905004",
+        "revisionId": "revision_c7a9bed48e724cef81496b639a57513c",
+        "digest": "020d86d5b2a96b4e3e8ab13f478e0d98b24b3e8d7b41eb133e7cd9eb54e3fe1b"
+      },
+      {
+        "factId": "fact_009d39a3ac8548faaa78c716d5bcbe7c",
+        "revisionId": "revision_06988b60eea640d896b1ce22927e50e6",
+        "digest": "f35cee93fcefd083fe566b87f1db4630c4608c21f830f4d5707e366d72dae832"
+      },
+      {
+        "factId": "fact_9a48311438fb4db385b32f57c9189ae0",
+        "revisionId": "revision_392f17dd916947a992183006a0df8318",
+        "digest": "78561d5b1d2d75ab30fb467be4c649f8a4c16d1e96110142df56d0de467651f4"
+      },
+      {
+        "factId": "fact_a61ec873a1dc4354be1efb135a4bcfa6",
+        "revisionId": "revision_2e0a0a2f7b674675ab4c6196c0185f82",
+        "digest": "439c7a60e5d6a103461a5a76a993e84adc13e02aa661a0bb6d6e22e10f82b003"
+      },
+      {
+        "factId": "fact_e897892bf3b74d7fb9880fee359ecc70",
+        "revisionId": "revision_55ca32c9d611498780650a21340e966d",
+        "digest": "b015e3464e7ae2035978222961f5bbe5d8219da663a9f98a6a3c629c9950cce6"
+      },
+      {
+        "factId": "fact_ad9cfbeca08f41e8b29ce18ae87db80f",
+        "revisionId": "revision_4cf6632695594fb881e30549524425ca",
+        "digest": "9dfb2a6aef00bfccd24fedfc8b4e64c3574c85a9a6c79b36a66456bb8521fb86"
+      },
+      {
+        "factId": "fact_2b5e318a10e949399f5dbfff29f5dee3",
+        "revisionId": "revision_80821946afa04a49972de6f0b48fc277",
+        "digest": "8ccfc1763ccbccf602a753e972ac039bec14c566ad5cd314b8ece1c52aee158f"
+      },
+      {
+        "factId": "fact_9a2420ae9081494ba4fdc88719b836a0",
+        "revisionId": "revision_5eca12e66dfb4055bc0b836bd2b71bba",
+        "digest": "1c845d23e94c3d8480dada4b4720823eac5e3b6c67338c81c867782f7e096d07"
+      },
+      {
+        "factId": "fact_6cb5e4161c6a45d281160f1bd80c3a60",
+        "revisionId": "revision_b2684a628366416d972ac495aa6d6c53",
+        "digest": "833a8789e262dea10f34863767cd7388e1c603007513bff9cc345fc7bf3ab5d3"
+      },
+      {
+        "factId": "fact_1a33ad84ca8d4c6f80223b5bc4a19e59",
+        "revisionId": "revision_10f7f05061ad4618bb6a47a1fc2da488",
+        "digest": "94f70dcec5a1210d7383bdab10f5146274c985b71068f410708d05dac6848da4"
+      },
+      {
+        "factId": "fact_e71be32f8f9d428bb2ee0d1c073cee02",
+        "revisionId": "revision_f62bcbc4616e44b3a09142ad5f8e950e",
+        "digest": "4483a57ecba3328cf983f551b24846ac30d72cf7d88bbd55e8ea8795fb2de39d"
+      },
+      {
+        "factId": "fact_39c3cededdbf49eba106e1fd34df357e",
+        "revisionId": "revision_df883a02be1541b58198571e636dfb38",
+        "digest": "769c2eabea844a21b34ef9aabb762b1f9556225914ae2bf7af521970dbd35152"
+      },
+      {
+        "factId": "fact_bd6ae0d0ac914e4b9d05d93b38d3b3ba",
+        "revisionId": "revision_46bca52f58ea4ad29645a08657cb4382",
+        "digest": "1a6d3e0ee72fe548daf30b1338ae13888c318aa791f3384973be96de1ca72cee"
+      },
+      {
+        "factId": "fact_06d83900e9a34258b8dc04edf816f9ae",
+        "revisionId": "revision_401dcb647a6b4fa29657688b09fa671b",
+        "digest": "1f07fe6fdbca82358675acae04191540ac3fc4f82526e43b1589008d24df6719"
+      },
+      {
+        "factId": "fact_9291584190a943bda0903068bb02e9c5",
+        "revisionId": "revision_eb917dc0b7e946b587c03c7cd6fbf9e9",
+        "digest": "5a7f5adde5be8dea0502cfb52accbcf74e916ddeb50c23b3b3054b3bcec66858"
+      },
+      {
+        "factId": "fact_95fa9fc0c77d44b3802e7a1e2f59448c",
+        "revisionId": "revision_ee828c01f6544201b54fc38ac649a6c2",
+        "digest": "6891796221cf854f23486e62cec27d7a7532e9c8fef6bc141fdfa0108488e38b"
+      },
+      {
+        "factId": "fact_f8d5799385cd4e358a5531f0f9807fe9",
+        "revisionId": "revision_74595e472b5142b8aed5d8a092a495b1",
+        "digest": "2481e3164ba08c603f1afdd8a17e59a0602bcab9b2f2bdcaa08bd7585f6da9ca"
+      },
+      {
+        "factId": "fact_f9f88e73afd84b65a99b7c8b4fd04bc3",
+        "revisionId": "revision_b8cdf0f61f564c00a713810ce76614f3",
+        "digest": "4f515caba29036a9fb2876ae85474bcc1ac7a498b25125ed7b01bf0495e92de2"
+      },
+      {
+        "factId": "fact_8cb2fbcc8bf241bc8212eb10ef1e32d8",
+        "revisionId": "revision_6dc480317a004fa28384f46e081cde46",
+        "digest": "3eb0a21a317a85b82412b558ec06c97ef40bc36393748849fd0315078c416c9d"
+      },
+      {
+        "factId": "fact_1394e5c5508f4e1f9beb590398aab723",
+        "revisionId": "revision_2eee6275797343de97a382a509cdb493",
+        "digest": "21d4a8deb8acbc75fb60915eac9b4362d8b0c20aaa5fd19debacb932c9e98aa7"
+      },
+      {
+        "factId": "fact_32e1ae9bdcac4520aaca133235acabef",
+        "revisionId": "revision_de6fb0b505644b7b9b014d6972151785",
+        "digest": "53adc3f1d04078e51fb4381409eab80d5312bb59a6f21da9a6aa70b0c5b1c8f8"
+      },
+      {
+        "factId": "fact_dda598bd50fb4e5ea53ef89401093e84",
+        "revisionId": "revision_c8983d297d564aa5a84a733d28518940",
+        "digest": "a8651fd89c8c253a185af927030275a9a1e51573b0351d55404e43c748c64944"
+      },
+      {
+        "factId": "fact_5e20e03fe29447b08fbf357e7c138402",
+        "revisionId": "revision_2f21ddac23404b8eaf78f69e539b4097",
+        "digest": "2957a9c12acf71577d0feb04068d96418f4eb786621f319880b4eac7831e9d25"
+      },
+      {
+        "factId": "fact_67978e4035d84af9ad73348537dbc47c",
+        "revisionId": "revision_8465f93fb75e42cc8770abcb65b84c21",
+        "digest": "fdd599ae6527513431a7e3e554cc75f5479ea260156e43ba4ad726d0532ef612"
+      },
+      {
+        "factId": "fact_5f9ce341d71440b78efa1643274d0c15",
+        "revisionId": "revision_956f140550a241eeac2441e24858be23",
+        "digest": "1e337cd6fc72c64ee0e63430e3c77bc637fff8973c846aae7ff12dda634cd514"
+      },
+      {
+        "factId": "fact_1f0ef8a291bb444d93a04768300ecae3",
+        "revisionId": "revision_e0bca21cadbc4e03bad3914db2f321ec",
+        "digest": "d65c09351ecce3126bba3c9eda3e2b6749bb6f64a1064ac2461effca418e89a4"
+      },
+      {
+        "factId": "fact_01af280322754b178fbf4732d4b8b474",
+        "revisionId": "revision_83ca86cbea094fd6a39fd78f882666b2",
+        "digest": "170f153ed2a23a56f99157fb3ab7367951ed4acca92101f5a46c51f3f8364207"
+      },
+      {
+        "factId": "fact_ea13449b5c774678a6f193638316f60f",
+        "revisionId": "revision_b7f746c39cef433b8da76689d00f96eb",
+        "digest": "5178469ce390a6cbc4739bd65d47ee19a4175bd69d863de216f207907ff9cca3"
+      },
+      {
+        "factId": "fact_1f967d23276f4e099fd7ba7c77bbe847",
+        "revisionId": "revision_4a088fc43fa847158acda57b5a08e674",
+        "digest": "94aed022f6114db549d315c9679ce10d8fc68d86aecda482d88b6683d85ca9ed"
+      },
+      {
+        "factId": "fact_8da683bef8294804bd34bd2a2ca8624e",
+        "revisionId": "revision_95fd0bb794fd4fadae7e791eeceeccc2",
+        "digest": "4d0987c031ef8d61206e843146cf22677d596cc78d31d7bb50b4f253b166e31c"
+      },
+      {
+        "factId": "fact_e9dd522adf2846359bafc07a128b58ad",
+        "revisionId": "revision_736687b3cdab44ec8abdadf7445730d9",
+        "digest": "0a90041f566e0fc3089b76dc77c6aa00dc3cbd94da4335dd4498451ae63b1bc9"
+      },
+      {
+        "factId": "fact_ff6e344fffba4001af26a05dc207cba2",
+        "revisionId": "revision_7fe242906e794e519f227a6c79701885",
+        "digest": "b636bcd3eba20712c3cc342b4f052f966ab787e5078d8e2366756c8b1d55f505"
+      },
+      {
+        "factId": "fact_399d863aaee14c909da04d2e8e9cd04b",
+        "revisionId": "revision_a6182bf889ed4337b195edaf9327dd99",
+        "digest": "f6b99e4400caedbc5d43e61dd1586d4e1982dd0eecffa7bbc0267cc79b46f767"
+      },
+      {
+        "factId": "fact_cec8b7ddc5e64e61a2fd676606d2d381",
+        "revisionId": "revision_c091ec396ea74fa1ba260c840aca73a2",
+        "digest": "672224f966eb444b4913239dc7d06a8ef5483b3ec1931e38bd49986a67ee3fa4"
+      },
+      {
+        "factId": "fact_b126d159b58f46d6b36a414ebf331379",
+        "revisionId": "revision_09fc4892851e4ef4bc8362a94cfca2ac",
+        "digest": "53eee8b8b26787c55a10531a6a8e144908ca38518046dfc4ea7fdae371046fc0"
+      },
+      {
+        "factId": "fact_e5be8a3d5de3466390118b5e98693edd",
+        "revisionId": "revision_1ca117d668c345d58e5f3e80b41c8e77",
+        "digest": "acb1ad253a14d0fb4856b1066e2f055979d3be25b76e9231d5beb35ad1389d3e"
+      },
+      {
+        "factId": "fact_55c157aebcbc429a86c8d28cdfa973dd",
+        "revisionId": "revision_afaaf7145c1549a7903b074aeb18ca83",
+        "digest": "1bf06c7438b331b3a22065cb1136c108e3a8c8705c70462e4c39d077421a04e3"
+      },
+      {
+        "factId": "fact_87f3e32c24ad4f3595662739cde56d8d",
+        "revisionId": "revision_edf99d264399450ba34181c51d0dd1da",
+        "digest": "9e9b9139707b39dd2f753c64efc8cc212f5536b79e1246fadff80a7f59df46fd"
+      },
+      {
+        "factId": "fact_0512bab96b5746d78f79cbe0939b3f3b",
+        "revisionId": "revision_f54fe8ed6d694418a9e8ccd3b3000470",
+        "digest": "42dddde874fe0baa863816a32f5b9afc649e608cfd1cf200934e2381233ddfeb"
+      },
+      {
+        "factId": "fact_b1857995c6334204929ef16be10c815a",
+        "revisionId": "revision_8352a0f05c544ee0b8812a44e5718484",
+        "digest": "e88a7aa9ae51652593707671cb6e087de24ccce5ef0a9cce3269f70b13b79681"
+      },
+      {
+        "factId": "fact_107f2ed9d64e4b608484312b5b945bc2",
+        "revisionId": "revision_c8beee246b61417b89ce1e6d78355709",
+        "digest": "55a51c7cbeac18d19b6e43ec65b388319b77daeac8cd073e407ed14afca95c29"
+      },
+      {
+        "factId": "fact_aa1fc369033e41b89b80ebeca1dee288",
+        "revisionId": "revision_4e4bb0759f454bf897656f558fc3a0a2",
+        "digest": "03122c4250f65e75c032d421b1579fcea3503623d03110ad3e412942696a89e7"
+      },
+      {
+        "factId": "fact_98e5b215eac24dd483f04a08ae669e2a",
+        "revisionId": "revision_fc3e3c64d5ef4029948612d9d4aa3be1",
+        "digest": "8c1ab1adb826623e6253edabda59fa1a1bbd2ab173c9bebcaa369dc468f8bf5e"
+      },
+      {
+        "factId": "fact_82d1ab4e194640c8bfcf4c6586eceeec",
+        "revisionId": "revision_96972db3c7d3418cb28022bed58d33b0",
+        "digest": "e34a50b670645252c12f59b2b09f76cfa4e47830c7ba7a896a744fea438e0c7c"
+      },
+      {
+        "factId": "fact_4a7004cfb2b94f1ca00eb26e28274706",
+        "revisionId": "revision_c6c0b73d084140eaa1872836c6ed90c0",
+        "digest": "c0f391d95dd92201e2ad959836b51456ca6c15f560cec48325b324e60b0272ae"
+      },
+      {
+        "factId": "fact_e21a18ea2af548488aee34f79ed6c737",
+        "revisionId": "revision_683a4d4158c0412cae3faa4d7676d8ea",
+        "digest": "fa1ac7b058febaccd51905e424b1f339a83713bd4d62e4166fd093172f854627"
+      },
+      {
+        "factId": "fact_06708f6d1e974ccca88556e41c9da45a",
+        "revisionId": "revision_cd2f129ce73541f9bf080c7456608777",
+        "digest": "ff5e121fe623915b683d5e897dad4c9c1feafd2ab972f9462d13a80d1bb66897"
+      },
+      {
+        "factId": "fact_d59ea646859b4bb49c18171a747482c3",
+        "revisionId": "revision_3bab70afdb8f4ccf8e7c8ded184d59b4",
+        "digest": "d580286ca9a1e7e70d83b435cc0c3283df0478a7e9d9c9f2c34591f231e4bde1"
+      },
+      {
+        "factId": "fact_83e79ca98ac84ebe81b5c2b98d359139",
+        "revisionId": "revision_ba6c140da5e54534a6c0b86360e403df",
+        "digest": "7846a5124f6274a5f947bbdb80f72f36bb5088bbb9c53d7ab66dd9875b1a2aa1"
+      },
+      {
+        "factId": "fact_42b80604309b40cd931c9e43a36bf682",
+        "revisionId": "revision_ac24a21820de4e65a6506ad9e0b521f2",
+        "digest": "fe87c104f3cd81effe2a0b534337a40e483de4c5914378d1102c8c97043445db"
+      },
+      {
+        "factId": "fact_92b28c8bc6974dcd81301883b18cc8b5",
+        "revisionId": "revision_7c4cd67109df49818d3649d20429df55",
+        "digest": "911262c970d7748ffe6a906ffca8902aa107f8352f6cd80ee10b8a6a94fbf390"
+      },
+      {
+        "factId": "fact_9e4fe2772c704a459e60f03e3f2ab93f",
+        "revisionId": "revision_dc734268ba064e648b5b43fb9b057d07",
+        "digest": "7c706309a8870daef84e4d5c2de525b1f5f4c9fd5d3a38a91c5354b900767b3a"
+      },
+      {
+        "factId": "fact_34d1f76f81f348b48685127edaec15b1",
+        "revisionId": "revision_ded9057445b44e4286cb334130dbd901",
+        "digest": "7811f73aa1e8986818eebcf6784e446a33b6e2da2703527437fc80962078dadb"
+      },
+      {
+        "factId": "fact_85202da689ca45b8838d9edbafe6db9c",
+        "revisionId": "revision_7c9635f78b7b418e89f85dca9ac3c565",
+        "digest": "401960a89eb4a0a30ae18115006c403d8e8021605491cdec48c92a29e3ebe370"
+      },
+      {
+        "factId": "fact_20dcbab52a424795afb2c30b6c1fa6af",
+        "revisionId": "revision_0c27fcd34c614276a264690d94e1f03a",
+        "digest": "187fdb85b6667d4dac000510f490bc62e469f4d9ced426f30f40cbdf8250ce3a"
+      },
+      {
+        "factId": "fact_fd6fbd0803f249869fec91dccc97b1cb",
+        "revisionId": "revision_ea790b932aa547a684ecf263f5d2064c",
+        "digest": "7bdee36b62d710dd3c067dc208170d36476f003a0cef79478c9943a1bbd040fd"
+      },
+      {
+        "factId": "fact_75f10bc7b8a14bccb310b0dc975e81ac",
+        "revisionId": "revision_89848a885f294fda9089b04c9cbb684f",
+        "digest": "1ad8de03d32be3746f8a59baae4b9d65b3a7c403e8f5bec6c0650e431caac445"
+      },
+      {
+        "factId": "fact_dfa578a9daa7483e976ddbe7be2a6817",
+        "revisionId": "revision_58e0a7683d6444a19859c19989475cb4",
+        "digest": "b8a57c8b2267e5692bca713ac069ca4feb53b44d95252441acb5539f6405d06e"
+      },
+      {
+        "factId": "fact_5c5e91608ea840a69851a455e9704385",
+        "revisionId": "revision_f57499c147104e16881c99cdfd6e563c",
+        "digest": "455ee0fe3fe90ca94efd761a50522195a7e7726b77a14ae687bb70eff91223a8"
+      },
+      {
+        "factId": "fact_7c033c9886a54761aecbf0d737f7eee9",
+        "revisionId": "revision_5d2f00a38bb54d22bcea4536a3f2535f",
+        "digest": "bffe9f5863f3ee622f6e9497882179820ebaed0ab5f91a0b9c36dbc2f710c0f8"
+      },
+      {
+        "factId": "fact_c87616ee00f548d48bfb38d344ee79b9",
+        "revisionId": "revision_aed7d0471daa495dbf3f8f42624ea9b9",
+        "digest": "492a90bb920bbb68e4cd681fcdaa893f1b4692bf3d6c2a2c939ac86503f3a2a0"
+      },
+      {
+        "factId": "fact_5d66104a80984d23a14814bd86d5f213",
+        "revisionId": "revision_361023807b3146f7934268ecea277881",
+        "digest": "9f12792934e4c0dc901a60cf30b1885d714508feb6fc23bb0fc1883433de53a5"
+      },
+      {
+        "factId": "fact_76f256c96ed74cb79ee36ec25d09988d",
+        "revisionId": "revision_70bbcd11ed6747be9c372e9b39f0a8da",
+        "digest": "2a534c4a54322ca4b8c0a7b802ad4c828d1ba6a6a545eaab676d76ea799a4223"
+      },
+      {
+        "factId": "fact_810b72787461466aa0fd24026634d591",
+        "revisionId": "revision_7d7c494da9b0419e8dca8828f86331f6",
+        "digest": "ad92612526a097a5736ca4e5ae808748345f06a51a4b6c16de60c2d90d119546"
+      },
+      {
+        "factId": "fact_725b9daf56b74a6091093b822cf7d8eb",
+        "revisionId": "revision_6eb9d79009cb4ce29dac3c4d72b3de6c",
+        "digest": "2e4e37b297cb71bea666e5eb5c0e5c61cd24ba2008b423775fe27da8a44041c0"
+      },
+      {
+        "factId": "fact_2fd889abe2d34f2fa7eec899b33b1eef",
+        "revisionId": "revision_40360ed929fd45dfbddece8fed8c1b30",
+        "digest": "e0b2376b43fbf0393c67b92d8f4c45613798738570bb6533be5e54e3a734c0ca"
+      },
+      {
+        "factId": "fact_2cecdca7b69f405b8f293ab9de93f2c9",
+        "revisionId": "revision_b2e11aa6d6dc4c4ea9f7cc89e416e888",
+        "digest": "f92d99c7e0bc3c20ae738873c7a04a06639d41cf265d1727c8249ec08d9cec0c"
+      },
+      {
+        "factId": "fact_989492827b014cc3bd87651ec44f93fe",
+        "revisionId": "revision_b653cef4fa6644bfa776847e74419911",
+        "digest": "b6b6806702f6c1a3a562e4ec225fe8e9e87d8a9d8d251fdfc971dd25f6c2b852"
+      }
+    ],
+    "scope": [
+      {
+        "factId": "fact_03d4b0cba9424c0faa6843ff864c131a",
+        "revisionId": "revision_97c0b78f372c4dd0bbada65b6821cbcb",
+        "digest": "ce543b63cfea53d1c373e595819cef19eef782c960c84880339a3823c9302347"
+      }
+    ]
+  },
+  "migration": {
+    "originalSentences": 30,
+    "preserved": 11,
+    "corrected": 17,
+    "omitted": 2,
+    "factoids": 80
+  },
+  "review": {
+    "originalMarkdown": "The NVIDIA H100 is a data-center graphics processing unit based on NVIDIA’s Hopper architecture, designed for large-scale artificial intelligence and high-performance computing workloads [1](#source-1). NVIDIA announced it on March 22, 2022, as the first Hopper-based GPU, succeeding the Ampere generation represented by the A100 [4](#source-4). Its principal features include fourth-generation Tensor Cores, a transformer engine, new dynamic-programming instructions, and expanded interconnect and GPU-partitioning capabilities [1](#source-1).\n\n## Introduction and configurations\n\nThe Hopper architecture is named after the American computer scientist Grace Hopper [4](#source-4). At introduction, NVIDIA announced H100 products in SXM and PCIe form factors and projected availability beginning in the third quarter of 2022 [4](#source-4).\n\nThe GH100 chip underlying the H100 contains 80 billion transistors, occupies 814 square millimeters, and uses a TSMC 4N manufacturing process customized for NVIDIA [1](#source-1). NVIDIA’s initial specifications distinguish the full GH100 design from the enabled resources in H100 products [1](#source-1).\n\nThe specified SXM5 configuration has 132 streaming multiprocessors, 16,896 FP32 CUDA cores, 528 Tensor Cores, and 80 GB of HBM3 memory [1](#source-1). The PCIe configuration has 114 streaming multiprocessors, 14,592 FP32 CUDA cores, 456 Tensor Cores, and 80 GB of HBM2e memory [1](#source-1). Both configurations include a 50 MB L2 cache, while NVIDIA described the SXM5 memory subsystem as providing 3 TB/s of bandwidth [1](#source-1).\n\n## Computation and programming\n\nH100’s fourth-generation Tensor Cores introduce FP8 precision alongside support for higher-precision calculations [1](#source-1). Its transformer engine combines software with Tensor Core hardware to choose dynamically between FP8 and 16-bit calculations, managing scaling and conversion within model layers [1](#source-1). NVIDIA reported potential large-language-model speedups of up to nine times for training and 30 times for inference relative to A100, but labeled its launch performance figures preliminary and subject to change [1](#source-1). The launch comparisons used workload-specific GPU counts and, in some cases, different cluster interconnects and batch sizes for the A100 and H100 systems [1](#source-1).\n\nThe architecture also introduces DPX instructions for dynamic-programming algorithms, including Smith–Waterman sequence alignment and Floyd–Warshall route finding [1](#source-1). NVIDIA claimed acceleration of up to seven times over A100 for these algorithms [1](#source-1).\n\nFor CUDA programming, Hopper adds thread block clusters, which allow concurrently scheduled blocks on multiple streaming multiprocessors to synchronize and exchange data [1](#source-1). Distributed shared memory supports direct communication between streaming multiprocessors, while the Tensor Memory Accelerator transfers large data blocks between global and shared memory and supports asynchronous copies within a cluster [1](#source-1). Asynchronous transaction barriers coordinate data movement and computation across threads and on-chip accelerators [1](#source-1).\n\n## Interconnects, systems, and isolation\n\nH100 supports fourth-generation NVLink, which NVIDIA specifies at 900 GB/s of total multi-GPU input/output bandwidth, and PCIe Gen 5, specified at 128 GB/s across both directions [1](#source-1). NVIDIA’s announced NVLink Switch System was designed to connect as many as 256 GPUs across 32 nodes; the launch technical article stated that systems using this technology were not yet available [1](#source-1).\n\nNVIDIA announced the DGX H100 system with eight H100 GPUs connected through NVLink and NVSwitch, alongside four- and eight-GPU HGX H100 server-board configurations [4](#source-4). It also announced the Grace Hopper Superchip, pairing a Hopper GPU with a Grace CPU through an NVLink-C2C interconnect for large-scale AI and scientific applications [4](#source-4).\n\nSecond-generation Multi-Instance GPU technology supports partitioning an H100 into as many as seven instances, each with dedicated video and JPEG decoding units and performance-monitoring resources [1](#source-1). NVIDIA describes its confidential-computing capabilities as extending trusted execution environments to the GPU and protecting data and virtual machines in virtualized and partitioned deployments [1](#source-1).\n\n## Performance evaluation\n\nMLCommons’ MLPerf Inference records include H100 systems in the Available, Open-division datacenter category, including submissions using four H100 PCIe GPUs and others using five or six H100 80 GB HBM3 GPUs [3](#source-3).\n\nA 2026 arXiv preprint by Aditya Ujeniya and colleagues compared power-capping behavior on H100 with HBM2e and H200 with HBM3e, using compute-bound DGEMM and memory-bound TheBandwidthBenchmark workloads [2](#source-2). In its July 15 revision, the authors reported that H100 remained slightly preferable for strictly compute-bound workloads across the tested power caps, whereas H200 provided superior efficiency for memory-bound applications [2](#source-2).\n\nA separate, project-reported CFD benchmark in the brae repository compared software implementations on one H100 PCIe 80 GB GPU and reported substantial timing differences between device-resident execution and pressure-solver-only GPU offloading [5](#source-5). That report distinguished its laminar timing workload from its separate turbulent accuracy test and cautioned that its virtualized, 24-core CPU reference was not a cost-matched comparison [5](#source-5).",
+    "edits": [
+      {
+        "blockId": "line_1",
+        "before": "The NVIDIA H100 is a data-center graphics processing unit based on NVIDIA’s Hopper architecture, designed for large-scale artificial intelligence and high-performance computing workloads.",
+        "after": "NVIDIA identifies NVIDIA H100 as its ninth-generation data-center GPU. NVIDIA states that NVIDIA H100 is based on the NVIDIA Hopper architecture. NVIDIA describes NVIDIA H100 as designed for large-scale AI and high-performance computing.",
+        "reason": "The supported classification, architecture, and purpose revisions jointly represent the original data-center GPU, Hopper, and large-scale AI/HPC assertions, appropriately attributed to NVIDIA's primary technical account."
+      },
+      {
+        "blockId": "line_2",
+        "before": "NVIDIA announced it on March 22, 2022, as the first Hopper-based GPU, succeeding the Ampere generation represented by the A100.",
+        "after": "NVIDIA announced NVIDIA H100 on March 22, 2022. NVIDIA states that NVIDIA H100 uses the NVIDIA Hopper architecture.",
+        "reason": "Supported revisions retain the H100 announcement date and attributed Hopper architecture relationship. They do not retain the first-Hopper ordinal or Hopper's succession to Ampere, both of which the source states, and the capture does not establish A100 as the Ampere representative. This is partial retention, not preservation. The claimed absence of registered ordinal and succession relations cannot be verified from a supplied ontology registry."
+      },
+      {
+        "blockId": "line_3",
+        "before": "Its principal features include fourth-generation Tensor Cores, a transformer engine, new dynamic-programming instructions, and expanded interconnect and GPU-partitioning capabilities.",
+        "after": "NVIDIA states that NVIDIA H100 incorporates fourth-generation Tensor Cores. NVIDIA states that NVIDIA H100 uses the H100 Transformer Engine. NVIDIA describes NVIDIA H100 as introducing DPX instructions for accelerating dynamic-programming algorithms. NVIDIA specifies fourth-generation NVIDIA NVLink for NVIDIA H100. NVIDIA describes NVIDIA H100 as using second-generation Multi-Instance GPU technology.",
+        "reason": "Supported revisions retain Tensor Cores, the transformer engine, new DPX instructions, NVLink and second-generation MIG. Absolute bandwidth and maximum partition count do not preserve the original comparative assertion of expanded capabilities, although the source separately discusses generational increases. Additional audited detail remains in the knowledge bundle; the article has an enforced 80-fact limit."
+      },
+      {
+        "blockId": "line_4",
+        "before": "The Hopper architecture is named after the American computer scientist Grace Hopper.",
+        "after": "NVIDIA states that the NVIDIA Hopper architecture is named after Grace Hopper.",
+        "reason": "The naming relationship is supported with NVIDIA attribution. Although the source also explicitly identifies Grace Hopper as a U.S. computer scientist, the mapped revision for that description fails schematic representation by using a generic definition property. Thus the complete original sentence is not represented by supported revisions."
+      },
+      {
+        "blockId": "line_5",
+        "before": "At introduction, NVIDIA announced H100 products in SXM and PCIe form factors and projected availability beginning in the third quarter of 2022.",
+        "after": "NVIDIA announced that H100 would come in SXM and PCIe form factors. NVIDIA projected H100 availability starting in the third quarter of 2022.",
+        "reason": "Supported revisions retain the announced SXM and PCIe form factors and the projected third-quarter 2022 availability. Their evidence comes from the introduction announcement, and neither turns the projection into confirmed shipment."
+      },
+      {
+        "blockId": "line_6",
+        "before": "The GH100 chip underlying the H100 contains 80 billion transistors, occupies 814 square millimeters, and uses a TSMC 4N manufacturing process customized for NVIDIA.",
+        "after": "NVIDIA reports that the GH100 chip powering NVIDIA H100 contains 80 billion transistors. NVIDIA reports a die area of 814 square millimeters for the GH100 chip powering NVIDIA H100. NVIDIA states that the GH100 chip powering NVIDIA H100 uses a TSMC 4N process customized for NVIDIA.",
+        "reason": "Three supported revisions retain all original GH100 specifications: 80 billion transistors, 814 square millimeters, and NVIDIA-customized TSMC 4N, explicitly scoped to the chip powering H100."
+      },
+      {
+        "blockId": "line_7",
+        "before": "NVIDIA’s initial specifications distinguish the full GH100 design from the enabled resources in H100 products.",
+        "after": "NVIDIA specifies 132 streaming multiprocessors for NVIDIA H100 in its SXM5 configuration.",
+        "reason": "The source explicitly distinguishes full GH100 from enabled SXM5 and PCIe resources. Only the mapped SXM5 count is supported schematically; the mapped full-GH100 count assigns the property to the wrong entity. The original full-design/product distinction is therefore not fully represented."
+      },
+      {
+        "blockId": "line_8",
+        "before": "The specified SXM5 configuration has 132 streaming multiprocessors, 16,896 FP32 CUDA cores, 528 Tensor Cores, and 80 GB of HBM3 memory.",
+        "after": "NVIDIA specifies 132 streaming multiprocessors for NVIDIA H100 in its SXM5 configuration. NVIDIA specifies 16,896 FP32 CUDA cores for NVIDIA H100 in its SXM5 configuration. NVIDIA specifies 528 fourth-generation Tensor Cores for NVIDIA H100 in its SXM5 configuration. NVIDIA specifies 80 gigabytes of HBM3 memory for NVIDIA H100 in its SXM5 configuration.",
+        "reason": "Four supported revisions separately retain all specified SXM5 quantities: 132 SMs, 16896 FP32 CUDA cores, 528 Tensor Cores and 80 GB HBM3."
+      },
+      {
+        "blockId": "line_9",
+        "before": "The PCIe configuration has 114 streaming multiprocessors, 14,592 FP32 CUDA cores, 456 Tensor Cores, and 80 GB of HBM2e memory.",
+        "after": "NVIDIA specifies 114 streaming multiprocessors for NVIDIA H100 in its PCIe Gen 5 board configuration. NVIDIA specifies 14,592 FP32 CUDA cores for NVIDIA H100 in its PCIe Gen 5 board configuration. NVIDIA specifies 456 fourth-generation Tensor Cores for NVIDIA H100 in its PCIe Gen 5 board configuration. NVIDIA specifies 80 gigabytes of HBM2e memory for NVIDIA H100 in its PCIe Gen 5 board configuration.",
+        "reason": "All four supported PCIe revisions match the captured PCIe Gen 5 configuration: 114 SMs, 14592 FP32 CUDA cores, 456 Tensor Cores, and 80 GB HBM2e."
+      },
+      {
+        "blockId": "line_10",
+        "before": "Both configurations include a 50 MB L2 cache, while NVIDIA described the SXM5 memory subsystem as providing 3 TB/s of bandwidth.",
+        "after": "NVIDIA specifies a 50-megabyte L2 cache for NVIDIA H100 in its SXM5 configuration. NVIDIA specifies a 50-megabyte L2 cache for NVIDIA H100 in its PCIe Gen 5 board configuration.",
+        "reason": "Supported revisions retain the 50 MB L2 cache for both SXM5 and PCIe configurations. The source also states 3 TB/sec for SXM5, but its mapped revision adds a preliminary qualification whose applicability outside Figure 2 is uncertain, so the bandwidth assertion is not retained by a supported revision."
+      },
+      {
+        "blockId": "line_11",
+        "before": "H100’s fourth-generation Tensor Cores introduce FP8 precision alongside support for higher-precision calculations.",
+        "after": "NVIDIA states that NVIDIA H100 incorporates fourth-generation Tensor Cores. NVIDIA describes FP8 as a new data type for NVIDIA H100's fourth-generation Tensor Cores. NVIDIA states that the H100 Transformer Engine dynamically chooses between FP8 and 16-bit calculations.",
+        "reason": "Supported revisions retain fourth-generation Tensor Cores, newly introduced FP8 and the engine's FP8-versus-16-bit calculation capability. Together with the captured Tensor Core context, these preserve the original general higher-precision support assertion without claiming support for every possible precision."
+      },
+      {
+        "blockId": "line_12",
+        "before": "Its transformer engine combines software with Tensor Core hardware to choose dynamically between FP8 and 16-bit calculations, managing scaling and conversion within model layers.",
+        "after": "NVIDIA states that NVIDIA H100 uses the H100 Transformer Engine. NVIDIA states that the H100 Transformer Engine combines software with custom NVIDIA Hopper Tensor Core technology. NVIDIA states that the H100 Transformer Engine dynamically chooses between FP8 and 16-bit calculations. NVIDIA states that the H100 Transformer Engine automatically handles re-casting between FP8 and 16-bit in each layer. NVIDIA states that the H100 Transformer Engine automatically handles scaling between FP8 and 16-bit in each layer.",
+        "reason": "Supported revisions retain the H100-engine relationship, software/Tensor Core composition, dynamic precision selection, and automatic per-layer re-casting and scaling."
+      },
+      {
+        "blockId": "line_13",
+        "before": "NVIDIA reported potential large-language-model speedups of up to nine times for training and 30 times for inference relative to A100, but labeled its launch performance figures preliminary and subject to change.",
+        "after": "NVIDIA labels its NVIDIA H100 launch performance numbers preliminary, based on current expectations and subject to change in shipping products.",
+        "reason": "The supported revision retains the preliminary, expectation-based and subject-to-change qualification. The authored body also reports up to 9x training and 30x inference speedups over A100, but no mapped revision retains those comparisons. Their omission makes this partial coverage, not preservation. The supplied material does not include a registry establishing the asserted absence of a suitable speedup property."
+      },
+      {
+        "blockId": "line_14",
+        "before": "The launch comparisons used workload-specific GPU counts and, in some cases, different cluster interconnects and batch sizes for the A100 and H100 systems.",
+        "after": "NVIDIA's Figure 2 launch comparison specifies an NDR InfiniBand network for the NVIDIA H100 cluster, with NVLink Switch System where indicated. NVIDIA's Figure 2 launch comparison of NVIDIA H100 uses an A100 baseline cluster with an HDR InfiniBand network. NVIDIA's launch comparison of NVIDIA H100 uses workload-dependent GPU counts. NVIDIA's launch MT-NLG comparison uses different batch sizes for NVIDIA H100 and A100.",
+        "reason": "Supported configuration revisions retain workload-dependent GPU counts, HDR versus NDR cluster networks, the where-indicated NVLink Switch restriction and different MT-NLG batch sizes. They do not convert preliminary launch comparisons into validated performance measurements."
+      },
+      {
+        "blockId": "line_15",
+        "before": "The architecture also introduces DPX instructions for dynamic-programming algorithms, including Smith–Waterman sequence alignment and Floyd–Warshall route finding.",
+        "after": "NVIDIA describes NVIDIA H100 as introducing DPX instructions for accelerating dynamic-programming algorithms. NVIDIA states that NVIDIA H100's DPX instructions accelerate Smith-Waterman genomics processing. NVIDIA states that NVIDIA H100's DPX instructions accelerate Floyd-Warshall optimal-route finding for robot fleets in dynamic warehouses.",
+        "reason": "Supported revisions retain new DPX instructions and the two named algorithm applications. Replacing sequence alignment with the source's genomics-processing wording is warranted because this capture does not explicitly identify sequence alignment. No sevenfold speedup is asserted; omitting that separate result is warranted without measurement conditions."
+      },
+      {
+        "blockId": "line_16",
+        "before": "NVIDIA claimed acceleration of up to seven times over A100 for these algorithms.",
+        "after": "",
+        "reason": "No revisions are mapped to this target. The authored source does explicitly claim up to 7x dynamic-programming acceleration over A100, but the passage lacks detailed measurement conditions. Omission avoids publishing an inadequately conditioned performance claim. The asserted absence of a suitable registry property cannot be independently verified because the property schemas were not supplied."
+      },
+      {
+        "blockId": "line_17",
+        "before": "For CUDA programming, Hopper adds thread block clusters, which allow concurrently scheduled blocks on multiple streaming multiprocessors to synchronize and exchange data.",
+        "after": "NVIDIA states that NVIDIA H100 adds thread block clusters as a new level in the CUDA thread group hierarchy. NVIDIA states that NVIDIA H100 guarantees concurrent scheduling of thread blocks within a cluster. NVIDIA states that NVIDIA H100's thread block clusters enable synchronization among thread blocks running concurrently across multiple streaming multiprocessors. NVIDIA states that NVIDIA H100's thread block clusters enable collaborative data fetching by thread blocks running concurrently across multiple streaming multiprocessors. NVIDIA states that NVIDIA H100's thread block clusters enable data exchange among thread blocks running concurrently across multiple streaming multiprocessors.",
+        "reason": "Supported revisions represent the new CUDA hierarchy level, concurrent scheduling, cross-SM synchronization, and data exchange described in the original line. These are explicit in the authored H100 architecture discussion; collaborative fetching is separately evidenced as well."
+      },
+      {
+        "blockId": "line_18",
+        "before": "Distributed shared memory supports direct communication between streaming multiprocessors, while the Tensor Memory Accelerator transfers large data blocks between global and shared memory and supports asynchronous copies within a cluster.",
+        "after": "NVIDIA states that NVIDIA H100's distributed shared memory permits direct communication between streaming multiprocessors for loads, stores and atomics across their shared-memory blocks. NVIDIA states that NVIDIA H100's Tensor Memory Accelerator transfers large data blocks between global memory and shared memory. NVIDIA states that NVIDIA H100's Tensor Memory Accelerator supports asynchronous copies between thread blocks within a cluster.",
+        "reason": "Three supported revisions separately retain distributed shared-memory SM-to-SM communication, TMA transfers between global and shared memory, and asynchronous copies between thread blocks within a cluster. The source explicitly supports all three; the added loads, stores and atomics wording faithfully specifies the communication operations."
+      },
+      {
+        "blockId": "line_19",
+        "before": "Asynchronous transaction barriers coordinate data movement and computation across threads and on-chip accelerators.",
+        "after": "NVIDIA states that NVIDIA H100's asynchronous transaction barriers synchronize general-purpose CUDA threads and on-chip accelerators within a cluster, including across separate streaming multiprocessors. NVIDIA states that NVIDIA H100's asynchronous transaction barrier supports atomic data movement.",
+        "reason": "The revisions replace the broad coordination paraphrase with explicitly evidenced atomic data movement and synchronization of CUDA threads and on-chip accelerators within a cluster, including across SMs. This retains the evidenced functionality while making the synchronization scope explicit, rather than preserving the original wording wholesale."
+      },
+      {
+        "blockId": "line_20",
+        "before": "H100 supports fourth-generation NVLink, which NVIDIA specifies at 900 GB/s of total multi-GPU input/output bandwidth, and PCIe Gen 5, specified at 128 GB/s across both directions.",
+        "after": "NVIDIA specifies fourth-generation NVIDIA NVLink for NVIDIA H100. NVIDIA specifies 900 gigabytes per second of total multi-GPU input/output bandwidth for NVIDIA H100's fourth-generation NVLink. NVIDIA states that NVIDIA H100 supports PCIe Gen 5. NVIDIA specifies 128 gigabytes per second of total bidirectional bandwidth for NVIDIA H100's PCIe Gen 5 interface.",
+        "reason": "All four mapped revisions are supported: H100 fourth-generation NVLink support, its 900 GB/sec total multi-GPU IO specification, PCIe Gen 5 support, and its 128 GB/sec total bidirectional specification. Together they represent the original line with explicit NVIDIA attribution."
+      },
+      {
+        "blockId": "line_21",
+        "before": "NVIDIA’s announced NVLink Switch System was designed to connect as many as 256 GPUs across 32 nodes; the launch technical article stated that systems using this technology were not yet available.",
+        "after": "NVIDIA's launch article states that NVLink Switch System technology was not yet available with NVIDIA H100 systems.",
+        "reason": "Only launch-time nonavailability with H100 systems is retained. The source also describes up to 32 nodes or 256 GPUs under a 2:1 tapered fat-tree topology, but no revision represents those limits or that condition. This is a partial replacement, not preservation; the claimed registry limitation cannot be verified from the supplied material."
+      },
+      {
+        "blockId": "line_22",
+        "before": "NVIDIA announced the DGX H100 system with eight H100 GPUs connected through NVLink and NVSwitch, alongside four- and eight-GPU HGX H100 server-board configurations.",
+        "after": "NVIDIA describes DGX H100 as using NVIDIA H100 GPUs. NVIDIA states that DGX H100 uses fourth-generation NVLink to connect its GPUs. NVIDIA states that DGX H100 uses NVSwitch to connect its H100 GPUs over NVLink.",
+        "reason": "Supported revisions retain DGX H100's use of H100 GPUs, NVLink and NVSwitch connectivity, and prospective HGX use of H100 SXM. They omit the explicitly evidenced eight-GPU DGX and four- and eight-way HGX counts and do not retain a separate DGX announcement event. The passage describes DGX specifications rather than explicitly announcing that event. The asserted registry limitation on counts is not independently established by the supplied material. Host excluded related claims without an audited relationship to this article: NVIDIA announced plans for HGX H100 server boards using H100 SXM GPUs."
+      },
+      {
+        "blockId": "line_23",
+        "before": "It also announced the Grace Hopper Superchip, pairing a Hopper GPU with a Grace CPU through an NVLink-C2C interconnect for large-scale AI and scientific applications.",
+        "after": "NVIDIA states that the Grace Hopper Superchip uses the NVIDIA Hopper architecture for its GPU. NVIDIA states that the Grace Hopper Superchip uses a NVIDIA Grace CPU. NVIDIA states that the Grace Hopper Superchip uses NVLink-C2C to interconnect its CPU and GPU. NVIDIA describes the Grace Hopper Superchip as designed for giant-scale HPC and AI applications.",
+        "reason": "Supported revisions retain the attributed Hopper GPU architecture, Grace CPU, NVLink-C2C CPU-GPU interconnect, and giant-scale HPC and AI design purpose. The source describes this combination but does not explicitly state a separate Superchip announcement event, which is omitted. The additional integrated-module revision is evidenced but does not restore the omitted event. Additional audited detail remains in the knowledge bundle; the article has an enforced 80-fact limit."
+      },
+      {
+        "blockId": "line_24",
+        "before": "Second-generation Multi-Instance GPU technology supports partitioning an H100 into as many as seven instances, each with dedicated video and JPEG decoding units and performance-monitoring resources.",
+        "after": "NVIDIA specifies support for up to seven individual GPU instances on NVIDIA H100 with second-generation Multi-Instance GPU technology. NVIDIA states that each NVIDIA H100 MIG instance has dedicated NVDEC units. NVIDIA states that each NVIDIA H100 MIG instance has dedicated NVJPG units. NVIDIA states that each NVIDIA H100 MIG instance includes its own set of performance monitors.",
+        "reason": "Supported revisions retain the seven-instance maximum, second-generation MIG scope, dedicated NVDEC and NVJPG units, and per-instance monitors. The capture does not explicitly expand those unit names into video and JPEG decoding functions, so the replacement conservatively retains the source terminology rather than fully representing those original functional descriptions. Developer-tool compatibility is an additional separately evidenced assertion. Additional audited detail remains in the knowledge bundle; the article has an enforced 80-fact limit."
+      },
+      {
+        "blockId": "line_25",
+        "before": "NVIDIA describes its confidential-computing capabilities as extending trusted execution environments to the GPU and protecting data and virtual machines in virtualized and partitioned deployments.",
+        "after": "NVIDIA states that NVIDIA H100's native confidential computing extends the trusted execution environment with CPUs to the GPU at full PCIe line rate. NVIDIA states that NVIDIA H100's confidential-computing support protects user data. NVIDIA states that NVIDIA H100's confidential-computing support improves isolation between virtual machines in virtualized and MIG environments. NVIDIA states that NVIDIA H100's confidential-computing support improves protection of virtual machines from one another in virtualized and MIG environments.",
+        "reason": "The revisions retain NVIDIA's TEE-extension and protection claims while restoring the full-PCIe-line-rate qualification and attaching virtualized and MIG environment conditions specifically to inter-VM isolation and protection. The source states user-data protection separately, so the original broader environmental phrasing is not preserved indiscriminately."
+      },
+      {
+        "blockId": "line_26",
+        "before": "MLCommons’ MLPerf Inference records include H100 systems in the Available, Open-division datacenter category, including submissions using four H100 PCIe GPUs and others using five or six H100 80 GB HBM3 GPUs.",
+        "after": "",
+        "reason": "The original sentence is substantively evidenced by the category heading and the rows listing H100 PCIe x 4, H100 80GB HBM3 x 5, and H100 80GB HBM3 x 6. However, none of its mapped revisions satisfies the required numeric typing, so none is supported for article inclusion. The supplied coverage rationale correctly avoids interpreting the flattened performance values, but its claim of preservation is not warranted under the structural requirements."
+      },
+      {
+        "blockId": "line_27",
+        "before": "A 2026 arXiv preprint by Aditya Ujeniya and colleagues compared power-capping behavior on H100 with HBM2e and H200 with HBM3e, using compute-bound DGEMM and memory-bound TheBandwidthBenchmark workloads.",
+        "after": "Aditya Ujeniya coauthored the H100/H200 power-capping paper. The power-capping paper describes an investigation of how NVIDIA H100 manages memory power consumption at various power-cap levels. The power-capping paper describes an investigation of how NVIDIA H200 manages memory power consumption at various power-cap levels. Ujeniya and colleagues describe the NVIDIA H100 configuration in their H100/H200 study as having HBM2e memory.",
+        "reason": "Supported mapped revisions retain Ujeniya's coauthorship, the two study-specific memory configurations, the varying-cap investigation, and both workload classes. The mapped submission-metadata revision is compound and unsupported, so the original 2026 arXiv-preprint characterization is not fully represented by supported revisions. The capture also does not establish peer-review status. Consequently the coverage is partial, not preserved. Additional audited detail remains in the knowledge bundle; the article has an enforced 80-fact limit."
+      },
+      {
+        "blockId": "line_28",
+        "before": "In its July 15 revision, the authors reported that H100 remained slightly preferable for strictly compute-bound workloads across the tested power caps, whereas H200 provided superior efficiency for memory-bound applications.",
+        "after": "In their July 15, 2026 revision, Ujeniya and colleagues report higher efficiency for H200 with HBM3e than NVIDIA H100 with HBM2e for memory-bound applications across varying power caps, in an evaluation using memory-bound TheBandwidthBenchmark.",
+        "reason": "The supported H200 comparison retains the attributed memory-bound efficiency conclusion and July 15 revision context. The H100 conclusion is evidenced in prose but its mapped schematic performance_preference remains ambiguous and is not supported. Thus only one of the original sentence's two conclusions survives this audit; the supplied claim of full preservation is unwarranted."
+      },
+      {
+        "blockId": "line_29",
+        "before": "A separate, project-reported CFD benchmark in the brae repository compared software implementations on one H100 PCIe 80 GB GPU and reported substantial timing differences between device-resident execution and pressure-solver-only GPU offloading.",
+        "after": "The brae project reports using a single PCIe NVIDIA H100 for its CFD benchmark. The brae project specifies 80 gigabytes of memory for the PCIe NVIDIA H100 used in its CFD benchmark. The report describes brae's benchmark configuration as keeping the mesh, fields, SIMPLE loop, and all linear solves resident on the GPU.",
+        "reason": "Supported revisions retain the single PCIe H100, 80 GB capacity, brae device residency, and the two pressure-only offload configurations. They do not retain a supported schematic runtime comparison: both submitted measured-comparison revisions fail the structural and qualification requirements, and the generic definition revision fails to encode the comparison relationship. Consequently, the original sentence's substantial timing-differences assertion is not preserved, notwithstanding the report's underlying timing evidence. Host excluded related claims without an audited relationship to this article: The report describes OpenFOAM + PETSc-GPU as offloading only the pressure solve in the brae H100 CFD benchmark. The report describes OpenFOAM + AMGX as offloading only the pressure solve in the brae H100 CFD benchmark."
+      },
+      {
+        "blockId": "line_30",
+        "before": "That report distinguished its laminar timing workload from its separate turbulent accuracy test and cautioned that its virtualized, 24-core CPU reference was not a cost-matched comparison.",
+        "after": "The report characterizes the benchmark's laminar, physically unsteady performance case as a timing workload with identical work per iteration rather than a field-comparison case. The report states that field accuracy in the brae H100 CFD benchmark is validated separately on a converged turbulent case. The report cautions that the OpenFOAM-CPU reference in the brae H100 CFD benchmark is not a cost-matched comparison. The report cautions that brae's speed margin over the virtualized OpenFOAM-CPU reference is indicative rather than exact because it expects a bare-metal EPYC to be faster.",
+        "reason": "Supported revisions retain the laminar timing versus separate turbulent accuracy distinction, the non-cost-matched caveat, and the virtualization-related uncertainty. The original unqualified '24-core' specification is not retained. That correction is warranted because the machine description and caveats specify 24 vCPUs in a KVM guest, not independently verified physical cores. The supplied claim that no registered count property exists cannot be verified from an ontology registry here; nevertheless, omission of the count makes this partial retention rather than preservation."
+      }
+    ],
+    "reviewedBlocks": 30,
+    "completedAt": "2026-10-05T21:40:28.231Z"
+  },
+  "images": [
+    {
+      "title": "NVIDIA H100 (极客湾Geekerwan) 024.png",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:NVIDIA_H100_(%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan)_024.png",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_024.png/500px-NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_024.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "artist": "极客湾Geekerwan",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "retrievedAt": "2026-10-05T23:20:07.610Z",
+      "caption": "NVIDIA H100 (极客湾Geekerwan) 024"
+    }
+  ]
+}

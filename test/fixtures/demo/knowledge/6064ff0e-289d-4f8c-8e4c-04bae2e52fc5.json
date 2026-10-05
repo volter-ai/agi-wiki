@@ -1,0 +1,474 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_3fcc8aa95ddd4550802e5f3c262f6901",
+        "label": "SWE-bench documentation",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_9fc189763cb248f4b3d89c7909a965cb",
+        "label": "SWE-bench Multimodal",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_ba081b4c1ce6450dbe9b05386e07cc11",
+        "label": "SWE-Llama 13b",
+        "type": "model",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_cf1806e572d046fab126907cdc1b1cdc",
+        "label": "SWE-Llama 13b (PEFT)",
+        "type": "model",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_b271eb1ec27e4289afa37aba5872a022",
+        "label": "SWE-Llama 7b",
+        "type": "model",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_dbb41082fe2f4a19b1dba7d9cef7ed8c",
+        "label": "SWE-Llama 7b (PEFT)",
+        "type": "model",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_f756afa690124d8c90e27441ee93f667",
+        "label": "Oracle Retrieval",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_08ce75b484b94d55868b6714c90cc5da",
+        "label": "BM25 Retrieval 13K",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_91e05988aa744e049f452d3fc0f8da34",
+        "label": "SWE-bench Create RAG Datasets guide",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+        "sourceId": "source_703a5bbc8ed748f4a760a70485d0a0646540dace607c8f46cc15e092bb21b913",
+        "url": "https://github.com/SWE-bench/SWE-bench/blob/main/docs/index.md",
+        "title": "SWE-bench/docs/index.md at main · SWE-bench/SWE-bench · GitHub",
+        "sha256": "c2aea47c1c7e1d46577193ee80aac586fa0156431317c1dfc91c9e8a679dea45",
+        "retrievedAt": "2026-10-05T17:30:28.310Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "Author-maintained documentation in the official SWE-bench repository directly defines the benchmark and supplies dataset-loading code, installation commands, and documentation for its Docker-based evaluation harness. Its dated release notes document containerization on June 27, 2024, and the Verified subset release on August 13, 2024. These are firsthand project records supporting implementation and development history; project performance claims are not independent validation.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_17667fe09ea74f23a8de47a2564cc91d",
+        "factId": "fact_f73cd75b85fc482b998042a97b424a41",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The documentation reports SWE-bench Multimodal integration with private-test-split evaluation on January 13, 2025.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_9fc189763cb248f4b3d89c7909a965cb"
+          },
+          {
+            "role": "property",
+            "value": "availability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "integration with private-test-split evaluation",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "time": {
+          "start": "2025-01-13",
+          "precision": "day",
+          "basis": "[Jan. 13, 2025]: SWE-bench Multimodal integration with private test split evaluation"
+        },
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 708,
+            "end": 792,
+            "quote": "[Jan. 13, 2025]: SWE-bench Multimodal integration with private test split evaluation",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.149Z",
+        "extractionJobId": "6064ff0e-289d-4f8c-8e4c-04bae2e52fc5",
+        "digest": "b101f8ca9ffee8603145786d34857684cfbac461df1ba6f128afc9373ffc513f"
+      },
+      {
+        "id": "revision_b5d633b2b57240a9b3fb050a456a58a4",
+        "factId": "fact_0bf2e7c2290448cdb4f2c7e69ae4e237",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation lists SWE-Llama 13b as an available model resource.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_ba081b4c1ce6450dbe9b05386e07cc11"
+          },
+          {
+            "role": "conditions",
+            "value": "an available model resource",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1883,
+            "end": 2174,
+            "quote": "⬇️ Available Resources Datasets Models RAG 💿 SWE-bench 🦙 SWE-Llama 13b 🤗 \"Oracle\" Retrieval 💿 SWE-bench Lite 🦙 SWE-Llama 13b (PEFT) 🤗 BM25 Retrieval 13K 💿 SWE-bench Verified 🦙 SWE-Llama 7b 🤗 BM25 Retrieval 27K 💿 SWE-bench Multimodal 🦙 SWE-Llama 7b (PEFT) 🤗 BM25 Retrieval 40K/50K",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.149Z",
+        "extractionJobId": "6064ff0e-289d-4f8c-8e4c-04bae2e52fc5",
+        "digest": "bf12504499bfd86fa5e187119ec528997c2ecba3a19831dc4f4cf9fdbaf2ae70"
+      },
+      {
+        "id": "revision_b4b36cea221e40e2acd1c81445040cd6",
+        "factId": "fact_13c8d10088f044419e29dfc6e0740ae3",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation lists SWE-Llama 13b (PEFT) as an available model resource.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_cf1806e572d046fab126907cdc1b1cdc"
+          },
+          {
+            "role": "conditions",
+            "value": "an available model resource",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1883,
+            "end": 2174,
+            "quote": "⬇️ Available Resources Datasets Models RAG 💿 SWE-bench 🦙 SWE-Llama 13b 🤗 \"Oracle\" Retrieval 💿 SWE-bench Lite 🦙 SWE-Llama 13b (PEFT) 🤗 BM25 Retrieval 13K 💿 SWE-bench Verified 🦙 SWE-Llama 7b 🤗 BM25 Retrieval 27K 💿 SWE-bench Multimodal 🦙 SWE-Llama 7b (PEFT) 🤗 BM25 Retrieval 40K/50K",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.149Z",
+        "extractionJobId": "6064ff0e-289d-4f8c-8e4c-04bae2e52fc5",
+        "digest": "52fc409e347501aae9c42d45b8839bbb83fdf9d5ae8174517a02e194fa68f2ce"
+      },
+      {
+        "id": "revision_968a646d4ef24a689837bf534339cfdb",
+        "factId": "fact_ba76e77eb9554558bcebf98956886ef5",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation lists SWE-Llama 7b as an available model resource.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_b271eb1ec27e4289afa37aba5872a022"
+          },
+          {
+            "role": "conditions",
+            "value": "an available model resource",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1883,
+            "end": 2174,
+            "quote": "⬇️ Available Resources Datasets Models RAG 💿 SWE-bench 🦙 SWE-Llama 13b 🤗 \"Oracle\" Retrieval 💿 SWE-bench Lite 🦙 SWE-Llama 13b (PEFT) 🤗 BM25 Retrieval 13K 💿 SWE-bench Verified 🦙 SWE-Llama 7b 🤗 BM25 Retrieval 27K 💿 SWE-bench Multimodal 🦙 SWE-Llama 7b (PEFT) 🤗 BM25 Retrieval 40K/50K",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.149Z",
+        "extractionJobId": "6064ff0e-289d-4f8c-8e4c-04bae2e52fc5",
+        "digest": "5be62f19801cc550d925c54d759cbf7b707be59cbb7bf73c09f0f1285ed4fb82"
+      },
+      {
+        "id": "revision_1d28f4c74abb47e9a419dbcf74acb8a9",
+        "factId": "fact_af68e8e27d1c43ea95fc8e49f1df2ac4",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation lists SWE-Llama 7b (PEFT) as an available model resource.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_dbb41082fe2f4a19b1dba7d9cef7ed8c"
+          },
+          {
+            "role": "conditions",
+            "value": "an available model resource",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1883,
+            "end": 2174,
+            "quote": "⬇️ Available Resources Datasets Models RAG 💿 SWE-bench 🦙 SWE-Llama 13b 🤗 \"Oracle\" Retrieval 💿 SWE-bench Lite 🦙 SWE-Llama 13b (PEFT) 🤗 BM25 Retrieval 13K 💿 SWE-bench Verified 🦙 SWE-Llama 7b 🤗 BM25 Retrieval 27K 💿 SWE-bench Multimodal 🦙 SWE-Llama 7b (PEFT) 🤗 BM25 Retrieval 40K/50K",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.149Z",
+        "extractionJobId": "6064ff0e-289d-4f8c-8e4c-04bae2e52fc5",
+        "digest": "afa932238aec42471502398efc8a21e3e2662eda79283ec075e27ba9a3ae4675"
+      },
+      {
+        "id": "revision_a143905cd4664e26bdf157a603039e76",
+        "factId": "fact_8fd562c4d4d14cbebe569a56e0d26b98",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation lists Oracle Retrieval as a retrieval resource.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f756afa690124d8c90e27441ee93f667"
+          },
+          {
+            "role": "conditions",
+            "value": "a retrieval resource",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1883,
+            "end": 2174,
+            "quote": "⬇️ Available Resources Datasets Models RAG 💿 SWE-bench 🦙 SWE-Llama 13b 🤗 \"Oracle\" Retrieval 💿 SWE-bench Lite 🦙 SWE-Llama 13b (PEFT) 🤗 BM25 Retrieval 13K 💿 SWE-bench Verified 🦙 SWE-Llama 7b 🤗 BM25 Retrieval 27K 💿 SWE-bench Multimodal 🦙 SWE-Llama 7b (PEFT) 🤗 BM25 Retrieval 40K/50K",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.149Z",
+        "extractionJobId": "6064ff0e-289d-4f8c-8e4c-04bae2e52fc5",
+        "digest": "a7bb2870615f4911d0d8b2030eff7e9877a81000cccf44ca217ee35ef97302e4"
+      },
+      {
+        "id": "revision_946cc42a18584b55964276307c0dc9e7",
+        "factId": "fact_44e35de3f0454c4dbe902056008e2715",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation lists BM25 Retrieval 13K as a retrieval resource.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_08ce75b484b94d55868b6714c90cc5da"
+          },
+          {
+            "role": "conditions",
+            "value": "a retrieval resource",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1883,
+            "end": 2174,
+            "quote": "⬇️ Available Resources Datasets Models RAG 💿 SWE-bench 🦙 SWE-Llama 13b 🤗 \"Oracle\" Retrieval 💿 SWE-bench Lite 🦙 SWE-Llama 13b (PEFT) 🤗 BM25 Retrieval 13K 💿 SWE-bench Verified 🦙 SWE-Llama 7b 🤗 BM25 Retrieval 27K 💿 SWE-bench Multimodal 🦙 SWE-Llama 7b (PEFT) 🤗 BM25 Retrieval 40K/50K",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.149Z",
+        "extractionJobId": "6064ff0e-289d-4f8c-8e4c-04bae2e52fc5",
+        "digest": "209d2f85e26472034fe5b377f4a07d0d22650057809b2525a94f6745d796fcac"
+      },
+      {
+        "id": "revision_4ceeea7a8680418589cd052a359e4b3d",
+        "factId": "fact_92d462ec47754b7385f0108ab9596eab",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation lists its Create RAG Datasets guide as a guide to building retrieval datasets.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_91e05988aa744e049f452d3fc0f8da34"
+          },
+          {
+            "role": "conditions",
+            "value": "a guide to building retrieval datasets",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1679,
+            "end": 1734,
+            "quote": "Create RAG Datasets - Build your own retrieval datasets",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.149Z",
+        "extractionJobId": "6064ff0e-289d-4f8c-8e4c-04bae2e52fc5",
+        "digest": "bd966f9444c00902d2702a58b6a6089a17e6b16ab300beba78c826fd165ab47d"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_17667fe09ea74f23a8de47a2564cc91d",
+        "outcome": "unsupported",
+        "reason": "The primary project documentation explicitly reports integration with private test split evaluation under January 13, 2025, supporting the attributed sentence and its day-level date. However, the schematic fields instead assign an 'availability' property to the benchmark. Availability and a dated integration event are not precisely the same assertion; neither the sentence nor the quote explicitly characterizes this as an availability property.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:51:21.042Z"
+      },
+      {
+        "revisionId": "revision_b5d633b2b57240a9b3fb050a456a58a4",
+        "outcome": "supported",
+        "reason": "The official repository documentation is primary evidence for its own resource listings. The quoted 'Available Resources' section includes SWE-Llama 13b under Models. The documentation subject, named model object, available-model-resource qualification, and reported attribution match the sentence without asserting independently verified availability or performance.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:51:21.042Z"
+      },
+      {
+        "revisionId": "revision_b4b36cea221e40e2acd1c81445040cd6",
+        "outcome": "supported",
+        "reason": "The quoted primary documentation lists the exact label 'SWE-Llama 13b (PEFT)' in its available model resources. The sentence and describes fields express that single attributed listing, preserving PEFT as part of the model label rather than inferring its implementation.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:51:21.042Z"
+      },
+      {
+        "revisionId": "revision_968a646d4ef24a689837bf534339cfdb",
+        "outcome": "supported",
+        "reason": "The primary documentation's quoted Available Resources section explicitly includes SWE-Llama 7b among Models. The structured subject, object, qualification, and reported attribution express the same resource-listing assertion as the sentence. No parameter count or measured result is inferred from the label.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:51:21.042Z"
+      },
+      {
+        "revisionId": "revision_1d28f4c74abb47e9a419dbcf74acb8a9",
+        "outcome": "supported",
+        "reason": "The exact model label 'SWE-Llama 7b (PEFT)' appears in the quoted available-resources listing. The primary documentation supports the attributed listing and its model-resource qualification, which are represented consistently in the sentence and schematic fields.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:51:21.042Z"
+      },
+      {
+        "revisionId": "revision_a143905cd4664e26bdf157a603039e76",
+        "outcome": "supported",
+        "reason": "The quoted primary documentation lists '\"Oracle\" Retrieval' in the RAG resources column. The Oracle Retrieval entity is identifiable from that label, and the sentence and fields consistently assert only that the documentation lists it as a retrieval resource.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:51:21.042Z"
+      },
+      {
+        "revisionId": "revision_946cc42a18584b55964276307c0dc9e7",
+        "outcome": "supported",
+        "reason": "The quoted primary documentation explicitly lists 'BM25 Retrieval 13K' as a RAG resource. The schematic fields and attributed sentence preserve that exact resource identity and retrieval-resource classification. They do not interpret 13K as an independently established quantity.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:51:21.042Z"
+      },
+      {
+        "revisionId": "revision_4ceeea7a8680418589cd052a359e4b3d",
+        "outcome": "supported",
+        "reason": "The exact quote 'Create RAG Datasets - Build your own retrieval datasets' appears within the documentation's Guides section. This supports the named guide and its stated subject. The describes predicate, guide object, explicit qualification, and attribution match the sentence's single listing assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:51:21.042Z"
+      }
+    ],
+    "approvals": []
+  }
+}

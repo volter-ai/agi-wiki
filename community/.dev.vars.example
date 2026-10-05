@@ -1,0 +1,5 @@
+# Throwaway LOCAL preview only. Never put production credentials here or in a World.
+MODE=development
+PUBLIC_ORIGIN=http://127.0.0.1:4318
+AUTH_SECRET=local-development-only-throwaway-secret-32-characters
+ADMIN_EMAILS=moderator@example.test

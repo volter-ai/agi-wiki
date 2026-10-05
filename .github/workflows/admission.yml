@@ -1,0 +1,57 @@
+name: Article admission
+on:
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: Pull request number to admit (does not approve)
+        required: true
+        type: string
+permissions: {}
+jobs:
+  admission:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.issue.pull_request &&
+      (vars.WIKICHAT_PUBLIC_ADMISSION == 'true' ||
+       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)) &&
+      (github.event.comment.user.id == github.event.issue.user.id ||
+       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)) &&
+      (github.event.comment.body == '/submit' || startsWith(github.event.comment.body, '/approve ')))
+    concurrency:
+      group: admission-${{ github.event.issue.number || inputs.pr }}
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: read
+      pull-requests: read
+      statuses: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Install locked tooling without lifecycle scripts
+        run: npm ci --ignore-scripts
+      - name: Create short-lived repository-scoped app token
+        id: admission-token
+        uses: actions/create-github-app-token@fee1f7d63c2ff003460e3d139729b119787bc349 # v2
+        with:
+          app-id: ${{ vars.AUTOWIKI_APP_ID }}
+          private-key: ${{ secrets.AUTOWIKI_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ github.event.repository.name }}
+          permission-contents: write
+          permission-pull-requests: read
+          permission-statuses: write
+      - name: Reserve quota or record exact-content local approval
+        run: node --import tsx github/gateway.ts
+        env:
+          GH_TOKEN: ${{ steps.admission-token.outputs.token }}
+# No PR checkout, interpolation into shell, AI secrets, deployment, or automatic merge.
+# Independent jobs use non-force Git ref updates; conflicts retry against fresh state.

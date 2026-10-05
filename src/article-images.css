@@ -1,0 +1,12 @@
+.article-illustrations{float:right;clear:right;width:280px;max-width:100%;margin:0 0 20px 24px}
+.article-illustration{margin:0;padding:4px;border:1px solid var(--volter-border-default,currentColor);background:var(--volter-surface-subtle,transparent);font-size:13px;line-height:1.5}
+.article-illustration>a{display:block;text-align:center}
+.article-illustration img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain}
+.article-illustration figcaption{padding:6px 4px;overflow-wrap:anywhere}
+.article-illustration small{display:block;margin-top:4px;font-size:11px}
+.image-unavailable{display:block;padding:24px 8px}
+.wiki-body::after{content:'';display:block;clear:both}
+@media(max-width:740px){.article-illustrations{float:none;width:min(100%,340px);margin:0 auto 20px}}
+@media(prefers-reduced-motion:no-preference){.article-illustrations{animation:illustration-appear .4s ease-out}@keyframes illustration-appear{from{opacity:0}to{opacity:1}}}
+
+.infobox .article-illustrations{float:none;width:100%;margin:8px 0 12px}

@@ -1,0 +1,673 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_695b87e6ab3a473785d7167ecd4accde",
+        "label": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_f2db063cd733454f9286fa53fda4d1fd",
+        "label": "LoRA",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_8869cd0c654843a586994c49f218a373",
+        "label": "RoBERTa base",
+        "type": "model",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_1f014c6d543644a6b7f7fe1e1956be2c",
+        "label": "DeBERTa XXL",
+        "type": "model",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_86fb1f6646844df0abdbe36b83154faf",
+        "label": "E2E NLG Challenge",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_9767d3e2acce4ff983b9b91b707739bb",
+        "label": "DART",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_100c2f3388d14182b56251e38923489c",
+        "label": "WebNLG",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_80b1a273539d4d07939eda8ff0df58ae",
+        "label": "Liu et al. (2019)",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_fafc3f5a7fdf490ea8e894b6b5568e71",
+        "label": "He et al. (2020)",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_5313025cd676420dbd5e2a42337f4870",
+        "label": "Li and Liang (2021)",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+        "sourceId": "source_2835ff1fe97b6a283adda2be28fafd4bfce40d7a5cf690e5e6ed381a3b7cdaf7",
+        "url": "https://github.com/microsoft/LoRA",
+        "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" · GitHub",
+        "sha256": "c9daba3985ec9c0d75e3264d07a9e51974a6129bc9aad3eec7f7abf650b5a05d",
+        "retrievedAt": "2026-10-05T17:21:40.047Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured project repository supplies the authors' implementation, method description, experimental reports, and citation for their own paper.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_6767cdfff06744b486fb5f6c5eaf3e34",
+        "factId": "fact_502fa0094aa048bbaf78cd433c123d04",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models reports 800000 trainable parameters for RoBERTa base with LoRA.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_8869cd0c654843a586994c49f218a373"
+          },
+          {
+            "role": "property",
+            "value": "parameter_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "800000",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Trainable parameters with LoRA, not total model parameters.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 1422,
+            "end": 1544,
+            "quote": "RoBERTa base Fine-tune RoBERTa base LoRA DeBERTa XXL Fine-tune DeBERTa XXL LoRA # of Trainable Params. 125M 0.8M 1.5B 4.7M",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:50:03.577Z",
+        "extractionJobId": "5cdbc74f-91b6-42ab-8612-4ea5d7c39f32",
+        "digest": "f7574e447f310d0779fc70212aacf0f24935e12279d38f256ca8c967dea5d0ed"
+      },
+      {
+        "id": "revision_09e433781cf84a1d8e7e7bf587ecc14c",
+        "factId": "fact_82568b7bb1a2418a85d79a9a8a63f453",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models lists 125000000 trainable parameters for the RoBERTa base full-fine-tuning baseline.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_8869cd0c654843a586994c49f218a373"
+          },
+          {
+            "role": "property",
+            "value": "parameter_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "125000000",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Trainable parameters for the full-fine-tuning baseline.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 1422,
+            "end": 1544,
+            "quote": "RoBERTa base Fine-tune RoBERTa base LoRA DeBERTa XXL Fine-tune DeBERTa XXL LoRA # of Trainable Params. 125M 0.8M 1.5B 4.7M",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:50:03.577Z",
+        "extractionJobId": "5cdbc74f-91b6-42ab-8612-4ea5d7c39f32",
+        "digest": "19b10ca63616001cbe02fba1b4f4c82d57db08fc393e99eb4076d42e0228ccba"
+      },
+      {
+        "id": "revision_3ebd62115374489a9bedc80f0391f03d",
+        "factId": "fact_3a97c3a6a26c4b57b6cc577ae561d8b4",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models reports 4700000 trainable parameters for DeBERTa XXL with LoRA.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_1f014c6d543644a6b7f7fe1e1956be2c"
+          },
+          {
+            "role": "property",
+            "value": "parameter_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "4700000",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Trainable parameters with LoRA, not total model parameters.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 1422,
+            "end": 1544,
+            "quote": "RoBERTa base Fine-tune RoBERTa base LoRA DeBERTa XXL Fine-tune DeBERTa XXL LoRA # of Trainable Params. 125M 0.8M 1.5B 4.7M",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:50:03.577Z",
+        "extractionJobId": "5cdbc74f-91b6-42ab-8612-4ea5d7c39f32",
+        "digest": "57a11cc36fb940e8f2f86cb3ef3661f1d52832ff1d1ed3b79fcca26598b03704"
+      },
+      {
+        "id": "revision_231541f0330640458196b31895f5843f",
+        "factId": "fact_62dded0238e943cea60f8ef5473c80b9",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models lists 1500000000 trainable parameters for the DeBERTa XXL full-fine-tuning baseline.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_1f014c6d543644a6b7f7fe1e1956be2c"
+          },
+          {
+            "role": "property",
+            "value": "parameter_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "1500000000",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Trainable parameters for the full-fine-tuning baseline.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 1422,
+            "end": 1544,
+            "quote": "RoBERTa base Fine-tune RoBERTa base LoRA DeBERTa XXL Fine-tune DeBERTa XXL LoRA # of Trainable Params. 125M 0.8M 1.5B 4.7M",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:50:03.577Z",
+        "extractionJobId": "5cdbc74f-91b6-42ab-8612-4ea5d7c39f32",
+        "digest": "61cea4dc46b28434ac446108c5d580a9993f91345faa4616227da822bbda56e4"
+      },
+      {
+        "id": "revision_c40efa96eca04d8a8673048f1b2ac378",
+        "factId": "fact_03579d4d73834170b115af16bc557204",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models reports evaluating LoRA on E2E NLG Challenge using GPT-2 in comparisons with full fine-tuning, adapters, and prefix tuning.",
+        "predicate": "evaluated_on",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_86fb1f6646844df0abdbe36b83154faf"
+          },
+          {
+            "role": "conditions",
+            "value": "GPT-2 evaluation comparing LoRA with full fine-tuning, adapters, and prefix tuning.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 2271,
+            "end": 2496,
+            "quote": "On GPT-2, LoRA compares favorably to both full finetuning and other efficient tuning methods, such as adapter (Houlsby et al., 2019) and prefix tuning (Li and Liang, 2021). We evaluated on E2E NLG Challenge, DART, and WebNLG:",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:50:03.577Z",
+        "extractionJobId": "5cdbc74f-91b6-42ab-8612-4ea5d7c39f32",
+        "digest": "62b5a6c4c5ab566ba59036ef8861f0ed58a4ac95fc68c1b5d0f6de6cad733e18"
+      },
+      {
+        "id": "revision_6c6de0db11e9431183e6dcd960ad2a27",
+        "factId": "fact_2f2a8d6ed40e46be9823983e8ca75e0c",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models reports evaluating LoRA on DART using GPT-2 in comparisons with full fine-tuning, adapters, and prefix tuning.",
+        "predicate": "evaluated_on",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_9767d3e2acce4ff983b9b91b707739bb"
+          },
+          {
+            "role": "conditions",
+            "value": "GPT-2 evaluation comparing LoRA with full fine-tuning, adapters, and prefix tuning.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 2271,
+            "end": 2496,
+            "quote": "On GPT-2, LoRA compares favorably to both full finetuning and other efficient tuning methods, such as adapter (Houlsby et al., 2019) and prefix tuning (Li and Liang, 2021). We evaluated on E2E NLG Challenge, DART, and WebNLG:",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:50:03.577Z",
+        "extractionJobId": "5cdbc74f-91b6-42ab-8612-4ea5d7c39f32",
+        "digest": "400a616075b96ee158006b0be0b51fae582bd55d396c314f77314386f316b33e"
+      },
+      {
+        "id": "revision_179c2ae1855540a3a89ab39915dbca7f",
+        "factId": "fact_b54547aabd054e9983c65f91ad0d83a4",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models reports evaluating LoRA on WebNLG using GPT-2 in comparisons with full fine-tuning, adapters, and prefix tuning.",
+        "predicate": "evaluated_on",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_100c2f3388d14182b56251e38923489c"
+          },
+          {
+            "role": "conditions",
+            "value": "GPT-2 evaluation comparing LoRA with full fine-tuning, adapters, and prefix tuning.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 2271,
+            "end": 2496,
+            "quote": "On GPT-2, LoRA compares favorably to both full finetuning and other efficient tuning methods, such as adapter (Houlsby et al., 2019) and prefix tuning (Li and Liang, 2021). We evaluated on E2E NLG Challenge, DART, and WebNLG:",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:50:03.577Z",
+        "extractionJobId": "5cdbc74f-91b6-42ab-8612-4ea5d7c39f32",
+        "digest": "0216a38a9edf9542bee70bacac2c75a2886d349988e4cc96af81abfddfe1a868"
+      },
+      {
+        "id": "revision_23e0591116da442982457627b2723da4",
+        "factId": "fact_8dc774a98bcf40708e77a6d9e4f00d48",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models identifies Liu et al. (2019) as a source of fine-tuning baseline results in its language-understanding comparison.",
+        "predicate": "related_to",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_80b1a273539d4d07939eda8ff0df58ae"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 2057,
+            "end": 2270,
+            "quote": "Fine-tuning numbers are taken from Liu et al. (2019) and He et al. (2020). We include confidence intervals on results from our experiments. Please follow the instructions in examples/NLU/ to reproduce our results.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:50:03.577Z",
+        "extractionJobId": "5cdbc74f-91b6-42ab-8612-4ea5d7c39f32",
+        "digest": "7e58c591841688a50a7cdfb03cf3ab11604c2edf219f75c5590fe38cd7daf867"
+      },
+      {
+        "id": "revision_02f554d3e93b4215bff45f20704d0fb7",
+        "factId": "fact_58bdd49ffd9f435bbbf552d1113a1d37",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models identifies He et al. (2020) as a source of fine-tuning baseline results in its language-understanding comparison.",
+        "predicate": "related_to",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_fafc3f5a7fdf490ea8e894b6b5568e71"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 2057,
+            "end": 2270,
+            "quote": "Fine-tuning numbers are taken from Liu et al. (2019) and He et al. (2020). We include confidence intervals on results from our experiments. Please follow the instructions in examples/NLU/ to reproduce our results.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:50:03.577Z",
+        "extractionJobId": "5cdbc74f-91b6-42ab-8612-4ea5d7c39f32",
+        "digest": "f4f648d1c064fc477af23c42f5d309ea55bbe84c1ff37c2ebd4dcb1e1adb9e48"
+      },
+      {
+        "id": "revision_e78158947f2d40c88be977c08aa38669",
+        "factId": "fact_92af148b2b4349e7ab4e2818b8d288f7",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models identifies Li and Liang (2021) as the source of its non-LoRA GPT-2 baselines except the GPT-2 large adapter baseline.",
+        "predicate": "related_to",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_5313025cd676420dbd5e2a42337f4870"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 3006,
+            "end": 3161,
+            "quote": "Non-LoRA baselines, except for adapter on GPT-2 large, are taken from Li and Liang (2021). We include confidence intervals on results from our experiments.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:50:03.577Z",
+        "extractionJobId": "5cdbc74f-91b6-42ab-8612-4ea5d7c39f32",
+        "digest": "0a04b0661781d5b6835f4704e701f457cc9564fc6f41794a9b215f7dce908c10"
+      },
+      {
+        "id": "revision_2a28d40b8a12428f9bbb2cfbd6696e6e",
+        "factId": "fact_949d67bdedea4f0b925bf897fa81e8b7",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models says its experimental results are reported with confidence intervals.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          },
+          {
+            "role": "property",
+            "value": "status",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Repository experimental results are reported with confidence intervals.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 3006,
+            "end": 3161,
+            "quote": "Non-LoRA baselines, except for adapter on GPT-2 large, are taken from Li and Liang (2021). We include confidence intervals on results from our experiments.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The captured text does not specify the confidence level or interval calculation procedure."
+        ],
+        "createdAt": "2026-10-05T20:50:03.577Z",
+        "extractionJobId": "5cdbc74f-91b6-42ab-8612-4ea5d7c39f32",
+        "digest": "660a14f58f3b8bd2a8fe565f96fafcdde6833f09a2341721f28cadc5b6866d90"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_6767cdfff06744b486fb5f6c5eaf3e34",
+        "outcome": "supported",
+        "reason": "The authors' repository qualifies as primary evidence for its own reported experiments. The quoted table assigns 0.8M trainable parameters to RoBERTa base LoRA, exactly 800000 parameters. The statement and fields retain repository attribution and the trainable-with-LoRA condition rather than asserting total model size.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:50:36.587Z"
+      },
+      {
+        "revisionId": "revision_09e433781cf84a1d8e7e7bf587ecc14c",
+        "outcome": "supported",
+        "reason": "The quoted table assigns 125M trainable parameters to RoBERTa base Fine-tune. The conversion to 125000000 count units is exact, and both the statement and structured conditions identify the full-fine-tuning baseline. Repository attribution avoids presenting the imported baseline as independently verified.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:50:36.587Z"
+      },
+      {
+        "revisionId": "revision_3ebd62115374489a9bedc80f0391f03d",
+        "outcome": "supported",
+        "reason": "The quoted table assigns 4.7M trainable parameters to DeBERTa XXL LoRA. The numerical conversion, model identity, repository attribution, and distinction between trainable parameters with LoRA and total model parameters are supported and aligned.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:50:36.587Z"
+      },
+      {
+        "revisionId": "revision_231541f0330640458196b31895f5843f",
+        "outcome": "supported",
+        "reason": "The quoted table assigns 1.5B trainable parameters to DeBERTa XXL Fine-tune, supporting 1500000000 count units. The statement and structured fields consistently express a repository-reported count for the full-fine-tuning baseline.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:50:36.587Z"
+      },
+      {
+        "revisionId": "revision_c40efa96eca04d8a8673048f1b2ac378",
+        "outcome": "supported",
+        "reason": "The quoted passage explicitly reports GPT-2 evaluation on E2E NLG Challenge alongside comparisons with full fine-tuning, adapters, and prefix tuning; the captured table confirms these methods. The evaluated_on assertion and conditions match the sentence without endorsing the repository's favorable-performance claim.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:50:36.587Z"
+      },
+      {
+        "revisionId": "revision_6c6de0db11e9431183e6dcd960ad2a27",
+        "outcome": "supported",
+        "reason": "The quoted passage names DART in the GPT-2 evaluations and identifies the comparison methods, which the captured table confirms. The statement and schematic fields express the same attributed evaluation-occurrence assertion, not an unsupported performance conclusion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:50:36.587Z"
+      },
+      {
+        "revisionId": "revision_179c2ae1855540a3a89ab39915dbca7f",
+        "outcome": "supported",
+        "reason": "The quoted passage explicitly includes WebNLG in the GPT-2 evaluations comparing LoRA with full fine-tuning, adapters, and prefix tuning. The captured table corroborates that scope, and the predicate, benchmark argument, conditions, and reported modality match the sentence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:50:36.587Z"
+      },
+      {
+        "revisionId": "revision_23e0591116da442982457627b2723da4",
+        "outcome": "unsupported",
+        "reason": "The source supports the prose attribution of fine-tuning baseline numbers to Liu et al. (2019), but related_to with only two paper arguments does not encode baseline provenance or the language-understanding comparison scope. The generic relationship is not precisely the assertion made by the sentence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:50:36.587Z"
+      },
+      {
+        "revisionId": "revision_02f554d3e93b4215bff45f20704d0fb7",
+        "outcome": "unsupported",
+        "reason": "The quoted note identifies He et al. (2020) as a source of fine-tuning numbers, but the structured related_to assertion omits both that provenance relationship and its language-understanding scope. Evidence for the prose does not cure this sentence–schema mismatch.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:50:36.587Z"
+      },
+      {
+        "revisionId": "revision_e78158947f2d40c88be977c08aa38669",
+        "outcome": "unsupported",
+        "reason": "The source explicitly attributes non-LoRA baselines to Li and Liang (2021), except the GPT-2 large adapter baseline. Neither baseline provenance, GPT-2 scope, nor the material exception appears in the two-argument related_to structure. The whole qualified assertion therefore is not schematically represented.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:50:36.587Z"
+      },
+      {
+        "revisionId": "revision_2a28d40b8a12428f9bbb2cfbd6696e6e",
+        "outcome": "unsupported",
+        "reason": "The quote supports the repository's statement that it includes confidence intervals on its experimental results. However, assigning a paper the generic property status and placing the reporting-practice assertion inside a text value does not type that assertion faithfully. Correcting whitespace in the property identifier does not resolve the semantic mismatch between paper status and experimental-result reporting.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:50:36.587Z"
+      }
+    ],
+    "approvals": []
+  }
+}

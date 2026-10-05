@@ -1,0 +1,20 @@
+CREATE TABLE users (id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE, username TEXT NOT NULL UNIQUE, bio TEXT NOT NULL DEFAULT '', role TEXT NOT NULL DEFAULT 'user' CHECK(role IN ('user','admin')), blocked INTEGER NOT NULL DEFAULT 0, created_at INTEGER NOT NULL);
+CREATE TABLE sessions (hash TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES users(id), expires_at INTEGER NOT NULL);
+CREATE TABLE auth_requests (id TEXT PRIMARY KEY, email TEXT NOT NULL, code_hash TEXT NOT NULL, expires_at INTEGER NOT NULL, attempts INTEGER NOT NULL DEFAULT 0, consumed INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE dev_mailbox (request_id TEXT PRIMARY KEY, code TEXT NOT NULL, expires_at INTEGER NOT NULL);
+CREATE TABLE rate_limits (key TEXT NOT NULL, window INTEGER NOT NULL, count INTEGER NOT NULL, PRIMARY KEY(key,window));
+CREATE TABLE submissions (id TEXT PRIMARY KEY, author_id TEXT NOT NULL REFERENCES users(id), topic_key TEXT NOT NULL, title TEXT NOT NULL, policy_key TEXT NOT NULL, policy_name TEXT NOT NULL, digest TEXT NOT NULL UNIQUE, object_key TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'pending' CHECK(status IN ('pending','review','published','rejected','withdrawn')), created_at INTEGER NOT NULL, published_at INTEGER, ip_hash TEXT NOT NULL, moderation TEXT NOT NULL DEFAULT '{}', claimed_at INTEGER, generation_model TEXT NOT NULL DEFAULT 'unknown');
+CREATE INDEX submissions_author_day ON submissions(author_id,created_at);
+CREATE INDEX submissions_ip_day ON submissions(ip_hash,created_at);
+CREATE INDEX submissions_topic_policy ON submissions(topic_key,policy_key,status);
+CREATE INDEX submissions_queue ON submissions(status,created_at);
+CREATE TRIGGER upload_limits BEFORE INSERT ON submissions BEGIN
+ SELECT CASE WHEN (SELECT COUNT(*) FROM submissions WHERE author_id=NEW.author_id AND created_at>=CAST(NEW.created_at/86400 AS INTEGER)*86400)>=100 THEN RAISE(ABORT,'daily_upload_limit') END;
+ SELECT CASE WHEN (SELECT COUNT(*) FROM submissions WHERE author_id=NEW.author_id AND created_at>NEW.created_at-60)>=5 THEN RAISE(ABORT,'burst_upload_limit') END;
+ SELECT CASE WHEN (SELECT COUNT(*) FROM submissions WHERE ip_hash=NEW.ip_hash AND created_at>=CAST(NEW.created_at/86400 AS INTEGER)*86400)>=500 THEN RAISE(ABORT,'ip_upload_limit') END;
+ SELECT CASE WHEN (SELECT COUNT(*) FROM submissions WHERE ip_hash=NEW.ip_hash AND created_at>NEW.created_at-60)>=30 THEN RAISE(ABORT,'ip_burst_limit') END;
+END;
+CREATE TABLE feedback (article_id TEXT NOT NULL REFERENCES submissions(id), user_id TEXT NOT NULL REFERENCES users(id), created_at INTEGER NOT NULL, PRIMARY KEY(article_id,user_id));
+CREATE TABLE reports (id TEXT PRIMARY KEY, article_id TEXT NOT NULL REFERENCES submissions(id), reporter_id TEXT NOT NULL REFERENCES users(id), reason TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'pending', resolution TEXT, created_at INTEGER NOT NULL, UNIQUE(article_id,reporter_id));
+CREATE TABLE reputation_events (event_key TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES users(id), points INTEGER NOT NULL, reason TEXT NOT NULL, created_at INTEGER NOT NULL);
+CREATE TABLE moderation_audit (id TEXT PRIMARY KEY, article_id TEXT NOT NULL, moderator_id TEXT, action TEXT NOT NULL, reason TEXT NOT NULL, created_at INTEGER NOT NULL);

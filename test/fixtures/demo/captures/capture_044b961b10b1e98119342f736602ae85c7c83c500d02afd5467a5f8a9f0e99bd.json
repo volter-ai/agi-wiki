@@ -1,0 +1,12 @@
+{
+  "id": "capture_044b961b10b1e98119342f736602ae85c7c83c500d02afd5467a5f8a9f0e99bd",
+  "sourceId": "source_fc476ea7a1dab27cd87b63cdbbbf997320fc9bd4109f4c09c5bc9debebfa66b3",
+  "url": "https://docs.mlcommons.org/cm4mlperf-inference/",
+  "title": "MLPerf Inference Results Comparison",
+  "text": "Results Datacenter Category: Available submissions in Open division 10 20 30 All ID System Submitter Accelerator LLAMA2-70B-99 LLAMA2-70B-99.9 GPTJ-99 GPTJ-99.9 Bert-99 Bert-99.9 Stable Diffusion DLRM-v2-99 DLRM-v2-99.9 Retinanet ResNet50 3d-unet-99 3d-unet-99.9 Server Offline Server Offline Server Offline Server Offline Server Offline Server Offline Server Offline Server Offline Server Offline Server Offline Server Offline Offline Offline ID System Submitter Accelerator LLAMA2-70B-99 LLAMA2-70B-99.9 GPTJ-99 GPTJ-99.9 Bert-99 Bert-99.9 Stable Diffusion DLRM-v2-99 DLRM-v2-99.9 Retinanet ResNet50 3d-unet-99 3d-unet-99.9 Server Offline Server Offline Server Offline Server Offline Server Offline Server Offline Server Offline Server Offline Server Offline Server Offline Server Offline Offline Offline 4.1-0001 334907abd4f4 NTHU NVIDIA H100 PCIe x 4 0.5 4.1-0002 ba7f5c94d10f NTHU NVIDIA H100 PCIe x 4 4.3 4.1-0003 1b41d1041a1b NTUHPC NVIDIA H100 PCIe x 4 4.2 4.1-0004 aqua UCSD 0.2 4.1-0005 aqua UCSD 0.2 4.1-0006 aqua UCSD 0.8 4.1-0007 mlperf_inference_lry_40 peking NVIDIA H100 80GB HBM3 x 5 7.6 4.1-0008 mlperf_inference_lry_40 peking1 NVIDIA H100 80GB HBM3 x 5 7.5 4.1-0009 mlperf_inference_lry_40 pku NVIDIA H100 80GB HBM3 x 5 8.3 4.1-0011 f2ea47b0a016 scc2 NVIDIA H100 80GB HBM3 x 6 7.5 10 20 30 All Count of Results Submitter LLAMA2-70B-99 LLAMA2-70B-99.9 GPTJ-99 GPTJ-99.9 Bert-99 Bert-99.9 Stable Diffusion DLRM-v2-99 DLRM-v2-99.9 Retinanet ResNet50 3d-unet-99 3d-unet-99.9 Total NTHU 0 0 0 0 0 0 2 0 0 0 0 0 0 2 NTUHPC 0 0 0 0 0 0 1 0 0 0 0 0 0 1 UCSD 0 0 0 0 0 0 3 0 0 0 0 0 0 3 peking 0 0 0 0 0 0 1 0 0 0 0 0 0 1 peking1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 pku 0 0 0 0 0 0 1 0 0 0 0 0 0 1 scc2 0 0 0 0 0 0 1 0 0 0 0 0 0 1 Total 0 0 0 0 0 0 10 0 0 0 0 0 0 10",
+  "sha256": "2c3f75addce7a5448fbc3bc11528b0dd89637ac950ebce5d97e7556814491ba8",
+  "retrievedAt": "2026-10-05T17:26:38.311Z",
+  "representation": "extracted-text",
+  "evidenceType": "primary",
+  "classificationReason": "The captured MLCommons results page directly lists MLPerf Inference submissions, their accelerator configurations, and their category and division."
+}

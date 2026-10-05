@@ -1,0 +1,911 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_131d5305be264149b2c500e137df37c7",
+        "label": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_4fb81f339c804ecbb97a28ea23b76ba2",
+        "label": "SWE-bench",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_3fcc8aa95ddd4550802e5f3c262f6901",
+        "label": "SWE-bench documentation",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_748458065c6c45c2b1e39b25168ba18c",
+        "label": "SWE-bench evaluation harness",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_e37317fe5014430e8b06fbdd9fbc7416",
+        "label": "Modal",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_ea2256cb3fbd46129f233309b38bfb5f",
+        "label": "Hugging Face",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_5f4a6d7ed65f40b6b19b53b0be4dca99",
+        "label": "SWE-bench installation guide",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_4476ba9ab31e4b9d95aff1f4809a1b92",
+        "label": "SWE-bench evaluation guide",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_a44c3f269ef946eab291ba58de48da2a",
+        "label": "SWE-bench harness API documentation",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_c11afe57aa564a2592aeeced80199896",
+        "label": "SWE-bench inference API documentation",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_39b9b41706084c12834eff2486b83f54",
+        "label": "SWE-bench Lite",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_f03ebc05f8da416ead771c0a65e9dbf9",
+        "label": "SWE-bench Verified",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_9fc189763cb248f4b3d89c7909a965cb",
+        "label": "SWE-bench Multimodal",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+        "sourceId": "source_703a5bbc8ed748f4a760a70485d0a0646540dace607c8f46cc15e092bb21b913",
+        "url": "https://github.com/SWE-bench/SWE-bench/blob/main/docs/index.md",
+        "title": "SWE-bench/docs/index.md at main · SWE-bench/SWE-bench · GitHub",
+        "sha256": "c2aea47c1c7e1d46577193ee80aac586fa0156431317c1dfc91c9e8a679dea45",
+        "retrievedAt": "2026-10-05T17:30:28.310Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "Author-maintained documentation in the official SWE-bench repository directly defines the benchmark and supplies dataset-loading code, installation commands, and documentation for its Docker-based evaluation harness. Its dated release notes document containerization on June 27, 2024, and the Verified subset release on August 13, 2024. These are firsthand project records supporting implementation and development history; project performance claims are not independent validation.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_cc62ce8ed7784f2699e2bf024bf9de64",
+        "factId": "fact_8c6c630f27f647428a1cddfedbce4353",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation describes the SWE-bench benchmark.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 0,
+            "end": 124,
+            "quote": "SWE-bench SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.141Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "5c88c0fb8c67a0239250f04e4414d21464fcc23cd9f00d4d4b5f865344511e92"
+      },
+      {
+        "id": "revision_893b5a2a3b76462ba7cbf13f230c3533",
+        "factId": "fact_33c91a432106450abb317a30d7584527",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation reports the SWE-bench paper as accepted for an oral presentation at ICLR 2024.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "property",
+            "value": "publication_status",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "accepted for an oral presentation at ICLR 2024",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1067,
+            "end": 1139,
+            "quote": "[Jan. 16, 2024]: SWE-bench accepted to ICLR 2024 as an oral presentation",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.143Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "305e713524a3e9ac0233dd7b33feab11b3e93b6932da270017393529f3c96b9b"
+      },
+      {
+        "id": "revision_fb639d364716493aa0cd2274fef2a941",
+        "factId": "fact_ba40d4582b404c948ccacedc9b97c99c",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench tasks require a patch that resolves the described problem.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "task_output",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "patch that resolves the described problem",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 125,
+            "end": 243,
+            "quote": "Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.143Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "9e16f1e633a17baac2d60378c990b84041e96e5db2c5488798bcc142c7fa5a20"
+      },
+      {
+        "id": "revision_c50873f545f6430aa4c38aea41016bc5",
+        "factId": "fact_e64ec76a36424f5996cb6b8f2783ca0f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench uses an evaluation harness based on Docker for reproducible evaluation with consistent results.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_748458065c6c45c2b1e39b25168ba18c"
+          },
+          {
+            "role": "conditions",
+            "value": "based on Docker for reproducible evaluation with consistent results",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 516,
+            "end": 598,
+            "quote": "✅ Reproducible evaluation - Docker-based evaluation harness for consistent results",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.143Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "dbf7da8ceb1e3a4fd2ea59d70994bba55dd5a0ab58462691818b1fe78ae74e68"
+      },
+      {
+        "id": "revision_54b7f7ffb3a14e3fb51ec7aca3539298",
+        "factId": "fact_a8e331478f5d464b8f0b1ca0be45c404",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation reports the evaluation harness as fully containerized using Docker.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_748458065c6c45c2b1e39b25168ba18c"
+          },
+          {
+            "role": "property",
+            "value": "availability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "fully containerized using Docker",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 934,
+            "end": 1002,
+            "quote": "[Jun. 27, 2024]: Fully containerized evaluation harness using Docker",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.143Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "825eae2b2e9ba7aa40ef80b8d06f29b8732f884010ac06fc1563530e749c3b65"
+      },
+      {
+        "id": "revision_543ca04c71d0456693e151dd1fc310c2",
+        "factId": "fact_0a76711760164929a8a5528ba8bd54c6",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The documentation reports SWE-bench cloud-based evaluations via Modal.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_e37317fe5014430e8b06fbdd9fbc7416"
+          },
+          {
+            "role": "conditions",
+            "value": "cloud-based evaluations",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 793,
+            "end": 843,
+            "quote": "[Jan. 11, 2025]: Cloud-based evaluations via Modal",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "4936a5e32b1427349b426a619417b8b595b1222e9880cff6e3607e02b7ea7844"
+      },
+      {
+        "id": "revision_dc00eff5e5b844c4ad676b2e18216140",
+        "factId": "fact_a6ef3f1e666c40bfa904d0d2b5899d1a",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench uses Hugging Face for dataset access.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_ea2256cb3fbd46129f233309b38bfb5f"
+          },
+          {
+            "role": "conditions",
+            "value": "dataset access",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1140,
+            "end": 1289,
+            "quote": "🚀 Quick Start # Access SWE-bench via Hugging Face from datasets import load_dataset swebench = load_dataset('princeton-nlp/SWE-bench', split='test')",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "411aae864018ec1c3f998b8afd484556ba4bfc2e755239c4ced04f21c4b33bbb"
+      },
+      {
+        "id": "revision_b7e9d6e8a77f4e72a33d4f29a3b89312",
+        "factId": "fact_636dfeb472684606b6bc2e60cc641183",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation lists its installation guide as a guide for local and cloud setup.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_5f4a6d7ed65f40b6b19b53b0be4dca99"
+          },
+          {
+            "role": "conditions",
+            "value": "a guide for local and cloud setup",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1420,
+            "end": 1486,
+            "quote": "Installation - Setup instructions for local and cloud environments",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "8511590f2c38c56654d907b001a1c2b6964592df13313dac67c2ee98218a1873"
+      },
+      {
+        "id": "revision_0739215e42e844adaecd42c2a70efe9f",
+        "factId": "fact_b849ecacb21f458e94d473ce6594cc20",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation lists its evaluation guide as a guide to evaluating models on SWE-bench.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_4476ba9ab31e4b9d95aff1f4809a1b92"
+          },
+          {
+            "role": "conditions",
+            "value": "a guide to evaluating models on SWE-bench",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1534,
+            "end": 1582,
+            "quote": "Evaluation - How to evaluate models on SWE-bench",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "53b5c1b2623c7ade8682e3336c5149de6e473ce7a524377dbd761e7f3be8c012"
+      },
+      {
+        "id": "revision_190d4edea2d346f6ba7a246900b21dec",
+        "factId": "fact_b9463bac3122454e9e3318bdd7e082bf",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation lists its harness API documentation as a reference for the evaluation harness.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_a44c3f269ef946eab291ba58de48da2a"
+          },
+          {
+            "role": "conditions",
+            "value": "a reference for the evaluation harness",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1745,
+            "end": 1799,
+            "quote": "Harness API - Documentation for the evaluation harness",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "7d840e70f887e7764517ae4b67dd113d93c38b2498f61a8d0c796a239efc54b4"
+      },
+      {
+        "id": "revision_d8a65b464f3d46c19587315d08e814ec",
+        "factId": "fact_b8cd2bc3dc2a42c983ed855be95d7e83",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation lists its inference API documentation as a reference for model inference.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_c11afe57aa564a2592aeeced80199896"
+          },
+          {
+            "role": "conditions",
+            "value": "a reference for model inference",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1800,
+            "end": 1849,
+            "quote": "Inference API - Documentation for model inference",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "2de3f500b86b99c9007d1fc66269188e58ab8dbe8a8929140d50e51382e8f8c4"
+      },
+      {
+        "id": "revision_e6e07ad02b1d4ac886e56ff82c103cad",
+        "factId": "fact_7b916d2e97274c4fb827616f249125a6",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The documentation reports a full SWE-bench leaderboard on the project website.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "availability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "full leaderboard on the project website",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 338,
+            "end": 403,
+            "quote": "🏆 Leaderboard You can find the full leaderboard at swebench.com!",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "ed77dd11ddc62c8f46f2fc76e7cff35b14d5cd2ff19d63e66e5c3fdd85eba0ba"
+      },
+      {
+        "id": "revision_7c7e246837bf44fe944f1aa55a4dc2bf",
+        "factId": "fact_7d09dc3629c542e8b676bf5d4f33d1ba",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation relates SWE-bench to SWE-bench Lite.",
+        "predicate": "related_to",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_39b9b41706084c12834eff2486b83f54"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 599,
+            "end": 692,
+            "quote": "✅ Multiple datasets - SWE-bench, SWE-bench Lite, SWE-bench Verified, and SWE-bench Multimodal",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "d7e8852f5d5a01e7bc00ed91c42315a35a3ff33c6cab6ba0653598a9f75d5618"
+      },
+      {
+        "id": "revision_e0dad69dbaed496db992874e23f9ccbe",
+        "factId": "fact_7b0a9e713ac448759ad44d8c6b89275d",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation relates SWE-bench to SWE-bench Verified.",
+        "predicate": "related_to",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f03ebc05f8da416ead771c0a65e9dbf9"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 599,
+            "end": 692,
+            "quote": "✅ Multiple datasets - SWE-bench, SWE-bench Lite, SWE-bench Verified, and SWE-bench Multimodal",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "06c05ecb5a822c7278101ec146a9da1c00d7ceda06243f05688493242acbaa4e"
+      },
+      {
+        "id": "revision_c26780b6f76d4cf289930f428194e163",
+        "factId": "fact_f6052c909132402bb4331b6fb7254011",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation relates SWE-bench to SWE-bench Multimodal.",
+        "predicate": "related_to",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_9fc189763cb248f4b3d89c7909a965cb"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 599,
+            "end": 692,
+            "quote": "✅ Multiple datasets - SWE-bench, SWE-bench Lite, SWE-bench Verified, and SWE-bench Multimodal",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "6260593e48e00abd4200a88216d77fa4c1198373ef7cb4e9cacc546786241154"
+      },
+      {
+        "id": "revision_2c58b5dbe6754914b7f3e13955930e7b",
+        "factId": "fact_bf5ecde5a93e4a3ab7d8eb5f9342c93f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project reports 500 engineer-confirmed solvable problems in SWE-bench Verified.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f03ebc05f8da416ead771c0a65e9dbf9"
+          },
+          {
+            "role": "property",
+            "value": "problem_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "500",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "engineer-confirmed solvable problems",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 844,
+            "end": 933,
+            "quote": "[Aug. 13, 2024]: SWE-bench Verified release with 500 engineer-confirmed solvable problems",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "4ac1ea1e6fce29b0dd3024d61d860ec8a2f739a5feeef289d4c2d75e4f2104a1"
+      },
+      {
+        "id": "revision_83d6d17556954b0381b8d435488d59a5",
+        "factId": "fact_f1f14ec0a5d74795b5e39946b05b2392",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project reports SWE-bench Verified as released on August 13, 2024.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f03ebc05f8da416ead771c0a65e9dbf9"
+          },
+          {
+            "role": "property",
+            "value": "availability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "released",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "time": {
+          "start": "2024-08-13",
+          "precision": "day",
+          "basis": "[Aug. 13, 2024]: SWE-bench Verified release"
+        },
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 844,
+            "end": 933,
+            "quote": "[Aug. 13, 2024]: SWE-bench Verified release with 500 engineer-confirmed solvable problems",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.146Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "11ce52abdee7cdb9b4c9ece634f35d138c7bbbfc02b22f05bded9641a2aa5182"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_cc62ce8ed7784f2699e2bf024bf9de64",
+        "outcome": "supported",
+        "reason": "The official repository documentation is primary project evidence. Its opening definition directly describes SWE-bench, supporting the documentation-to-benchmark relationship without asserting a measured result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_893b5a2a3b76462ba7cbf13f230c3533",
+        "outcome": "supported",
+        "reason": "The news entry explicitly reports acceptance to ICLR 2024 as an oral presentation. The captured citation identifies the SWE-bench paper and conference, supporting the paper identity and attributed publication-status assertion. No acceptance date is asserted.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_fb639d364716493aa0cd2274fef2a941",
+        "outcome": "unsupported",
+        "reason": "The source defines the output in the explicit setting of a language model given a codebase and an issue. Neither the sentence nor the structured fields retains those material task-input conditions, including the connection to that codebase. The sentence also does not express the structured project-report attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_c50873f545f6430aa4c38aea41016bc5",
+        "outcome": "unsupported",
+        "reason": "The documentation advertises a Docker-based harness for reproducible evaluation and consistent results; it does not independently establish reproducibility or consistency. The sentence presents consistent results without explicit project attribution or intended-purpose qualification, whereas the structured modality is reported. It therefore does not preserve the evidential status of this project claim.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_54b7f7ffb3a14e3fb51ec7aca3539298",
+        "outcome": "supported",
+        "reason": "The June 27 news entry explicitly describes a fully containerized evaluation harness using Docker. The attributed sentence and property value express that narrower status assertion. They do not assert a release date.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_543ca04c71d0456693e151dd1fc310c2",
+        "outcome": "supported",
+        "reason": "The news entry explicitly reports cloud-based evaluations via Modal, supporting Modal as the service used under the stated evaluation condition. The sentence preserves project attribution and does not claim a dated introduction.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_dc00eff5e5b844c4ad676b2e18216140",
+        "outcome": "unsupported",
+        "reason": "The quick-start passage supports documented dataset access through Hugging Face. However, the sentence states an unqualified use relationship rather than the project-reported relationship encoded by its modality and attribution fields. The supplied sentence and schematic assertion therefore do not fully match.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_b7e9d6e8a77f4e72a33d4f29a3b89312",
+        "outcome": "supported",
+        "reason": "The documentation structure explicitly lists Installation as setup instructions for local and cloud environments. This supports the identified guide, its described scope, and the attributed documentation relationship.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_0739215e42e844adaecd42c2a70efe9f",
+        "outcome": "supported",
+        "reason": "Under Guides, the source lists Evaluation as instructions for evaluating models on SWE-bench. The sentence and structured fields retain precisely that described guide and scope.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_190d4edea2d346f6ba7a246900b21dec",
+        "outcome": "supported",
+        "reason": "The captured Reference section lists Harness API as documentation for the evaluation harness. The quote and section context support the documentation identity and reference purpose expressed in both representations.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_d8a65b464f3d46c19587315d08e814ec",
+        "outcome": "supported",
+        "reason": "The captured Reference section lists Inference API as documentation for model inference. This directly supports the attributed description and stated reference scope.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_e6e07ad02b1d4ac886e56ff82c103cad",
+        "outcome": "supported",
+        "reason": "The official project documentation explicitly directs readers to the full leaderboard at swebench.com. The attributed availability assertion matches that passage without claiming independent verification of the website.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_7c7e246837bf44fe944f1aa55a4dc2bf",
+        "outcome": "unsupported",
+        "reason": "The source specifically lists SWE-bench and SWE-bench Lite as multiple datasets provided by the project. An unspecified related_to relationship discards that defining relationship and does not schematically represent the documented dataset distinction.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_e0dad69dbaed496db992874e23f9ccbe",
+        "outcome": "unsupported",
+        "reason": "The passage identifies SWE-bench and SWE-bench Verified as separately listed datasets. The generic related_to assertion conceals that specific relationship rather than encoding the evidenced dataset distinction.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_c26780b6f76d4cf289930f428194e163",
+        "outcome": "unsupported",
+        "reason": "The evidence lists SWE-bench Multimodal alongside SWE-bench among multiple datasets. The unspecified related_to predicate omits the material dataset-listing relationship and cannot represent the original distinction.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_2c58b5dbe6754914b7f3e13955930e7b",
+        "outcome": "supported",
+        "reason": "The release note explicitly reports 500 engineer-confirmed solvable problems. The sentence preserves project attribution, and the structure includes the numeric count, count unit, and engineer-confirmed-solvable qualification. It does not independently certify solvability.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_83d6d17556954b0381b8d435488d59a5",
+        "outcome": "supported",
+        "reason": "The dated news entry explicitly identifies a SWE-bench Verified release on August 13, 2024. The attributed release-status assertion and day-precision time field match the sentence and evidence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      }
+    ],
+    "approvals": []
+  }
+}

@@ -1,0 +1,1208 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_695b87e6ab3a473785d7167ecd4accde",
+        "label": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_f2db063cd733454f9286fa53fda4d1fd",
+        "label": "LoRA",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_23c6c5bd15ac44829c7fdffc07b0e52b",
+        "label": "loralib",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_93f46169f7584011989dddf1d6ba9ab8",
+        "label": "Edward J. Hu",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_fa36516b321d48a6b63a5c0474c32647",
+        "label": "Yelong Shen",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_11bc18096f2c404386279218f571a264",
+        "label": "Phillip Wallis",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_a067bfe2caac47b39f6b240edd528819",
+        "label": "Zeyuan Allen-Zhu",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_70653b3ac0ea46bf8d02bdf3e350ab52",
+        "label": "Yuanzhi Li",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_1274dcc39bc64fc9aef96f9458092a66",
+        "label": "Shean Wang",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_6af967b92fef401f93c9040a8adca305",
+        "label": "Lu Wang",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_589a6ab62b154640918b9c840e85b536",
+        "label": "Weizhu Chen",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+        "sourceId": "source_2835ff1fe97b6a283adda2be28fafd4bfce40d7a5cf690e5e6ed381a3b7cdaf7",
+        "url": "https://github.com/microsoft/LoRA",
+        "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" · GitHub",
+        "sha256": "c9daba3985ec9c0d75e3264d07a9e51974a6129bc9aad3eec7f7abf650b5a05d",
+        "retrievedAt": "2026-10-05T17:21:40.047Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured project repository supplies the authors' implementation, method description, experimental reports, and citation for their own paper.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_f099d99639104ceb8b310734bb331a9b",
+        "factId": "fact_2060b17f2bb048c6aca98a578b57f7f2",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "LoRA: Low-Rank Adaptation of Large Language Models describes adaptation through learning pairs of rank-decomposition matrices while freezing the original weights.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "method",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Learn pairs of rank-decomposition matrices while freezing the original weights.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 680,
+            "end": 812,
+            "quote": "LoRA reduces the number of trainable parameters by learning pairs of rank-decompostion matrices while freezing the original weights.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.788Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "23bccc1097bc25ca977f150bdb0078b4ab9d9a72a4ef37473a5529bf5536254e"
+      },
+      {
+        "id": "revision_1597f51b94a844b990004ff80dc782f4",
+        "factId": "fact_fff41ece9f454317b9ac0507ad544582",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models reports that LoRA reduces the number of trainable parameters.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Reduces the number of trainable parameters.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 680,
+            "end": 812,
+            "quote": "LoRA reduces the number of trainable parameters by learning pairs of rank-decompostion matrices while freezing the original weights.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.790Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "3fedb3604c732f2a0e4e1951bb3b3eebe9da6d3b868d3e49233a796541092c26"
+      },
+      {
+        "id": "revision_492da64ca0804c42b12654e54f333102",
+        "factId": "fact_80418822252c4cf08f815323329bc56d",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models reports that LoRA reduces storage requirements for large language models adapted to specific tasks.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Reduces storage requirements for large language models adapted to specific tasks.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 680,
+            "end": 1006,
+            "quote": "LoRA reduces the number of trainable parameters by learning pairs of rank-decompostion matrices while freezing the original weights. This vastly reduces the storage requirement for large language models adapted to specific tasks and enables efficient task-switching during deployment all without introducing inference latency.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.790Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "67ec208cf358320eed524f41792da404406f65ad10cf9d34ded91f8639d3c629"
+      },
+      {
+        "id": "revision_b6024b21d6cd40ac97bf254ba23e239b",
+        "factId": "fact_fca467e49b2e4cc7a91f9bfb16692559",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository credits Edward J. Hu as an author of LoRA: Low-Rank Adaptation of Large Language Models.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_93f46169f7584011989dddf1d6ba9ab8"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 245,
+            "end": 453,
+            "quote": "See our paper for a detailed description of LoRA. LoRA: Low-Rank Adaptation of Large Language Models Edward J. Hu*, Yelong Shen*, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.790Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "ef5fe6b74f216e3c7614bf64c37a8bdf05115ed55be3b1f987ed001669652ae3"
+      },
+      {
+        "id": "revision_4c804eeddcf34f76976dcdb9bf435b72",
+        "factId": "fact_02b5d25cc7754547b717508331f42d5c",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository credits Yelong Shen as an author of LoRA: Low-Rank Adaptation of Large Language Models.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_fa36516b321d48a6b63a5c0474c32647"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 245,
+            "end": 453,
+            "quote": "See our paper for a detailed description of LoRA. LoRA: Low-Rank Adaptation of Large Language Models Edward J. Hu*, Yelong Shen*, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.790Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "61fa2cf804496609fce9227ef1c807009e7e6e112ad52b22dd346e454781ceab"
+      },
+      {
+        "id": "revision_8aa1eded1ab040bba96dbd54e50921b7",
+        "factId": "fact_b920a00d4eff4088b2c173437f0f7494",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository credits Phillip Wallis as an author of LoRA: Low-Rank Adaptation of Large Language Models.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_11bc18096f2c404386279218f571a264"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 245,
+            "end": 453,
+            "quote": "See our paper for a detailed description of LoRA. LoRA: Low-Rank Adaptation of Large Language Models Edward J. Hu*, Yelong Shen*, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.790Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "a27cd4c9534726616d123bde2f1145229afebacf6c688dacf1ee14f8d029c826"
+      },
+      {
+        "id": "revision_844513d7b5324e488ed2ca326f367e1a",
+        "factId": "fact_6d5da810876d4c648f95add962f932b8",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository credits Zeyuan Allen-Zhu as an author of LoRA: Low-Rank Adaptation of Large Language Models.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_a067bfe2caac47b39f6b240edd528819"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 245,
+            "end": 453,
+            "quote": "See our paper for a detailed description of LoRA. LoRA: Low-Rank Adaptation of Large Language Models Edward J. Hu*, Yelong Shen*, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.790Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "f9d1ca59f479311f19457266a257348df6a48029e66e9a0571e8eabffab01a4c"
+      },
+      {
+        "id": "revision_9fac5543f18b4d2f950f352ea5ccfa05",
+        "factId": "fact_4e85d20ecbdf468c97c6332c359e9ed5",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository credits Yuanzhi Li as an author of LoRA: Low-Rank Adaptation of Large Language Models.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_70653b3ac0ea46bf8d02bdf3e350ab52"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 245,
+            "end": 453,
+            "quote": "See our paper for a detailed description of LoRA. LoRA: Low-Rank Adaptation of Large Language Models Edward J. Hu*, Yelong Shen*, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.791Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "9244dadfcce4960f08f99634692309f08fa2a1652a8d5dc4b6394ca60b5fbef6"
+      },
+      {
+        "id": "revision_9f10364eadab41239e4fec0788bf9b07",
+        "factId": "fact_bf5e5626899a43ea8903c0a7c1eef649",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository credits Shean Wang as an author of LoRA: Low-Rank Adaptation of Large Language Models.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_1274dcc39bc64fc9aef96f9458092a66"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 245,
+            "end": 453,
+            "quote": "See our paper for a detailed description of LoRA. LoRA: Low-Rank Adaptation of Large Language Models Edward J. Hu*, Yelong Shen*, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.791Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "b0db4a9787653a86e7a6ab8b4055442e3d8f18d300f66b7ccf702d9420d31412"
+      },
+      {
+        "id": "revision_8e2105de261b4e29b2098ca844f203b9",
+        "factId": "fact_a2046baa9dc84022b7f575b33fea484a",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository credits Lu Wang as an author of LoRA: Low-Rank Adaptation of Large Language Models.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_6af967b92fef401f93c9040a8adca305"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 245,
+            "end": 453,
+            "quote": "See our paper for a detailed description of LoRA. LoRA: Low-Rank Adaptation of Large Language Models Edward J. Hu*, Yelong Shen*, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.791Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "ea830dfc7b1f24d517e669e7771bbbc86c2ab82220fa903a5492e2727e6574f3"
+      },
+      {
+        "id": "revision_b72a24e23ba14e23b7fbac09ebfb4cda",
+        "factId": "fact_cb107b6d0f344cb1921ddccaa23a7091",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository credits Weizhu Chen as an author of LoRA: Low-Rank Adaptation of Large Language Models.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_589a6ab62b154640918b9c840e85b536"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 245,
+            "end": 453,
+            "quote": "See our paper for a detailed description of LoRA. LoRA: Low-Rank Adaptation of Large Language Models Edward J. Hu*, Yelong Shen*, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.791Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "9ad2751c6b3536b049d3afbd0f344232ecd8bf637099a9e62eb516f34a623d89"
+      },
+      {
+        "id": "revision_c2db54bec7454efab2ed6e7a366143ff",
+        "factId": "fact_df8ec96da8994a3ab4724e92e387138a",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository lists LoRA: Low-Rank Adaptation of Large Language Models as a 2022 International Conference on Learning Representations publication.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          },
+          {
+            "role": "property",
+            "value": "publication_venue",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "International Conference on Learning Representations",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository citation",
+        "time": {
+          "start": "2022",
+          "end": "2022",
+          "precision": "year",
+          "basis": "The repository citation specifies year={2022}."
+        },
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 8745,
+            "end": 9110,
+            "quote": "Citation @inproceedings{ hu2022lora, title={Lo{RA}: Low-Rank Adaptation of Large Language Models}, author={Edward J Hu and Yelong Shen and Phillip Wallis and Zeyuan Allen-Zhu and Yuanzhi Li and Shean Wang and Lu Wang and Weizhu Chen}, booktitle={International Conference on Learning Representations}, year={2022}, url={https://openreview.net/forum?id=nZeVKeeFYf9} }",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.791Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "7aed704674b068a0dd3880f5620c8726624af3cdbcddb13cf2f6766c42d0c648"
+      },
+      {
+        "id": "revision_93f574c7d44b4e929da33289912549ae",
+        "factId": "fact_6d6b7c84dcf94affbfe7278225faee5f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models says its examples focus on adapting only the query and value projections in a Transformer.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "The examples focus on adapting only the query and value projections in a Transformer.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 5631,
+            "end": 5811,
+            "quote": "While we focus on a simple yet effect setup, namely adapting only the q and v projection in a Transformer, in our examples, LoRA can be apply to any subsets of pre-trained weights.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.791Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "dc564fac5fa476740cdab41bbdccd5ed84e2d6dcc0c04390926a8760a02e15bd"
+      },
+      {
+        "id": "revision_27c8be4a98804879a394bc7756dd5449",
+        "factId": "fact_e2c4960ff4df4722a4438825748c0966",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models states that LoRA can be applied to any subset of pretrained weights.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Can be applied to any subset of pretrained weights.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 5631,
+            "end": 5811,
+            "quote": "While we focus on a simple yet effect setup, namely adapting only the q and v projection in a Transformer, in our examples, LoRA can be apply to any subsets of pre-trained weights.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.791Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "c78c9d467c0db802fdf27356e1ff54d957309e57dddc1368a1545f195432e131"
+      },
+      {
+        "id": "revision_38be0020fc224538b53f535fb4421e0c",
+        "factId": "fact_63369fa338364ef89e32ad464cb1686f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models suggests exploring embedding adaptation by replacing the standard embedding layer with its LoRA counterpart.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Explore embedding adaptation by replacing nn.Embedding with lora.Embedding.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "proposed",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 5812,
+            "end": 5980,
+            "quote": "We encourage you to explore different configurations, such as adapting the embedding layer by replacing nn.Embedding with lora.Embedding and/or adapting the MLP layers.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.791Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "2cc6fa7567f4a7b4ad99eb9478e23ef1ef88c15d65b1a5503d3b945b10be908f"
+      },
+      {
+        "id": "revision_5e160e2953354843800d982b62828c93",
+        "factId": "fact_d00ab589d1394af49f48507be8ceed03",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models suggests exploring adaptation of multilayer perceptron layers.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Explore adaptation of multilayer perceptron layers.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "proposed",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 5812,
+            "end": 5980,
+            "quote": "We encourage you to explore different configurations, such as adapting the embedding layer by replacing nn.Embedding with lora.Embedding and/or adapting the MLP layers.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.791Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "abcd57c0b05efbb7d8fd99cdda0508f9e24127565012d4201d77b4c809e88ef1"
+      },
+      {
+        "id": "revision_691b37a4985c4290965a0f25e08c2068",
+        "factId": "fact_7ff053423e044cdb926d35805f00e7f5",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models considers it very likely that the optimal LoRA configuration varies across model architectures and tasks.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "The optimal configuration is considered very likely to vary across model architectures and tasks.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 5812,
+            "end": 6080,
+            "quote": "We encourage you to explore different configurations, such as adapting the embedding layer by replacing nn.Embedding with lora.Embedding and/or adapting the MLP layers. It's very likely that the optimal configuration varies for different model architectures and tasks.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The source expresses an expectation rather than a demonstrated universal result."
+        ],
+        "createdAt": "2026-10-05T20:43:49.792Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "e4453d64e84abcc87ecd2970fc7ae34485de7efa498d2e45fb2f9142818f79cf"
+      },
+      {
+        "id": "revision_96791a69182641b39bef7ea9200529f3",
+        "factId": "fact_a1af22b45b454faabeb0edfedc574872",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models provides the source code for the Python package loralib.",
+        "predicate": "related_to",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 0,
+            "end": 294,
+            "quote": "LoRA: Low-Rank Adaptation of Large Language Models This repo contains the source code of the Python package loralib and several examples of how to integrate it with PyTorch models, such as those in Hugging Face. We only support PyTorch for now. See our paper for a detailed description of LoRA.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.792Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "0566769591177e8f6fd7ad9a1ea724eb28d1b67cc278e8450223a239f3672179"
+      },
+      {
+        "id": "revision_55088da17c964dee8f4ef1ec9f2c094f",
+        "factId": "fact_fddb23c685464c8b8d4f7b197efbcfce",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models says loralib supports only PyTorch for now.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Supports only PyTorch for now.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 51,
+            "end": 244,
+            "quote": "This repo contains the source code of the Python package loralib and several examples of how to integrate it with PyTorch models, such as those in Hugging Face. We only support PyTorch for now.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.792Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "697a6718f3130b7b218107b77b06e8cb5d8e611509fe22aadc1ce059711b33ca"
+      },
+      {
+        "id": "revision_9b910ae597384a809a96a309423c301e",
+        "factId": "fact_52daeb8d8f15480caf58607fe01b979b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models says loralib provides adapted linear layers.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Provides adapted counterparts to nn.Linear.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 4187,
+            "end": 4346,
+            "quote": "You can choose to adapt some layers by replacing them with counterparts implemented in loralib. We only support nn.Linear, nn.Embedding, and nn.Conv2d for now.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.792Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "7eaed23049b61273e0fcd58790c2c8e4c7b6bb29e06dd68b00cec20109383de6"
+      },
+      {
+        "id": "revision_3ba61532f13f4b83985c4c603ecec19c",
+        "factId": "fact_fbec5f275db742b283655e9cee142045",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models says loralib provides adapted embedding layers.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Provides adapted counterparts to nn.Embedding.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 4187,
+            "end": 4346,
+            "quote": "You can choose to adapt some layers by replacing them with counterparts implemented in loralib. We only support nn.Linear, nn.Embedding, and nn.Conv2d for now.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.792Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "ebb563829db04ce15864fd8c3f53d445a55019ead03f2d608176dbfa9f79f173"
+      },
+      {
+        "id": "revision_ff2556082244408cbef6b68868ef2fc8",
+        "factId": "fact_cf2d35a1bebc425eb58b91493e7551ca",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models says loralib provides adapted two-dimensional convolution layers.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Provides adapted counterparts to nn.Conv2d.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 4187,
+            "end": 4346,
+            "quote": "You can choose to adapt some layers by replacing them with counterparts implemented in loralib. We only support nn.Linear, nn.Embedding, and nn.Conv2d for now.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.792Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "222d1e7e7ada6e7d3932097efa9d3cb413e9fd9568a42695e98dd224394ef1ec"
+      },
+      {
+        "id": "revision_b0faa040f3254e9c99a43ac7dc6f63a5",
+        "factId": "fact_29fe6bec7abf472f93cd660291e17dec",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository for LoRA: Low-Rank Adaptation of Large Language Models says loralib provides MergedLinear for a single linear layer representing multiple projections, such as combined attention query, key, and value projections.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          },
+          {
+            "role": "property",
+            "value": "implementation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Provides MergedLinear for a single linear layer representing multiple projections, including combined attention query, key, and value projections.",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 4347,
+            "end": 4542,
+            "quote": "We also support a MergedLinear for cases where a single nn.Linear represents more than one layers, such as in some implementations of the attention qkv projection (see Additional Notes for more).",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 6081,
+            "end": 6355,
+            "quote": "Some Transformer implementation uses a single nn.Linear for the projection matrices for query, key, and value. If one wishes to constrain the rank of the updates to the individual matrices, one has to either break it up into three separate matrices or use lora.MergedLinear.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:43:49.792Z",
+        "extractionJobId": "5cc987d2-9d4c-4634-941c-a5becf56615f",
+        "digest": "8f664fa77cc2d1cf5aa765f2056ffca6431e615f7e426f1790757970af3e18bd"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_f099d99639104ceb8b310734bb331a9b",
+        "outcome": "unsupported",
+        "reason": "The quote supports the technique's learning rank-decomposition matrices while freezing original weights. However, the sentence asserts that the paper describes this mechanism, whereas the schematic assertion assigns a method property to the technique and only lists the paper as a participant. Those are different relationships, and the quote is repository prose, not a passage from the paper.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_1597f51b94a844b990004ff80dc782f4",
+        "outcome": "supported",
+        "reason": "The authors' repository is primary evidence for its own method description and explicitly says LoRA reduces the number of trainable parameters. The sentence and capability value preserve this qualitative assertion with repository attribution, without converting it into an independently established numerical result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_492da64ca0804c42b12654e54f333102",
+        "outcome": "supported",
+        "reason": "The quoted repository description explicitly claims reduced storage requirements for large language models adapted to specific tasks. Both the sentence and structured value retain that scope and report the repository's claim rather than independently endorsing a measured reduction.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_b6024b21d6cd40ac97bf254ba23e239b",
+        "outcome": "supported",
+        "reason": "The exact quoted paper heading and author list credit Edward J. Hu. The person-to-paper authored relationship and repository attribution match the sentence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_4c804eeddcf34f76976dcdb9bf435b72",
+        "outcome": "supported",
+        "reason": "The exact quoted paper heading and author list credit Yelong Shen. The structured authored relationship preserves that attributed credit.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_8aa1eded1ab040bba96dbd54e50921b7",
+        "outcome": "supported",
+        "reason": "The quoted author list explicitly includes Phillip Wallis for the identified paper, supporting the sentence and its attributed authored relationship.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_844513d7b5324e488ed2ca326f367e1a",
+        "outcome": "supported",
+        "reason": "The quoted author list explicitly credits Zeyuan Allen-Zhu for the identified paper. The statement, person identity, paper identity, and reported authorship agree.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_9fac5543f18b4d2f950f352ea5ccfa05",
+        "outcome": "supported",
+        "reason": "Yuanzhi Li appears in the quoted author list beneath the paper title. This supports the attributed person-to-paper authored assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_9f10364eadab41239e4fec0788bf9b07",
+        "outcome": "supported",
+        "reason": "The quoted paper author list names Shean Wang exactly. The sentence and schematic fields express the same repository-attributed author credit.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_8e2105de261b4e29b2098ca844f203b9",
+        "outcome": "supported",
+        "reason": "The quoted paper author list explicitly names Lu Wang, supporting the stated credit and the corresponding authored relationship without identity inference.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_b72a24e23ba14e23b7fbac09ebfb4cda",
+        "outcome": "supported",
+        "reason": "The quoted author list credits Weizhu Chen for the identified paper. The structured relationship and reported attribution match the sentence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_c2db54bec7454efab2ed6e7a366143ff",
+        "outcome": "supported",
+        "reason": "The repository's exact BibTeX citation supplies the paper title, International Conference on Learning Representations venue, and year 2022. The publication-venue property and year-precision time bounds match the attributed sentence without inventing a more precise publication date.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_93f574c7d44b4e929da33289912549ae",
+        "outcome": "supported",
+        "reason": "The quoted Additional Notes explicitly limit the examples' focus to adapting q and v projections in a Transformer. The captured context identifies query, key, and value projections, and both representations preserve the examples-only scope and repository attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_27c8be4a98804879a394bc7756dd5449",
+        "outcome": "supported",
+        "reason": "The quote explicitly states that LoRA can be applied to any subset of pretrained weights. The sentence and capability value retain the possibility wording and attribute this general applicability claim to the repository.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_38be0020fc224538b53f535fb4421e0c",
+        "outcome": "supported",
+        "reason": "The quote encourages exploring embedding adaptation by replacing nn.Embedding with lora.Embedding. In the captured PyTorch implementation context, the sentence's standard embedding layer and LoRA counterpart express the same replacement, and proposed modality preserves the recommendation rather than claiming an experimental result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_5e160e2953354843800d982b62828c93",
+        "outcome": "supported",
+        "reason": "The quote expressly encourages exploring adaptation of MLP layers. The sentence and structured value express that same proposed implementation choice, not demonstrated superiority or an existing example configuration.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_691b37a4985c4290965a0f25e08c2068",
+        "outcome": "unsupported",
+        "reason": "The quote supports the authors' qualified expectation that optimal configurations vary across architectures and tasks, and the value preserves that expectation. However, the property field additionally classifies it as a limitation, which neither the sentence nor the quoted source asserts. The whole schematic assertion therefore does not precisely match the sentence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_96791a69182641b39bef7ea9200529f3",
+        "outcome": "unsupported",
+        "reason": "The quote supports a repository containing source code for a Python package. The fields instead encode only an unspecified related_to relationship between a paper and a product. They do not encode the repository as provider, source-code provision, or Python-package qualification, so they cannot render the statement's assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_55088da17c964dee8f4ef1ec9f2c094f",
+        "outcome": "supported",
+        "reason": "Immediately after describing loralib and its PyTorch integration examples, the repository states 'We only support PyTorch for now.' The sentence and implementation value preserve both exclusivity and the source-relative 'for now' qualification.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_9b910ae597384a809a96a309423c301e",
+        "outcome": "supported",
+        "reason": "The quote says layers can be replaced with counterparts implemented in loralib and explicitly lists nn.Linear. The sentence's adapted linear layers match the structured implementation value in this PyTorch context.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_3ba61532f13f4b83985c4c603ecec19c",
+        "outcome": "supported",
+        "reason": "The quoted supported-layer list includes nn.Embedding and describes loralib counterparts used for adaptation. This supports the attributed adapted-embedding implementation assertion in both representations.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_ff2556082244408cbef6b68868ef2fc8",
+        "outcome": "supported",
+        "reason": "The quoted supported-layer list includes nn.Conv2d as a layer with a loralib adaptation counterpart. In the captured PyTorch context, the sentence's two-dimensional convolution layers and structured value express the same implementation support.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      },
+      {
+        "revisionId": "revision_b0faa040f3254e9c99a43ac7dc6f63a5",
+        "outcome": "supported",
+        "reason": "The first quote directly supports MergedLinear for a single linear layer representing multiple projections; the second identifies combined query, key, and value projections. The sentence and structured value preserve this supported use case without adding claims about measured performance or unconditional rank constraints.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:44:54.858Z"
+      }
+    ],
+    "approvals": []
+  }
+}

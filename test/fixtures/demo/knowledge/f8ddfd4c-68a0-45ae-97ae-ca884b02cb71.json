@@ -1,0 +1,722 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_1f5aa2537a4b44bbacddc6fcd3c0c899",
+        "label": "NVIDIA",
+        "type": "organization",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_e667105517db4fda9e58032cc1dd375f",
+        "label": "NVIDIA Hopper architecture",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_f2d5851eaf504cc58866aeb8431c45f9",
+        "label": "NVIDIA H100",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_6dce4d0d0d1b4150839177e64ef9047b",
+        "label": "Fourth-generation NVIDIA NVLink",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_c2250a34446f4f4797bab4a37bc608f0",
+        "label": "NVIDIA DGX H100",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_1093e286ead648c8a60eff2a0f9b5547",
+        "label": "Grace Hopper Superchip",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_917e4fcd76f54128a16b2bf9c7fb7e57",
+        "label": "H100 SXM",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_5d2c9049e94f45548d76cdc74e7997e6",
+        "label": "NVIDIA HGX H100",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_0d10ca8dfcf2416889b2cb74a3ad8683",
+        "label": "NVIDIA NVSwitch",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_8e09207e43394763bf094df8c2920727",
+        "label": "NVIDIA Grace CPU",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_19d37144a02a459fa5733f11a74df7e4",
+        "label": "NVIDIA NVLink-C2C",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_6f0b2bf5208449eaafb0c5deadfa8fb6",
+        "label": "Grace Hopper",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+        "sourceId": "source_f03b0c4d419328171dec5d03850240878e5b4f37c761b4bb869ba23e2f1608de",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-hopper-architecture-the-next-generation-of-accelerated-computing",
+        "title": "NVIDIA Announces Hopper Architecture, the Next Generation of Accelerated Computing | NVIDIA Newsroom",
+        "sha256": "a0a7ad1ede710c56c7fd747f421f623382987cf0f084372b0d9705bbd47f6328",
+        "retrievedAt": "2026-10-05T18:19:19.880Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "This is NVIDIA's own announcement of Hopper and H100, providing firsthand evidence of its announcements and stated specifications, expectations, and performance claims, not independent verification.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_a347c44ea5c84d648262549fed36b47e",
+        "factId": "fact_e71ddd9f26b04ec08484b0122e9362c7",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA announced NVIDIA H100 on March 22, 2022.",
+        "predicate": "introduced",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_1f5aa2537a4b44bbacddc6fcd3c0c899"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "time": {
+          "start": "2022-03-22",
+          "end": "2022-03-22",
+          "precision": "day",
+          "basis": "The dated release says NVIDIA announced its platform today and also announced H100."
+        },
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 187,
+            "end": 428,
+            "quote": "March 22, 2022 GTC—To power the next wave of AI data centers, NVIDIA today announced its next-generation accelerated computing platform with NVIDIA Hopper™ architecture, delivering an order of magnitude performance leap over its predecessor.",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 577,
+            "end": 684,
+            "quote": "The company also announced its first Hopper-based GPU, the NVIDIA H100, packed with 80 billion transistors.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.640Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "d36b784a5be1348229bdc6bb1f21a4895dbf8c76c92d81b91c602cb82edc05bd"
+      },
+      {
+        "id": "revision_5534a912dc9e4cb2b9a83105f520d2f8",
+        "factId": "fact_cd34143a0dcf43b683c12ba976d526d1",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 uses the NVIDIA Hopper architecture.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_e667105517db4fda9e58032cc1dd375f"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 577,
+            "end": 684,
+            "quote": "The company also announced its first Hopper-based GPU, the NVIDIA H100, packed with 80 billion transistors.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.641Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "185cbb92b80f511f688a03c08aca945953f2978eb2e59a678f7ed7fca6e11e39"
+      },
+      {
+        "id": "revision_67763ec2d85e49cb90c1bae83710aecf",
+        "factId": "fact_ec719f7da64843b5bee9108ac7537196",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that the NVIDIA Hopper architecture is named after Grace Hopper.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_e667105517db4fda9e58032cc1dd375f"
+          },
+          {
+            "role": "property",
+            "value": "named_after",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Grace Hopper",
+            "valueType": "text"
+          },
+          {
+            "role": "participant",
+            "entityId": "entity_6f0b2bf5208449eaafb0c5deadfa8fb6"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 429,
+            "end": 576,
+            "quote": "Named for Grace Hopper, a pioneering U.S. computer scientist, the new architecture succeeds the NVIDIA Ampere architecture, launched two years ago.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.641Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "9b14adeddf008448451cf98032a35be506b096528b54f7adf16b9035ce23ad31"
+      },
+      {
+        "id": "revision_7388c7d808884e28a4ba903470bee957",
+        "factId": "fact_0fe37cbe36f5476cb76b98630ae549a1",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA identifies Grace Hopper as a U.S. computer scientist.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_6f0b2bf5208449eaafb0c5deadfa8fb6"
+          },
+          {
+            "role": "property",
+            "value": "definition",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "U.S. computer scientist",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 429,
+            "end": 576,
+            "quote": "Named for Grace Hopper, a pioneering U.S. computer scientist, the new architecture succeeds the NVIDIA Ampere architecture, launched two years ago.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.641Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "e4abbdbffa000ea428e93c86163303524608f6929a9f50a582e60a5e599e893b"
+      },
+      {
+        "id": "revision_4e4bb0759f454bf897656f558fc3a0a2",
+        "factId": "fact_aa1fc369033e41b89b80ebeca1dee288",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA describes DGX H100 as using NVIDIA H100 GPUs.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_c2250a34446f4f4797bab4a37bc608f0"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 4791,
+            "end": 5078,
+            "quote": "NVIDIA's fourth-generation DGX™ system, DGX H100, features eight H100 GPUs to deliver 32 petaflops of AI performance at new FP8 precision, providing the scale to meet the massive compute requirements of large language models, recommender systems, healthcare research and climate science.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.641Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "03122c4250f65e75c032d421b1579fcea3503623d03110ad3e412942696a89e7"
+      },
+      {
+        "id": "revision_fc3e3c64d5ef4029948612d9d4aa3be1",
+        "factId": "fact_98e5b215eac24dd483f04a08ae669e2a",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that DGX H100 uses fourth-generation NVLink to connect its GPUs.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_c2250a34446f4f4797bab4a37bc608f0"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_6dce4d0d0d1b4150839177e64ef9047b"
+          },
+          {
+            "role": "conditions",
+            "value": "GPU connectivity",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 5079,
+            "end": 5219,
+            "quote": "Every GPU in DGX H100 systems is connected by fourth-generation NVLink, providing 900GB/s connectivity, 1.5x more than the prior generation.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.641Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "8c1ab1adb826623e6253edabda59fa1a1bbd2ab173c9bebcaa369dc468f8bf5e"
+      },
+      {
+        "id": "revision_96972db3c7d3418cb28022bed58d33b0",
+        "factId": "fact_82d1ab4e194640c8bfcf4c6586eceeec",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that DGX H100 uses NVSwitch to connect its H100 GPUs over NVLink.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_c2250a34446f4f4797bab4a37bc608f0"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_0d10ca8dfcf2416889b2cb74a3ad8683"
+          },
+          {
+            "role": "conditions",
+            "value": "Connecting H100 GPUs over NVLink",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 5079,
+            "end": 5288,
+            "quote": "Every GPU in DGX H100 systems is connected by fourth-generation NVLink, providing 900GB/s connectivity, 1.5x more than the prior generation. NVSwitch™ enables all eight of the H100 GPUs to connect over NVLink.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.642Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "e34a50b670645252c12f59b2b09f76cfa4e47830c7ba7a896a744fea438e0c7c"
+      },
+      {
+        "id": "revision_aa30c12c1cd94a55bb3ea634e83da2ff",
+        "factId": "fact_57c49a0723574b4ea560a74f83843426",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA announced plans for HGX H100 server boards using H100 SXM GPUs.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_5d2c9049e94f45548d76cdc74e7997e6"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_917e4fcd76f54128a16b2bf9c7fb7e57"
+          },
+          {
+            "role": "conditions",
+            "value": "Announced server-board plans",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 6172,
+            "end": 6374,
+            "quote": "NVIDIA's H100 SXM will be available in HGX™ H100 server boards with four- and eight-way configurations for enterprises with applications scaling to multiple GPUs in a server and across multiple servers.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This is a prospective availability statement, not confirmation of shipment."
+        ],
+        "createdAt": "2026-10-05T21:36:46.642Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "c63b7c19498d6b4650484fd253094333e5dd755deda1790bd492ec20df6d525e"
+      },
+      {
+        "id": "revision_c6c0b73d084140eaa1872836c6ed90c0",
+        "factId": "fact_4a7004cfb2b94f1ca00eb26e28274706",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that the Grace Hopper Superchip uses the NVIDIA Hopper architecture for its GPU.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_1093e286ead648c8a60eff2a0f9b5547"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_e667105517db4fda9e58032cc1dd375f"
+          },
+          {
+            "role": "conditions",
+            "value": "GPU component",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 7046,
+            "end": 7377,
+            "quote": "NVIDIA Hopper architecture-based GPUs can also be paired with NVIDIA Grace™ CPUs with an ultra-fast NVLink-C2C interconnect for over 7x faster communication between the CPU and GPU compared to PCIe 5.0. This combination -- the Grace Hopper Superchip -- is an integrated module designed to serve giant-scale HPC and AI applications.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.642Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "c0f391d95dd92201e2ad959836b51456ca6c15f560cec48325b324e60b0272ae"
+      },
+      {
+        "id": "revision_683a4d4158c0412cae3faa4d7676d8ea",
+        "factId": "fact_e21a18ea2af548488aee34f79ed6c737",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that the Grace Hopper Superchip uses a NVIDIA Grace CPU.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_1093e286ead648c8a60eff2a0f9b5547"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_8e09207e43394763bf094df8c2920727"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 7046,
+            "end": 7377,
+            "quote": "NVIDIA Hopper architecture-based GPUs can also be paired with NVIDIA Grace™ CPUs with an ultra-fast NVLink-C2C interconnect for over 7x faster communication between the CPU and GPU compared to PCIe 5.0. This combination -- the Grace Hopper Superchip -- is an integrated module designed to serve giant-scale HPC and AI applications.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.642Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "fa1ac7b058febaccd51905e424b1f339a83713bd4d62e4166fd093172f854627"
+      },
+      {
+        "id": "revision_cd2f129ce73541f9bf080c7456608777",
+        "factId": "fact_06708f6d1e974ccca88556e41c9da45a",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that the Grace Hopper Superchip uses NVLink-C2C to interconnect its CPU and GPU.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_1093e286ead648c8a60eff2a0f9b5547"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_19d37144a02a459fa5733f11a74df7e4"
+          },
+          {
+            "role": "conditions",
+            "value": "CPU-to-GPU interconnect",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 7046,
+            "end": 7377,
+            "quote": "NVIDIA Hopper architecture-based GPUs can also be paired with NVIDIA Grace™ CPUs with an ultra-fast NVLink-C2C interconnect for over 7x faster communication between the CPU and GPU compared to PCIe 5.0. This combination -- the Grace Hopper Superchip -- is an integrated module designed to serve giant-scale HPC and AI applications.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.642Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "ff5e121fe623915b683d5e897dad4c9c1feafd2ab972f9462d13a80d1bb66897"
+      },
+      {
+        "id": "revision_3bab70afdb8f4ccf8e7c8ded184d59b4",
+        "factId": "fact_d59ea646859b4bb49c18171a747482c3",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA describes the Grace Hopper Superchip as designed for giant-scale HPC and AI applications.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_1093e286ead648c8a60eff2a0f9b5547"
+          },
+          {
+            "role": "property",
+            "value": "purpose",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Giant-scale HPC and AI applications",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 7249,
+            "end": 7377,
+            "quote": "This combination -- the Grace Hopper Superchip -- is an integrated module designed to serve giant-scale HPC and AI applications.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.642Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "d580286ca9a1e7e70d83b435cc0c3283df0478a7e9d9c9f2c34591f231e4bde1"
+      },
+      {
+        "id": "revision_aff971e8dd3346e7bedb4441237ef557",
+        "factId": "fact_d7e5d7d5c5104db898fde6d87f4b4f02",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA describes the Grace Hopper Superchip as an integrated module.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_1093e286ead648c8a60eff2a0f9b5547"
+          },
+          {
+            "role": "property",
+            "value": "form_factor",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Integrated module",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 7249,
+            "end": 7377,
+            "quote": "This combination -- the Grace Hopper Superchip -- is an integrated module designed to serve giant-scale HPC and AI applications.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.643Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "032c382f271309d543b95db896bc5228580c94f5853fc98c32b0c4fa24b45123"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_a347c44ea5c84d648262549fed36b47e",
+        "outcome": "supported",
+        "reason": "NVIDIA's own release is primary evidence of its announcement. Its March 22, 2022 date, 'today announced' context, and 'also announced' H100 passage support the announcement predicate, organization and hardware arguments, and single-day bounds.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      },
+      {
+        "revisionId": "revision_5534a912dc9e4cb2b9a83105f520d2f8",
+        "outcome": "supported",
+        "reason": "The release explicitly calls NVIDIA H100 a Hopper-based GPU. This supports the attributed architecture-use assertion and both entity arguments without importing the separate first-GPU ordinal.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      },
+      {
+        "revisionId": "revision_67763ec2d85e49cb90c1bae83710aecf",
+        "outcome": "supported",
+        "reason": "The quoted 'Named for Grace Hopper' refers to the newly announced Hopper architecture in context. The named_after property, named person participant, and NVIDIA attribution express that same naming assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      },
+      {
+        "revisionId": "revision_7388c7d808884e28a4ba903470bee957",
+        "outcome": "unsupported",
+        "reason": "The source does identify Grace Hopper as a U.S. computer scientist, but the structure encodes this through a generic definition property. That conceals the biographical occupation and national identification relationships rather than schematically expressing them; the sentence does not assert a definition.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      },
+      {
+        "revisionId": "revision_4e4bb0759f454bf897656f558fc3a0a2",
+        "outcome": "supported",
+        "reason": "The quoted statement that DGX H100 'features eight H100 GPUs' directly supports the narrower, NVIDIA-attributed hardware-use relationship. The revision makes no count or performance assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      },
+      {
+        "revisionId": "revision_fc3e3c64d5ef4029948612d9d4aa3be1",
+        "outcome": "supported",
+        "reason": "The release states that every GPU in DGX H100 is connected by fourth-generation NVLink. The subject, interconnect entity, and GPU-connectivity condition match the attributed sentence without claiming the separately reported bandwidth.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      },
+      {
+        "revisionId": "revision_96972db3c7d3418cb28022bed58d33b0",
+        "outcome": "supported",
+        "reason": "The adjacent DGX H100 and NVSwitch sentences establish that NVSwitch enables its H100 GPUs to connect over NVLink. Both the sentence and structured condition retain this connectivity scope and NVIDIA attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      },
+      {
+        "revisionId": "revision_aa30c12c1cd94a55bb3ea634e83da2ff",
+        "outcome": "supported",
+        "reason": "NVIDIA's statement that H100 SXM 'will be available in HGX H100 server boards' supports the announced prospective use relationship. The sentence and 'Announced server-board plans' condition both preserve its planned status rather than asserting shipment or actual availability.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      },
+      {
+        "revisionId": "revision_c6c0b73d084140eaa1872836c6ed90c0",
+        "outcome": "supported",
+        "reason": "The passage identifies the combination of Hopper architecture-based GPUs and Grace CPUs as the Grace Hopper Superchip. This supports the attributed architecture-use assertion specifically for its GPU component, as expressed in both sentence and condition.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      },
+      {
+        "revisionId": "revision_683a4d4158c0412cae3faa4d7676d8ea",
+        "outcome": "supported",
+        "reason": "The quoted passage names Grace CPUs in the combination it calls the Grace Hopper Superchip. It supports the attributed CPU-use relationship without identifying the GPU as H100 or asserting commercial availability.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      },
+      {
+        "revisionId": "revision_cd2f129ce73541f9bf080c7456608777",
+        "outcome": "supported",
+        "reason": "The passage explicitly describes NVLink-C2C as the interconnect for the CPU-GPU combination named Grace Hopper Superchip. The sentence and structured condition match that relationship and omit the separate vendor speed comparison.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      },
+      {
+        "revisionId": "revision_3bab70afdb8f4ccf8e7c8ded184d59b4",
+        "outcome": "supported",
+        "reason": "The source explicitly says the module is 'designed to serve giant-scale HPC and AI applications.' Here the purpose property genuinely represents intended applications, not a concealed performance result, and the sentence preserves NVIDIA attribution and design intent.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      },
+      {
+        "revisionId": "revision_aff971e8dd3346e7bedb4441237ef557",
+        "outcome": "supported",
+        "reason": "NVIDIA directly describes the Grace Hopper Superchip as 'an integrated module.' The form_factor property and its value express exactly that attributed physical-form assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      }
+    ],
+    "approvals": []
+  }
+}

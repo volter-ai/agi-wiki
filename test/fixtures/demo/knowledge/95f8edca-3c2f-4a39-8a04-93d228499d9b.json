@@ -1,0 +1,312 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_695b87e6ab3a473785d7167ecd4accde",
+        "label": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_f2db063cd733454f9286fa53fda4d1fd",
+        "label": "LoRA",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_64ce9db0d4a0400ea344385d60ec735f",
+        "label": "GLUE",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+        "sourceId": "source_2835ff1fe97b6a283adda2be28fafd4bfce40d7a5cf690e5e6ed381a3b7cdaf7",
+        "url": "https://github.com/microsoft/LoRA",
+        "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" · GitHub",
+        "sha256": "c9daba3985ec9c0d75e3264d07a9e51974a6129bc9aad3eec7f7abf650b5a05d",
+        "retrievedAt": "2026-10-05T17:21:40.047Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured project repository supplies the authors' implementation, method description, experimental reports, and citation for their own paper.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_cdcd49f721c840f39b97a0cd03fa5a8b",
+        "factId": "fact_900c794235034932a1aa327dd0fdc073",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository identifies LoRA: Low-Rank Adaptation of Large Language Models as a paper describing LoRA.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_695b87e6ab3a473785d7167ecd4accde"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 245,
+            "end": 453,
+            "quote": "See our paper for a detailed description of LoRA. LoRA: Low-Rank Adaptation of Large Language Models Edward J. Hu*, Yelong Shen*, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:06:47.432Z",
+        "extractionJobId": "95f8edca-3c2f-4a39-8a04-93d228499d9b",
+        "digest": "df13dc7fdac63b31e9ecc274f9aaf3800a85dad494a6e84971b7b9de1e1bbdca"
+      },
+      {
+        "id": "revision_cf2e5559af6f4a6495d4ed497f398f19",
+        "factId": "fact_24b16b23ab0b4cd8b56ca8760523d380",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors report that LoRA achieves results comparable or superior to full fine-tuning on GLUE using RoBERTa base and large and DeBERTa XXL.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Achieves results comparable or superior to full fine-tuning.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "On GLUE using RoBERTa base and large and DeBERTa XXL.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository authors",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 1113,
+            "end": 1343,
+            "quote": "We obtain result comparable or superior to full finetuning on the GLUE benchmark using RoBERTa (Liu et al., 2019) base and large and DeBERTa (He et al., 2020) XXL 1.5B, while only training and storing a fraction of the parameters.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This is the authors' qualitative summary, not independent confirmation or a claim of superiority on every GLUE task."
+        ],
+        "createdAt": "2026-10-05T21:06:47.432Z",
+        "extractionJobId": "95f8edca-3c2f-4a39-8a04-93d228499d9b",
+        "digest": "e467c47abfaccfd07073e2235f514714bcf8467ea72cd90ed7d68e8b23aa7ff0"
+      },
+      {
+        "id": "revision_b2ae2683bc704bfe9bceee1a0d10194a",
+        "factId": "fact_458145e58ddc4ac0806439ef51286214",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors report that LoRA trains only a fraction of the parameters used by full fine-tuning in their GLUE comparison using RoBERTa base and large and DeBERTa XXL.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Trains only a fraction of the parameters used by full fine-tuning.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "In the authors' GLUE comparison using RoBERTa base and large and DeBERTa XXL.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository authors",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 1113,
+            "end": 1343,
+            "quote": "We obtain result comparable or superior to full finetuning on the GLUE benchmark using RoBERTa (Liu et al., 2019) base and large and DeBERTa (He et al., 2020) XXL 1.5B, while only training and storing a fraction of the parameters.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:06:47.432Z",
+        "extractionJobId": "95f8edca-3c2f-4a39-8a04-93d228499d9b",
+        "digest": "c71f2d8d260126cfd1b4776372a2d397350c80733fdbc304d62571094564eef8"
+      },
+      {
+        "id": "revision_e90146bb18b9472eb7990b41317145d4",
+        "factId": "fact_cb0dc72801e14903aca22b263fa00b72",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors report that LoRA stores only a fraction of the parameters used by full fine-tuning in their GLUE comparison using RoBERTa base and large and DeBERTa XXL.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Stores only a fraction of the parameters used by full fine-tuning.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "In the authors' GLUE comparison using RoBERTa base and large and DeBERTa XXL.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository authors",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 1113,
+            "end": 1343,
+            "quote": "We obtain result comparable or superior to full finetuning on the GLUE benchmark using RoBERTa (Liu et al., 2019) base and large and DeBERTa (He et al., 2020) XXL 1.5B, while only training and storing a fraction of the parameters.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:06:47.432Z",
+        "extractionJobId": "95f8edca-3c2f-4a39-8a04-93d228499d9b",
+        "digest": "9720b0f48c584bbe780dfd3ba130c01d68924b7530ad6842c2620c1fb022fad7"
+      },
+      {
+        "id": "revision_2536cee926b64df086903b353cfd4cdf",
+        "factId": "fact_2fc34d7a9691432aa152165584f615e6",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The repository reports evaluating LoRA on GLUE using RoBERTa base and large and DeBERTa XXL against fine-tuning baseline numbers taken from Liu and colleagues in 2019 and He and colleagues in 2020.",
+        "predicate": "evaluated_on",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_64ce9db0d4a0400ea344385d60ec735f"
+          },
+          {
+            "role": "conditions",
+            "value": "Using RoBERTa base and large and DeBERTa XXL against fine-tuning baseline numbers taken from Liu and colleagues in 2019 and He and colleagues in 2020.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The LoRA project repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 1113,
+            "end": 1343,
+            "quote": "We obtain result comparable or superior to full finetuning on the GLUE benchmark using RoBERTa (Liu et al., 2019) base and large and DeBERTa (He et al., 2020) XXL 1.5B, while only training and storing a fraction of the parameters.",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 2057,
+            "end": 2196,
+            "quote": "Fine-tuning numbers are taken from Liu et al. (2019) and He et al. (2020). We include confidence intervals on results from our experiments.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The comparison combines the authors' experiments with previously published baseline numbers; the passage does not establish that all baselines were rerun under identical conditions."
+        ],
+        "createdAt": "2026-10-05T21:06:47.432Z",
+        "extractionJobId": "95f8edca-3c2f-4a39-8a04-93d228499d9b",
+        "digest": "7aea183b7b1a04614ed8501d85c405a23dac711395fc58874d97d499b7643564"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_cdcd49f721c840f39b97a0cd03fa5a8b",
+        "outcome": "supported",
+        "reason": "The repository is primary evidence for the authors' description of their own work. The quoted invitation to consult 'our paper for a detailed description of LoRA,' followed by the paper title, supports the describes predicate, both entity arguments, and repository attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:08:24.167Z"
+      },
+      {
+        "revisionId": "revision_cf2e5559af6f4a6495d4ed497f398f19",
+        "outcome": "unsupported",
+        "reason": "The quotation supports an attributed qualitative summary of experimental performance, not independently established superiority on every task. However, the schematic representation classifies that experimental comparison as a generic capability property and places the actual comparative result in free-text value content. This does not faithfully type the assertion as an experimental comparison under the supplied schematic requirements.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:08:24.167Z"
+      },
+      {
+        "revisionId": "revision_b2ae2683bc704bfe9bceee1a0d10194a",
+        "outcome": "unsupported",
+        "reason": "The authors explicitly report training a fraction of the parameters in this GLUE comparison, and the captured table supplies substantially smaller trainable-parameter counts. Nevertheless, the structured claim uses a generic capability property to represent a comparative experimental resource result. The relationship actually asserted is concealed in the text value rather than faithfully represented by the schematic predicate and property.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:08:24.167Z"
+      },
+      {
+        "revisionId": "revision_e90146bb18b9472eb7990b41317145d4",
+        "outcome": "unsupported",
+        "reason": "The quoted summary reports storing a fraction of the parameters, but the captured context expressly says that the original pretrained checkpoint is still required to use the LoRA checkpoints. Neither the statement nor its conditions restrict the storage comparison to the adaptation checkpoints, leaving a material storage qualification unstated. In addition, the generic capability property does not faithfully type this comparative storage result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:08:24.167Z"
+      },
+      {
+        "revisionId": "revision_2536cee926b64df086903b353cfd4cdf",
+        "outcome": "supported",
+        "reason": "The primary repository reports GLUE experiments using the specified model variants and explicitly identifies Liu et al. (2019) and He et al. (2020) as the sources of fine-tuning numbers. The evaluated_on predicate and conditions express that attributed evaluation and baseline provenance without asserting that the baselines were rerun under identical conditions. The years identify the cited works, not evaluation dates.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:08:24.167Z"
+      }
+    ],
+    "approvals": []
+  }
+}

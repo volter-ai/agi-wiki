@@ -1,0 +1,851 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_f2db063cd733454f9286fa53fda4d1fd",
+        "label": "LoRA",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_cc028381d0e9423abfcf4dd8789cec9c",
+        "label": "LoRA vs Full Fine-tuning: An Illusion of Equivalence",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_cc1b68ac14f44f218800b43ca5b77f7f",
+        "label": "Reece Shuttleworth",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_e4726c6278ca43b891f548c809da3d68",
+        "label": "Jacob Andreas",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_0c11382a441146c09803af717e48af6b",
+        "label": "Antonio Torralba",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_f9a3ed10758d495598c7d9edce6ff803",
+        "label": "Pratyusha Sharma",
+        "type": "person",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_b8d9b65dc78342b6a660f50525a770f2",
+        "label": "Intruder dimensions",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_e811771a319a433d9b76a2b24758526d",
+        "label": "Full fine-tuning",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+        "sourceId": "source_ab11278e89739afa51a0589177ac1d762aa3e066b45fdaac351aff469a54ce52",
+        "url": "https://arxiv.org/abs/2410.21228",
+        "title": "[2410.21228] LoRA vs Full Fine-tuning: An Illusion of Equivalence",
+        "sha256": "cee3d3ddac2c914371478d93625f4fd2e8143a37cd2170330607d015a9b98cde",
+        "retrievedAt": "2026-10-05T17:21:39.126Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured arXiv record contains the authors' abstract reporting their own spectral analysis and interventions, together with authorship and submission history; it is primary evidence of their reported findings, not independent confirmation.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_07d260127aff4bc9b1e838ced301a2b0",
+        "factId": "fact_370bce7c027e4406bcaf124a02ab5bbe",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Reece Shuttleworth is an author of the comparison paper.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_cc1b68ac14f44f218800b43ca5b77f7f"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_cc028381d0e9423abfcf4dd8789cec9c"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 194,
+            "end": 271,
+            "quote": "Authors:Reece Shuttleworth, Jacob Andreas, Antonio Torralba, Pratyusha Sharma",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:09:45.917Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "37ed02fe8cee09208b8ff3dd1005316b3bd2b310b5bb0d47fda95d6c75f1935e"
+      },
+      {
+        "id": "revision_9392b2f1f18b426bbf9ed502e085898f",
+        "factId": "fact_58ab1c6522ca40ebab808d1d76700243",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Jacob Andreas is an author of the comparison paper.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_e4726c6278ca43b891f548c809da3d68"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_cc028381d0e9423abfcf4dd8789cec9c"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 194,
+            "end": 271,
+            "quote": "Authors:Reece Shuttleworth, Jacob Andreas, Antonio Torralba, Pratyusha Sharma",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:09:45.917Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "c2211f8bd20e69ca2e11812e35c851173f1a4d8037b8dd99e8fa8f83b84778b4"
+      },
+      {
+        "id": "revision_5e7e608e22374baeb690028a6adac6e2",
+        "factId": "fact_d705f3bb52c14a70bdb20e35f21c6d7b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Antonio Torralba is an author of the comparison paper.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_0c11382a441146c09803af717e48af6b"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_cc028381d0e9423abfcf4dd8789cec9c"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 194,
+            "end": 271,
+            "quote": "Authors:Reece Shuttleworth, Jacob Andreas, Antonio Torralba, Pratyusha Sharma",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:09:45.917Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "9ee38f4039596ba3690f52fe073cbf21f5eae906a9ee01c68bbd0453493bd947"
+      },
+      {
+        "id": "revision_2508e422c3a743ef89daeb406ab63c34",
+        "factId": "fact_e77c25ccd9384b60a7290883231defaa",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Pratyusha Sharma is an author of the comparison paper.",
+        "predicate": "authored",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f9a3ed10758d495598c7d9edce6ff803"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_cc028381d0e9423abfcf4dd8789cec9c"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 194,
+            "end": 271,
+            "quote": "Authors:Reece Shuttleworth, Jacob Andreas, Antonio Torralba, Pratyusha Sharma",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:09:45.917Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "3367bdb58efde25562930b2dacd19764aee47d845a21b8d0eb416290c59bb939"
+      },
+      {
+        "id": "revision_7d0a7afb3bf342349833d7520ac49020",
+        "factId": "fact_2bd5705e6bd14b45a0eb7312c9eb0a44",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The comparison paper was first submitted to arXiv on October 28, 2024.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_cc028381d0e9423abfcf4dd8789cec9c"
+          },
+          {
+            "role": "property",
+            "value": "publication_status",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "First submitted to arXiv as version 1.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "time": {
+          "start": "2024-10-28",
+          "end": "2024-10-28",
+          "precision": "day",
+          "basis": "The arXiv record explicitly dates the initial submission."
+        },
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 58,
+            "end": 134,
+            "quote": "[Submitted on 28 Oct 2024 (v1), last revised 22 Oct 2025 (this version, v3)]",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:09:45.918Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "edc05eed2cbe1a0246548ffcc6733ef2dad9767c0601daea2ae05fadd55cae63"
+      },
+      {
+        "id": "revision_7d7c5307486d4fa4b2ffb02885cc5c9c",
+        "factId": "fact_4516bdd250484c178fd54b069a51ba85",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The captured arXiv record lists the comparison paper's latest revision as version 3, dated October 22, 2025.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_cc028381d0e9423abfcf4dd8789cec9c"
+          },
+          {
+            "role": "property",
+            "value": "publication_status",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Latest revision in the captured arXiv record is version 3.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "time": {
+          "start": "2025-10-22",
+          "end": "2025-10-22",
+          "precision": "day",
+          "basis": "The arXiv record explicitly dates its latest revision."
+        },
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 58,
+            "end": 134,
+            "quote": "[Submitted on 28 Oct 2024 (v1), last revised 22 Oct 2025 (this version, v3)]",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:09:45.918Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "7407fdea27b54d5868302184169239a3c9c60c852bf965e459b140f8efce7a26"
+      },
+      {
+        "id": "revision_b798c8a8244d496aa004eb25b45fb81e",
+        "factId": "fact_543351cd014847418b990f43e8ecbe30",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The comparison paper investigates whether LoRA and full fine-tuning learn equivalent solutions.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_cc028381d0e9423abfcf4dd8789cec9c"
+          },
+          {
+            "role": "property",
+            "value": "purpose",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Investigate whether LoRA and full fine-tuning learn equivalent solutions.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Reece Shuttleworth and coauthors",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 686,
+            "end": 896,
+            "quote": "But, \\emph{are their learned solutions really equivalent?} We study how LoRA and full-finetuning change pre-trained models by analyzing the model's weight matrices through the lens of their spectral properties.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:09:45.918Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "6d9ddc97ea3a20325565d58ebd8749eff5acbb74b931255fe1f07c94a18bbc11"
+      },
+      {
+        "id": "revision_e36ab210bc3549a5b20b1b83335a4fb7",
+        "factId": "fact_8fd075c009ce4a859215414a8e120b18",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The comparison paper describes LoRA through an analysis of changes in pretrained models' weight-matrix spectral properties.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_cc028381d0e9423abfcf4dd8789cec9c"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "conditions",
+            "value": "Analysis of changes in pretrained models' weight-matrix spectral properties, comparing LoRA with full fine-tuning.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Reece Shuttleworth and coauthors",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 745,
+            "end": 896,
+            "quote": "We study how LoRA and full-finetuning change pre-trained models by analyzing the model's weight matrices through the lens of their spectral properties.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:09:45.918Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "550e6496c95e3268c047ce2058f1751d346e208e74dc581486717f8223d8597c"
+      },
+      {
+        "id": "revision_b03471cfe849422db703947b4a163952",
+        "factId": "fact_005b5506e6b24d8a8a3fe68725cead6d",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors define intruder dimensions as new, high-ranking singular vectors in weight matrices trained with LoRA.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_b8d9b65dc78342b6a660f50525a770f2"
+          },
+          {
+            "role": "property",
+            "value": "definition",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "New, high-ranking singular vectors in weight matrices trained with LoRA.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Reece Shuttleworth and coauthors",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 897,
+            "end": 1194,
+            "quote": "We find that LoRA and full fine-tuning yield weight matrices whose singular value decompositions exhibit very different structure: weight matrices trained with LoRA have new, high-ranking singular vectors, which we call \\emph{intruder dimensions}, while those trained with full fine-tuning do not.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:09:45.918Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "b6364d18951b13f768beb9e4446307391bfaadc095aee1e121b9f9cb02ae345c"
+      },
+      {
+        "id": "revision_fa810630f16748e98a50208b20a6f128",
+        "factId": "fact_2275c013df4849ffa80c45fc5bd7763b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors report that LoRA-trained weight matrices exhibit intruder dimensions in their comparison.",
+        "predicate": "related_to",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_b8d9b65dc78342b6a660f50525a770f2"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Reece Shuttleworth and coauthors",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 897,
+            "end": 1194,
+            "quote": "We find that LoRA and full fine-tuning yield weight matrices whose singular value decompositions exhibit very different structure: weight matrices trained with LoRA have new, high-ranking singular vectors, which we call \\emph{intruder dimensions}, while those trained with full fine-tuning do not.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The abstract does not specify the models, datasets, or LoRA configurations used in this comparison."
+        ],
+        "createdAt": "2026-10-05T21:09:45.918Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "d71dd10272f672757679f05778dcb3d57b5403685bf418dc26c2275d8833173e"
+      },
+      {
+        "id": "revision_ef7cbba028e243debc101c28403ba162",
+        "factId": "fact_418259f2ecfd49b3b11f9d5dd0449eff",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The comparison paper describes full fine-tuning as a comparator to LoRA.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_cc028381d0e9423abfcf4dd8789cec9c"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_e811771a319a433d9b76a2b24758526d"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Reece Shuttleworth and coauthors",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 745,
+            "end": 896,
+            "quote": "We study how LoRA and full-finetuning change pre-trained models by analyzing the model's weight matrices through the lens of their spectral properties.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:09:45.919Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "e645907499d6ff2d9ccf38a8f095bd18cd7ca86bb88f73804224e7be7b41bdf1"
+      },
+      {
+        "id": "revision_96de1dd2bb244074bbd8462cfcd95981",
+        "factId": "fact_d5375930501b4e7ba54a89a48cf729b6",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors report that their full-fine-tuning comparisons do not exhibit the new, high-ranking singular vectors termed intruder dimensions.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_e811771a319a433d9b76a2b24758526d"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Resulting weight matrices lack the new, high-ranking singular vectors termed intruder dimensions.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "The comparisons reported by Shuttleworth and coauthors.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Reece Shuttleworth and coauthors",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 897,
+            "end": 1194,
+            "quote": "We find that LoRA and full fine-tuning yield weight matrices whose singular value decompositions exhibit very different structure: weight matrices trained with LoRA have new, high-ranking singular vectors, which we call \\emph{intruder dimensions}, while those trained with full fine-tuning do not.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The abstract does not identify the specific experimental configurations."
+        ],
+        "createdAt": "2026-10-05T21:09:45.919Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "1519fdcc7c89f1031113bdaf206e8b3d53b7f86c2de42d4fa432f1b5efab4149"
+      },
+      {
+        "id": "revision_b4d2a1db2d35452bbd17c66b3f745e7a",
+        "factId": "fact_97528927065841a2894e5c69f4a506e6",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors report that LoRA forgets less than full fine-tuning in their study.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Less forgetting than full fine-tuning.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "The study reported by Shuttleworth and coauthors.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Reece Shuttleworth and coauthors",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 1195,
+            "end": 1340,
+            "quote": "Further, we extend the finding that LoRA forgets less than full fine-tuning and find its forgetting is vastly localized to the intruder dimension",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "No quantitative forgetting measurements or specific evaluation configurations are provided in the abstract."
+        ],
+        "createdAt": "2026-10-05T21:09:45.919Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "ae539a4cbbc686cd5cd094583171e33471b666f3c1e4b999ca61cc80d83724c1"
+      },
+      {
+        "id": "revision_417f744e19434009a8d129a1c9e78505",
+        "factId": "fact_1560a83d04e44d949c2a09469197c651",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors report that LoRA's forgetting is strongly localized to intruder dimensions in their study.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Forgetting is strongly localized to intruder dimensions.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "The study reported by Shuttleworth and coauthors.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Reece Shuttleworth and coauthors",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 1195,
+            "end": 1493,
+            "quote": "Further, we extend the finding that LoRA forgets less than full fine-tuning and find its forgetting is vastly localized to the intruder dimension -- by causally intervening on the intruder dimensions by changing their associated singular values post-fine-tuning, we show that they cause forgetting.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The abstract does not quantify the degree of localization."
+        ],
+        "createdAt": "2026-10-05T21:09:45.919Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "5e69bd68cedd3c40db10a931c8af848b07a5be927c72b8cd3008e49b187b12f8"
+      },
+      {
+        "id": "revision_1610b9ffb79c48c19a16606d8bc2b82b",
+        "factId": "fact_bd67e1222cec45b88903593d28036dd8",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors report that LoRA models accumulate intruder dimensions during sequential continual learning.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "LoRA models accumulate intruder dimensions.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Sequential fine-tuning in the continual-learning setting examined by Shuttleworth and coauthors.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Reece Shuttleworth and coauthors",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 1744,
+            "end": 1982,
+            "quote": "This will be amplified during continual learning because of sequentially fine-tuning, and we show that LoRA models do accumulate intruder dimensions here tend to perform worse in this setting, emphasizing the practicality of our findings.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The abstract does not specify the task sequence, models, or datasets."
+        ],
+        "createdAt": "2026-10-05T21:09:45.919Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "83df0b8b79d4afe7d36517f697a578fd00d8c59c0235205bbc242de0d9e4ae1c"
+      },
+      {
+        "id": "revision_18d887cbf57c4055a3e10a4f745cf39c",
+        "factId": "fact_4a9dd61c5dc244d99edbfa9b37f26e0c",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors report that LoRA models accumulating intruder dimensions tend to perform worse in the continual-learning setting they examined.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Models accumulating intruder dimensions tend to perform worse.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Sequential fine-tuning in the continual-learning setting examined by Shuttleworth and coauthors.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Reece Shuttleworth and coauthors",
+        "evidence": [
+          {
+            "captureId": "capture_2cdfcf1af2e82ed70391b6b69fed92dbe95272f85676c55413d1402d65061568",
+            "start": 1744,
+            "end": 1982,
+            "quote": "This will be amplified during continual learning because of sequentially fine-tuning, and we show that LoRA models do accumulate intruder dimensions here tend to perform worse in this setting, emphasizing the practicality of our findings.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The abstract does not specify a performance metric, effect size, or explicit baseline for this sentence; the reported tendency is not a universal result."
+        ],
+        "createdAt": "2026-10-05T21:09:45.919Z",
+        "extractionJobId": "8853d794-459e-4a33-a11b-0d68bb85db2b",
+        "digest": "53c8b04561418e2509e4805a52917fef2679337d7cdf07af7b89bb56bd5c16a7"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_07d260127aff4bc9b1e838ced301a2b0",
+        "outcome": "supported",
+        "reason": "The captured record is primary evidence of this paper's authorship and expressly lists Reece Shuttleworth. The authored predicate and both identified arguments match the statement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_9392b2f1f18b426bbf9ed502e085898f",
+        "outcome": "supported",
+        "reason": "The quoted author list expressly names Jacob Andreas as an author of the identified comparison paper, matching the statement and authored arguments.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_5e7e608e22374baeb690028a6adac6e2",
+        "outcome": "supported",
+        "reason": "The quoted author list expressly names Antonio Torralba as an author of the identified comparison paper, matching the statement and authored arguments.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_2508e422c3a743ef89daeb406ab63c34",
+        "outcome": "supported",
+        "reason": "The quoted author list expressly names Pratyusha Sharma as an author of the identified comparison paper, matching the statement and authored arguments.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_7d0a7afb3bf342349833d7520ac49020",
+        "outcome": "unsupported",
+        "reason": "The record supports initial submission on October 28, 2024, and identifies v1. However, the structured value additionally asserts the version designation, which the statement does not express. The date bounds are evidenced, but the required exact sentence–field correspondence fails.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_7d7c5307486d4fa4b2ffb02885cc5c9c",
+        "outcome": "supported",
+        "reason": "The record explicitly says 'last revised 22 Oct 2025 (this version, v3).' The statement and structured publication status both limit latest-version status to the captured record, and the day-level event bounds match.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_b798c8a8244d496aa004eb25b45fb81e",
+        "outcome": "supported",
+        "reason": "The authors ask whether the learned solutions are equivalent and describe studying LoRA and full fine-tuning. Purpose is an appropriate description of this research question, rather than a placeholder for a result. The statement identifies the paper as the source, consistently with the reported modality and author attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_e36ab210bc3549a5b20b1b83335a4fb7",
+        "outcome": "unsupported",
+        "reason": "The quoted abstract supports the spectral analysis, but the structured conditions explicitly include comparison with full fine-tuning while the statement does not. Calling it 'the comparison paper' does not express that particular comparator and condition.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_b03471cfe849422db703947b4a163952",
+        "outcome": "supported",
+        "reason": "The authors explicitly call the new, high-ranking singular vectors in LoRA-trained weight matrices 'intruder dimensions.' This is an attributed terminology assertion, accurately represented by the definition property, not an unqualified endorsement of an experimental result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_fa810630f16748e98a50208b20a6f128",
+        "outcome": "unsupported",
+        "reason": "The abstract supports the attributed observation, but related_to encodes only an unspecified relationship between LoRA and intruder dimensions. It does not encode that LoRA-trained weight matrices exhibit these vectors or the restriction to the authors' comparison. Those material parts of the sentence are absent from the schematic assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_ef7cbba028e243debc101c28403ba162",
+        "outcome": "unsupported",
+        "reason": "The evidence supports studying full fine-tuning alongside LoRA, but the schematic assertion only says the paper describes full fine-tuning. Neither LoRA nor the comparator relationship asserted in the sentence is encoded.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_96de1dd2bb244074bbd8462cfcd95981",
+        "outcome": "unsupported",
+        "reason": "The abstract reports absence of the vectors in the full-fine-tuning weight matrices examined. Encoding this experimental observation as the technique's architecture misclassifies the relationship: the source does not identify an architectural property, and the sentence does not assert one.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_b4d2a1db2d35452bbd17c66b3f745e7a",
+        "outcome": "unsupported",
+        "reason": "The abstract supports an attributed comparative forgetting finding, but the structured property labels it a capability of LoRA. The sentence asserts a study result, not a capability. The comparative result should not be treated as structurally equivalent to that different property merely because its wording appears in a text value.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_417f744e19434009a8d129a1c9e78505",
+        "outcome": "supported",
+        "reason": "The abstract says LoRA's forgetting is 'vastly localized to the intruder dimension.' Both the sentence and fields retain author attribution and study scope, characterize the same forgetting limitation, and avoid asserting the separate causal-intervention result or inventing a quantitative localization measure.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_1610b9ffb79c48c19a16606d8bc2b82b",
+        "outcome": "unsupported",
+        "reason": "The abstract reports accumulation in the continual-learning setting examined. The structured conditions explicitly restrict the result to that setting and specify sequential fine-tuning, whereas the sentence says 'during sequential continual learning' without explicitly retaining the examined-setting restriction or the fine-tuning condition. Attribution alone does not make these evaluation conditions explicit.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      },
+      {
+        "revisionId": "revision_18d887cbf57c4055a3e10a4f745cf39c",
+        "outcome": "unsupported",
+        "reason": "The abstract supports an attributed tendency toward worse performance in its continual-learning setting, without identifying a metric or explicit baseline. The revision appropriately avoids inventing those details, but its structured conditions additionally specify sequential fine-tuning, which the statement does not express. The sentence and fields therefore fail the required explicit condition correspondence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:10:37.592Z"
+      }
+    ],
+    "approvals": []
+  }
+}

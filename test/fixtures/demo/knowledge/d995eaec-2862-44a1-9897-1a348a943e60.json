@@ -1,0 +1,92 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_f2db063cd733454f9286fa53fda4d1fd",
+        "label": "LoRA",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_23c6c5bd15ac44829c7fdffc07b0e52b",
+        "label": "loralib",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+        "sourceId": "source_2835ff1fe97b6a283adda2be28fafd4bfce40d7a5cf690e5e6ed381a3b7cdaf7",
+        "url": "https://github.com/microsoft/LoRA",
+        "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" · GitHub",
+        "sha256": "c9daba3985ec9c0d75e3264d07a9e51974a6129bc9aad3eec7f7abf650b5a05d",
+        "retrievedAt": "2026-10-05T17:21:40.047Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured project repository supplies the authors' implementation, method description, experimental reports, and citation for their own paper.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_35305344468e4ee893b4e2a29eed558d",
+        "factId": "fact_8847cfc23baf48b485c6be13d6d80188",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The LoRA repository provides loralib as an implementation of LoRA.",
+        "predicate": "implemented_by",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_23c6c5bd15ac44829c7fdffc07b0e52b"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "LoRA repository",
+        "evidence": [
+          {
+            "captureId": "capture_2721dac2c2b6bd6888c948cedd2874274e1925c72d82a529d005335bb81287b6",
+            "start": 0,
+            "end": 282,
+            "quote": "LoRA: Low-Rank Adaptation of Large Language Models This repo contains the source code of the Python package loralib and several examples of how to integrate it with PyTorch models, such as those in Hugging Face. We only support PyTorch for now. See our paper for a detailed descript",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:16:09.995Z",
+        "extractionJobId": "d995eaec-2862-44a1-9897-1a348a943e60",
+        "digest": "2bb0de024e08c7184107a6bf53c4bf0a3642ac02fdd8a00f78842a5e0849276b"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_35305344468e4ee893b4e2a29eed558d",
+        "outcome": "supported",
+        "reason": "The captured repository is primary implementation documentation. The exact quoted passage identifies loralib as the package whose source code the LoRA repository contains; the captured title explicitly calls it an implementation of LoRA, and the repository overview confirms its use to implement LoRA in models. This supports the implemented_by relationship between the identified technique and package. The statement and fields express that relationship with repository attribution and reported modality, without adding experimental results, dates, or locations.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:16:17.269Z"
+      }
+    ],
+    "approvals": []
+  }
+}

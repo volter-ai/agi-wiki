@@ -1,0 +1,766 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_f2d5851eaf504cc58866aeb8431c45f9",
+        "label": "NVIDIA H100",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_b063feac7f454edc8bfd47f9f4167186",
+        "label": "Multi-Instance GPU",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_6dce4d0d0d1b4150839177e64ef9047b",
+        "label": "Fourth-generation NVIDIA NVLink",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_42e94e812c724c65aafdcb9b5a879746",
+        "label": "PCIe Gen 5",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+        "sourceId": "source_5b14cbf37f4f5a9af4b9fc17d315052c72183d86d8a2f12bdca3defc7a83aca5",
+        "url": "https://developer.nvidia.com/blog/?p=45555",
+        "title": "NVIDIA Hopper Architecture In-Depth | NVIDIA Technical Blog",
+        "sha256": "bb2d19fedbe921ad4e827e485c85bc5831cc761433c4aca30bd1c89db29a1c12",
+        "retrievedAt": "2026-10-05T17:26:37.915Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "NVIDIA's technical blog provides its own H100 architecture and configuration specifications; claims below use the authored article rather than its AI-generated summary and remain attributed to NVIDIA.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_afaaf7145c1549a7903b074aeb18ca83",
+        "factId": "fact_55c157aebcbc429a86c8d28cdfa973dd",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies fourth-generation NVIDIA NVLink for NVIDIA H100.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_6dce4d0d0d1b4150839177e64ef9047b"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 13196,
+            "end": 13540,
+            "quote": "The NVIDIA H100 GPU with SXM5 board form-factor includes the following units: 8 GPCs, 66 TPCs, 2 SMs/TPC, 132 SMs per GPU 128 FP32 CUDA Cores per SM, 16896 FP32 CUDA Cores per GPU 4 fourth-generation Tensor Cores per SM, 528 per GPU 80 GB HBM3, 5 HBM3 stacks, 10 512-bit memory controllers 50 MB L2 cache Fourth-generation NVLink and PCIe Gen 5",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:59:15.406Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "1bf06c7438b331b3a22065cb1136c108e3a8c8705c70462e4c39d077421a04e3"
+      },
+      {
+        "id": "revision_edf99d264399450ba34181c51d0dd1da",
+        "factId": "fact_87f3e32c24ad4f3595662739cde56d8d",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies 900 gigabytes per second of total multi-GPU input/output bandwidth for NVIDIA H100's fourth-generation NVLink.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "interconnect_bandwidth",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "900",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "gigabytes_per_second",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Fourth-generation NVIDIA NVLink; total bandwidth for multi-GPU IO.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 8311,
+            "end": 8564,
+            "quote": "Fourth-generation NVIDIA NVLink provides a 3x bandwidth increase on all-reduce operations and a 50% general bandwidth increase over the prior generation NVLink with 900 GB/sec total bandwidth for multi-GPU IO operating at 7x the bandwidth of PCIe Gen 5.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This is a company bandwidth specification, not an independently measured workload result."
+        ],
+        "createdAt": "2026-10-05T20:59:15.406Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "9e9b9139707b39dd2f753c64efc8cc212f5536b79e1246fadff80a7f59df46fd"
+      },
+      {
+        "id": "revision_f54fe8ed6d694418a9e8ccd3b3000470",
+        "factId": "fact_0512bab96b5746d78f79cbe0939b3f3b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 supports PCIe Gen 5.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_42e94e812c724c65aafdcb9b5a879746"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 9697,
+            "end": 9817,
+            "quote": "PCIe Gen 5 enables H100 to interface with the highest performing x86 CPUs and SmartNICs or data processing units (DPUs).",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:59:15.406Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "42dddde874fe0baa863816a32f5b9afc649e608cfd1cf200934e2381233ddfeb"
+      },
+      {
+        "id": "revision_8352a0f05c544ee0b8812a44e5718484",
+        "factId": "fact_b1857995c6334204929ef16be10c815a",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies 128 gigabytes per second of total bidirectional bandwidth for NVIDIA H100's PCIe Gen 5 interface.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "interconnect_bandwidth",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "128",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "gigabytes_per_second",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "PCIe Gen 5; total bandwidth across both directions.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 9538,
+            "end": 9817,
+            "quote": "PCIe Gen 5 provides 128 GB/sec total bandwidth (64 GB/sec in each direction) compared to 64 GB/sec total bandwidth (32GB/sec in each direction) in Gen 4 PCIe. PCIe Gen 5 enables H100 to interface with the highest performing x86 CPUs and SmartNICs or data processing units (DPUs).",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The stated bandwidth is an interface specification, not measured application throughput."
+        ],
+        "createdAt": "2026-10-05T20:59:15.406Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "e88a7aa9ae51652593707671cb6e087de24ccce5ef0a9cce3269f70b13b79681"
+      },
+      {
+        "id": "revision_400da1bbbc244feb853cb0b094d35675",
+        "factId": "fact_7b5be324d35449a993dbbb285020920b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA describes NVIDIA H100's announced NVLink Switch System connectivity as supporting up to 32 nodes or 256 GPUs in a 2:1 tapered fat-tree topology.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Announced NVLink Switch System connectivity supporting up to 32 nodes or 256 GPUs in a 2:1 tapered fat-tree topology.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 9111,
+            "end": 9386,
+            "quote": "New NVLink Switch System interconnect technology and new second-level NVLink Switches based on third-gen NVSwitch technology introduce address space isolation and protection, enabling up to 32 nodes or 256 GPUs to be connected over NVLink in a 2:1 tapered, fat tree topology.",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 3560,
+            "end": 3685,
+            "quote": "NVLink Switch System technology is not currently available with H100 systems, but systems and availability will be announced.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The source describes announced connectivity rather than an available deployed H100 system."
+        ],
+        "createdAt": "2026-10-05T20:59:15.406Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "ac01983f5319326ed5620fdad904ea7123131115fc964fefbc00fbcbf3078871"
+      },
+      {
+        "id": "revision_7f351c69080e42cab5a1094c4e488070",
+        "factId": "fact_691766a745504175a1d856f3a641f532",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA's launch article states that NVLink Switch System technology was not yet available with NVIDIA H100 systems and that systems and availability would be announced.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "availability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "NVLink Switch System technology not currently available with H100 systems in the launch article; systems and availability to be announced.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 3560,
+            "end": 3685,
+            "quote": "NVLink Switch System technology is not currently available with H100 systems, but systems and availability will be announced.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This is the launch article's availability statement, not a claim about present availability."
+        ],
+        "createdAt": "2026-10-05T20:59:15.407Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "bb79ffde31b60dc635c7ca9b8eea80918aa8f6c0e8073fa4c5bf5f74339e3734"
+      },
+      {
+        "id": "revision_1291ed6bd0ef4524a213a987c1e201d7",
+        "factId": "fact_e2142840ac8e4d21929a609a46216a96",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA describes NVIDIA H100 as using second-generation Multi-Instance GPU technology.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_b063feac7f454edc8bfd47f9f4167186"
+          },
+          {
+            "role": "version",
+            "value": "Second generation",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7487,
+            "end": 7843,
+            "quote": "Second-generation Multi-Instance GPU (MIG) technology provides approximately 3x more compute capacity and nearly 2x more memory bandwidth per GPU instance compared to A100. Confidential Computing capability with MIG-level TEE is now provided for the first time. Up to seven individual GPU instances are supported, each with dedicated NVDEC and NVJPG units.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:59:15.407Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "db134f062a8fd2b626972856d482c20ef5c45d7b06f477aea58142f62c848bea"
+      },
+      {
+        "id": "revision_32053d40a86640b692087f88e4a732ad",
+        "factId": "fact_3cb825e345b44e42ad2aa05f0565de52",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies a maximum of seven Multi-Instance GPU instances for NVIDIA H100.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "partition_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "7",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Maximum supported individual GPU instances using second-generation MIG.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7487,
+            "end": 7843,
+            "quote": "Second-generation Multi-Instance GPU (MIG) technology provides approximately 3x more compute capacity and nearly 2x more memory bandwidth per GPU instance compared to A100. Confidential Computing capability with MIG-level TEE is now provided for the first time. Up to seven individual GPU instances are supported, each with dedicated NVDEC and NVJPG units.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:59:15.407Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "e42c181cbc4081f7703523976c18de01378d4a88f304d8a5e00eeccd8198fa6f"
+      },
+      {
+        "id": "revision_022ea3006cdf4530b314f26c4f5f4d5f",
+        "factId": "fact_a17efef866784ead97d2b0d457d911db",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that each NVIDIA H100 MIG instance has dedicated NVDEC units.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Dedicated NVDEC units for each MIG instance.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7749,
+            "end": 7843,
+            "quote": "Up to seven individual GPU instances are supported, each with dedicated NVDEC and NVJPG units.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:59:15.407Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "06c1cb72a2053d49517f7e19d4cd9c684b31e7803e46a3d3968758a850d479b9"
+      },
+      {
+        "id": "revision_a389411231fb4165a8171d61d50b1d8b",
+        "factId": "fact_8ef04b71d59a4ca29e54d38cf0b85a55",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that each NVIDIA H100 MIG instance has dedicated NVJPG units.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Dedicated NVJPG units for each MIG instance.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7749,
+            "end": 7843,
+            "quote": "Up to seven individual GPU instances are supported, each with dedicated NVDEC and NVJPG units.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:59:15.407Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "d64a2376061495d7129b5b16f50359b782fe67e7615a7b25eeb2d76cd6ab876b"
+      },
+      {
+        "id": "revision_c8f0cebfbf0b45249e4b417e90fa9807",
+        "factId": "fact_a1f621b0504e45708695c37174d7d9af",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that each NVIDIA H100 MIG instance includes its own performance monitors compatible with NVIDIA developer tools.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Each MIG instance has its own set of performance monitors that work with NVIDIA developer tools.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7749,
+            "end": 7945,
+            "quote": "Up to seven individual GPU instances are supported, each with dedicated NVDEC and NVJPG units. Each instance now includes its own set of performance monitors that work with NVIDIA developer tools.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:59:15.407Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "601e9f70bfb863abded3f26e89dedd5abe0fe0d6d4e41f5a1f8582200f562717"
+      },
+      {
+        "id": "revision_0eeb5259b9d34b8586915a15984af7d5",
+        "factId": "fact_7406a8fdbafd4e27a855b641207daa66",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA describes NVIDIA H100's native confidential computing as extending the CPU trusted execution environment to the GPU at full PCIe line rate.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Native GPU confidential computing extending the trusted execution environment with CPUs at full PCIe line rate.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 8157,
+            "end": 8310,
+            "quote": "H100 implements the world’s first native Confidential Computing GPU and extends the trusted execution environment (TEE) with CPUs at full PCIe line rate.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The line-rate capability is a company claim without an independent measurement in the captured passage."
+        ],
+        "createdAt": "2026-10-05T20:59:15.407Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "7949337166ccbd3bc205e948912ebfa2499f853abc0d80e97ed6410c2c2f2d17"
+      },
+      {
+        "id": "revision_e5eb26d24c25474b91f1690515bd6e28",
+        "factId": "fact_0ff51e851aa44bebb3de60c570c97e64",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's confidential-computing support protects user data.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Protection of user data through confidential-computing support.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7946,
+            "end": 8156,
+            "quote": "New Confidential Computing support protects user data, defends against hardware and software attacks, and better isolates and protects virtual machines (VMs) from each other in virtualized and MIG environments.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The captured passage does not specify a threat model or independently validate the security claim."
+        ],
+        "createdAt": "2026-10-05T20:59:15.407Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "fa05d58b9d6d7240ff141c339b0e6f2a22fc316846e998751e6d516f9ddc18fc"
+      },
+      {
+        "id": "revision_c04e07c1e5534932a08c5424290e24e0",
+        "factId": "fact_73a2badbaf5e44e8a3d18f8fa8282ae5",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's confidential-computing support improves isolation and protection of virtual machines from one another in virtualized and MIG environments.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Improved isolation and protection of virtual machines from one another.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Virtualized and MIG environments using confidential-computing support.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7946,
+            "end": 8156,
+            "quote": "New Confidential Computing support protects user data, defends against hardware and software attacks, and better isolates and protects virtual machines (VMs) from each other in virtualized and MIG environments.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The captured passage does not specify a threat model or independently validate the security claim."
+        ],
+        "createdAt": "2026-10-05T20:59:15.407Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "975926fe49f2adf73ec098d36732166e0447064ca08a52223530dccf691aaec2"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_afaaf7145c1549a7903b074aeb18ca83",
+        "outcome": "supported",
+        "reason": "The authored NVIDIA article is primary evidence for NVIDIA's specifications. The quoted H100 SXM5 configuration explicitly includes fourth-generation NVLink, and the captured PCIe-board configuration corroborates it. The uses relationship and NVIDIA attribution match the statement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_edf99d264399450ba34181c51d0dd1da",
+        "outcome": "supported",
+        "reason": "The H100 feature summary explicitly specifies 900 GB/sec total bandwidth for fourth-generation NVLink multi-GPU IO. The numeric value, unit, interconnect, total-bandwidth scope and attribution are represented consistently without presenting this as independently measured throughput.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_f54fe8ed6d694418a9e8ccd3b3000470",
+        "outcome": "supported",
+        "reason": "The quote explicitly says PCIe Gen 5 enables H100 to interface with CPUs and other devices; the captured configuration lists also include PCIe Gen 5. This supports the attributed H100 interface-support relationship.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_8352a0f05c544ee0b8812a44e5718484",
+        "outcome": "supported",
+        "reason": "The quote specifies PCIe Gen 5 total bandwidth of 128 GB/sec, explicitly divided into 64 GB/sec in each direction, and connects that interface to H100. Statement and fields consistently represent an attributed total bidirectional interface specification.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_400da1bbbc244feb853cb0b094d35675",
+        "outcome": "unsupported",
+        "reason": "The source supports the announced connectivity limits and topology, but the schematic value embeds the node limit, GPU limit and topology ratio in a text string. These quantitative specifications lack the typed numeric values and explicit units required by the supplied philosophy.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_7f351c69080e42cab5a1094c4e488070",
+        "outcome": "unsupported",
+        "reason": "The quote supports both launch-time nonavailability and a future announcement. However, the revision combines those distinct assertions in one availability value and one sentence. Matching a compound source sentence does not satisfy the required one-assertion factoid structure.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_1291ed6bd0ef4524a213a987c1e201d7",
+        "outcome": "supported",
+        "reason": "The quoted passage is in the H100 key-feature summary and explicitly identifies second-generation Multi-Instance GPU technology. The subject, technology, version and NVIDIA attribution match the statement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_32053d40a86640b692087f88e4a732ad",
+        "outcome": "unsupported",
+        "reason": "The source supports up to seven instances with second-generation MIG, and the structured count is typed. However, the conditions field explicitly specifies second-generation MIG while the statement does not express that generation condition. The required sentence-field equivalence is incomplete.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_022ea3006cdf4530b314f26c4f5f4d5f",
+        "outcome": "supported",
+        "reason": "The quote explicitly gives each supported GPU instance dedicated NVDEC units; its surrounding H100 MIG paragraph resolves the instance identity. The statement and architecture value consistently preserve the per-instance scope and NVIDIA attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_a389411231fb4165a8171d61d50b1d8b",
+        "outcome": "supported",
+        "reason": "The quote explicitly gives each supported GPU instance dedicated NVJPG units in the H100 MIG context. The statement and architecture value express the same attributed per-instance hardware provision without inventing an abbreviation expansion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_c8f0cebfbf0b45249e4b417e90fa9807",
+        "outcome": "unsupported",
+        "reason": "The source supports both each instance having its own performance monitors and those monitors working with NVIDIA developer tools. The revision bundles monitor provision and tool compatibility into one architecture value rather than representing one assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_0eeb5259b9d34b8586915a15984af7d5",
+        "outcome": "supported",
+        "reason": "The quote identifies H100 as a native confidential-computing GPU extending the TEE with CPUs at full PCIe line rate. In this context, extending the CPU TEE to the GPU is a faithful rendering. The capability, line-rate qualification and company attribution appear in both representations.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_e5eb26d24c25474b91f1690515bd6e28",
+        "outcome": "supported",
+        "reason": "The H100 feature summary explicitly claims that confidential-computing support protects user data. The revision isolates that assertion and retains NVIDIA attribution rather than asserting independently validated security. The virtualized/MIG phrase in the source directly qualifies the separate inter-VM claim.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_c04e07c1e5534932a08c5424290e24e0",
+        "outcome": "unsupported",
+        "reason": "The source explicitly claims better inter-VM isolation and protection in virtualized and MIG environments, and the revision preserves those conditions and attribution. Nevertheless, it combines improved isolation and improved protection in a single capability assertion, contrary to the required rejection of compound claims.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      }
+    ],
+    "approvals": []
+  }
+}

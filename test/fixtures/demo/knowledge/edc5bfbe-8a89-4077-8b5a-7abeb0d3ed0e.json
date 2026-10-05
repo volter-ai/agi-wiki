@@ -1,0 +1,140 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_f2db063cd733454f9286fa53fda4d1fd",
+        "label": "LoRA",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_c9243a0cb6e44d78b5a296662533eb1e",
+        "label": "QLoRA",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_add98c1269274213a85c6dc5afb51709",
+        "label": "4-bit NormalFloat (NF4)",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+        "sourceId": "source_9ebd1fec33c37166a43089bdc8b205dfab3c84f3007d54bd5cabf91a0b9a42a6",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract.html",
+        "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+        "sha256": "895f76b961315d677e6e8c05a369c5ab88e196106540cb3501a7fbcda41aa4f2",
+        "retrievedAt": "2026-10-05T17:21:40.450Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured proceedings abstract presents the QLoRA authors' own method, experiments, results, and limitations in the first person.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_b92f6034c0d64a2caff2b07287c44658",
+        "factId": "fact_7eb2b8c53a2847428da0a296e4c962f7",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The QLoRA authors describe QLoRA as using LoRA adapters.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f2db063cd733454f9286fa53fda4d1fd"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 232,
+            "end": 353,
+            "quote": "QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters~(LoRA).",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:16:31.028Z",
+        "extractionJobId": "edc5bfbe-8a89-4077-8b5a-7abeb0d3ed0e",
+        "digest": "05da833c4b42cd1732a028bcfad386dbac19563cb203ff5492cff1408f9f8966"
+      },
+      {
+        "id": "revision_b3ae9d46ad104fec99655617a4973862",
+        "factId": "fact_4c0ddd3252c94cceb0f2ee4099811b10",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The QLoRA authors describe QLoRA as using four-bit NormalFloat.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_c9243a0cb6e44d78b5a296662533eb1e"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_add98c1269274213a85c6dc5afb51709"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "QLoRA authors",
+        "evidence": [
+          {
+            "captureId": "capture_eb784de9962e2da794e524cdf41ad9b06d8378c2922d38e99f8ee3cadb6afdb4",
+            "start": 585,
+            "end": 793,
+            "quote": "QLoRA introduces a number of innovations to save memory without sacrificing performance: (a) 4-bit NormalFloat (NF4), a new data type that is information-theoretically optimal for normally distributed weights",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:16:31.029Z",
+        "extractionJobId": "edc5bfbe-8a89-4077-8b5a-7abeb0d3ed0e",
+        "digest": "5b3946fc129298bab3fa8e8cfa10f847f6c72dc2aae7781f81c7c68ef791fd30"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_b92f6034c0d64a2caff2b07287c44658",
+        "outcome": "supported",
+        "reason": "The captured abstract is primary evidence describing the authors' own method. Its exact quoted passage says QLoRA backpropagates gradients into Low Rank Adapters (LoRA), directly supporting the attributed assertion that QLoRA uses LoRA adapters. The uses predicate and its subject and object match the statement; neither asserts additional mechanism details or experimental results.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:16:39.023Z"
+      },
+      {
+        "revisionId": "revision_b3ae9d46ad104fec99655617a4973862",
+        "outcome": "supported",
+        "reason": "The captured primary-source abstract explicitly lists 4-bit NormalFloat (NF4) among QLoRA's innovations, supporting the authors-attributed assertion that QLoRA uses that data type. The uses predicate and both entity arguments express the same assertion as the statement. The revision does not assert the separate optimality or performance claims, so it does not require their conditions.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:16:39.023Z"
+      }
+    ],
+    "approvals": []
+  }
+}

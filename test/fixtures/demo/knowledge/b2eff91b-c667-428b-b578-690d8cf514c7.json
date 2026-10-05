@@ -1,0 +1,216 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_f2d5851eaf504cc58866aeb8431c45f9",
+        "label": "NVIDIA H100",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_44d12a0a4691480799b910e93aa44819",
+        "label": "MLPerf Inference",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_044b961b10b1e98119342f736602ae85c7c83c500d02afd5467a5f8a9f0e99bd",
+        "sourceId": "source_fc476ea7a1dab27cd87b63cdbbbf997320fc9bd4109f4c09c5bc9debebfa66b3",
+        "url": "https://docs.mlcommons.org/cm4mlperf-inference/",
+        "title": "MLPerf Inference Results Comparison",
+        "sha256": "2c3f75addce7a5448fbc3bc11528b0dd89637ac950ebce5d97e7556814491ba8",
+        "retrievedAt": "2026-10-05T17:26:38.311Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured MLCommons results page directly lists MLPerf Inference submissions, their accelerator configurations, and their category and division.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_b0d7301c26a640f19a15cf298645b5ae",
+        "factId": "fact_fd95d64b05fb4ddeb5aa53c477aefe35",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "MLCommons lists NVIDIA H100 evaluations using four H100 PCIe GPUs in MLPerf Inference's Available, Open-division datacenter submissions.",
+        "predicate": "evaluated_on",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_44d12a0a4691480799b910e93aa44819"
+          },
+          {
+            "role": "conditions",
+            "value": "Available submissions in the Open division, Datacenter category; four NVIDIA H100 PCIe GPUs; submission IDs 4.1-0001, 4.1-0002, and 4.1-0003.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "MLCommons",
+        "evidence": [
+          {
+            "captureId": "capture_044b961b10b1e98119342f736602ae85c7c83c500d02afd5467a5f8a9f0e99bd",
+            "start": 0,
+            "end": 67,
+            "quote": "Results Datacenter Category: Available submissions in Open division",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_044b961b10b1e98119342f736602ae85c7c83c500d02afd5467a5f8a9f0e99bd",
+            "start": 807,
+            "end": 964,
+            "quote": "4.1-0001 334907abd4f4 NTHU NVIDIA H100 PCIe x 4 0.5 4.1-0002 ba7f5c94d10f NTHU NVIDIA H100 PCIe x 4 4.3 4.1-0003 1b41d1041a1b NTUHPC NVIDIA H100 PCIe x 4 4.2",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This assertion concerns listed submission configurations, not independently confirmed performance."
+        ],
+        "createdAt": "2026-10-05T21:17:40.621Z",
+        "extractionJobId": "b2eff91b-c667-428b-b578-690d8cf514c7",
+        "digest": "3000729ac75cb5997cdade54ea2d2ef8224b79875d99ff1a57f44669f38d93b0"
+      },
+      {
+        "id": "revision_b6a5a0d13988440db30860616ca98c77",
+        "factId": "fact_3d398b2bfa72405fb6ab136453649678",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "MLCommons lists NVIDIA H100 evaluations using five H100 80 GB HBM3 GPUs in MLPerf Inference's Available, Open-division datacenter submissions.",
+        "predicate": "evaluated_on",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_44d12a0a4691480799b910e93aa44819"
+          },
+          {
+            "role": "conditions",
+            "value": "Available submissions in the Open division, Datacenter category; five NVIDIA H100 80GB HBM3 GPUs; submission IDs 4.1-0007, 4.1-0008, and 4.1-0009.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "MLCommons",
+        "evidence": [
+          {
+            "captureId": "capture_044b961b10b1e98119342f736602ae85c7c83c500d02afd5467a5f8a9f0e99bd",
+            "start": 0,
+            "end": 67,
+            "quote": "Results Datacenter Category: Available submissions in Open division",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_044b961b10b1e98119342f736602ae85c7c83c500d02afd5467a5f8a9f0e99bd",
+            "start": 1034,
+            "end": 1241,
+            "quote": "4.1-0007 mlperf_inference_lry_40 peking NVIDIA H100 80GB HBM3 x 5 7.6 4.1-0008 mlperf_inference_lry_40 peking1 NVIDIA H100 80GB HBM3 x 5 7.5 4.1-0009 mlperf_inference_lry_40 pku NVIDIA H100 80GB HBM3 x 5 8.3",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This assertion concerns listed submission configurations, not independently confirmed performance."
+        ],
+        "createdAt": "2026-10-05T21:17:40.621Z",
+        "extractionJobId": "b2eff91b-c667-428b-b578-690d8cf514c7",
+        "digest": "fd02fdab11492b0f477fdd2497264d87ff8eb557a63d7b720614ff06fab0c729"
+      },
+      {
+        "id": "revision_9a54324d079b40aaa7ff16d06b5cfaec",
+        "factId": "fact_c7d7c373600c4d15a110f4ed5c2a17e7",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "MLCommons lists a NVIDIA H100 evaluation using six H100 80 GB HBM3 GPUs in MLPerf Inference's Available, Open-division datacenter submissions.",
+        "predicate": "evaluated_on",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_44d12a0a4691480799b910e93aa44819"
+          },
+          {
+            "role": "conditions",
+            "value": "Available submissions in the Open division, Datacenter category; six NVIDIA H100 80GB HBM3 GPUs; submission ID 4.1-0011.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "MLCommons",
+        "evidence": [
+          {
+            "captureId": "capture_044b961b10b1e98119342f736602ae85c7c83c500d02afd5467a5f8a9f0e99bd",
+            "start": 0,
+            "end": 67,
+            "quote": "Results Datacenter Category: Available submissions in Open division",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_044b961b10b1e98119342f736602ae85c7c83c500d02afd5467a5f8a9f0e99bd",
+            "start": 1242,
+            "end": 1298,
+            "quote": "4.1-0011 f2ea47b0a016 scc2 NVIDIA H100 80GB HBM3 x 6 7.5",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This assertion concerns a listed submission configuration, not independently confirmed performance."
+        ],
+        "createdAt": "2026-10-05T21:17:40.621Z",
+        "extractionJobId": "b2eff91b-c667-428b-b578-690d8cf514c7",
+        "digest": "0bce4cbd967bea776d420f449fdedd4858a19e7beeac68f763f4f9916f9428fa"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_b0d7301c26a640f19a15cf298645b5ae",
+        "outcome": "unsupported",
+        "reason": "The MLCommons results table qualifies as primary evidence for its listed submissions. Its category heading and rows 4.1-0001, 4.1-0002, and 4.1-0003 support the attributed listing of four-H100-PCIe configurations. However, the structured conditions expressly identify those three submissions, while the statement does not express that identification. The statement and schematic fields therefore do not express precisely the same assertion as required.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:18:02.048Z"
+      },
+      {
+        "revisionId": "revision_b6a5a0d13988440db30860616ca98c77",
+        "outcome": "unsupported",
+        "reason": "The primary MLCommons table lists NVIDIA H100 80GB HBM3 x 5 for submissions 4.1-0007, 4.1-0008, and 4.1-0009 under the Available, Open-division datacenter heading. This supports the attributed configuration listing, but the structured conditions additionally identify those specific submissions, which the statement does not express. That statement–structure mismatch fails the required exact equivalence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:18:02.048Z"
+      },
+      {
+        "revisionId": "revision_9a54324d079b40aaa7ff16d06b5cfaec",
+        "outcome": "unsupported",
+        "reason": "The primary MLCommons table lists NVIDIA H100 80GB HBM3 x 6 for submission 4.1-0011 under the Available, Open-division datacenter heading. The attributed configuration listing is evidenced, but the structured conditions specify submission 4.1-0011 whereas the statement identifies only an unspecified evaluation. The additional structured identification is not expressed in the statement, violating the required exact equivalence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:18:02.048Z"
+      }
+    ],
+    "approvals": []
+  }
+}

@@ -1,0 +1,49 @@
+name: Publish approved encyclopedia
+on:
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: pages-publication
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - run: npm ci --ignore-scripts
+      - name: Fetch authoritative approvals (outside the app World)
+        run: node --import tsx github/export-receipts.ts
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: npm install -g @volter/world@2.0.24
+      - run: volter world up
+      - name: Build only articles whose bytes match an approval
+        run: volter world run -- npm run pages:build
+      - if: always()
+        run: volter world down
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: pages-dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the explicitly requested release
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

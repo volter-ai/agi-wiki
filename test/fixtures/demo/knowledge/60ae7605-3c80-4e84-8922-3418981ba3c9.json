@@ -1,0 +1,397 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_f2d5851eaf504cc58866aeb8431c45f9",
+        "label": "NVIDIA H100",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_7e9f9764a4b7444fbf1c9e103002bd3d",
+        "label": "Architectural Trade-offs in the Energy-Efficient Era: A Comparative Study of power-capping NVIDIA H100 and H200",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_3143a3ac37c245b78f994d721b01d8a5",
+        "label": "DGEMM",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_335dd9c1bd19400f8dd07901a4f33664",
+        "label": "TheBandwidthBenchmark",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_dadea49e7a11efeb2dc360df227af05a806a2ad98375fb2f6d34b29870014b34",
+        "sourceId": "source_88443633d3b4387c4f81cf084d7b6a72085dcbf0e7f16aca70d735a18671bd61",
+        "url": "https://arxiv.org/abs/2604.11391",
+        "title": "[2604.11391] Architectural Trade-offs in the Energy-Efficient Era: A Comparative Study of power-capping NVIDIA H100 and H200",
+        "sha256": "1d4044ce9105dd2dd77ba6a5da503a1b95d356e82caeba5671807b3a6400a852",
+        "retrievedAt": "2026-10-05T17:26:38.110Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured arXiv record contains the researchers' own abstract describing their comparative study and observations, along with authorship and revision metadata; the results are author reports, not independent confirmation.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_bd0f32352b964d289e20ef752eba8f1c",
+        "factId": "fact_f0b0d1c3c2674d2686e27ed379d0b081",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The paper Architectural Trade-offs in the Energy-Efficient Era: A Comparative Study of power-capping NVIDIA H100 and H200 investigates NVIDIA H100 memory power consumption at various power-cap levels in comparison with H200.",
+        "predicate": "related_to",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_7e9f9764a4b7444fbf1c9e103002bd3d"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Aditya Ujeniya, Jan Eitzinger, Georg Hager and Gerhard Wellein",
+        "evidence": [
+          {
+            "captureId": "capture_dadea49e7a11efeb2dc360df227af05a806a2ad98375fb2f6d34b29870014b34",
+            "start": 0,
+            "end": 315,
+            "quote": "Computer Science > Performance arXiv:2604.11391 (cs) [Submitted on 13 Apr 2026 (v1), last revised 15 Jul 2026 (this version, v2)] Title:Architectural Trade-offs in the Energy-Efficient Era: A Comparative Study of power-capping NVIDIA H100 and H200 Authors:Aditya Ujeniya, Jan Eitzinger, Georg Hager, Gerhard Wellein",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_dadea49e7a11efeb2dc360df227af05a806a2ad98375fb2f6d34b29870014b34",
+            "start": 1004,
+            "end": 1110,
+            "quote": "This study investigates how the H100 and H200 manage memory power consumption at various power-cap levels.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:16:39.082Z",
+        "extractionJobId": "60ae7605-3c80-4e84-8922-3418981ba3c9",
+        "digest": "216f671ca0a766769d45f6910aee54fd329a0963794ecaedb20171d9b04ca157"
+      },
+      {
+        "id": "revision_41e99b698d8a4dc3ae4b30bdec075185",
+        "factId": "fact_c7be5773970d47a7b6ee51a5c90383fd",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Ujeniya and colleagues describe the NVIDIA H100 configuration in their comparison with H200 using HBM3e as having HBM2e memory.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "configuration",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "HBM2e memory",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "The H100 configuration described in the study comparing H100 with H200 using HBM3e.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Aditya Ujeniya and colleagues",
+        "evidence": [
+          {
+            "captureId": "capture_dadea49e7a11efeb2dc360df227af05a806a2ad98375fb2f6d34b29870014b34",
+            "start": 527,
+            "end": 702,
+            "quote": "Abstract:Modern NVIDIA GPUs like the H100 (HBM2e) and H200 (HBM3e) share similar compute characteristics but differ significantly in memory interface technology and bandwidth.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The abstract does not identify the H100 board variant; the memory description should not be generalized to all H100 variants."
+        ],
+        "createdAt": "2026-10-05T21:16:39.083Z",
+        "extractionJobId": "60ae7605-3c80-4e84-8922-3418981ba3c9",
+        "digest": "b9c70fb87f3c4c504c7327bca209c7879457b7880e567fcfbf2fc7cbc7250d83"
+      },
+      {
+        "id": "revision_e50490db881d406096440b0e69a9f591",
+        "factId": "fact_ec8c74ed89d44f4b922d999a4920e6ab",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Ujeniya and colleagues report evaluating NVIDIA H100 efficiency with compute-bound DGEMM workloads in their power-capping comparison with H200.",
+        "predicate": "evaluated_on",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_3143a3ac37c245b78f994d721b01d8a5"
+          },
+          {
+            "role": "conditions",
+            "value": "Compute-bound workloads in an efficiency comparison of H100 and H200 at various power-cap levels, representing the compute-bound extreme of the Roof-line model.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Aditya Ujeniya and colleagues",
+        "evidence": [
+          {
+            "captureId": "capture_dadea49e7a11efeb2dc360df227af05a806a2ad98375fb2f6d34b29870014b34",
+            "start": 1004,
+            "end": 1381,
+            "quote": "This study investigates how the H100 and H200 manage memory power consumption at various power-cap levels. By a regression analysis, we study the memory power limit and uncover outliers consuming more memory power. To evaluate efficiency, we employ compute-bound (DGEMM) and memory-bound (TheBandwidthBenchmark) workloads, representing the two extremes of the Roof\\-line model.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The captured abstract does not specify numerical power caps, workload sizes or measurement procedures."
+        ],
+        "createdAt": "2026-10-05T21:16:39.083Z",
+        "extractionJobId": "60ae7605-3c80-4e84-8922-3418981ba3c9",
+        "digest": "2cf8848d0202b76c7277434f94f982fd5c8dea5430aceeac6be50eb8690dea68"
+      },
+      {
+        "id": "revision_a88933a8fc2140a0bde5725fff7f9294",
+        "factId": "fact_32d850e2ede24b87998b788ec9da37e9",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Ujeniya and colleagues report evaluating NVIDIA H100 efficiency with memory-bound TheBandwidthBenchmark workloads in their power-capping comparison with H200.",
+        "predicate": "evaluated_on",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_335dd9c1bd19400f8dd07901a4f33664"
+          },
+          {
+            "role": "conditions",
+            "value": "Memory-bound workloads in an efficiency comparison of H100 and H200 at various power-cap levels, representing the memory-bound extreme of the Roof-line model.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Aditya Ujeniya and colleagues",
+        "evidence": [
+          {
+            "captureId": "capture_dadea49e7a11efeb2dc360df227af05a806a2ad98375fb2f6d34b29870014b34",
+            "start": 1004,
+            "end": 1381,
+            "quote": "This study investigates how the H100 and H200 manage memory power consumption at various power-cap levels. By a regression analysis, we study the memory power limit and uncover outliers consuming more memory power. To evaluate efficiency, we employ compute-bound (DGEMM) and memory-bound (TheBandwidthBenchmark) workloads, representing the two extremes of the Roof\\-line model.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The captured abstract does not specify numerical power caps, workload sizes or measurement procedures."
+        ],
+        "createdAt": "2026-10-05T21:16:39.083Z",
+        "extractionJobId": "60ae7605-3c80-4e84-8922-3418981ba3c9",
+        "digest": "7828bf443b441a9003b5f6deeb1ee22046524928515029014553aece480a09c7"
+      },
+      {
+        "id": "revision_f6194b25af7840488eb76aa53ae0f71a",
+        "factId": "fact_d1320e6d851d4f469bd695a93529eb1c",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "In their July 15, 2026 revision, Ujeniya and colleagues report that NVIDIA H100 remains the slightly better choice than H200 for strictly compute-bound workloads across varying power caps.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Reported as the slightly better choice than H200 for strictly compute-bound workloads.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Across varying power caps in the authors' comparison.",
+            "valueType": "text"
+          },
+          {
+            "role": "version",
+            "value": "Study revision v2, revised July 15, 2026.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Aditya Ujeniya and colleagues",
+        "evidence": [
+          {
+            "captureId": "capture_dadea49e7a11efeb2dc360df227af05a806a2ad98375fb2f6d34b29870014b34",
+            "start": 0,
+            "end": 129,
+            "quote": "Computer Science > Performance arXiv:2604.11391 (cs) [Submitted on 13 Apr 2026 (v1), last revised 15 Jul 2026 (this version, v2)]",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_dadea49e7a11efeb2dc360df227af05a806a2ad98375fb2f6d34b29870014b34",
+            "start": 1382,
+            "end": 1602,
+            "quote": "Our observations indicate that across varying power caps, the H100 remains the slightly better choice for strictly compute-bound workloads, whereas the H200 demonstrates superior efficiency for memory-bound applications.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The abstract provides no numerical advantage, power-cap range or statistical uncertainty.",
+          "The revision date is not evidence of when the experiments occurred."
+        ],
+        "createdAt": "2026-10-05T21:16:39.083Z",
+        "extractionJobId": "60ae7605-3c80-4e84-8922-3418981ba3c9",
+        "digest": "67a0cbda3a943eac1ed3ce4af0de8bb92c97d609982a5bdad291796bed9af100"
+      },
+      {
+        "id": "revision_8f59eb2e343b4b1b9cd65a8a4e9c1cc3",
+        "factId": "fact_723f5859a0a24b58877ab24fbccc0913",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "In their July 15, 2026 revision, Ujeniya and colleagues report lower efficiency for NVIDIA H100 than H200 for memory-bound applications in their comparison across varying power caps.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Lower efficiency than H200 for memory-bound applications in the reported comparison.",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Across varying power caps in the authors' comparison.",
+            "valueType": "text"
+          },
+          {
+            "role": "version",
+            "value": "Study revision v2, revised July 15, 2026.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "Aditya Ujeniya and colleagues",
+        "evidence": [
+          {
+            "captureId": "capture_dadea49e7a11efeb2dc360df227af05a806a2ad98375fb2f6d34b29870014b34",
+            "start": 0,
+            "end": 129,
+            "quote": "Computer Science > Performance arXiv:2604.11391 (cs) [Submitted on 13 Apr 2026 (v1), last revised 15 Jul 2026 (this version, v2)]",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_dadea49e7a11efeb2dc360df227af05a806a2ad98375fb2f6d34b29870014b34",
+            "start": 1382,
+            "end": 1602,
+            "quote": "Our observations indicate that across varying power caps, the H100 remains the slightly better choice for strictly compute-bound workloads, whereas the H200 demonstrates superior efficiency for memory-bound applications.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The abstract provides no numerical efficiency difference, power-cap range or statistical uncertainty.",
+          "The revision date is not evidence of when the experiments occurred."
+        ],
+        "createdAt": "2026-10-05T21:16:39.083Z",
+        "extractionJobId": "60ae7605-3c80-4e84-8922-3418981ba3c9",
+        "digest": "d7b191f5f202d667fb0a491853d497e014f60045e23eaa057a1270c06c4ea5c6"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_bd0f32352b964d289e20ef752eba8f1c",
+        "outcome": "unsupported",
+        "reason": "The researchers' own abstract qualifies as primary evidence and explicitly describes investigating H100 and H200 memory power consumption at various power-cap levels. However, the structured assertion only says that the paper is related_to H100. It does not encode the investigation, H200 comparison, memory power consumption or power-cap conditions asserted in the sentence. The generic relationship therefore does not express the same assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:17:09.339Z"
+      },
+      {
+        "revisionId": "revision_41e99b698d8a4dc3ae4b30bdec075185",
+        "outcome": "supported",
+        "reason": "The abstract explicitly identifies 'H100 (HBM2e) and H200 (HBM3e)', and the captured context identifies the authors and their comparative study. The sentence and has_property fields consistently attribute the HBM2e configuration description to those authors and restrict it to their comparison with H200 using HBM3e. Neither asserts a particular board variant nor generalizes the description to every H100 variant.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:17:09.339Z"
+      },
+      {
+        "revisionId": "revision_e50490db881d406096440b0e69a9f591",
+        "outcome": "unsupported",
+        "reason": "The quoted abstract supports the reported use of compute-bound DGEMM for efficiency evaluation. However, the structured conditions additionally assert that the workloads represent the compute-bound extreme of the Roof-line model, which the sentence does not express. The fields also explicitly specify various power-cap levels, whereas the sentence only names a power-capping comparison. Despite source support for those conditions, the sentence and schematic assertion do not satisfy the required exact correspondence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:17:09.339Z"
+      },
+      {
+        "revisionId": "revision_a88933a8fc2140a0bde5725fff7f9294",
+        "outcome": "unsupported",
+        "reason": "The quoted abstract supports the reported use of memory-bound TheBandwidthBenchmark for efficiency evaluation. However, the structured conditions additionally characterize the workloads as representing the memory-bound extreme of the Roof-line model, which is absent from the sentence. Various power-cap levels are also explicit only in the fields, not in the sentence's general reference to a power-capping comparison. The source supports these details, but the two representations do not express precisely the same assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:17:09.339Z"
+      },
+      {
+        "revisionId": "revision_f6194b25af7840488eb76aa53ae0f71a",
+        "outcome": "unsupported",
+        "reason": "The captured revision metadata and abstract support attributing the qualitative 'slightly better choice' conclusion to the authors' July 15, 2026 revision, rather than treating it as independently established. Structurally, however, this is a comparative experimental conclusion hidden inside a text value under has_property/capability, not a typed comparison with H200 in a comparator role. Moreover, the supplied evaluation context identifies compute-bound DGEMM and the H100/H200 memory configurations, but these material conditions are absent from both the conclusion sentence and its structured conditions.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:17:09.339Z"
+      },
+      {
+        "revisionId": "revision_8f59eb2e343b4b1b9cd65a8a4e9c1cc3",
+        "outcome": "unsupported",
+        "reason": "In this two-device comparison, the authors' statement that H200 demonstrates superior efficiency supports the attributed inverse comparison that H100 has lower efficiency. The July 15, 2026 source-revision date is also evidenced. However, has_property/limitation conceals a comparative efficiency result in a text value instead of encoding the comparison and comparator as typed roles. The conclusion also omits the captured memory-bound TheBandwidthBenchmark evaluation context and described memory configurations from both the sentence and structured conditions.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:17:09.339Z"
+      }
+    ],
+    "approvals": []
+  }
+}

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.data/
+.env
+.volter/state/
+.volter/instances/
+*.log
+community/.dev.vars
+community/.wrangler/
+community/public/
+.wrangler/
+pages-dist/
+public/catalog.json

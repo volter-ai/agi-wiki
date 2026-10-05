@@ -1,0 +1,373 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_4fb81f339c804ecbb97a28ea23b76ba2",
+        "label": "SWE-bench",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_3fcc8aa95ddd4550802e5f3c262f6901",
+        "label": "SWE-bench documentation",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_748458065c6c45c2b1e39b25168ba18c",
+        "label": "SWE-bench evaluation harness",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_39b9b41706084c12834eff2486b83f54",
+        "label": "SWE-bench Lite",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_f03ebc05f8da416ead771c0a65e9dbf9",
+        "label": "SWE-bench Verified",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_9fc189763cb248f4b3d89c7909a965cb",
+        "label": "SWE-bench Multimodal",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_04d2b7615ec14174a3965bb7456aad8a",
+        "label": "Private test-split evaluation",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+        "sourceId": "source_703a5bbc8ed748f4a760a70485d0a0646540dace607c8f46cc15e092bb21b913",
+        "url": "https://github.com/SWE-bench/SWE-bench/blob/main/docs/index.md",
+        "title": "SWE-bench/docs/index.md at main · SWE-bench/SWE-bench · GitHub",
+        "sha256": "c2aea47c1c7e1d46577193ee80aac586fa0156431317c1dfc91c9e8a679dea45",
+        "retrievedAt": "2026-10-05T17:30:28.310Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "Author-maintained documentation in the official SWE-bench repository directly defines the benchmark and supplies dataset-loading code, installation commands, and documentation for its Docker-based evaluation harness. Its dated release notes document containerization on June 27, 2024, and the Verified subset release on August 13, 2024. These are firsthand project records supporting implementation and development history; project performance claims are not independent validation.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_a919ef9fb8e147c3bdeeae699df326cd",
+        "factId": "fact_5a57262ec70545918275cea71ab45521",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation describes SWE-bench’s expected model output, given a codebase and an issue, as a patch resolving that issue.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "task_output",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "patch resolving the supplied issue",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "given a codebase and an issue",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 125,
+            "end": 243,
+            "quote": "Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.825Z",
+        "extractionJobId": "878e8183-3c64-49f6-81d8-31aaf5d1458e",
+        "digest": "66b5d60e1af117711338ac6024701c70e0038f63d4667d6153d2d6bf09e70aac"
+      },
+      {
+        "id": "revision_0e20898f4e1c4977b78f5258456851aa",
+        "factId": "fact_6ede9a68187c4743974091062329cff5",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation describes the Docker-based SWE-bench evaluation harness as intended for reproducible evaluation with consistent results.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_748458065c6c45c2b1e39b25168ba18c"
+          },
+          {
+            "role": "conditions",
+            "value": "Docker-based; intended for reproducible evaluation with consistent results",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 516,
+            "end": 598,
+            "quote": "✅ Reproducible evaluation - Docker-based evaluation harness for consistent results",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.825Z",
+        "extractionJobId": "878e8183-3c64-49f6-81d8-31aaf5d1458e",
+        "digest": "c4efd32d4be5deb6f6efbcb7a320c4a35edc36cb3f3cc0c648bcb30b772759df"
+      },
+      {
+        "id": "revision_99ef52c8b43443f791f4040ac3468a4c",
+        "factId": "fact_caf451adee3d4df9be554e99b1748e3f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The documentation lists SWE-bench Lite as one of the SWE-bench project’s datasets.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_39b9b41706084c12834eff2486b83f54"
+          },
+          {
+            "role": "conditions",
+            "value": "one of the SWE-bench project’s datasets",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 599,
+            "end": 692,
+            "quote": "✅ Multiple datasets - SWE-bench, SWE-bench Lite, SWE-bench Verified, and SWE-bench Multimodal",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.825Z",
+        "extractionJobId": "878e8183-3c64-49f6-81d8-31aaf5d1458e",
+        "digest": "89193a8e2f40b0ff48cbfe42afa2e9145018b69ea3d0b1120b1a2141734caee9"
+      },
+      {
+        "id": "revision_8b93fcd8cfc54b028584599f6962cbca",
+        "factId": "fact_004e98876f2e4aaa97400f512d51faab",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The documentation lists SWE-bench Verified as one of the SWE-bench project’s datasets.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f03ebc05f8da416ead771c0a65e9dbf9"
+          },
+          {
+            "role": "conditions",
+            "value": "one of the SWE-bench project’s datasets",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 599,
+            "end": 692,
+            "quote": "✅ Multiple datasets - SWE-bench, SWE-bench Lite, SWE-bench Verified, and SWE-bench Multimodal",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.826Z",
+        "extractionJobId": "878e8183-3c64-49f6-81d8-31aaf5d1458e",
+        "digest": "0714487c513c621e600eeb3bf1fbdc712c2f58b82d51f1cc8174f3ca78770ff8"
+      },
+      {
+        "id": "revision_70819586f8ac4af489eee8df47260cc9",
+        "factId": "fact_654507da483a4b9d9751074af5ef66da",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The documentation lists SWE-bench Multimodal as one of the SWE-bench project’s datasets.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_9fc189763cb248f4b3d89c7909a965cb"
+          },
+          {
+            "role": "conditions",
+            "value": "one of the SWE-bench project’s datasets",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 599,
+            "end": 692,
+            "quote": "✅ Multiple datasets - SWE-bench, SWE-bench Lite, SWE-bench Verified, and SWE-bench Multimodal",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.826Z",
+        "extractionJobId": "878e8183-3c64-49f6-81d8-31aaf5d1458e",
+        "digest": "520d63d42733c60ed2f89ac783336dee6e529b113861da9ee7532f38eecd12ba"
+      },
+      {
+        "id": "revision_30cfc4903401429b83cc35a1863083bc",
+        "factId": "fact_74d2331cf8424101ba155ab97ca84a62",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation reports SWE-bench Multimodal integration with private-test-split evaluation on January 13, 2025.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_9fc189763cb248f4b3d89c7909a965cb"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_04d2b7615ec14174a3965bb7456aad8a"
+          },
+          {
+            "role": "conditions",
+            "value": "integration with private-test-split evaluation",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "time": {
+          "start": "2025-01-13",
+          "precision": "day",
+          "basis": "[Jan. 13, 2025]: SWE-bench Multimodal integration with private test split evaluation"
+        },
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 708,
+            "end": 792,
+            "quote": "[Jan. 13, 2025]: SWE-bench Multimodal integration with private test split evaluation",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.826Z",
+        "extractionJobId": "878e8183-3c64-49f6-81d8-31aaf5d1458e",
+        "digest": "c846818de76abf3d1ce8e7ba03ac7836d5cb2f0ede7d4502516ebc148a808dfe"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_a919ef9fb8e147c3bdeeae699df326cd",
+        "outcome": "supported",
+        "reason": "The firsthand project documentation explicitly defines the task as generating a patch resolving the described problem given a codebase and issue. The task_output property directly represents that output rather than masking another relationship.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.801Z"
+      },
+      {
+        "revisionId": "revision_0e20898f4e1c4977b78f5258456851aa",
+        "outcome": "supported",
+        "reason": "The official documentation explicitly advertises reproducible evaluation and a Docker-based harness for consistent results. The revision appropriately records this as the project’s stated intent, not independently demonstrated reproducibility.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.801Z"
+      },
+      {
+        "revisionId": "revision_99ef52c8b43443f791f4040ac3468a4c",
+        "outcome": "supported",
+        "reason": "The firsthand documentation explicitly lists SWE-bench Lite under multiple datasets, supporting its identity and attributed dataset characterization.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.801Z"
+      },
+      {
+        "revisionId": "revision_8b93fcd8cfc54b028584599f6962cbca",
+        "outcome": "supported",
+        "reason": "The firsthand documentation explicitly lists SWE-bench Verified under multiple datasets, supporting the complete attributed statement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.801Z"
+      },
+      {
+        "revisionId": "revision_70819586f8ac4af489eee8df47260cc9",
+        "outcome": "supported",
+        "reason": "The firsthand documentation explicitly lists SWE-bench Multimodal under multiple datasets, supporting the complete attributed statement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.801Z"
+      },
+      {
+        "revisionId": "revision_30cfc4903401429b83cc35a1863083bc",
+        "outcome": "supported",
+        "reason": "The official dated project entry explicitly records SWE-bench Multimodal integration with private test-split evaluation on January 13, 2025, supporting the relationship, conditions, attribution and day-level date.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.801Z"
+      }
+    ],
+    "approvals": []
+  }
+}
