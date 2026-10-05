@@ -11,6 +11,7 @@ export default function PagesReader(){
  const [catalog,setCatalog]=useState<any>({articles:[],repository:''}),[error,setError]=useState(''),[query,setQuery]=useState(''),[policy,setPolicy]=useState(''),[selected,setSelected]=useState(new URLSearchParams(location.search).get('article')||'');
  useEffect(()=>{fetch(import.meta.env.BASE_URL+'catalog.json').then(r=>{if(!r.ok)throw Error('The article catalog is unavailable.');return r.json();}).then(setCatalog).catch(e=>setError(e.message));const pop=()=>setSelected(new URLSearchParams(location.search).get('article')||'');addEventListener('popstate',pop);return()=>removeEventListener('popstate',pop);},[]);
  function select(id:string){const u=new URL(location.href);if(id)u.searchParams.set('article',id);else u.searchParams.delete('article');history.pushState({},'',u);setSelected(id);scrollTo(0,0);}
+ useEffect(()=>{document.title=(catalog.title||'AutoWiki')+' — The open encyclopedia';},[catalog.title]);
  const article=catalog.articles.find((a:any)=>a.id===selected);const repo=catalog.repository?`https://github.com/${catalog.repository}`:'';
  const research=(topic:string,id='general')=>`http://127.0.0.1:4317/?topic=${encodeURIComponent(topic)}&philosophy=${encodeURIComponent(id)}`;
  const matching=catalog.articles.filter((a:any)=>a.title.toLowerCase().includes(query.toLowerCase())&&(!policy||a.philosophy.id===policy));
