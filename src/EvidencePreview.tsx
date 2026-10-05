@@ -81,11 +81,23 @@ export function Factoid({reference,children,inline=false}:{reference:FactoidRefe
  </Tag>;
 }
 
-export function FactoidArticle({article,load,render}:{article:Article;load:(reference:FactoidReference)=>Promise<EvidencePreview>;render:(text:string)=>React.ReactNode}){
+export function FactoidArticle({article,load,render,renderInline}:{article:Article;renderInline?:(text:string)=>React.ReactNode;load:(reference:FactoidReference)=>Promise<EvidencePreview>;render:(text:string)=>React.ReactNode}){
  const pins=article.knowledge?.dependencies;
  if(!pins)return <>{render(article.markdown)}</>;
  let blocks:ReturnType<typeof factoidBlocks>;try{blocks=factoidBlocks(article.markdown);if(pins.length!==blocks.filter(b=>b.claimIndex!==null).length)throw Error('Missing claim bindings.');}catch{return <p role="alert">This article has invalid factoid bindings and cannot be displayed.</p>;}
- return <EvidencePreviewProvider load={load} scopeKey={article.id+':'+article.knowledge!.mode+':'+JSON.stringify(pins)}>
-  {blocks.map(({text,claimIndex},blockIndex)=>{if(claimIndex===null)return <React.Fragment key={'heading-'+blockIndex}>{render(text)}</React.Fragment>;const i=claimIndex;return <Factoid key={pins[i].revisionId} reference={{revisionId:pins[i].revisionId,digest:pins[i].digest,statement:text.replace(/ \[\d+\]\(#source-\d+\)/g,'')}}>{render(text)}</Factoid>;})}
- </EvidencePreviewProvider>;
+ const content:React.ReactNode[]=[];
+ // Preserve each claim binding while laying out related sentences as paragraphs.
+ let paragraph:React.ReactNode[]=[];let length=0;
+ const flush=()=>{if(paragraph.length){content.push(<p className="factoid-paragraph" key={'paragraph-'+content.length}>{paragraph}</p>);paragraph=[];length=0;}};
+ for(const {text,claimIndex} of blocks){
+  if(claimIndex===null){flush();content.push(<React.Fragment key={'heading-'+content.length}>{render(text)}</React.Fragment>);continue;}
+  const reference={revisionId:pins[claimIndex].revisionId,digest:pins[claimIndex].digest,statement:text.replace(/ \[\d+\]\(#source-\d+\)/g,'')};
+  if(renderInline){
+   if(paragraph.length)paragraph.push(' ');
+   paragraph.push(<Factoid key={reference.revisionId} reference={reference} inline>{renderInline(text)}</Factoid>);length+=text.length;
+   if(length>=420)flush();
+  }else content.push(<Factoid key={reference.revisionId} reference={reference}>{render(text)}</Factoid>);
+ }
+ flush();
+ return <EvidencePreviewProvider load={load} scopeKey={article.id+':'+article.knowledge!.mode+':'+JSON.stringify(pins)}>{content}</EvidencePreviewProvider>;
 }
