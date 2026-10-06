@@ -1,3 +1,5 @@
+import {composeNarrative,type NarrativeState} from './article-narrative.js';
+import {narrativeBlocks,type ArticleNarrative} from '../shared/narrative.js';
 import type {ArticleImage} from '../shared/images.js';
 import {FACT_SECTIONS,factSection} from '../shared/article-blocks.js';
 import type {ChatGPTClient} from '../vendor/siwc/src/types.js';
@@ -19,7 +21,7 @@ export interface SchematicTask {
  id:string;engine:'schematic';profileId:string;topic:string;subjectId:string;philosophy:Philosophy;model:string;
  status:'interrupted'|'complete';sources:Source[];sourceTasks:Record<string,string>;processedURLs:string[];
  document:ResearchDocument;requestsUsed:number;runtimeMs:number;imageCandidates:ImageCandidate[];images?:ArticleImage[];
- toolCalls:number;usage:Record<string,unknown>[];revisionIds:string[];
+ narrativeState?:NarrativeState;toolCalls:number;usage:Record<string,unknown>[];revisionIds:string[];
 }
 interface Options {
  task:SchematicTask;store:KnowledgeStore;signal:AbortSignal;requestLimit:number;client:Pick<ChatGPTClient,'streamResponse'>;
@@ -33,12 +35,12 @@ export function schematicEntity(k:KnowledgeSnapshot,topic:string,policyKey:strin
  if(!entities.length)throw Error('No supported facts establish the exact topic identity yet.');
  return entities[0];
 }
-/** No writer can add prose: all final lines compile from separately audited revisions. */
+/** Every final narrative sentence is separately audited against schematic revisions and quotes. */
 export async function researchSchematic(o:Options):Promise<Article>{
  const {task:t,store,signal,emit,save}=o,key=factPolicyKey(t.philosophy);
  if(!requiresFactoids(t.philosophy))throw Error('This engine requires the schematic philosophy.');
  const doc=t.document;doc.status='reviewing';emit({type:'document',document:structuredClone(doc)});
- const sourceLimit=Math.max(1,Math.min(6,Math.floor((o.requestLimit-3)/2)));
+ const sourceLimit=Math.max(1,Math.min(6,Math.floor((o.requestLimit-6)/2)));
  const sourcesEvent=()=>emit({type:'sources',sources:structuredClone(t.sources)});
  async function collect(query:string){
   const found=await (o.collect||collectIndependentSources)(query,t.philosophy,signal,o.client,event=>{
@@ -109,6 +111,14 @@ export async function researchSchematic(o:Options):Promise<Article>{
    // Existing unprocessed sources are eligible too; never silently ignore a blocking completion check.
    continue;
   }
+  emit({type:'progress',step:2,message:'Writing a readable article from the verified fact collection…'});
+  t.narrativeState||={};
+  article=await composeNarrative({article,k:store.snapshot(),client:o.client,model:t.model,signal,state:t.narrativeState,save,show:(sentences,stage)=>{
+   const blocks=narrativeBlocks({sentences} as ArticleNarrative);
+   const next=[{id:'title',markdown:'# '+t.topic},...blocks.map((b,i)=>({id:b.type==='heading'?'narrative-heading-'+i:'narrative-paragraph-'+b.sentences[0].paragraph,markdown:b.type==='heading'?'## '+b.text:b.text}))];
+   if(stage==='edit')for(const block of next){const before=doc.blocks.find(b=>b.id===block.id)?.markdown||'';if(before!==block.markdown){const edit={blockId:block.id,before,after:block.markdown,reason:'Edited for clear narrative flow and exact evidence coverage.'};doc.edits.push(edit);emit({type:'review-edit',blockId:block.id,edit});}}
+   doc.blocks=next;emit({type:'document',document:structuredClone(doc)});
+  }});
   assertFactoidCoverage(article,store.snapshot());signal.throwIfAborted();
   doc.status='complete';await save();
   const pins=article.knowledge!.dependencies;

@@ -1,3 +1,4 @@
+import {narrativeBlocks,citedSentence} from '../shared/narrative';
 import {factoidBlocks} from '../shared/article-blocks';
 import React,{createContext,useContext,useEffect,useId,useLayoutEffect,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
@@ -26,7 +27,7 @@ export function EvidencePreviewProvider({load,scopeKey,children}:{load:(ref:Fact
  const reference=target?.reference;
  useEffect(()=>{
   let cancelled=false;setPreview(null);setError('');if(!reference)return;
-  const key=reference.revisionId+':'+reference.digest;
+  const key=reference.revisionId+':'+reference.digest+':'+reference.statement;
   const resolve=async()=>{
    try{const result=cache.current.get(key)||await loader.current(reference);
     if(result.revisionId!==reference.revisionId||result.digest!==reference.digest||result.statement!==reference.statement)throw Error('The evidence does not match this exact statement.');
@@ -61,7 +62,7 @@ export function EvidencePreviewProvider({load,scopeKey,children}:{load:(ref:Fact
     <a href={p.url} target="_blank" rel="noreferrer">{p.title}</a><p className="factoid-preview-meta">{new URL(p.url).hostname} · Captured {new Date(p.retrievedAt).toLocaleDateString()} · {p.stance}</p>
     <blockquote>{p.beforeClipped&&'… '}{p.before}<mark>{p.quote}</mark>{p.after}{p.afterClipped&&' …'}</blockquote>
     {!p.contextAvailable&&<p className="factoid-preview-meta">Exact captured quote. Open the original source for more context.</p>}
-   </section>)}{preview.structure&&<details><summary>Claim structure</summary><p>{preview.structure.predicate.replaceAll('_',' ')} · {preview.structure.modality}{preview.structure.attribution?' · '+preview.structure.attribution:''}</p><dl>{preview.structure.arguments.map((a,i)=><React.Fragment key={i}><dt>{a.role}</dt><dd>{a.value} <small>({a.type})</small></dd></React.Fragment>)}</dl></details>}<p className="factoid-preview-hint">Highlighted text is the exact cited passage. Escape closes this preview.</p></>}
+   </section>)}{preview.structures&&<details><summary>Supporting schematic facts ({preview.structures.length})</summary>{preview.structures.map((f,i)=><p key={i}>{f.statement} <small>({f.structure.predicate.replaceAll('_',' ')} · {f.structure.modality}{f.structure.attribution?' · '+f.structure.attribution:''})</small></p>)}</details>}{preview.structure&&!preview.structures&&<details><summary>Claim structure</summary><p>{preview.structure.predicate.replaceAll('_',' ')} · {preview.structure.modality}{preview.structure.attribution?' · '+preview.structure.attribution:''}</p><dl>{preview.structure.arguments.map((a,i)=><React.Fragment key={i}><dt>{a.role}</dt><dd>{a.value} <small>({a.type})</small></dd></React.Fragment>)}</dl></details>}<p className="factoid-preview-hint">Highlighted text is the exact cited passage. Escape closes this preview.</p></>}
   </div>,document.body)}</Context.Provider>;
 }
 
@@ -84,6 +85,15 @@ export function Factoid({reference,children,inline=false}:{reference:FactoidRefe
 export function FactoidArticle({article,load,render,renderInline}:{article:Article;renderInline?:(text:string)=>React.ReactNode;load:(reference:FactoidReference)=>Promise<EvidencePreview>;render:(text:string)=>React.ReactNode}){
  const pins=article.knowledge?.dependencies;
  if(!pins)return <>{render(article.markdown)}</>;
+ const narrative=article.knowledge?.narrative;
+ if(narrative){
+  const sentenceLoad=async(reference:FactoidReference):Promise<EvidencePreview>=>{
+   const sentence=narrative.sentences.find(s=>s.id===reference.revisionId);if(!sentence||reference.digest!==narrative.digest||reference.statement!==sentence.text)throw Error('Invalid narrative evidence binding.');
+   const previews=await Promise.all(sentence.revisionIds.map(async id=>{const pin=pins.find(p=>p.revisionId===id);if(!pin)throw Error('Missing narrative claim pin.');const ref={revisionId:id,digest:pin.digest,statement:narrative.factStatements[id]};const p=await load(ref);if(p.revisionId!==id||p.digest!==ref.digest||p.statement!==ref.statement)throw Error('Narrative evidence no longer matches its exact fact.');return p;}));
+   return {...previews[0],...reference,approved:article.knowledge!.mode==='approved'&&previews.every(p=>p.approved),passages:[...new Map(previews.flatMap(p=>p.passages).map(p=>[p.captureId+':'+p.quote,p])).values()],structures:previews.map(p=>({statement:p.statement,structure:p.structure}))};
+  };
+  return <EvidencePreviewProvider load={sentenceLoad} scopeKey={article.id+':'+narrative.digest}>{narrativeBlocks(narrative).map((block,i)=>block.type==='heading'?<React.Fragment key={'heading-'+i}>{render('## '+block.text)}</React.Fragment>:renderInline?<p key={'paragraph-'+i}>{block.sentences.map((s,j)=><React.Fragment key={s.id}>{j>0&&' '}<Factoid reference={{revisionId:s.id,digest:narrative.digest,statement:s.text}} inline>{renderInline(citedSentence(s))}</Factoid></React.Fragment>)}</p>:<div key={'paragraph-'+i}>{block.sentences.map(s=><Factoid key={s.id} reference={{revisionId:s.id,digest:narrative.digest,statement:s.text}}>{render(citedSentence(s))}</Factoid>)}</div>)}</EvidencePreviewProvider>;
+ }
  let blocks:ReturnType<typeof factoidBlocks>;try{blocks=factoidBlocks(article.markdown);if(pins.length!==blocks.filter(b=>b.claimIndex!==null).length)throw Error('Missing claim bindings.');}catch{return <p role="alert">This article has invalid factoid bindings and cannot be displayed.</p>;}
  const content:React.ReactNode[]=[];
  // Preserve each claim binding while laying out related sentences as paragraphs.

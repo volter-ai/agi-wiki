@@ -1,3 +1,5 @@
+import {assertFactoidCoverage} from './knowledge-articles.js';
+import type {Article} from './research.js';
 import {atomicSentenceCount} from '../shared/sentences.js';
 import {emptyKnowledge,ENTITY_TYPES,PREDICATES,type KnowledgeSnapshot,type SourceCapture} from '../shared/knowledge.js';
 import {resolvePhilosophy,type Philosophy} from '../shared/philosophies.js';
@@ -8,9 +10,9 @@ import {evidenceURL} from './web-evidence.js';
 import {requiresFactoids} from '../shared/philosophies.js';
 import {validateSchematicFact} from '../shared/schematic.js';
 import {validateArticleImages,type ArticleImage} from '../shared/images.js';
-export interface KnowledgeBundle {kind:'knowledge';ontologyVersion:1;subjectId:string;philosophy:Philosophy;snapshot:KnowledgeSnapshot;illustrations?:{entityId:string;image:ArticleImage}[]}
+export interface KnowledgeBundle {kind:'knowledge';ontologyVersion:1;subjectId:string;philosophy:Philosophy;snapshot:KnowledgeSnapshot;illustrations?:{entityId:string;image:ArticleImage}[];articles?:Article[]}
 /** Retain the prior revisions and conflicts required to review a source batch. */
-export function exportKnowledgeBundle(all:KnowledgeSnapshot,subjectId:string,philosophy:Philosophy,jobId?:string,revisionIds?:string[],illustrations?:KnowledgeBundle['illustrations']):KnowledgeBundle {
+export function exportKnowledgeBundle(all:KnowledgeSnapshot,subjectId:string,philosophy:Philosophy,jobId?:string,revisionIds?:string[],illustrations?:KnowledgeBundle['illustrations'],articles?:Article[]):KnowledgeBundle {
  const eligible=all.revisions.filter(f=>f.subjectId===subjectId&&f.policyKey===factPolicyKey(philosophy));
  const selected=new Set(eligible.filter(f=>(!jobId||f.extractionJobId===jobId)&&(!revisionIds||revisionIds.includes(f.id))).map(f=>f.id));
  if(revisionIds&&(new Set(revisionIds).size!==revisionIds.length||revisionIds.some(id=>!selected.has(id))))throw Error('Export requires exact revision IDs under this policy.');
@@ -19,7 +21,7 @@ export function exportKnowledgeBundle(all:KnowledgeSnapshot,subjectId:string,phi
   for(const related of eligible.filter(r=>r.id===f.previousRevisionId||f.conflictsWith.includes(r.factId)))if(!selected.has(related.id)){selected.add(related.id);changed=true;}
  }}
  const revisions=eligible.filter(f=>selected.has(f.id)),entityIds=new Set(revisions.flatMap(f=>f.arguments.flatMap(a=>a.entityId?[a.entityId]:[]))),captureIds=new Set(revisions.flatMap(f=>f.evidence.map(e=>e.captureId)));
- return validateKnowledgeBundle({kind:'knowledge',ontologyVersion:1,subjectId,philosophy,...(illustrations?.length?{illustrations}:{}),snapshot:{ontologyVersion:1,revisions,entities:all.entities.filter(e=>entityIds.has(e.id)),captures:all.captures.filter(c=>captureIds.has(c.id)),audits:all.audits.filter(a=>selected.has(a.revisionId))}});
+ return validateKnowledgeBundle({kind:'knowledge',ontologyVersion:1,subjectId,philosophy,...(articles?.length?{articles:articles.map(a=>({...a,sources:a.sources.filter(s=>captureIds.has(s.captureId!)).map(s=>({...s,extract:''})),review:undefined,imageCandidates:undefined}))}:{}),...(illustrations?.length?{illustrations}:{}),snapshot:{ontologyVersion:1,revisions,entities:all.entities.filter(e=>entityIds.has(e.id)),captures:all.captures.filter(c=>captureIds.has(c.id)),audits:all.audits.filter(a=>selected.has(a.revisionId))}});
 }
 const validID=(s:unknown)=>typeof s==='string'&&/^[a-z0-9_-]{1,100}$/.test(s);
 const bounded=(s:unknown,n:number)=>typeof s==='string'&&!!s.trim()&&s.length<=n&&!/[\u0000-\u001f<>]/.test(s);
@@ -59,7 +61,19 @@ export function validateKnowledgeBundle(raw:any):KnowledgeBundle{
    depicted.add(i.entityId);const [image]=validateArticleImages([i.image]);return {entityId:i.entityId,image};
   });
  }
- return {kind:'knowledge',ontologyVersion:1,subjectId:raw.subjectId,philosophy,snapshot,...(illustrations?.length?{illustrations}:{})};
+ let articles:Article[]|undefined;
+ if(raw.articles!==undefined){
+  if(!Array.isArray(raw.articles)||raw.articles.length>3)throw Error('Invalid article narratives.');
+  const seenArticles=new Set<string>();
+  articles=raw.articles.map((a:any)=>{
+   if(!a?.knowledge?.narrative||a.subjectId!==raw.subjectId||a.philosophy?.id!==philosophy.id||a.philosophy?.version!==philosophy.version||typeof a.markdown!=='string'||a.markdown.length>40000||typeof a.model!=='string'||a.model.length>100||!Number.isFinite(Date.parse(a.createdAt))||!Array.isArray(a.sources)||!a.sources.length||a.sources.length>8||seenArticles.has(a.knowledge.entityId))throw Error('Invalid composed article.');
+   seenArticles.add(a.knowledge.entityId);const sourceIds=new Set<number>();
+   const sources=a.sources.map((s:any)=>{const c=snapshot.captures.find(c=>c.id===s.captureId);if(!c||s.url!==c.url||s.title!==c.title||!Number.isInteger(s.id)||s.id<1||s.id>100||sourceIds.has(s.id))throw Error('Narrative sources must match their immutable captures.');sourceIds.add(s.id);return {id:s.id,captureId:c.id,url:c.url,title:c.title,extract:''};});
+   const article:Article={id:'knowledge-'+a.knowledge.entityId,title:a.title,topic:a.title,subjectId:raw.subjectId,philosophy,markdown:a.markdown,sources,createdAt:a.createdAt,model:a.model,knowledge:{...a.knowledge,mode:'preview'},...(a.images?.length?{images:validateArticleImages(a.images)}:{})};
+   assertFactoidCoverage(article,snapshot);return article;
+  });
+ }
+ return {kind:'knowledge',ontologyVersion:1,subjectId:raw.subjectId,philosophy,snapshot,...(articles?.length?{articles}:{}),...(illustrations?.length?{illustrations}:{})};
 }
 export function verifyBundleEvidence(bundle:KnowledgeBundle,retrieved:{url:string;extract:string}[]){
  for(const capture of bundle.snapshot.captures){const source=retrieved.find(s=>s.url===capture.url);if(!source||knowledgeHash(source.extract)!==capture.sha256)throw Error('Source capture changed or could not be reproduced. Re-extract and review a new bundle.');
