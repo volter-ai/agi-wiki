@@ -1,0 +1,2618 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_1f5aa2537a4b44bbacddc6fcd3c0c899",
+        "label": "NVIDIA",
+        "type": "organization",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_e667105517db4fda9e58032cc1dd375f",
+        "label": "NVIDIA Hopper architecture",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_f2d5851eaf504cc58866aeb8431c45f9",
+        "label": "NVIDIA H100",
+        "type": "hardware",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_106b4034f8f24be093053f40f67d858e",
+        "label": "H100 Transformer Engine",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+        "sourceId": "source_f03b0c4d419328171dec5d03850240878e5b4f37c761b4bb869ba23e2f1608de",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-hopper-architecture-the-next-generation-of-accelerated-computing",
+        "title": "NVIDIA Announces Hopper Architecture, the Next Generation of Accelerated Computing | NVIDIA Newsroom",
+        "sha256": "a0a7ad1ede710c56c7fd747f421f623382987cf0f084372b0d9705bbd47f6328",
+        "retrievedAt": "2026-10-05T18:19:19.880Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "This is NVIDIA's own announcement of Hopper and H100, providing firsthand evidence of its announcements and stated specifications, expectations, and performance claims, not independent verification.",
+        "text": ""
+      },
+      {
+        "id": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+        "sourceId": "source_5b14cbf37f4f5a9af4b9fc17d315052c72183d86d8a2f12bdca3defc7a83aca5",
+        "url": "https://developer.nvidia.com/blog/?p=45555",
+        "title": "NVIDIA Hopper Architecture In-Depth | NVIDIA Technical Blog",
+        "sha256": "bb2d19fedbe921ad4e827e485c85bc5831cc761433c4aca30bd1c89db29a1c12",
+        "retrievedAt": "2026-10-05T17:26:37.915Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "NVIDIA's technical blog provides its own H100 architecture and configuration specifications; claims below use the authored article rather than its AI-generated summary and remain attributed to NVIDIA.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_c051b1248e254052839cee9f61b69255",
+        "factId": "fact_2c858bc2ab964713ac114957629111ac",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA identifies NVIDIA H100 as its ninth-generation data-center GPU.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "definition",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "NVIDIA's ninth-generation data-center GPU",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 2117,
+            "end": 2329,
+            "quote": "The NVIDIA H100 Tensor Core GPU is our ninth-generation data center GPU designed to deliver an order-of-magnitude performance leap for large-scale AI and HPC over the prior-generation NVIDIA A100 Tensor Core GPU.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:54:16.662Z",
+        "extractionJobId": "b93c4ca6-96ff-456d-a19d-e80967f14e08",
+        "digest": "76ebeb22d1260778c360ff58f865345f14a64c6880405c1eeaa913fae78e9b2a"
+      },
+      {
+        "id": "revision_ad93e3e951ff4a29af9c2e02c76fb155",
+        "factId": "fact_1d29454dd060486e84a9f7f777069377",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 is based on the NVIDIA Hopper architecture.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_e667105517db4fda9e58032cc1dd375f"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 1779,
+            "end": 1948,
+            "quote": "Today during the 2022 NVIDIA GTC Keynote address, NVIDIA CEO Jensen Huang introduced the new NVIDIA H100 Tensor Core GPU based on the new NVIDIA Hopper GPU architecture.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:54:16.662Z",
+        "extractionJobId": "b93c4ca6-96ff-456d-a19d-e80967f14e08",
+        "digest": "3001b7a959f69a683fada6e440c3c45f7976f36fd913f2938f354de6c24f171a"
+      },
+      {
+        "id": "revision_48b8c36377564eafae4727448932c0ed",
+        "factId": "fact_c36fc30a93e240bf920cee8712c64941",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA describes NVIDIA H100 as designed for large-scale AI and high-performance computing.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "purpose",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Large-scale AI and high-performance computing",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 2117,
+            "end": 2329,
+            "quote": "The NVIDIA H100 Tensor Core GPU is our ninth-generation data center GPU designed to deliver an order-of-magnitude performance leap for large-scale AI and HPC over the prior-generation NVIDIA A100 Tensor Core GPU.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:54:16.662Z",
+        "extractionJobId": "b93c4ca6-96ff-456d-a19d-e80967f14e08",
+        "digest": "be4108c63f967df0ed29e8b9804faf062feabef82540d596fe78ab991edc7876"
+      },
+      {
+        "id": "revision_06988b60eea640d896b1ce22927e50e6",
+        "factId": "fact_009d39a3ac8548faaa78c716d5bcbe7c",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA reports that the GH100 chip powering NVIDIA H100 contains 80 billion transistors.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "transistor_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "80000000000",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Underlying full GH100 chip",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 12460,
+            "end": 12647,
+            "quote": "The full GH100 GPU that powers the H100 GPU is fabricated using the TSMC 4N process customized for NVIDIA, with 80 billion transistors, a die size of 814 mm2, and higher frequency design.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:54:16.663Z",
+        "extractionJobId": "b93c4ca6-96ff-456d-a19d-e80967f14e08",
+        "digest": "f35cee93fcefd083fe566b87f1db4630c4608c21f830f4d5707e366d72dae832"
+      },
+      {
+        "id": "revision_392f17dd916947a992183006a0df8318",
+        "factId": "fact_9a48311438fb4db385b32f57c9189ae0",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA reports a die area of 814 square millimeters for the GH100 chip powering NVIDIA H100.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "chip_area",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "814",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "square_millimeters",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Underlying full GH100 chip",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 12460,
+            "end": 12647,
+            "quote": "The full GH100 GPU that powers the H100 GPU is fabricated using the TSMC 4N process customized for NVIDIA, with 80 billion transistors, a die size of 814 mm2, and higher frequency design.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:54:16.663Z",
+        "extractionJobId": "b93c4ca6-96ff-456d-a19d-e80967f14e08",
+        "digest": "78561d5b1d2d75ab30fb467be4c649f8a4c16d1e96110142df56d0de467651f4"
+      },
+      {
+        "id": "revision_2e0a0a2f7b674675ab4c6196c0185f82",
+        "factId": "fact_a61ec873a1dc4354be1efb135a4bcfa6",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that the GH100 chip powering NVIDIA H100 uses a TSMC 4N process customized for NVIDIA.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "manufacturing_process",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "TSMC 4N customized for NVIDIA",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Underlying full GH100 chip",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 12460,
+            "end": 12647,
+            "quote": "The full GH100 GPU that powers the H100 GPU is fabricated using the TSMC 4N process customized for NVIDIA, with 80 billion transistors, a die size of 814 mm2, and higher frequency design.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:54:16.663Z",
+        "extractionJobId": "b93c4ca6-96ff-456d-a19d-e80967f14e08",
+        "digest": "439c7a60e5d6a103461a5a76a993e84adc13e02aa661a0bb6d6e22e10f82b003"
+      },
+      {
+        "id": "revision_b2684a628366416d972ac495aa6d6c53",
+        "factId": "fact_6cb5e4161c6a45d281160f1bd80c3a60",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies 114 streaming multiprocessors for NVIDIA H100 in its PCIe Gen 5 board configuration.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "streaming_multiprocessor_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "114",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "PCIe Gen 5 board configuration",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 13541,
+            "end": 13896,
+            "quote": "The NVIDIA H100 GPU with a PCIe Gen 5 board form-factor includes the following units: 7 or 8 GPCs, 57 TPCs, 2 SMs/TPC, 114 SMs per GPU 128 FP32 CUDA Cores/SM, 14592 FP32 CUDA Cores per GPU 4 fourth-generation Tensor Cores per SM, 456 per GPU 80 GB HBM2e, 5 HBM2e stacks, 10 512-bit memory controllers 50 MB L2 cache Fourth-generation NVLink and PCIe Gen 5",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:54:16.664Z",
+        "extractionJobId": "b93c4ca6-96ff-456d-a19d-e80967f14e08",
+        "digest": "833a8789e262dea10f34863767cd7388e1c603007513bff9cc345fc7bf3ab5d3"
+      },
+      {
+        "id": "revision_f62bcbc4616e44b3a09142ad5f8e950e",
+        "factId": "fact_e71be32f8f9d428bb2ee0d1c073cee02",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies 456 fourth-generation Tensor Cores for NVIDIA H100 in its PCIe Gen 5 board configuration.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "tensor_core_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "456",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "PCIe Gen 5 board configuration; fourth-generation Tensor Cores",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 13541,
+            "end": 13896,
+            "quote": "The NVIDIA H100 GPU with a PCIe Gen 5 board form-factor includes the following units: 7 or 8 GPCs, 57 TPCs, 2 SMs/TPC, 114 SMs per GPU 128 FP32 CUDA Cores/SM, 14592 FP32 CUDA Cores per GPU 4 fourth-generation Tensor Cores per SM, 456 per GPU 80 GB HBM2e, 5 HBM2e stacks, 10 512-bit memory controllers 50 MB L2 cache Fourth-generation NVLink and PCIe Gen 5",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:54:16.664Z",
+        "extractionJobId": "b93c4ca6-96ff-456d-a19d-e80967f14e08",
+        "digest": "4483a57ecba3328cf983f551b24846ac30d72cf7d88bbd55e8ea8795fb2de39d"
+      },
+      {
+        "id": "revision_df883a02be1541b58198571e636dfb38",
+        "factId": "fact_39c3cededdbf49eba106e1fd34df357e",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies 80 gigabytes of HBM2e memory for NVIDIA H100 in its PCIe Gen 5 board configuration.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "memory_capacity",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "80",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "gigabytes",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "PCIe Gen 5 board configuration; HBM2e memory",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 13541,
+            "end": 13896,
+            "quote": "The NVIDIA H100 GPU with a PCIe Gen 5 board form-factor includes the following units: 7 or 8 GPCs, 57 TPCs, 2 SMs/TPC, 114 SMs per GPU 128 FP32 CUDA Cores/SM, 14592 FP32 CUDA Cores per GPU 4 fourth-generation Tensor Cores per SM, 456 per GPU 80 GB HBM2e, 5 HBM2e stacks, 10 512-bit memory controllers 50 MB L2 cache Fourth-generation NVLink and PCIe Gen 5",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:54:16.664Z",
+        "extractionJobId": "b93c4ca6-96ff-456d-a19d-e80967f14e08",
+        "digest": "769c2eabea844a21b34ef9aabb762b1f9556225914ae2bf7af521970dbd35152"
+      },
+      {
+        "id": "revision_a6182bf889ed4337b195edaf9327dd99",
+        "factId": "fact_399d863aaee14c909da04d2e8e9cd04b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's Tensor Memory Accelerator transfers large data blocks between global memory and shared memory.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Tensor Memory Accelerator transfers large blocks of data between global memory and shared memory.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6287,
+            "end": 6465,
+            "quote": "New asynchronous execution features include a new Tensor Memory Accelerator (TMA) unit that can transfer large blocks of data efficiently between global memory and shared memory.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.604Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "f6b99e4400caedbc5d43e61dd1586d4e1982dd0eecffa7bbc0267cc79b46f767"
+      },
+      {
+        "id": "revision_c091ec396ea74fa1ba260c840aca73a2",
+        "factId": "fact_cec8b7ddc5e64e61a2fd676606d2d381",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's Tensor Memory Accelerator supports asynchronous copies between thread blocks within a cluster.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Tensor Memory Accelerator supports asynchronous copies between thread blocks in a cluster.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6287,
+            "end": 6539,
+            "quote": "New asynchronous execution features include a new Tensor Memory Accelerator (TMA) unit that can transfer large blocks of data efficiently between global memory and shared memory. TMA also supports asynchronous copies between thread blocks in a cluster.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T20:56:54.604Z",
+        "extractionJobId": "56626b50-c6e6-468a-a16d-82608bfaf9c9",
+        "digest": "672224f966eb444b4913239dc7d06a8ef5483b3ec1931e38bd49986a67ee3fa4"
+      },
+      {
+        "id": "revision_edf99d264399450ba34181c51d0dd1da",
+        "factId": "fact_87f3e32c24ad4f3595662739cde56d8d",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies 900 gigabytes per second of total multi-GPU input/output bandwidth for NVIDIA H100's fourth-generation NVLink.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "interconnect_bandwidth",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "900",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "gigabytes_per_second",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Fourth-generation NVIDIA NVLink; total bandwidth for multi-GPU IO.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 8311,
+            "end": 8564,
+            "quote": "Fourth-generation NVIDIA NVLink provides a 3x bandwidth increase on all-reduce operations and a 50% general bandwidth increase over the prior generation NVLink with 900 GB/sec total bandwidth for multi-GPU IO operating at 7x the bandwidth of PCIe Gen 5.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This is a company bandwidth specification, not an independently measured workload result."
+        ],
+        "createdAt": "2026-10-05T20:59:15.406Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "9e9b9139707b39dd2f753c64efc8cc212f5536b79e1246fadff80a7f59df46fd"
+      },
+      {
+        "id": "revision_8352a0f05c544ee0b8812a44e5718484",
+        "factId": "fact_b1857995c6334204929ef16be10c815a",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies 128 gigabytes per second of total bidirectional bandwidth for NVIDIA H100's PCIe Gen 5 interface.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "interconnect_bandwidth",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "128",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "gigabytes_per_second",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "PCIe Gen 5; total bandwidth across both directions.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 9538,
+            "end": 9817,
+            "quote": "PCIe Gen 5 provides 128 GB/sec total bandwidth (64 GB/sec in each direction) compared to 64 GB/sec total bandwidth (32GB/sec in each direction) in Gen 4 PCIe. PCIe Gen 5 enables H100 to interface with the highest performing x86 CPUs and SmartNICs or data processing units (DPUs).",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The stated bandwidth is an interface specification, not measured application throughput."
+        ],
+        "createdAt": "2026-10-05T20:59:15.406Z",
+        "extractionJobId": "7993bca0-69cc-470a-a45d-39ddc440c0ac",
+        "digest": "e88a7aa9ae51652593707671cb6e087de24ccce5ef0a9cce3269f70b13b79681"
+      },
+      {
+        "id": "revision_4ffa2f038beb42318ad4e9fea5f8eec4",
+        "factId": "fact_444ed501c3b743b3870124aa3f23d5ea",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA announced that H100 would come in SXM and PCIe form factors.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "form_factor",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Planned SXM and PCIe form factors",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 5936,
+            "end": 6034,
+            "quote": "H100 will come in SXM and PCIe form factors to support a wide range of server design requirements.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This describes announced plans, not confirmation of shipping products."
+        ],
+        "createdAt": "2026-10-05T21:19:33.896Z",
+        "extractionJobId": "15c62ae1-0efc-4a8c-8232-f6a0eae9e9a7",
+        "digest": "e923e76e975ebee28c08c80109ae20ae620f645db0d348a2a7c8e85fc22ba836"
+      },
+      {
+        "id": "revision_c7a9bed48e724cef81496b639a57513c",
+        "factId": "fact_ab8c9fba4c9840478a5f86b708905004",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA projected H100 availability starting in the third quarter of 2022.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "availability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Projected availability starting in the third quarter of 2022",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 7899,
+            "end": 7972,
+            "quote": "Availability NVIDIA H100 will be available starting in the third quarter.",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 187,
+            "end": 428,
+            "quote": "March 22, 2022 GTC—To power the next wave of AI data centers, NVIDIA today announced its next-generation accelerated computing platform with NVIDIA Hopper™ architecture, delivering an order of magnitude performance leap over its predecessor.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "This is a launch-time projection, not evidence of actual availability."
+        ],
+        "createdAt": "2026-10-05T21:19:33.896Z",
+        "extractionJobId": "15c62ae1-0efc-4a8c-8232-f6a0eae9e9a7",
+        "digest": "020d86d5b2a96b4e3e8ab13f478e0d98b24b3e8d7b41eb133e7cd9eb54e3fe1b"
+      },
+      {
+        "id": "revision_1e6e100f0624449a9c88671acfdc8443",
+        "factId": "fact_b0724ed200ef4583bf4a2197d0087248",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 incorporates fourth-generation Tensor Cores.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Fourth-generation Tensor Cores",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 9997,
+            "end": 10228,
+            "quote": "The NVIDIA H100 GPU based on the new NVIDIA Hopper GPU architecture features multiple innovations: New fourth-generation Tensor Cores perform faster matrix computations than ever before on an even broader array of AI and HPC tasks.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:29:40.084Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "b74c5e15a8d67dc2da70192694da7b3cb508c27a816f863b36a373466d313056"
+      },
+      {
+        "id": "revision_32666fd3064543f995a10c04aea75b89",
+        "factId": "fact_a03a3ebfbceb4cab8608cc3772e1adf7",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 uses the H100 Transformer Engine.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_106b4034f8f24be093053f40f67d858e"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 10229,
+            "end": 10413,
+            "quote": "A new transformer engine enables H100 to deliver up to 9x faster AI training and up to 30x faster AI. inference speedups on large language models compared to the prior generation A100.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:29:40.085Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "a002fc08890a6a12e9761941d3507a2682026d55f9cafb6c85ca0174fd325e3f"
+      },
+      {
+        "id": "revision_600620d1dcac41b28ec805c5e0b39e20",
+        "factId": "fact_1f22689587b046e6bba60aeb7343cc01",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA describes NVIDIA H100 as introducing DPX instructions for accelerating dynamic-programming algorithms.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "New DPX instructions for accelerating dynamic-programming algorithms",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 5229,
+            "end": 5521,
+            "quote": "New DPX Instructions accelerate dynamic programming algorithms by up to 7x over the A100 GPU. Two examples include the Smith-Waterman algorithm for genomics processing, and the Floyd-Warshall algorithm used to find optimal routes for a fleet of robots through a dynamic warehouse environment.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:29:40.085Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "6b73168ecb9b00a4b88d3c1a13573579db7407e1e44973b457470e0e6e07dbe9"
+      },
+      {
+        "id": "revision_55ca32c9d611498780650a21340e966d",
+        "factId": "fact_e897892bf3b74d7fb9880fee359ecc70",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies 132 streaming multiprocessors for NVIDIA H100 in its SXM5 configuration.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "streaming_multiprocessor_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "132",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "SXM5 configuration",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 13196,
+            "end": 13317,
+            "quote": "The NVIDIA H100 GPU with SXM5 board form-factor includes the following units: 8 GPCs, 66 TPCs, 2 SMs/TPC, 132 SMs per GPU",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:29:40.086Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "b015e3464e7ae2035978222961f5bbe5d8219da663a9f98a6a3c629c9950cce6"
+      },
+      {
+        "id": "revision_80821946afa04a49972de6f0b48fc277",
+        "factId": "fact_2b5e318a10e949399f5dbfff29f5dee3",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies 528 fourth-generation Tensor Cores for NVIDIA H100 in its SXM5 configuration.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "tensor_core_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "528",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "SXM5 configuration; fourth-generation Tensor Cores",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 13196,
+            "end": 13428,
+            "quote": "The NVIDIA H100 GPU with SXM5 board form-factor includes the following units: 8 GPCs, 66 TPCs, 2 SMs/TPC, 132 SMs per GPU 128 FP32 CUDA Cores per SM, 16896 FP32 CUDA Cores per GPU 4 fourth-generation Tensor Cores per SM, 528 per GPU",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:29:40.086Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "8ccfc1763ccbccf602a753e972ac039bec14c566ad5cd314b8ece1c52aee158f"
+      },
+      {
+        "id": "revision_5eca12e66dfb4055bc0b836bd2b71bba",
+        "factId": "fact_9a2420ae9081494ba4fdc88719b836a0",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies 80 gigabytes of HBM3 memory for NVIDIA H100 in its SXM5 configuration.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "memory_capacity",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "80",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "gigabytes",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "SXM5 configuration; HBM3 memory",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 13196,
+            "end": 13540,
+            "quote": "The NVIDIA H100 GPU with SXM5 board form-factor includes the following units: 8 GPCs, 66 TPCs, 2 SMs/TPC, 132 SMs per GPU 128 FP32 CUDA Cores per SM, 16896 FP32 CUDA Cores per GPU 4 fourth-generation Tensor Cores per SM, 528 per GPU 80 GB HBM3, 5 HBM3 stacks, 10 512-bit memory controllers 50 MB L2 cache Fourth-generation NVLink and PCIe Gen 5",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:29:40.086Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "1c845d23e94c3d8480dada4b4720823eac5e3b6c67338c81c867782f7e096d07"
+      },
+      {
+        "id": "revision_eb917dc0b7e946b587c03c7cd6fbf9e9",
+        "factId": "fact_9291584190a943bda0903068bb02e9c5",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA describes FP8 as a new data type for NVIDIA H100's fourth-generation Tensor Cores.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "precision",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "New FP8 data type in fourth-generation Tensor Cores",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 4659,
+            "end": 5079,
+            "quote": "New fourth-generation Tensor Cores are up to 6x faster chip-to-chip compared to A100, including per-SM speedup, additional SM count, and higher clocks of H100. On a per SM basis, the Tensor Cores deliver 2x the MMA (Matrix Multiply-Accumulate) computational rates of the A100 SM on equivalent data types, and 4x the rate of A100 using the new FP8 data type, compared to previous generation 16-bit floating-point options.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:29:40.087Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "5a7f5adde5be8dea0502cfb52accbcf74e916ddeb50c23b3b3054b3bcec66858"
+      },
+      {
+        "id": "revision_74595e472b5142b8aed5d8a092a495b1",
+        "factId": "fact_f8d5799385cd4e358a5531f0f9807fe9",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that the H100 Transformer Engine combines software with custom NVIDIA Hopper Tensor Core technology.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_106b4034f8f24be093053f40f67d858e"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Combination of software and custom NVIDIA Hopper Tensor Core technology",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6645,
+            "end": 6824,
+            "quote": "New transformer engine uses a combination of software and custom NVIDIA Hopper Tensor Core technology designed specifically to accelerate transformer model training and inference.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:29:40.087Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "2481e3164ba08c603f1afdd8a17e59a0602bcab9b2f2bdcaa08bd7585f6da9ca"
+      },
+      {
+        "id": "revision_ee828c01f6544201b54fc38ac649a6c2",
+        "factId": "fact_95fa9fc0c77d44b3802e7a1e2f59448c",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that the H100 Transformer Engine dynamically chooses between FP8 and 16-bit calculations.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_106b4034f8f24be093053f40f67d858e"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Dynamic selection between FP8 and 16-bit calculations",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6825,
+            "end": 7159,
+            "quote": "The transformer engine intelligently manages and dynamically chooses between FP8 and 16-bit calculations, automatically handling re-casting and scaling between FP8 and 16-bit in each layer to deliver up to 9x faster AI training and up to 30x faster AI inference speedups on large language models compared to the prior generation A100.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:29:40.087Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "6891796221cf854f23486e62cec27d7a7532e9c8fef6bc141fdfa0108488e38b"
+      },
+      {
+        "id": "revision_b8cdf0f61f564c00a713810ce76614f3",
+        "factId": "fact_f9f88e73afd84b65a99b7c8b4fd04bc3",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that the H100 Transformer Engine automatically handles re-casting between FP8 and 16-bit in each layer.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_106b4034f8f24be093053f40f67d858e"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Automatic re-casting between FP8 and 16-bit in each layer",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6825,
+            "end": 7159,
+            "quote": "The transformer engine intelligently manages and dynamically chooses between FP8 and 16-bit calculations, automatically handling re-casting and scaling between FP8 and 16-bit in each layer to deliver up to 9x faster AI training and up to 30x faster AI inference speedups on large language models compared to the prior generation A100.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:29:40.087Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "4f515caba29036a9fb2876ae85474bcc1ac7a498b25125ed7b01bf0495e92de2"
+      },
+      {
+        "id": "revision_6dc480317a004fa28384f46e081cde46",
+        "factId": "fact_8cb2fbcc8bf241bc8212eb10ef1e32d8",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that the H100 Transformer Engine automatically handles scaling between FP8 and 16-bit in each layer.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_106b4034f8f24be093053f40f67d858e"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Automatic scaling between FP8 and 16-bit in each layer",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6825,
+            "end": 7159,
+            "quote": "The transformer engine intelligently manages and dynamically chooses between FP8 and 16-bit calculations, automatically handling re-casting and scaling between FP8 and 16-bit in each layer to deliver up to 9x faster AI training and up to 30x faster AI inference speedups on large language models compared to the prior generation A100.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:29:40.087Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "3eb0a21a317a85b82412b558ec06c97ef40bc36393748849fd0315078c416c9d"
+      },
+      {
+        "id": "revision_956f140550a241eeac2441e24858be23",
+        "factId": "fact_5f9ce341d71440b78efa1643274d0c15",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's DPX instructions accelerate Smith-Waterman genomics processing.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "DPX acceleration of Smith-Waterman genomics processing",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 5229,
+            "end": 5521,
+            "quote": "New DPX Instructions accelerate dynamic programming algorithms by up to 7x over the A100 GPU. Two examples include the Smith-Waterman algorithm for genomics processing, and the Floyd-Warshall algorithm used to find optimal routes for a fleet of robots through a dynamic warehouse environment.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The passage does not provide algorithm-specific measurement conditions."
+        ],
+        "createdAt": "2026-10-05T21:29:40.087Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "1e337cd6fc72c64ee0e63430e3c77bc637fff8973c846aae7ff12dda634cd514"
+      },
+      {
+        "id": "revision_e0bca21cadbc4e03bad3914db2f321ec",
+        "factId": "fact_1f0ef8a291bb444d93a04768300ecae3",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's DPX instructions accelerate Floyd-Warshall optimal-route finding for robot fleets in dynamic warehouses.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "DPX acceleration of Floyd-Warshall optimal-route finding for robot fleets in dynamic warehouses",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 5229,
+            "end": 5521,
+            "quote": "New DPX Instructions accelerate dynamic programming algorithms by up to 7x over the A100 GPU. Two examples include the Smith-Waterman algorithm for genomics processing, and the Floyd-Warshall algorithm used to find optimal routes for a fleet of robots through a dynamic warehouse environment.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The passage does not provide algorithm-specific measurement conditions."
+        ],
+        "createdAt": "2026-10-05T21:29:40.087Z",
+        "extractionJobId": "5d7f61f2-41d2-45f4-88aa-0a3d5be67848",
+        "digest": "d65c09351ecce3126bba3c9eda3e2b6749bb6f64a1064ac2461effca418e89a4"
+      },
+      {
+        "id": "revision_83ca86cbea094fd6a39fd78f882666b2",
+        "factId": "fact_01af280322754b178fbf4732d4b8b474",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 adds thread block clusters as a new level in the CUDA thread group hierarchy.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Thread block clusters added as a new level in the CUDA thread group hierarchy",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 11434,
+            "end": 11526,
+            "quote": "H100 grows the CUDA thread group hierarchy with a new level called the thread block cluster.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "170f153ed2a23a56f99157fb3ab7367951ed4acca92101f5a46c51f3f8364207"
+      },
+      {
+        "id": "revision_b7f746c39cef433b8da76689d00f96eb",
+        "factId": "fact_ea13449b5c774678a6f193638316f60f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100 guarantees concurrent scheduling of thread blocks within a cluster.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Guaranteed concurrent scheduling of thread blocks within a cluster",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 11434,
+            "end": 11697,
+            "quote": "H100 grows the CUDA thread group hierarchy with a new level called the thread block cluster. A cluster is a group of thread blocks that are guaranteed to be concurrently scheduled, and enable efficient cooperation and data sharing for threads across multiple SMs.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "5178469ce390a6cbc4739bd65d47ee19a4175bd69d863de216f207907ff9cca3"
+      },
+      {
+        "id": "revision_4a088fc43fa847158acda57b5a08e674",
+        "factId": "fact_1f967d23276f4e099fd7ba7c77bbe847",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's thread block clusters enable synchronization among thread blocks running concurrently across multiple streaming multiprocessors.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Thread block clusters enable synchronization among thread blocks running concurrently across multiple streaming multiprocessors",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6011,
+            "end": 6150,
+            "quote": "Clusters enable multiple thread blocks running concurrently across multiple SMs to synchronize and collaboratively fetch and exchange data.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "94aed022f6114db549d315c9679ce10d8fc68d86aecda482d88b6683d85ca9ed"
+      },
+      {
+        "id": "revision_95fd0bb794fd4fadae7e791eeceeccc2",
+        "factId": "fact_8da683bef8294804bd34bd2a2ca8624e",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's thread block clusters enable collaborative data fetching by thread blocks running concurrently across multiple streaming multiprocessors.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Thread block clusters enable collaborative data fetching by thread blocks running concurrently across multiple streaming multiprocessors",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6011,
+            "end": 6150,
+            "quote": "Clusters enable multiple thread blocks running concurrently across multiple SMs to synchronize and collaboratively fetch and exchange data.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "4d0987c031ef8d61206e843146cf22677d596cc78d31d7bb50b4f253b166e31c"
+      },
+      {
+        "id": "revision_736687b3cdab44ec8abdadf7445730d9",
+        "factId": "fact_e9dd522adf2846359bafc07a128b58ad",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that NVIDIA H100's thread block clusters enable data exchange among thread blocks running concurrently across multiple streaming multiprocessors.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "capability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Thread block clusters enable data exchange among thread blocks running concurrently across multiple streaming multiprocessors",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 6011,
+            "end": 6150,
+            "quote": "Clusters enable multiple thread blocks running concurrently across multiple SMs to synchronize and collaboratively fetch and exchange data.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "0a90041f566e0fc3089b76dc77c6aa00dc3cbd94da4335dd4498451ae63b1bc9"
+      },
+      {
+        "id": "revision_ba6c140da5e54534a6c0b86360e403df",
+        "factId": "fact_83e79ca98ac84ebe81b5c2b98d359139",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA specifies support for up to seven individual GPU instances on NVIDIA H100 with second-generation Multi-Instance GPU technology.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "partition_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "7",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Maximum supported individual GPU instances with second-generation Multi-Instance GPU technology",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7487,
+            "end": 7843,
+            "quote": "Second-generation Multi-Instance GPU (MIG) technology provides approximately 3x more compute capacity and nearly 2x more memory bandwidth per GPU instance compared to A100. Confidential Computing capability with MIG-level TEE is now provided for the first time. Up to seven individual GPU instances are supported, each with dedicated NVDEC and NVJPG units.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "7846a5124f6274a5f947bbdb80f72f36bb5088bbb9c53d7ab66dd9875b1a2aa1"
+      },
+      {
+        "id": "revision_ac24a21820de4e65a6506ad9e0b521f2",
+        "factId": "fact_42b80604309b40cd931c9e43a36bf682",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that each NVIDIA H100 MIG instance has dedicated NVDEC units.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Dedicated NVDEC units for each MIG instance",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7749,
+            "end": 7843,
+            "quote": "Up to seven individual GPU instances are supported, each with dedicated NVDEC and NVJPG units.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "fe87c104f3cd81effe2a0b534337a40e483de4c5914378d1102c8c97043445db"
+      },
+      {
+        "id": "revision_7c4cd67109df49818d3649d20429df55",
+        "factId": "fact_92b28c8bc6974dcd81301883b18cc8b5",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that each NVIDIA H100 MIG instance has dedicated NVJPG units.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Dedicated NVJPG units for each MIG instance",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7749,
+            "end": 7843,
+            "quote": "Up to seven individual GPU instances are supported, each with dedicated NVDEC and NVJPG units.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "911262c970d7748ffe6a906ffca8902aa107f8352f6cd80ee10b8a6a94fbf390"
+      },
+      {
+        "id": "revision_dc734268ba064e648b5b43fb9b057d07",
+        "factId": "fact_9e4fe2772c704a459e60f03e3f2ab93f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA states that each NVIDIA H100 MIG instance includes its own set of performance monitors.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          },
+          {
+            "role": "property",
+            "value": "architecture",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Each MIG instance includes its own set of performance monitors",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "evidence": [
+          {
+            "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+            "start": 7844,
+            "end": 7945,
+            "quote": "Each instance now includes its own set of performance monitors that work with NVIDIA developer tools.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:32:04.974Z",
+        "extractionJobId": "d91a4cff-7b71-43e0-ac7f-e60d2eb98f89",
+        "digest": "7c706309a8870daef84e4d5c2de525b1f5f4c9fd5d3a38a91c5354b900767b3a"
+      },
+      {
+        "id": "revision_a347c44ea5c84d648262549fed36b47e",
+        "factId": "fact_e71ddd9f26b04ec08484b0122e9362c7",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "NVIDIA announced NVIDIA H100 on March 22, 2022.",
+        "predicate": "introduced",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_1f5aa2537a4b44bbacddc6fcd3c0c899"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "NVIDIA",
+        "time": {
+          "start": "2022-03-22",
+          "end": "2022-03-22",
+          "precision": "day",
+          "basis": "The dated release says NVIDIA announced its platform today and also announced H100."
+        },
+        "evidence": [
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 187,
+            "end": 428,
+            "quote": "March 22, 2022 GTC—To power the next wave of AI data centers, NVIDIA today announced its next-generation accelerated computing platform with NVIDIA Hopper™ architecture, delivering an order of magnitude performance leap over its predecessor.",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+            "start": 577,
+            "end": 684,
+            "quote": "The company also announced its first Hopper-based GPU, the NVIDIA H100, packed with 80 billion transistors.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:36:46.640Z",
+        "extractionJobId": "f8ddfd4c-68a0-45ae-97ae-ca884b02cb71",
+        "digest": "d36b784a5be1348229bdc6bb1f21a4895dbf8c76c92d81b91c602cb82edc05bd"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_c051b1248e254052839cee9f61b69255",
+        "outcome": "supported",
+        "reason": "The authored NVIDIA article calls H100 'our ninth-generation data center GPU.' The definition field expresses that same classification, with appropriate NVIDIA attribution; it does not conceal a performance assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:55:23.247Z"
+      },
+      {
+        "revisionId": "revision_ad93e3e951ff4a29af9c2e02c76fb155",
+        "outcome": "supported",
+        "reason": "The quoted introduction explicitly identifies H100 as based on the Hopper GPU architecture. The uses relationship and attributed sentence express that architectural relationship without importing the introduction event or its date.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:55:23.247Z"
+      },
+      {
+        "revisionId": "revision_48b8c36377564eafae4727448932c0ed",
+        "outcome": "supported",
+        "reason": "NVIDIA explicitly describes H100 as designed for large-scale AI and HPC performance. The purpose field retains the intended workload domain without asserting the advertised performance improvement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:55:23.247Z"
+      },
+      {
+        "revisionId": "revision_06988b60eea640d896b1ce22927e50e6",
+        "outcome": "supported",
+        "reason": "The quote explicitly gives 80 billion transistors for the full GH100 chip powering H100. The numeric conversion to 80000000000 count is exact, and both the sentence and conditions scope the specification to the underlying chip rather than enabled product resources.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:55:23.247Z"
+      },
+      {
+        "revisionId": "revision_392f17dd916947a992183006a0df8318",
+        "outcome": "supported",
+        "reason": "The source gives the underlying GH100 die size as 814 mm2. The sentence and structured chip-area specification preserve that chip scope, value, square-millimeter unit, and NVIDIA attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:55:23.247Z"
+      },
+      {
+        "revisionId": "revision_2e0a0a2f7b674675ab4c6196c0185f82",
+        "outcome": "supported",
+        "reason": "The quote explicitly says the GH100 GPU powering H100 is fabricated using TSMC 4N customized for NVIDIA. The manufacturing-process value and underlying-chip condition match the attributed sentence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:55:23.247Z"
+      },
+      {
+        "revisionId": "revision_b2684a628366416d972ac495aa6d6c53",
+        "outcome": "supported",
+        "reason": "The PCIe Gen 5 board configuration explicitly lists 114 SMs per GPU. The sentence and structured count express that one configuration-specific specification.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:55:23.247Z"
+      },
+      {
+        "revisionId": "revision_f62bcbc4616e44b3a09142ad5f8e950e",
+        "outcome": "supported",
+        "reason": "The PCIe Gen 5 configuration explicitly specifies 456 fourth-generation Tensor Cores per GPU. The revision preserves that count and its material qualifications in both representations.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:55:23.247Z"
+      },
+      {
+        "revisionId": "revision_df883a02be1541b58198571e636dfb38",
+        "outcome": "supported",
+        "reason": "The source specifies 80 GB HBM2e for the PCIe Gen 5 board configuration. The attributed sentence and capacity fields match, including memory type.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:55:23.247Z"
+      },
+      {
+        "revisionId": "revision_a6182bf889ed4337b195edaf9327dd99",
+        "outcome": "supported",
+        "reason": "The authored H100 summary states that TMA can transfer large data blocks between global and shared memory. The sentence and capability value describe that same transfer capability without importing the source's separate efficiency claim.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_c091ec396ea74fa1ba260c840aca73a2",
+        "outcome": "supported",
+        "reason": "The quote explicitly says TMA supports asynchronous copies between thread blocks in a cluster. The H100 subject, asynchronous operation, endpoints, cluster restriction and NVIDIA attribution are retained in both representations.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:57:53.182Z"
+      },
+      {
+        "revisionId": "revision_edf99d264399450ba34181c51d0dd1da",
+        "outcome": "supported",
+        "reason": "The H100 feature summary explicitly specifies 900 GB/sec total bandwidth for fourth-generation NVLink multi-GPU IO. The numeric value, unit, interconnect, total-bandwidth scope and attribution are represented consistently without presenting this as independently measured throughput.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_8352a0f05c544ee0b8812a44e5718484",
+        "outcome": "supported",
+        "reason": "The quote specifies PCIe Gen 5 total bandwidth of 128 GB/sec, explicitly divided into 64 GB/sec in each direction, and connects that interface to H100. Statement and fields consistently represent an attributed total bidirectional interface specification.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T20:59:58.982Z"
+      },
+      {
+        "revisionId": "revision_4ffa2f038beb42318ad4e9fea5f8eec4",
+        "outcome": "supported",
+        "reason": "The exact passage says H100 'will come in SXM and PCIe form factors.' The statement and form-factor value both retain the prospective character and NVIDIA attribution rather than asserting shipment.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:20:22.466Z"
+      },
+      {
+        "revisionId": "revision_c7a9bed48e724cef81496b639a57513c",
+        "outcome": "supported",
+        "reason": "The availability passage projects availability starting in the third quarter; the March 2022 dateline and surrounding 'later this year' context establish 2022. Both sentence and structured value describe a projection, not actual availability.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:20:22.466Z"
+      },
+      {
+        "revisionId": "revision_1e6e100f0624449a9c88671acfdc8443",
+        "outcome": "supported",
+        "reason": "The authored NVIDIA article explicitly lists new fourth-generation Tensor Cores among H100's innovations. The architecture property and sentence express the same attributed feature assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_32666fd3064543f995a10c04aea75b89",
+        "outcome": "supported",
+        "reason": "The quoted passage explicitly connects the transformer engine to H100. The uses relationship retains that connection without endorsing the accompanying performance multipliers.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_600620d1dcac41b28ec805c5e0b39e20",
+        "outcome": "supported",
+        "reason": "Within the H100 feature summary, NVIDIA identifies new DPX instructions for dynamic-programming acceleration. Both representations describe that architectural feature, not a quantified experimental result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_55ca32c9d611498780650a21340e966d",
+        "outcome": "supported",
+        "reason": "The SXM5 specification explicitly gives 132 SMs per GPU. Subject, count, unit, configuration and NVIDIA attribution match the sentence and evidence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_80821946afa04a49972de6f0b48fc277",
+        "outcome": "supported",
+        "reason": "The SXM5 list specifies fourth-generation Tensor Cores and 528 per GPU. The structured count and generation condition faithfully express the attributed sentence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_5eca12e66dfb4055bc0b836bd2b71bba",
+        "outcome": "supported",
+        "reason": "The SXM5 list explicitly specifies 80 GB HBM3. The capacity, units, memory type and board condition are retained in both representations.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_eb917dc0b7e946b587c03c7cd6fbf9e9",
+        "outcome": "supported",
+        "reason": "The authored Tensor Core discussion calls FP8 a new data type and places it in the fourth-generation H100 Tensor Core context. The precision property makes no unsupported performance assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_74595e472b5142b8aed5d8a092a495b1",
+        "outcome": "supported",
+        "reason": "The quote explicitly describes a combination of software and custom NVIDIA Hopper Tensor Core technology. The architecture property and sentence express that single composition assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_ee828c01f6544201b54fc38ac649a6c2",
+        "outcome": "supported",
+        "reason": "NVIDIA explicitly says the transformer engine dynamically chooses between FP8 and 16-bit calculations. The capability value precisely retains that operation without importing the speedup claims.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_b8cdf0f61f564c00a713810ce76614f3",
+        "outcome": "supported",
+        "reason": "The passage explicitly states automatic re-casting between FP8 and 16-bit in each layer. Both the sentence and capability value retain the automatic, precision and per-layer qualifications.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_6dc480317a004fa28384f46e081cde46",
+        "outcome": "supported",
+        "reason": "The passage explicitly states automatic scaling between FP8 and 16-bit in each layer. The structured capability matches the sentence and remains attributed to NVIDIA.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_956f140550a241eeac2441e24858be23",
+        "outcome": "supported",
+        "reason": "NVIDIA names Smith-Waterman genomics processing as an example of DPX acceleration. The revision records that attributed capability, not an algorithm-specific measured speedup or an independently established causal result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_e0bca21cadbc4e03bad3914db2f321ec",
+        "outcome": "supported",
+        "reason": "The quote names Floyd-Warshall optimal routing for robot fleets through a dynamic warehouse as a DPX application. Both representations retain that application context and assert no numerical speedup.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:30:34.907Z"
+      },
+      {
+        "revisionId": "revision_83ca86cbea094fd6a39fd78f882666b2",
+        "outcome": "supported",
+        "reason": "The authored NVIDIA article explicitly says H100 adds the thread block cluster level to the CUDA thread group hierarchy. The architecture property expresses that same single assertion with manufacturer attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_b7f746c39cef433b8da76689d00f96eb",
+        "outcome": "supported",
+        "reason": "The quoted H100 passage explicitly guarantees concurrent scheduling of thread blocks within a cluster. Both the statement and capability value preserve the cluster scope and NVIDIA attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_4a088fc43fa847158acda57b5a08e674",
+        "outcome": "supported",
+        "reason": "The source says clusters enable concurrently running thread blocks across multiple SMs to synchronize. The surrounding H100 feature discussion establishes the subject, and the statement and fields retain the concurrency and cross-SM conditions.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_95fd0bb794fd4fadae7e791eeceeccc2",
+        "outcome": "supported",
+        "reason": "Collaborative fetching is expressly included in the quoted cluster capability. The revision isolates that capability while preserving concurrently running blocks, multiple streaming multiprocessors, and manufacturer attribution in its schematic representation.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_736687b3cdab44ec8abdadf7445730d9",
+        "outcome": "supported",
+        "reason": "The quoted passage explicitly includes data exchange among concurrently running thread blocks across multiple SMs. The statement and structured capability express the same attributed assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_ba6c140da5e54534a6c0b86360e403df",
+        "outcome": "supported",
+        "reason": "The H100 second-generation MIG passage explicitly supports up to seven individual GPU instances. The numeric value, count unit, and maximum-supported condition correctly represent the upper bound and technology scope expressed in the statement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_ac24a21820de4e65a6506ad9e0b521f2",
+        "outcome": "supported",
+        "reason": "The quote states that each supported GPU instance has dedicated NVDEC units, and the surrounding paragraph identifies H100 MIG instances. The architecture value and statement express that same attributed per-instance resource assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_7c4cd67109df49818d3649d20429df55",
+        "outcome": "supported",
+        "reason": "The quoted sentence explicitly assigns dedicated NVJPG units to each instance in the H100 MIG discussion. The statement and architecture field preserve that scope without adding an unevidenced functional expansion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_dc734268ba064e648b5b43fb9b057d07",
+        "outcome": "supported",
+        "reason": "The source expressly says each instance includes its own set of performance monitors. The preceding MIG context establishes the instance identity, and both representations retain the per-instance ownership claim and NVIDIA attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:32:54.632Z"
+      },
+      {
+        "revisionId": "revision_a347c44ea5c84d648262549fed36b47e",
+        "outcome": "supported",
+        "reason": "NVIDIA's own release is primary evidence of its announcement. Its March 22, 2022 date, 'today announced' context, and 'also announced' H100 passage support the announcement predicate, organization and hardware arguments, and single-day bounds.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:37:23.702Z"
+      }
+    ],
+    "approvals": []
+  },
+  "articles": [
+    {
+      "id": "knowledge-entity_f2d5851eaf504cc58866aeb8431c45f9",
+      "title": "NVIDIA H100",
+      "topic": "NVIDIA H100",
+      "subjectId": "ai",
+      "philosophy": {
+        "id": "schematic",
+        "version": 2,
+        "name": "Schematic primary evidence",
+        "description": "Every article claim is a typed factoid with exact original evidence.",
+        "sourceMode": "reference",
+        "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+      },
+      "markdown": "The NVIDIA H100 is a data-center GPU designed for large-scale artificial intelligence and high-performance computing, which NVIDIA identifies as its ninth-generation data-center GPU [2](#source-2). Announced on March 22, 2022, it is based on NVIDIA’s Hopper architecture [3](#source-3) [2](#source-2). Its design incorporates fourth-generation Tensor Cores and a Transformer Engine intended to accelerate transformer-model training and inference, alongside DPX instructions for dynamic-programming algorithms [2](#source-2). At announcement, NVIDIA planned SXM and PCIe form factors and projected availability beginning in the third quarter of 2022 [3](#source-3).\n\n## Chip and board configurations\n\nAccording to NVIDIA, the underlying GH100 chip contains 80 billion transistors in an 814-square-millimeter die, manufactured using a TSMC 4N process customized for the company [2](#source-2). The manufacturer specifies 132 streaming multiprocessors and 528 fourth-generation Tensor Cores for the SXM5 configuration, compared with 114 streaming multiprocessors and 456 Tensor Cores for the PCIe Gen 5 board [2](#source-2). Both configurations are specified with 80 gigabytes of memory, but the SXM5 version uses HBM3 whereas the PCIe board uses HBM2e [2](#source-2).\n\n## Computation and data movement\n\nNVIDIA describes FP8 as a new data type supported by H100’s fourth-generation Tensor Cores [2](#source-2). The Transformer Engine combines software with custom Hopper Tensor Core technology; according to NVIDIA, it dynamically selects between FP8 and 16-bit calculations and automatically handles re-casting and scaling between them in each layer [2](#source-2). For dynamic programming, the company identifies Smith-Waterman genomics processing and Floyd-Warshall route finding for robot fleets in dynamic warehouses as applications of the DPX instructions [2](#source-2).\n\nH100 also adds thread block clusters to the CUDA thread group hierarchy, with NVIDIA guaranteeing concurrent scheduling of the thread blocks within a cluster [2](#source-2). These clusters allow blocks running across multiple streaming multiprocessors to synchronize and collaboratively fetch and exchange data [2](#source-2). The Tensor Memory Accelerator transfers large blocks of data between global and shared memory and supports asynchronous copies between thread blocks within a cluster [2](#source-2).\n\n## Connectivity and GPU instances\n\nNVIDIA specifies fourth-generation NVLink with 900 gigabytes per second of total multi-GPU input/output bandwidth, alongside a PCIe Gen 5 interface with 128 gigabytes per second of total bidirectional bandwidth [2](#source-2).\n\nSecond-generation Multi-Instance GPU technology supports up to seven individual GPU instances, according to NVIDIA [2](#source-2). Each instance has dedicated NVDEC and NVJPG units and its own performance monitors [2](#source-2).",
+      "sources": [
+        {
+          "id": 2,
+          "captureId": "capture_c3144297c6eebb03d71cb9f8db7f290badc191ac2871746dbfcf8b58cb191399",
+          "url": "https://developer.nvidia.com/blog/?p=45555",
+          "title": "NVIDIA Hopper Architecture In-Depth | NVIDIA Technical Blog",
+          "extract": ""
+        },
+        {
+          "id": 3,
+          "captureId": "capture_2923e6cab6e8a06fd272694728b376c3cc16e091169ca91dcf115556bf5850de",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-hopper-architecture-the-next-generation-of-accelerated-computing",
+          "title": "NVIDIA Announces Hopper Architecture, the Next Generation of Accelerated Computing | NVIDIA Newsroom",
+          "extract": ""
+        }
+      ],
+      "createdAt": "2026-10-06T00:18:58.561Z",
+      "model": "gpt-6-astra",
+      "knowledge": {
+        "ontologyVersion": 1,
+        "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "mode": "preview",
+        "dependencies": [
+          {
+            "factId": "fact_2c858bc2ab964713ac114957629111ac",
+            "revisionId": "revision_c051b1248e254052839cee9f61b69255",
+            "digest": "76ebeb22d1260778c360ff58f865345f14a64c6880405c1eeaa913fae78e9b2a"
+          },
+          {
+            "factId": "fact_1d29454dd060486e84a9f7f777069377",
+            "revisionId": "revision_ad93e3e951ff4a29af9c2e02c76fb155",
+            "digest": "3001b7a959f69a683fada6e440c3c45f7976f36fd913f2938f354de6c24f171a"
+          },
+          {
+            "factId": "fact_c36fc30a93e240bf920cee8712c64941",
+            "revisionId": "revision_48b8c36377564eafae4727448932c0ed",
+            "digest": "be4108c63f967df0ed29e8b9804faf062feabef82540d596fe78ab991edc7876"
+          },
+          {
+            "factId": "fact_e71ddd9f26b04ec08484b0122e9362c7",
+            "revisionId": "revision_a347c44ea5c84d648262549fed36b47e",
+            "digest": "d36b784a5be1348229bdc6bb1f21a4895dbf8c76c92d81b91c602cb82edc05bd"
+          },
+          {
+            "factId": "fact_b0724ed200ef4583bf4a2197d0087248",
+            "revisionId": "revision_1e6e100f0624449a9c88671acfdc8443",
+            "digest": "b74c5e15a8d67dc2da70192694da7b3cb508c27a816f863b36a373466d313056"
+          },
+          {
+            "factId": "fact_a03a3ebfbceb4cab8608cc3772e1adf7",
+            "revisionId": "revision_32666fd3064543f995a10c04aea75b89",
+            "digest": "a002fc08890a6a12e9761941d3507a2682026d55f9cafb6c85ca0174fd325e3f"
+          },
+          {
+            "factId": "fact_1f22689587b046e6bba60aeb7343cc01",
+            "revisionId": "revision_600620d1dcac41b28ec805c5e0b39e20",
+            "digest": "6b73168ecb9b00a4b88d3c1a13573579db7407e1e44973b457470e0e6e07dbe9"
+          },
+          {
+            "factId": "fact_444ed501c3b743b3870124aa3f23d5ea",
+            "revisionId": "revision_4ffa2f038beb42318ad4e9fea5f8eec4",
+            "digest": "e923e76e975ebee28c08c80109ae20ae620f645db0d348a2a7c8e85fc22ba836"
+          },
+          {
+            "factId": "fact_ab8c9fba4c9840478a5f86b708905004",
+            "revisionId": "revision_c7a9bed48e724cef81496b639a57513c",
+            "digest": "020d86d5b2a96b4e3e8ab13f478e0d98b24b3e8d7b41eb133e7cd9eb54e3fe1b"
+          },
+          {
+            "factId": "fact_009d39a3ac8548faaa78c716d5bcbe7c",
+            "revisionId": "revision_06988b60eea640d896b1ce22927e50e6",
+            "digest": "f35cee93fcefd083fe566b87f1db4630c4608c21f830f4d5707e366d72dae832"
+          },
+          {
+            "factId": "fact_9a48311438fb4db385b32f57c9189ae0",
+            "revisionId": "revision_392f17dd916947a992183006a0df8318",
+            "digest": "78561d5b1d2d75ab30fb467be4c649f8a4c16d1e96110142df56d0de467651f4"
+          },
+          {
+            "factId": "fact_a61ec873a1dc4354be1efb135a4bcfa6",
+            "revisionId": "revision_2e0a0a2f7b674675ab4c6196c0185f82",
+            "digest": "439c7a60e5d6a103461a5a76a993e84adc13e02aa661a0bb6d6e22e10f82b003"
+          },
+          {
+            "factId": "fact_e897892bf3b74d7fb9880fee359ecc70",
+            "revisionId": "revision_55ca32c9d611498780650a21340e966d",
+            "digest": "b015e3464e7ae2035978222961f5bbe5d8219da663a9f98a6a3c629c9950cce6"
+          },
+          {
+            "factId": "fact_2b5e318a10e949399f5dbfff29f5dee3",
+            "revisionId": "revision_80821946afa04a49972de6f0b48fc277",
+            "digest": "8ccfc1763ccbccf602a753e972ac039bec14c566ad5cd314b8ece1c52aee158f"
+          },
+          {
+            "factId": "fact_9a2420ae9081494ba4fdc88719b836a0",
+            "revisionId": "revision_5eca12e66dfb4055bc0b836bd2b71bba",
+            "digest": "1c845d23e94c3d8480dada4b4720823eac5e3b6c67338c81c867782f7e096d07"
+          },
+          {
+            "factId": "fact_6cb5e4161c6a45d281160f1bd80c3a60",
+            "revisionId": "revision_b2684a628366416d972ac495aa6d6c53",
+            "digest": "833a8789e262dea10f34863767cd7388e1c603007513bff9cc345fc7bf3ab5d3"
+          },
+          {
+            "factId": "fact_e71be32f8f9d428bb2ee0d1c073cee02",
+            "revisionId": "revision_f62bcbc4616e44b3a09142ad5f8e950e",
+            "digest": "4483a57ecba3328cf983f551b24846ac30d72cf7d88bbd55e8ea8795fb2de39d"
+          },
+          {
+            "factId": "fact_39c3cededdbf49eba106e1fd34df357e",
+            "revisionId": "revision_df883a02be1541b58198571e636dfb38",
+            "digest": "769c2eabea844a21b34ef9aabb762b1f9556225914ae2bf7af521970dbd35152"
+          },
+          {
+            "factId": "fact_9291584190a943bda0903068bb02e9c5",
+            "revisionId": "revision_eb917dc0b7e946b587c03c7cd6fbf9e9",
+            "digest": "5a7f5adde5be8dea0502cfb52accbcf74e916ddeb50c23b3b3054b3bcec66858"
+          },
+          {
+            "factId": "fact_95fa9fc0c77d44b3802e7a1e2f59448c",
+            "revisionId": "revision_ee828c01f6544201b54fc38ac649a6c2",
+            "digest": "6891796221cf854f23486e62cec27d7a7532e9c8fef6bc141fdfa0108488e38b"
+          },
+          {
+            "factId": "fact_f8d5799385cd4e358a5531f0f9807fe9",
+            "revisionId": "revision_74595e472b5142b8aed5d8a092a495b1",
+            "digest": "2481e3164ba08c603f1afdd8a17e59a0602bcab9b2f2bdcaa08bd7585f6da9ca"
+          },
+          {
+            "factId": "fact_f9f88e73afd84b65a99b7c8b4fd04bc3",
+            "revisionId": "revision_b8cdf0f61f564c00a713810ce76614f3",
+            "digest": "4f515caba29036a9fb2876ae85474bcc1ac7a498b25125ed7b01bf0495e92de2"
+          },
+          {
+            "factId": "fact_8cb2fbcc8bf241bc8212eb10ef1e32d8",
+            "revisionId": "revision_6dc480317a004fa28384f46e081cde46",
+            "digest": "3eb0a21a317a85b82412b558ec06c97ef40bc36393748849fd0315078c416c9d"
+          },
+          {
+            "factId": "fact_5f9ce341d71440b78efa1643274d0c15",
+            "revisionId": "revision_956f140550a241eeac2441e24858be23",
+            "digest": "1e337cd6fc72c64ee0e63430e3c77bc637fff8973c846aae7ff12dda634cd514"
+          },
+          {
+            "factId": "fact_1f0ef8a291bb444d93a04768300ecae3",
+            "revisionId": "revision_e0bca21cadbc4e03bad3914db2f321ec",
+            "digest": "d65c09351ecce3126bba3c9eda3e2b6749bb6f64a1064ac2461effca418e89a4"
+          },
+          {
+            "factId": "fact_01af280322754b178fbf4732d4b8b474",
+            "revisionId": "revision_83ca86cbea094fd6a39fd78f882666b2",
+            "digest": "170f153ed2a23a56f99157fb3ab7367951ed4acca92101f5a46c51f3f8364207"
+          },
+          {
+            "factId": "fact_ea13449b5c774678a6f193638316f60f",
+            "revisionId": "revision_b7f746c39cef433b8da76689d00f96eb",
+            "digest": "5178469ce390a6cbc4739bd65d47ee19a4175bd69d863de216f207907ff9cca3"
+          },
+          {
+            "factId": "fact_1f967d23276f4e099fd7ba7c77bbe847",
+            "revisionId": "revision_4a088fc43fa847158acda57b5a08e674",
+            "digest": "94aed022f6114db549d315c9679ce10d8fc68d86aecda482d88b6683d85ca9ed"
+          },
+          {
+            "factId": "fact_8da683bef8294804bd34bd2a2ca8624e",
+            "revisionId": "revision_95fd0bb794fd4fadae7e791eeceeccc2",
+            "digest": "4d0987c031ef8d61206e843146cf22677d596cc78d31d7bb50b4f253b166e31c"
+          },
+          {
+            "factId": "fact_e9dd522adf2846359bafc07a128b58ad",
+            "revisionId": "revision_736687b3cdab44ec8abdadf7445730d9",
+            "digest": "0a90041f566e0fc3089b76dc77c6aa00dc3cbd94da4335dd4498451ae63b1bc9"
+          },
+          {
+            "factId": "fact_399d863aaee14c909da04d2e8e9cd04b",
+            "revisionId": "revision_a6182bf889ed4337b195edaf9327dd99",
+            "digest": "f6b99e4400caedbc5d43e61dd1586d4e1982dd0eecffa7bbc0267cc79b46f767"
+          },
+          {
+            "factId": "fact_cec8b7ddc5e64e61a2fd676606d2d381",
+            "revisionId": "revision_c091ec396ea74fa1ba260c840aca73a2",
+            "digest": "672224f966eb444b4913239dc7d06a8ef5483b3ec1931e38bd49986a67ee3fa4"
+          },
+          {
+            "factId": "fact_87f3e32c24ad4f3595662739cde56d8d",
+            "revisionId": "revision_edf99d264399450ba34181c51d0dd1da",
+            "digest": "9e9b9139707b39dd2f753c64efc8cc212f5536b79e1246fadff80a7f59df46fd"
+          },
+          {
+            "factId": "fact_b1857995c6334204929ef16be10c815a",
+            "revisionId": "revision_8352a0f05c544ee0b8812a44e5718484",
+            "digest": "e88a7aa9ae51652593707671cb6e087de24ccce5ef0a9cce3269f70b13b79681"
+          },
+          {
+            "factId": "fact_83e79ca98ac84ebe81b5c2b98d359139",
+            "revisionId": "revision_ba6c140da5e54534a6c0b86360e403df",
+            "digest": "7846a5124f6274a5f947bbdb80f72f36bb5088bbb9c53d7ab66dd9875b1a2aa1"
+          },
+          {
+            "factId": "fact_42b80604309b40cd931c9e43a36bf682",
+            "revisionId": "revision_ac24a21820de4e65a6506ad9e0b521f2",
+            "digest": "fe87c104f3cd81effe2a0b534337a40e483de4c5914378d1102c8c97043445db"
+          },
+          {
+            "factId": "fact_92b28c8bc6974dcd81301883b18cc8b5",
+            "revisionId": "revision_7c4cd67109df49818d3649d20429df55",
+            "digest": "911262c970d7748ffe6a906ffca8902aa107f8352f6cd80ee10b8a6a94fbf390"
+          },
+          {
+            "factId": "fact_9e4fe2772c704a459e60f03e3f2ab93f",
+            "revisionId": "revision_dc734268ba064e648b5b43fb9b057d07",
+            "digest": "7c706309a8870daef84e4d5c2de525b1f5f4c9fd5d3a38a91c5354b900767b3a"
+          }
+        ],
+        "scope": [],
+        "narrative": {
+          "version": 1,
+          "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9",
+          "sentences": [
+            {
+              "id": "s1",
+              "text": "The NVIDIA H100 is a data-center GPU designed for large-scale artificial intelligence and high-performance computing, which NVIDIA identifies as its ninth-generation data-center GPU.",
+              "revisionIds": [
+                "revision_c051b1248e254052839cee9f61b69255",
+                "revision_48b8c36377564eafae4727448932c0ed"
+              ],
+              "section": "",
+              "paragraph": 0,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s2",
+              "text": "Announced on March 22, 2022, it is based on NVIDIA’s Hopper architecture.",
+              "revisionIds": [
+                "revision_a347c44ea5c84d648262549fed36b47e",
+                "revision_ad93e3e951ff4a29af9c2e02c76fb155"
+              ],
+              "section": "",
+              "paragraph": 0,
+              "sourceIds": [
+                3,
+                2
+              ]
+            },
+            {
+              "id": "s3",
+              "text": "Its design incorporates fourth-generation Tensor Cores and a Transformer Engine intended to accelerate transformer-model training and inference, alongside DPX instructions for dynamic-programming algorithms.",
+              "revisionIds": [
+                "revision_1e6e100f0624449a9c88671acfdc8443",
+                "revision_32666fd3064543f995a10c04aea75b89",
+                "revision_74595e472b5142b8aed5d8a092a495b1",
+                "revision_600620d1dcac41b28ec805c5e0b39e20"
+              ],
+              "section": "",
+              "paragraph": 0,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s4",
+              "text": "At announcement, NVIDIA planned SXM and PCIe form factors and projected availability beginning in the third quarter of 2022.",
+              "revisionIds": [
+                "revision_4ffa2f038beb42318ad4e9fea5f8eec4",
+                "revision_c7a9bed48e724cef81496b639a57513c"
+              ],
+              "section": "",
+              "paragraph": 0,
+              "sourceIds": [
+                3
+              ]
+            },
+            {
+              "id": "s5",
+              "text": "According to NVIDIA, the underlying GH100 chip contains 80 billion transistors in an 814-square-millimeter die, manufactured using a TSMC 4N process customized for the company.",
+              "revisionIds": [
+                "revision_06988b60eea640d896b1ce22927e50e6",
+                "revision_392f17dd916947a992183006a0df8318",
+                "revision_2e0a0a2f7b674675ab4c6196c0185f82"
+              ],
+              "section": "Chip and board configurations",
+              "paragraph": 1,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s6",
+              "text": "The manufacturer specifies 132 streaming multiprocessors and 528 fourth-generation Tensor Cores for the SXM5 configuration, compared with 114 streaming multiprocessors and 456 Tensor Cores for the PCIe Gen 5 board.",
+              "revisionIds": [
+                "revision_55ca32c9d611498780650a21340e966d",
+                "revision_80821946afa04a49972de6f0b48fc277",
+                "revision_b2684a628366416d972ac495aa6d6c53",
+                "revision_f62bcbc4616e44b3a09142ad5f8e950e"
+              ],
+              "section": "Chip and board configurations",
+              "paragraph": 1,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s7",
+              "text": "Both configurations are specified with 80 gigabytes of memory, but the SXM5 version uses HBM3 whereas the PCIe board uses HBM2e.",
+              "revisionIds": [
+                "revision_5eca12e66dfb4055bc0b836bd2b71bba",
+                "revision_df883a02be1541b58198571e636dfb38"
+              ],
+              "section": "Chip and board configurations",
+              "paragraph": 1,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s8",
+              "text": "NVIDIA describes FP8 as a new data type supported by H100’s fourth-generation Tensor Cores.",
+              "revisionIds": [
+                "revision_eb917dc0b7e946b587c03c7cd6fbf9e9"
+              ],
+              "section": "Computation and data movement",
+              "paragraph": 2,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s9",
+              "text": "The Transformer Engine combines software with custom Hopper Tensor Core technology; according to NVIDIA, it dynamically selects between FP8 and 16-bit calculations and automatically handles re-casting and scaling between them in each layer.",
+              "revisionIds": [
+                "revision_74595e472b5142b8aed5d8a092a495b1",
+                "revision_ee828c01f6544201b54fc38ac649a6c2",
+                "revision_b8cdf0f61f564c00a713810ce76614f3",
+                "revision_6dc480317a004fa28384f46e081cde46"
+              ],
+              "section": "Computation and data movement",
+              "paragraph": 2,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s10",
+              "text": "For dynamic programming, the company identifies Smith-Waterman genomics processing and Floyd-Warshall route finding for robot fleets in dynamic warehouses as applications of the DPX instructions.",
+              "revisionIds": [
+                "revision_956f140550a241eeac2441e24858be23",
+                "revision_e0bca21cadbc4e03bad3914db2f321ec"
+              ],
+              "section": "Computation and data movement",
+              "paragraph": 2,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s11",
+              "text": "H100 also adds thread block clusters to the CUDA thread group hierarchy, with NVIDIA guaranteeing concurrent scheduling of the thread blocks within a cluster.",
+              "revisionIds": [
+                "revision_83ca86cbea094fd6a39fd78f882666b2",
+                "revision_b7f746c39cef433b8da76689d00f96eb"
+              ],
+              "section": "Computation and data movement",
+              "paragraph": 3,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s12",
+              "text": "These clusters allow blocks running across multiple streaming multiprocessors to synchronize and collaboratively fetch and exchange data.",
+              "revisionIds": [
+                "revision_4a088fc43fa847158acda57b5a08e674",
+                "revision_95fd0bb794fd4fadae7e791eeceeccc2",
+                "revision_736687b3cdab44ec8abdadf7445730d9"
+              ],
+              "section": "Computation and data movement",
+              "paragraph": 3,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s13",
+              "text": "The Tensor Memory Accelerator transfers large blocks of data between global and shared memory and supports asynchronous copies between thread blocks within a cluster.",
+              "revisionIds": [
+                "revision_a6182bf889ed4337b195edaf9327dd99",
+                "revision_c091ec396ea74fa1ba260c840aca73a2"
+              ],
+              "section": "Computation and data movement",
+              "paragraph": 3,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s14",
+              "text": "NVIDIA specifies fourth-generation NVLink with 900 gigabytes per second of total multi-GPU input/output bandwidth, alongside a PCIe Gen 5 interface with 128 gigabytes per second of total bidirectional bandwidth.",
+              "revisionIds": [
+                "revision_edf99d264399450ba34181c51d0dd1da",
+                "revision_8352a0f05c544ee0b8812a44e5718484"
+              ],
+              "section": "Connectivity and GPU instances",
+              "paragraph": 4,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s16",
+              "text": "Second-generation Multi-Instance GPU technology supports up to seven individual GPU instances, according to NVIDIA.",
+              "revisionIds": [
+                "revision_ba6c140da5e54534a6c0b86360e403df"
+              ],
+              "section": "Connectivity and GPU instances",
+              "paragraph": 5,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s17",
+              "text": "Each instance has dedicated NVDEC and NVJPG units and its own performance monitors.",
+              "revisionIds": [
+                "revision_ac24a21820de4e65a6506ad9e0b521f2",
+                "revision_7c4cd67109df49818d3649d20429df55",
+                "revision_dc734268ba064e648b5b43fb9b057d07"
+              ],
+              "section": "Connectivity and GPU instances",
+              "paragraph": 5,
+              "sourceIds": [
+                2
+              ]
+            }
+          ],
+          "factStatements": {
+            "revision_c051b1248e254052839cee9f61b69255": "NVIDIA identifies NVIDIA H100 as its ninth-generation data-center GPU.",
+            "revision_ad93e3e951ff4a29af9c2e02c76fb155": "NVIDIA states that NVIDIA H100 is based on the NVIDIA Hopper architecture.",
+            "revision_48b8c36377564eafae4727448932c0ed": "NVIDIA describes NVIDIA H100 as designed for large-scale AI and high-performance computing.",
+            "revision_06988b60eea640d896b1ce22927e50e6": "NVIDIA reports that the GH100 chip powering NVIDIA H100 contains 80 billion transistors.",
+            "revision_392f17dd916947a992183006a0df8318": "NVIDIA reports a die area of 814 square millimeters for the GH100 chip powering NVIDIA H100.",
+            "revision_2e0a0a2f7b674675ab4c6196c0185f82": "NVIDIA states that the GH100 chip powering NVIDIA H100 uses a TSMC 4N process customized for NVIDIA.",
+            "revision_b2684a628366416d972ac495aa6d6c53": "NVIDIA specifies 114 streaming multiprocessors for NVIDIA H100 in its PCIe Gen 5 board configuration.",
+            "revision_f62bcbc4616e44b3a09142ad5f8e950e": "NVIDIA specifies 456 fourth-generation Tensor Cores for NVIDIA H100 in its PCIe Gen 5 board configuration.",
+            "revision_df883a02be1541b58198571e636dfb38": "NVIDIA specifies 80 gigabytes of HBM2e memory for NVIDIA H100 in its PCIe Gen 5 board configuration.",
+            "revision_a6182bf889ed4337b195edaf9327dd99": "NVIDIA states that NVIDIA H100's Tensor Memory Accelerator transfers large data blocks between global memory and shared memory.",
+            "revision_c091ec396ea74fa1ba260c840aca73a2": "NVIDIA states that NVIDIA H100's Tensor Memory Accelerator supports asynchronous copies between thread blocks within a cluster.",
+            "revision_edf99d264399450ba34181c51d0dd1da": "NVIDIA specifies 900 gigabytes per second of total multi-GPU input/output bandwidth for NVIDIA H100's fourth-generation NVLink.",
+            "revision_8352a0f05c544ee0b8812a44e5718484": "NVIDIA specifies 128 gigabytes per second of total bidirectional bandwidth for NVIDIA H100's PCIe Gen 5 interface.",
+            "revision_4ffa2f038beb42318ad4e9fea5f8eec4": "NVIDIA announced that H100 would come in SXM and PCIe form factors.",
+            "revision_c7a9bed48e724cef81496b639a57513c": "NVIDIA projected H100 availability starting in the third quarter of 2022.",
+            "revision_1e6e100f0624449a9c88671acfdc8443": "NVIDIA states that NVIDIA H100 incorporates fourth-generation Tensor Cores.",
+            "revision_32666fd3064543f995a10c04aea75b89": "NVIDIA states that NVIDIA H100 uses the H100 Transformer Engine.",
+            "revision_600620d1dcac41b28ec805c5e0b39e20": "NVIDIA describes NVIDIA H100 as introducing DPX instructions for accelerating dynamic-programming algorithms.",
+            "revision_55ca32c9d611498780650a21340e966d": "NVIDIA specifies 132 streaming multiprocessors for NVIDIA H100 in its SXM5 configuration.",
+            "revision_80821946afa04a49972de6f0b48fc277": "NVIDIA specifies 528 fourth-generation Tensor Cores for NVIDIA H100 in its SXM5 configuration.",
+            "revision_5eca12e66dfb4055bc0b836bd2b71bba": "NVIDIA specifies 80 gigabytes of HBM3 memory for NVIDIA H100 in its SXM5 configuration.",
+            "revision_eb917dc0b7e946b587c03c7cd6fbf9e9": "NVIDIA describes FP8 as a new data type for NVIDIA H100's fourth-generation Tensor Cores.",
+            "revision_74595e472b5142b8aed5d8a092a495b1": "NVIDIA states that the H100 Transformer Engine combines software with custom NVIDIA Hopper Tensor Core technology.",
+            "revision_ee828c01f6544201b54fc38ac649a6c2": "NVIDIA states that the H100 Transformer Engine dynamically chooses between FP8 and 16-bit calculations.",
+            "revision_b8cdf0f61f564c00a713810ce76614f3": "NVIDIA states that the H100 Transformer Engine automatically handles re-casting between FP8 and 16-bit in each layer.",
+            "revision_6dc480317a004fa28384f46e081cde46": "NVIDIA states that the H100 Transformer Engine automatically handles scaling between FP8 and 16-bit in each layer.",
+            "revision_956f140550a241eeac2441e24858be23": "NVIDIA states that NVIDIA H100's DPX instructions accelerate Smith-Waterman genomics processing.",
+            "revision_e0bca21cadbc4e03bad3914db2f321ec": "NVIDIA states that NVIDIA H100's DPX instructions accelerate Floyd-Warshall optimal-route finding for robot fleets in dynamic warehouses.",
+            "revision_83ca86cbea094fd6a39fd78f882666b2": "NVIDIA states that NVIDIA H100 adds thread block clusters as a new level in the CUDA thread group hierarchy.",
+            "revision_b7f746c39cef433b8da76689d00f96eb": "NVIDIA states that NVIDIA H100 guarantees concurrent scheduling of thread blocks within a cluster.",
+            "revision_4a088fc43fa847158acda57b5a08e674": "NVIDIA states that NVIDIA H100's thread block clusters enable synchronization among thread blocks running concurrently across multiple streaming multiprocessors.",
+            "revision_95fd0bb794fd4fadae7e791eeceeccc2": "NVIDIA states that NVIDIA H100's thread block clusters enable collaborative data fetching by thread blocks running concurrently across multiple streaming multiprocessors.",
+            "revision_736687b3cdab44ec8abdadf7445730d9": "NVIDIA states that NVIDIA H100's thread block clusters enable data exchange among thread blocks running concurrently across multiple streaming multiprocessors.",
+            "revision_ba6c140da5e54534a6c0b86360e403df": "NVIDIA specifies support for up to seven individual GPU instances on NVIDIA H100 with second-generation Multi-Instance GPU technology.",
+            "revision_ac24a21820de4e65a6506ad9e0b521f2": "NVIDIA states that each NVIDIA H100 MIG instance has dedicated NVDEC units.",
+            "revision_7c4cd67109df49818d3649d20429df55": "NVIDIA states that each NVIDIA H100 MIG instance has dedicated NVJPG units.",
+            "revision_dc734268ba064e648b5b43fb9b057d07": "NVIDIA states that each NVIDIA H100 MIG instance includes its own set of performance monitors.",
+            "revision_a347c44ea5c84d648262549fed36b47e": "NVIDIA announced NVIDIA H100 on March 22, 2022."
+          },
+          "audit": {
+            "model": "gpt-6-astra",
+            "createdAt": "2026-10-06T00:13:50.390Z",
+            "decisions": [
+              {
+                "sentenceId": "s1",
+                "outcome": "supported",
+                "reason": "The bound NVIDIA quote identifies H100 as its ninth-generation data-center GPU designed for large-scale AI and HPC. The sentence preserves attribution for the generation designation and does not repeat the promotional performance comparison.",
+                "textDigest": "e0daed2b77aae61cc1dc798d1689d871ffa9a48a04aab3de01aa40a391820fc5"
+              },
+              {
+                "sentenceId": "s2",
+                "outcome": "supported",
+                "reason": "The release dated March 22, 2022 announces H100 as the first Hopper-based GPU, and the bound technical-blog quote explicitly says H100 is based on Hopper. 'It' correctly refers to H100.",
+                "textDigest": "04837632055b0cdc668fefaac66eab37fdd77ea0977ea7dbfc772d8eba22cd7c"
+              },
+              {
+                "sentenceId": "s3",
+                "outcome": "supported",
+                "reason": "The bound quotes specify fourth-generation Tensor Cores, a Transformer Engine designed to accelerate transformer-model training and inference, and DPX instructions for dynamic-programming algorithms. The sentence states design features and intended purpose, not independently verified speedups.",
+                "textDigest": "dedfe175123ad08119125ad4158234e0f546acf73189f1bd219171b8a33318ab"
+              },
+              {
+                "sentenceId": "s4",
+                "outcome": "supported",
+                "reason": "The announcement says H100 'will come in SXM and PCIe form factors' and 'will be available starting in the third quarter.' The dated 2022 release establishes the year, and the sentence correctly retains the launch-time, projected status.",
+                "textDigest": "c338fe14281e4cc2293fa8b8068248113c9cc8051dac1a00536ea3ced2918a8a"
+              },
+              {
+                "sentenceId": "s5",
+                "outcome": "supported",
+                "reason": "The bound quote specifies the full GH100 underlying H100, 80 billion transistors, an 814 mm2 die, and a TSMC 4N process customized for NVIDIA. The quantities, area unit, chip scope, and attribution match.",
+                "textDigest": "de2880e526014f5e64140830745c816207560f2b90e836c2738f989fe497e636"
+              },
+              {
+                "sentenceId": "s6",
+                "outcome": "supported",
+                "reason": "The configuration-specific quotes list 132 SMs and 528 fourth-generation Tensor Cores for SXM5, versus 114 SMs and 456 fourth-generation Tensor Cores for the PCIe Gen 5 board. The sentence preserves the correct configuration-to-count mapping and manufacturer attribution.",
+                "textDigest": "c6dfb1a3fb773e9cfb80a6acb3cbe5074bf8f60bb7f3404af70bf1c822558984"
+              },
+              {
+                "sentenceId": "s7",
+                "outcome": "supported",
+                "reason": "The bound configuration lists specify 80 GB HBM3 for SXM5 and 80 GB HBM2e for PCIe Gen 5. 'Both configurations' correctly refers to the two configurations in s6.",
+                "textDigest": "9932303d630e1f4b166322689ba835a5e45b31d57087e88ded8b0980dc30a7bc"
+              },
+              {
+                "sentenceId": "s8",
+                "outcome": "supported",
+                "reason": "The bound quote describes fourth-generation Tensor Cores operating with 'the new FP8 data type.' The sentence accurately attributes this description to NVIDIA without adopting the associated performance comparisons.",
+                "textDigest": "f29194d5f177352568742aaae908aec6e53de071383d24d8f7384e18cebf227b"
+              },
+              {
+                "sentenceId": "s9",
+                "outcome": "supported",
+                "reason": "The bound quotes explicitly describe the combination of software and custom Hopper Tensor Core technology, dynamic selection between FP8 and 16-bit calculations, and automatic re-casting and scaling in each layer. The operational claims retain NVIDIA attribution.",
+                "textDigest": "7a59d3a94e5dd1eb6be58fcb7b22a6733a8502623eded645ea5b8aefb66f39e9"
+              },
+              {
+                "sentenceId": "s10",
+                "outcome": "supported",
+                "reason": "NVIDIA's bound quote names Smith-Waterman for genomics processing and Floyd-Warshall for optimal routes for robot fleets through dynamic warehouses as DPX examples. The sentence accurately presents these as company-identified applications, without asserting measured algorithm-specific gains.",
+                "textDigest": "50ddebf43b174828348d252566b4ddb4ff9b979587304794775ce7a4089c05f5"
+              },
+              {
+                "sentenceId": "s11",
+                "outcome": "supported",
+                "reason": "The quotes explicitly say H100 adds the thread block cluster level to the CUDA thread group hierarchy and that a cluster's thread blocks are guaranteed to be concurrently scheduled. The guarantee is attributed to NVIDIA.",
+                "textDigest": "95e01151852071a9daa5ad8a459721bdde97d8cb2ab557b7a66fcec5c692569f"
+              },
+              {
+                "sentenceId": "s12",
+                "outcome": "supported",
+                "reason": "The bound quote states that clusters enable concurrently running thread blocks across multiple SMs to synchronize and collaboratively fetch and exchange data. 'These clusters' refers to s11's thread block clusters, whose concurrent scheduling has just been established.",
+                "textDigest": "d912e7756860ad41861fde41d339aff68b56dd34c1b2975d4b605f97b4b26981"
+              },
+              {
+                "sentenceId": "s13",
+                "outcome": "supported",
+                "reason": "The bound quotes explicitly give TMA both capabilities: transferring large data blocks between global and shared memory, and supporting asynchronous copies between thread blocks in a cluster. The sentence adds no bandwidth or independently measured performance claim.",
+                "textDigest": "0fba23256f6dbabce253ffcbdb43a9b2035a1e932d13e391d0b4ec5959b3e5fe"
+              },
+              {
+                "sentenceId": "s14",
+                "outcome": "supported",
+                "reason": "The quotes specify fourth-generation NVLink at 900 GB/sec total multi-GPU IO bandwidth and PCIe Gen 5 at 128 GB/sec total, comprising 64 GB/sec in each direction. The sentence correctly preserves total versus bidirectional scope, units, and manufacturer attribution.",
+                "textDigest": "a8b1e83d170d23537fab519493fb75b6f8ecc7aace3042be24280b16957339f5"
+              },
+              {
+                "sentenceId": "s16",
+                "outcome": "supported",
+                "reason": "The bound quote identifies second-generation MIG and states that 'up to seven individual GPU instances are supported.' The sentence preserves the maximum qualification and NVIDIA attribution, with H100 established by the article context.",
+                "textDigest": "e9cf044767956a0f25a1a513bd48a436961005e87d4de4e145548efc81e311b2"
+              },
+              {
+                "sentenceId": "s17",
+                "outcome": "supported",
+                "reason": "The bound quotes state that each supported MIG instance has dedicated NVDEC and NVJPG units and its own set of performance monitors. 'Each instance' correctly refers to the H100 MIG instances discussed in s16.",
+                "textDigest": "0c76e7c8053ab003f29268b2fd32a8114e5c69bc1d18071af05a31f7eaabd195"
+              }
+            ]
+          },
+          "digest": "c3571fbf78db960ad5fb55e003d8753ffc7f25c1d7dc83f3ae290442b810ec73"
+        }
+      },
+      "images": [
+        {
+          "title": "NVIDIA H100 (极客湾Geekerwan) 024.png",
+          "pageUrl": "https://commons.wikimedia.org/wiki/File:NVIDIA_H100_(%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan)_024.png",
+          "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_024.png/500px-NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_024.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "artist": "极客湾Geekerwan",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "retrievedAt": "2026-10-05T23:20:07.610Z",
+          "caption": "NVIDIA H100 (极客湾Geekerwan) 024"
+        }
+      ]
+    }
+  ],
+  "illustrations": [
+    {
+      "entityId": "entity_f2d5851eaf504cc58866aeb8431c45f9",
+      "image": {
+        "title": "NVIDIA H100 (极客湾Geekerwan) 024.png",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:NVIDIA_H100_(%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan)_024.png",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_024.png/500px-NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_024.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "artist": "极客湾Geekerwan",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "retrievedAt": "2026-10-05T23:20:07.610Z",
+        "caption": "NVIDIA H100 (极客湾Geekerwan) 024"
+      }
+    }
+  ]
+}
