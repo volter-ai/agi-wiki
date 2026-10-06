@@ -1,3 +1,4 @@
+import {validateNarrative} from './article-narrative.js';
 import {FACT_SECTIONS,factoidBlocks,factSection} from '../shared/article-blocks.js';
 import {currentFacts,factsForEntity,type KnowledgeSnapshot} from '../shared/knowledge.js';
 import type {Philosophy} from '../shared/philosophies.js';
@@ -36,12 +37,14 @@ export function assertFactoidCoverage(article:Article,k:KnowledgeSnapshot){
  if(!article.philosophy||!requiresFactoids(article.philosophy)||!article.knowledge||article.knowledge.policyKey!==factPolicyKey(article.philosophy))throw Error('Schematic articles require their exact factoid policy and revision bindings.');
  const entity=k.entities.find(e=>e.id===article.knowledge!.entityId&&e.subjectId===article.subjectId);
  if(!entity||entity.label!==article.title)throw Error('Article title must identify its bound entity.');
- const paragraphs=factoidBlocks(article.markdown).filter(b=>b.claimIndex!==null).map(b=>b.text),pins=article.knowledge.dependencies;
- if(!pins.length||pins.length!==paragraphs.length||new Set(pins.map(p=>p.revisionId)).size!==pins.length)throw Error('Every article line must have exactly one factoid revision binding.');
+ const pins=article.knowledge.dependencies;
+ const paragraphs=article.knowledge.narrative?[]:factoidBlocks(article.markdown).filter(b=>b.claimIndex!==null).map(b=>b.text);
+ if(!pins.length||!article.knowledge.narrative&&pins.length!==paragraphs.length||new Set(pins.map(p=>p.revisionId)).size!==pins.length)throw Error('Every article line must have exactly one factoid revision binding.');
  const scopePins=article.knowledge.scope||[];
  const bound=[...pins,...scopePins].map(p=>{const f=k.revisions.find(f=>f.id===p.revisionId&&f.factId===p.factId&&f.digest===p.digest&&f.subjectId===article.subjectId&&f.policyKey===article.knowledge!.policyKey);if(!f||!k.audits.some(a=>a.revisionId===f.id&&a.outcome==='supported'))throw Error('Invalid audited article scope.');validateSchematicFact(f,k.entities);if(article.knowledge!.mode==='approved'&&!k.approvals.some(a=>a.revisionId===f.id&&a.digest===f.digest))throw Error('Every approved article binding requires exact human approval.');return f;});
  if(new Set([...pins,...scopePins].map(p=>p.revisionId)).size!==pins.length+scopePins.length||scopePins.length>12)throw Error('Invalid article scope bindings.');
  articleScope(bound,entity.id,bound.slice(0,pins.length));
+ if(article.knowledge.narrative){validateNarrative(article.knowledge.narrative,article,k);for(const f of bound)for(const e of f.evidence){const c=k.captures.find(c=>c.id===e.captureId);if(!c||c.text&&c.text.slice(e.start,e.end)!==e.quote)throw Error('Missing exact narrative evidence.');}return;}
  const captures=new Map(k.captures.map(c=>[c.id,c]));
  for(const f of bound.slice(pins.length))for(const e of f.evidence.filter(e=>e.stance==='supports')){const c=captures.get(e.captureId);if(!c||!article.sources.some(s=>s.captureId?s.captureId===c.id:s.url===c.url)||c.text&&c.text.slice(e.start,e.end)!==e.quote)throw Error('Missing exact article scope evidence.');}
  for(let i=0;i<pins.length;i++){

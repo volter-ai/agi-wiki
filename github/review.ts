@@ -13,7 +13,7 @@ const sources=await Promise.all(sourceInputs.map(s=>(new URL(s.url).hostname==='
 const problems=sourcePolicyProblems(sources,philosophy);if(problems.length)throw new Error(problems.join('\n'));
 if(item.kind==='knowledge')verifyBundleEvidence(item.bundle,sources);
 const title=item.kind==='knowledge'?item.bundle.subjectId+' shared claims':item.article.title;
-const content=item.kind==='knowledge'?JSON.stringify(item.bundle.snapshot.revisions,null,2):item.article.markdown;
+const content=item.kind==='knowledge'?[...(item.bundle.articles||[]).map(a=>'# '+a.title+'\n\n'+a.markdown+'\n\nSentence audit: '+JSON.stringify(a.knowledge!.narrative!.audit)), 'Schematic fact ledger\n'+JSON.stringify(item.bundle.snapshot.revisions,null,2)].join('\n\n'):item.article.markdown;
 const illustrations=item.kind==='knowledge'?(item.bundle.illustrations||[]).map(i=>i.image):item.article.images||[];
 const escape=(s:string)=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
 if(mode==='prepare'){

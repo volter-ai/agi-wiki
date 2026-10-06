@@ -80,7 +80,7 @@ volter world run -- npm test
 volter world run -- npm run build
 ```
 
-The five automated checks cover typed article evidence, the selected research allowance, the 100-submissions-per-user daily quota, exact-content publication approval, and a full application smoke test. The smoke starts the real local server, serves the app, streams a schematic research draft, removes an unsupported claim in the audit, inserts a licensed article illustration with credit, rejects an unlicensed candidate, and preserves its exact approval through the knowledge export, and reads the saved article back through HTTP. It uses fake model responses, source and Commons metadata fixtures, and disposable local storage; no paid calls or real credentials. Keep additional tests limited to concrete failures that these checks cannot catch; inspect cosmetic changes visually.
+The five automated checks cover typed article evidence, the selected research allowance, the 100-submissions-per-user daily quota, exact-content publication approval, and a full application smoke test. The smoke starts the real local server, serves the app, streams a schematic research draft, removes an unsupported claim in the audit, inserts a licensed article illustration with credit, rejects an unlicensed candidate, runs the narrative writing/editing/audit passes, preserves the exact image and prose approval through the knowledge export, and reads the saved article back through HTTP. It uses fake model responses, source and Commons metadata fixtures, and disposable local storage; no paid calls or real credentials. Keep additional tests limited to concrete failures that these checks cannot catch; inspect cosmetic changes visually.
 
 The community browser check completed local email sign-in, article submission (100 → 99 remaining), a private held state, fresh source retrieval, moderator approval, and the free reader with contributor credit and missing-philosophy links. The local Worker runtime caught and verified fixes for redirect handling and D1 search escaping that native Node/SQLite tests did not expose. A local QA article remains in the preview library. No production email, moderation API, or CDN publication was performed.
 
@@ -236,7 +236,7 @@ and evidenced coordinates. The shared records retain immutable history and bind
 human approvals to exact revisions. Under the schematic philosophy the standard
 research engine uses this path automatically, shows candidates and audit edits,
 then checks completion against the same selected request/runtime allowance.
-Other philosophies retain prose research. No new prose can enter a schematic article.
+Schematic articles now have a separate narrative writing pass, a second editing pass and an independent sentence audit. Each prose sentence pins one or more exact schematic fact revisions and their quoted evidence; the host adds citations and rejects changed text or incomplete audit coverage. Editorial selection does not delete facts from the shared ledger. The narrative, audit and pins travel together in the knowledge contribution and require explicit approval of those exact bytes. If a pinned fact changes, the old narrative is not silently applied to new facts. The writer uses the existing user request and runtime allowance; interrupted writing and editing resume from checkpoints. Other philosophies retain their existing prose research.
 
 See [knowledge/README.md](knowledge/README.md) for the ontology, history-project
 inspiration, source-task resumption, local review and GitHub bundle workflow. One

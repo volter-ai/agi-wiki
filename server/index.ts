@@ -101,7 +101,7 @@ app.get('/api/articles/:id/knowledge-bundle',async(req,res)=>{
  const a=await loadArticle(req.params.id);
  if(site.subjectId&&a.subjectId!==site.subjectId)throw Error('Wrong subject wiki.');
  assertFactoidCoverage(a,knowledgeStore.snapshot());
- const bundle=exportKnowledgeBundle(knowledgeStore.snapshot(),a.subjectId!,a.philosophy!,undefined,[...a.knowledge!.dependencies,...a.knowledge!.scope||[]].map(d=>d.revisionId),a.images?.map(image=>({entityId:a.knowledge!.entityId,image})));
+ const bundle=exportKnowledgeBundle(knowledgeStore.snapshot(),a.subjectId!,a.philosophy!,undefined,[...a.knowledge!.dependencies,...a.knowledge!.scope||[]].map(d=>d.revisionId),a.images?.map(image=>({entityId:a.knowledge!.entityId,image})),a.knowledge?.narrative?[a]:undefined);
  if(Buffer.byteLength(JSON.stringify(bundle))>160000)throw Error('This bundle is too large. Export and review individual source tasks.');
  res.json(bundle);
 });
@@ -140,7 +140,7 @@ app.get('/api/knowledge/articles/:entityId/bundle',(req,res)=>{
  const {philosophy,subject,key}=knowledgeScope(req);assertSubjectPolicy(subject.id,philosophy);
  const k=scopedKnowledge(knowledgeStore.snapshot(),subject.id,key),a=factArticle(k,req.params.entityId,philosophy);
  assertFactoidCoverage(a,k);
- const bundle=exportKnowledgeBundle(k,subject.id,philosophy,undefined,[...a.knowledge!.dependencies,...a.knowledge!.scope||[]].map(d=>d.revisionId),a.images?.map(image=>({entityId:a.knowledge!.entityId,image})));
+ const bundle=exportKnowledgeBundle(k,subject.id,philosophy,undefined,[...a.knowledge!.dependencies,...a.knowledge!.scope||[]].map(d=>d.revisionId),a.images?.map(image=>({entityId:a.knowledge!.entityId,image})),a.knowledge?.narrative?[a]:undefined);
  if(Buffer.byteLength(JSON.stringify(bundle))>160000)throw Error('This bundle is too large. Export and review individual source tasks.');
  res.json(bundle);
 });

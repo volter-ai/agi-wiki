@@ -88,6 +88,9 @@ test('app starts, streams research, audit edits and an article illustration, the
     case 4:return {text:JSON.stringify({assessments:JSON.parse(String(o.input)).facts.map((f:any)=>({revisionId:f.id,outcome:f.statement===unsupported?'unsupported':'supported',reason:f.statement===unsupported?'The source does not support this claim.':'Supported by the captured author documentation.'}))})};
     case 5:return {text:JSON.stringify({sourceQueries:[],imageQuery:'Smoke model diagram'})};
     case 6:return {text:JSON.stringify({selectedIndex:0,reason:'A diagram of the Smoke model.'})};
+    case 7:{const input=JSON.parse(String(o.input));const text=JSON.stringify({sentences:input.facts.map((f:any,i:number)=>({id:'s'+(i+1),text:f.statement,revisionIds:[f.id],section:'',paragraph:0}))});for(let i=0;i<text.length;i+=35)o.onDelta?.(text.slice(i,i+35));return {text};}
+    case 8:return {text:JSON.stringify({sentences:JSON.parse(String(o.input)).draft})};
+    case 9:return {text:JSON.stringify({decisions:JSON.parse(String(o.input)).sentences.map((s:any)=>({sentenceId:s.id,outcome:'supported',reason:'Each assertion is supported by the exact model documentation quote.'}))})};
     default:throw Error('Unexpected model request.');
    }
   },
@@ -104,7 +107,7 @@ test('app starts, streams research, audit edits and an article illustration, the
   const signal=AbortSignal.timeout(10000);
   assert.match(await fetch(app.url,{signal}).then(r=>r.text()),/id="root"/);
   const {csrf}=await fetch(app.url+'/api/session',{signal}).then(r=>r.json());
-  const response=await fetch(app.url+'/api/research',{method:'POST',signal,headers:{'content-type':'application/json','x-wikichat-token':csrf},body:JSON.stringify({topic,subjectId:'ai',philosophyId:'schematic',model:'fake-model',budget:{requests:6,minutes:1}})});
+  const response=await fetch(app.url+'/api/research',{method:'POST',signal,headers:{'content-type':'application/json','x-wikichat-token':csrf},body:JSON.stringify({topic,subjectId:'ai',philosophyId:'schematic',model:'fake-model',budget:{requests:9,minutes:1}})});
   const events=(await response.text()).trim().split('\n').map(line=>JSON.parse(line));
   assert.equal(response.status,200);
   assert.equal(events.at(-1)?.type,'complete',JSON.stringify(events.at(-1)));
@@ -132,6 +135,9 @@ test('app starts, streams research, audit edits and an article illustration, the
   assert.throws(()=>approvedKnowledge(path,JSON.stringify({...bundle,illustrations:[]}),[approval],'ai'));
   assert.deepEqual(JSON.parse(await readFile(join(dataRoot,'articles',article.id+'.json'),'utf8')),article);
   assert.deepEqual(await fetch(app.url+'/api/articles/'+article.id,{signal}).then(r=>r.json()),article);
-  assert.equal(calls,6);
+  assert.equal(calls,9);
+  assert.equal(article.knowledge.narrative.audit.decisions.length,2);
+  assert.equal(bundle.articles[0].markdown,article.markdown);
+  assert.throws(()=>validateKnowledgeBundle({...bundle,articles:[{...bundle.articles[0],markdown:bundle.articles[0].markdown+' An unbound sentence.'}]}));
  }finally{await app?.close();await rm(dataRoot,{recursive:true,force:true});}
 });

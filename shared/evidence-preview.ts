@@ -2,7 +2,7 @@ import type {KnowledgeSnapshot} from './knowledge.js';
 
 export interface FactoidReference {revisionId:string;digest:string;statement:string}
 export interface EvidencePreview extends FactoidReference {
- approved:boolean;
+ approved:boolean;structures?:{statement:string;structure:EvidencePreview['structure']}[];
  structure:{predicate:string;modality:string;attribution?:string;arguments:{role:string;value:string;type:string}[]};
  passages:{captureId:string;title:string;url:string;retrievedAt:string;stance:'supports'|'contradicts'|'context';before:string;quote:string;after:string;contextAvailable:boolean;beforeClipped:boolean;afterClipped:boolean}[];
 }
