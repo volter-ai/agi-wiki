@@ -1,0 +1,2031 @@
+{
+  "kind": "knowledge",
+  "ontologyVersion": 1,
+  "subjectId": "ai",
+  "philosophy": {
+    "id": "schematic",
+    "version": 2,
+    "name": "Schematic primary evidence",
+    "description": "Every article claim is a typed factoid with exact original evidence.",
+    "sourceMode": "reference",
+    "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+  },
+  "snapshot": {
+    "ontologyVersion": 1,
+    "entities": [
+      {
+        "id": "entity_131d5305be264149b2c500e137df37c7",
+        "label": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+        "type": "paper",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_4fb81f339c804ecbb97a28ea23b76ba2",
+        "label": "SWE-bench",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_e62573cf5b054b0d9a15bf41025f525a",
+        "label": "SWE-Llama",
+        "type": "model",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_79451e83765c41399fb7ca7a140c3916",
+        "label": "Claude 2",
+        "type": "model",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_3fcc8aa95ddd4550802e5f3c262f6901",
+        "label": "SWE-bench documentation",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_748458065c6c45c2b1e39b25168ba18c",
+        "label": "SWE-bench evaluation harness",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_e37317fe5014430e8b06fbdd9fbc7416",
+        "label": "Modal",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_5f4a6d7ed65f40b6b19b53b0be4dca99",
+        "label": "SWE-bench installation guide",
+        "type": "product",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_39b9b41706084c12834eff2486b83f54",
+        "label": "SWE-bench Lite",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_f03ebc05f8da416ead771c0a65e9dbf9",
+        "label": "SWE-bench Verified",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_9fc189763cb248f4b3d89c7909a965cb",
+        "label": "SWE-bench Multimodal",
+        "type": "benchmark",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_32a1c83025dd4531b4b8458defded008",
+        "label": "Understanding and coordinating changes across functions, classes and files",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_edd58bcd69734945bd6579de94371bfc",
+        "label": "Effective evaluation of language models",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_218e8ccb91f645a1b6956cd560c3961a",
+        "label": "State-of-the-art proprietary models evaluated in the SWE-bench paper",
+        "type": "concept",
+        "subjectId": "ai",
+        "identity": "proposed"
+      },
+      {
+        "id": "entity_04d2b7615ec14174a3965bb7456aad8a",
+        "label": "Private test-split evaluation",
+        "type": "technique",
+        "subjectId": "ai",
+        "identity": "proposed"
+      }
+    ],
+    "captures": [
+      {
+        "id": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+        "sourceId": "source_3e4a5dea3aec490fe3b7bc9536c9ac06c9758b4b3d572ac667536f95fbf38fc0",
+        "url": "https://arxiv.org/abs/2310.06770",
+        "title": "[2310.06770] SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+        "sha256": "30dfc7ef044a54b964fe2278d679bb47a5014be083384e44b2ae387427b99535",
+        "retrievedAt": "2026-10-05T18:09:57.596Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "The captured arXiv record contains the authors' own abstract introducing SWE-bench and reporting their evaluations. It is an arXiv preprint record for version 3, revised 11 November 2024; the comments mention ICLR 2024, but the capture alone does not establish peer-review status. Evaluation results are author-reported, not independent replication.",
+        "text": ""
+      },
+      {
+        "id": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+        "sourceId": "source_703a5bbc8ed748f4a760a70485d0a0646540dace607c8f46cc15e092bb21b913",
+        "url": "https://github.com/SWE-bench/SWE-bench/blob/main/docs/index.md",
+        "title": "SWE-bench/docs/index.md at main · SWE-bench/SWE-bench · GitHub",
+        "sha256": "c2aea47c1c7e1d46577193ee80aac586fa0156431317c1dfc91c9e8a679dea45",
+        "retrievedAt": "2026-10-05T17:30:28.310Z",
+        "representation": "extracted-text",
+        "evidenceType": "primary",
+        "classificationReason": "Author-maintained documentation in the official SWE-bench repository directly defines the benchmark and supplies dataset-loading code, installation commands, and documentation for its Docker-based evaluation harness. Its dated release notes document containerization on June 27, 2024, and the Verified subset release on August 13, 2024. These are firsthand project records supporting implementation and development history; project performance claims are not independent validation.",
+        "text": ""
+      }
+    ],
+    "revisions": [
+      {
+        "id": "revision_110bce8156294537b2add4e7099c6960",
+        "factId": "fact_2e713ce38b304ceeb071e71d5c09402c",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench is an evaluation framework for language models using software engineering problems drawn from real GitHub issues and corresponding pull requests.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "definition",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "An evaluation framework for language models using software engineering problems drawn from real GitHub issues and corresponding pull requests.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 812,
+            "end": 1027,
+            "quote": "To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.171Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "2bd742e781e3fd17453d6e834be7885d9e32b2db6ad2d0575be067ff87ecad82"
+      },
+      {
+        "id": "revision_2ec6338c984b45e399d7c896b3cc459a",
+        "factId": "fact_bd07403c50d941db876e577c36ccb157",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench benchmark described in the paper contains 2,294 software engineering problems.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "problem_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "2294",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 812,
+            "end": 1027,
+            "quote": "To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "7ce0e5afae04677d3dd9ed8b09116a90b7d60a020dbf66f8e652a339dafd43ca"
+      },
+      {
+        "id": "revision_249f3e5dc09e45349a94087bec8af52f",
+        "factId": "fact_00a373cd184c49c993fe540df9a1e82b",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench benchmark described in the paper draws its problems from 12 popular Python repositories.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "repository_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "12",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "Popular Python repositories from which the benchmark's problems are drawn.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 812,
+            "end": 1027,
+            "quote": "To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "a536b044e0a2563ea651ebc1af33fdac39002154d743a2bf0cfba1f2765abe74"
+      },
+      {
+        "id": "revision_39135e549495466ea54ab245f01175f6",
+        "factId": "fact_6bfa1db451684441b6f06ef095085926",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Each SWE-bench task provides a codebase and a description of an issue to be resolved.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "task_input",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "A codebase and a description of an issue to be resolved.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1028,
+            "end": 1172,
+            "quote": "Given a codebase along with a description of an issue to be resolved, a language model is tasked with editing the codebase to address the issue.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "518ddb4f70575164f29903a036510e54d20654e7bed56f7260b2f769b65e5e3d"
+      },
+      {
+        "id": "revision_2e39a3a66c1f4e7e89ec867271e12567",
+        "factId": "fact_9a6fa87ead82455fa29545d2b6d1ecd9",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench paper describes the SWE-bench evaluation framework.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 812,
+            "end": 1027,
+            "quote": "To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.172Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "8ad0eb9381b3f2baff32ce53068293c1f46a22989f4a80b031a5ab201a2e543d"
+      },
+      {
+        "id": "revision_e6a37d1cd5464747897392dad777de6f",
+        "factId": "fact_9e3068dc932e45c595f9669c881745a7",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench paper's first arXiv version was submitted on October 10, 2023.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "property",
+            "value": "publication_status",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "First arXiv version submitted.",
+            "valueType": "text"
+          },
+          {
+            "role": "version",
+            "value": "v1",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "time": {
+          "start": "2023-10-10",
+          "precision": "day",
+          "basis": "arXiv submission history for v1"
+        },
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 2268,
+            "end": 2313,
+            "quote": "[v1] Tue, 10 Oct 2023 16:47:29 UTC (2,003 KB)",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.173Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "04aed77569323d05ffb47b65bad232151971ff4c57a985f7b3d2fa6fe7f37b9f"
+      },
+      {
+        "id": "revision_f4740ba759174d679d7a312966ad6eb3",
+        "factId": "fact_4a5f188d1acb4bc7a94eef976a87c7a5",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors frame SWE-bench as using real-world software engineering as a rich, sustainable, and challenging testbed for evaluating the next generation of language models.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "purpose",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Using real-world software engineering as a rich, sustainable, and challenging testbed for evaluating the next generation of language models.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The SWE-bench paper's authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 666,
+            "end": 811,
+            "quote": "We find real-world software engineering to be a rich, sustainable, and challenging testbed for evaluating the next generation of language models.",
+            "stance": "supports"
+          },
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 812,
+            "end": 1027,
+            "quote": "To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:41:56.173Z",
+        "extractionJobId": "320b5601-9564-44cd-9604-1dd60cbeba99",
+        "digest": "469293c1c1cd8511f7890f776f0faabca5fafe2ecc49838484ebd9f6826218e8"
+      },
+      {
+        "id": "revision_8f8ed1cfc4574801961a93538332d95d",
+        "factId": "fact_a0f505a310e24d20876ff7f240f58557",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench tasks require editing the supplied codebase to address the issue.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "task_output",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "Edits to the supplied codebase that address the issue.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "asserted",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1028,
+            "end": 1172,
+            "quote": "Given a codebase along with a description of an issue to be resolved, a language model is tasked with editing the codebase to address the issue.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:44:10.525Z",
+        "extractionJobId": "9d7c6f7f-53ff-46d1-86fb-a527b1c1a3d0",
+        "digest": "5153f679db96876da4a41cc9a067ca799a6f1783fea2fe03063ce523329a4bac"
+      },
+      {
+        "id": "revision_24778f3f7d8e489daef5f987053e2486",
+        "factId": "fact_1a55f9e95448438d81b68846a6f6674f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The authors report evaluating their fine-tuned model SWE-Llama on SWE-bench.",
+        "predicate": "evaluated_on",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_e62573cf5b054b0d9a15bf41025f525a"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "conditions",
+            "value": "The paper's evaluations of issue resolution using the authors' fine-tuned model.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The SWE-bench paper's authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1507,
+            "end": 1646,
+            "quote": "Our evaluations show that both state-of-the-art proprietary models and our fine-tuned model SWE-Llama can resolve only the simplest issues.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The captured abstract does not specify the evaluation protocol."
+        ],
+        "createdAt": "2026-10-05T21:44:10.525Z",
+        "extractionJobId": "9d7c6f7f-53ff-46d1-86fb-a527b1c1a3d0",
+        "digest": "8c9524ceac554a84686695908862fd0efe195dde65e2de44ca575fdb6b75d9f2"
+      },
+      {
+        "id": "revision_9e57a8323ce64f838cce019f8ffabb31",
+        "factId": "fact_721b39c4a29c4c72aecca841d1407850",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "Claude 2 was evaluated on SWE-bench in the experiments reported by the authors.",
+        "predicate": "evaluated_on",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_79451e83765c41399fb7ca7a140c3916"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "conditions",
+            "value": "The paper's reported issue-resolution evaluations.",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "The SWE-bench paper's authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1507,
+            "end": 1730,
+            "quote": "Our evaluations show that both state-of-the-art proprietary models and our fine-tuned model SWE-Llama can resolve only the simplest issues. The best-performing model, Claude 2, is able to solve a mere $1.96$% of the issues.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The captured abstract does not specify the evaluation protocol."
+        ],
+        "createdAt": "2026-10-05T21:44:10.525Z",
+        "extractionJobId": "9d7c6f7f-53ff-46d1-86fb-a527b1c1a3d0",
+        "digest": "3c6393eb8de85d85069391e85b4ebcf0d946647e9071414f89da57ac2ec345fc"
+      },
+      {
+        "id": "revision_cc62ce8ed7784f2699e2bf024bf9de64",
+        "factId": "fact_8c6c630f27f647428a1cddfedbce4353",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation describes the SWE-bench benchmark.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 0,
+            "end": 124,
+            "quote": "SWE-bench SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.141Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "5c88c0fb8c67a0239250f04e4414d21464fcc23cd9f00d4d4b5f865344511e92"
+      },
+      {
+        "id": "revision_893b5a2a3b76462ba7cbf13f230c3533",
+        "factId": "fact_33c91a432106450abb317a30d7584527",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation reports the SWE-bench paper as accepted for an oral presentation at ICLR 2024.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "property",
+            "value": "publication_status",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "accepted for an oral presentation at ICLR 2024",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1067,
+            "end": 1139,
+            "quote": "[Jan. 16, 2024]: SWE-bench accepted to ICLR 2024 as an oral presentation",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.143Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "305e713524a3e9ac0233dd7b33feab11b3e93b6932da270017393529f3c96b9b"
+      },
+      {
+        "id": "revision_54b7f7ffb3a14e3fb51ec7aca3539298",
+        "factId": "fact_a8e331478f5d464b8f0b1ca0be45c404",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation reports the evaluation harness as fully containerized using Docker.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_748458065c6c45c2b1e39b25168ba18c"
+          },
+          {
+            "role": "property",
+            "value": "availability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "fully containerized using Docker",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 934,
+            "end": 1002,
+            "quote": "[Jun. 27, 2024]: Fully containerized evaluation harness using Docker",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.143Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "825eae2b2e9ba7aa40ef80b8d06f29b8732f884010ac06fc1563530e749c3b65"
+      },
+      {
+        "id": "revision_543ca04c71d0456693e151dd1fc310c2",
+        "factId": "fact_0a76711760164929a8a5528ba8bd54c6",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The documentation reports SWE-bench cloud-based evaluations via Modal.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_e37317fe5014430e8b06fbdd9fbc7416"
+          },
+          {
+            "role": "conditions",
+            "value": "cloud-based evaluations",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 793,
+            "end": 843,
+            "quote": "[Jan. 11, 2025]: Cloud-based evaluations via Modal",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "4936a5e32b1427349b426a619417b8b595b1222e9880cff6e3607e02b7ea7844"
+      },
+      {
+        "id": "revision_b7e9d6e8a77f4e72a33d4f29a3b89312",
+        "factId": "fact_636dfeb472684606b6bc2e60cc641183",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "SWE-bench documentation lists its installation guide as a guide for local and cloud setup.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_5f4a6d7ed65f40b6b19b53b0be4dca99"
+          },
+          {
+            "role": "conditions",
+            "value": "a guide for local and cloud setup",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 1420,
+            "end": 1486,
+            "quote": "Installation - Setup instructions for local and cloud environments",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "8511590f2c38c56654d907b001a1c2b6964592df13313dac67c2ee98218a1873"
+      },
+      {
+        "id": "revision_e6e07ad02b1d4ac886e56ff82c103cad",
+        "factId": "fact_7b916d2e97274c4fb827616f249125a6",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The documentation reports a full SWE-bench leaderboard on the project website.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "availability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "full leaderboard on the project website",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 338,
+            "end": 403,
+            "quote": "🏆 Leaderboard You can find the full leaderboard at swebench.com!",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "ed77dd11ddc62c8f46f2fc76e7cff35b14d5cd2ff19d63e66e5c3fdd85eba0ba"
+      },
+      {
+        "id": "revision_2c58b5dbe6754914b7f3e13955930e7b",
+        "factId": "fact_bf5ecde5a93e4a3ab7d8eb5f9342c93f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project reports 500 engineer-confirmed solvable problems in SWE-bench Verified.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f03ebc05f8da416ead771c0a65e9dbf9"
+          },
+          {
+            "role": "property",
+            "value": "problem_count",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "500",
+            "valueType": "number"
+          },
+          {
+            "role": "unit",
+            "value": "count",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "engineer-confirmed solvable problems",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 844,
+            "end": 933,
+            "quote": "[Aug. 13, 2024]: SWE-bench Verified release with 500 engineer-confirmed solvable problems",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.144Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "4ac1ea1e6fce29b0dd3024d61d860ec8a2f739a5feeef289d4c2d75e4f2104a1"
+      },
+      {
+        "id": "revision_83d6d17556954b0381b8d435488d59a5",
+        "factId": "fact_f1f14ec0a5d74795b5e39946b05b2392",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project reports SWE-bench Verified as released on August 13, 2024.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_f03ebc05f8da416ead771c0a65e9dbf9"
+          },
+          {
+            "role": "property",
+            "value": "availability",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "released",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "time": {
+          "start": "2024-08-13",
+          "precision": "day",
+          "basis": "[Aug. 13, 2024]: SWE-bench Verified release"
+        },
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 844,
+            "end": 933,
+            "quote": "[Aug. 13, 2024]: SWE-bench Verified release with 500 engineer-confirmed solvable problems",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:49:30.146Z",
+        "extractionJobId": "246627b5-f758-403a-9f29-18f94307fecb",
+        "digest": "11ce52abdee7cdb9b4c9ece634f35d138c7bbbfc02b22f05bded9641a2aa5182"
+      },
+      {
+        "id": "revision_7321965dbcee40b19291f2a6b2b3041a",
+        "factId": "fact_4bce266e68aa4abfb2bc86ab05a0deca",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "According to the paper authors, resolving SWE-bench issues frequently requires understanding and coordinating simultaneous changes across functions, classes, and files.",
+        "predicate": "requires",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_32a1c83025dd4531b4b8458defded008"
+          },
+          {
+            "role": "conditions",
+            "value": "resolving SWE-bench issues frequently",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1173,
+            "end": 1506,
+            "quote": "Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.820Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "89430ccd21e151dca4c9b2f5148ddd248d0238877e69255db19a5c5b1cdc555c"
+      },
+      {
+        "id": "revision_c2f3a0de71614c379db7571521401c7e",
+        "factId": "fact_0abd692fb62e40bfaefba42f8947cb22",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The SWE-bench authors describe effective language-model evaluation as outpaced by language models.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_edd58bcd69734945bd6579de94371bfc"
+          },
+          {
+            "role": "conditions",
+            "value": "outpaced by language models",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 500,
+            "end": 665,
+            "quote": "Language models have outpaced our ability to evaluate them effectively, but for their future development it is essential to study the frontier of their capabilities.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.820Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "f531e3fb26038f39356cbcbc50acf212d55b08b5d0e03c5ec909467ef58a2ba9"
+      },
+      {
+        "id": "revision_c476e7ac712c4a22a11fc34e716fbc1f",
+        "factId": "fact_efad801c673648acbf3bed1dba5d612d",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The paper qualitatively describes SWE-Llama as resolving only the simplest issues in its original SWE-bench evaluations.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_e62573cf5b054b0d9a15bf41025f525a"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "can resolve only the simplest issues",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "qualitative characterization in the original SWE-bench evaluations",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1507,
+            "end": 1646,
+            "quote": "Our evaluations show that both state-of-the-art proprietary models and our fine-tuned model SWE-Llama can resolve only the simplest issues.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The captured abstract does not operationally define \"simplest\"; this is the authors’ qualitative characterization."
+        ],
+        "createdAt": "2026-10-05T21:56:41.821Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "e121813943acf75e2efdea0bb0ef9e687eeccea1b0523bf7f3793964022b7d8b"
+      },
+      {
+        "id": "revision_3ae70e9ab0f145fc954b060bed99883c",
+        "factId": "fact_570d0c0259d14011a2c915ff7ae6433e",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The paper qualitatively describes the evaluated state-of-the-art proprietary models as resolving only the simplest issues in its original SWE-bench evaluations.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_131d5305be264149b2c500e137df37c7"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_218e8ccb91f645a1b6956cd560c3961a"
+          },
+          {
+            "role": "property",
+            "value": "limitation",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "can resolve only the simplest issues",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "qualitative characterization in the original SWE-bench evaluations",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench paper authors",
+        "evidence": [
+          {
+            "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+            "start": 1507,
+            "end": 1646,
+            "quote": "Our evaluations show that both state-of-the-art proprietary models and our fine-tuned model SWE-Llama can resolve only the simplest issues.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [
+          "The captured abstract does not operationally define \"simplest\"; this is the authors’ qualitative characterization."
+        ],
+        "createdAt": "2026-10-05T21:56:41.821Z",
+        "extractionJobId": "031a7fc5-a5c9-4854-a515-f7d8cc17c8f1",
+        "digest": "98810b2043800c5b3243485eb2c56b24f64112fc400899195241a5c95fd85da6"
+      },
+      {
+        "id": "revision_a919ef9fb8e147c3bdeeae699df326cd",
+        "factId": "fact_5a57262ec70545918275cea71ab45521",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation describes SWE-bench’s expected model output, given a codebase and an issue, as a patch resolving that issue.",
+        "predicate": "has_property",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2"
+          },
+          {
+            "role": "property",
+            "value": "task_output",
+            "valueType": "text"
+          },
+          {
+            "role": "value",
+            "value": "patch resolving the supplied issue",
+            "valueType": "text"
+          },
+          {
+            "role": "conditions",
+            "value": "given a codebase and an issue",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 125,
+            "end": 243,
+            "quote": "Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem.",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.825Z",
+        "extractionJobId": "878e8183-3c64-49f6-81d8-31aaf5d1458e",
+        "digest": "66b5d60e1af117711338ac6024701c70e0038f63d4667d6153d2d6bf09e70aac"
+      },
+      {
+        "id": "revision_0e20898f4e1c4977b78f5258456851aa",
+        "factId": "fact_6ede9a68187c4743974091062329cff5",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation describes the Docker-based SWE-bench evaluation harness as intended for reproducible evaluation with consistent results.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_748458065c6c45c2b1e39b25168ba18c"
+          },
+          {
+            "role": "conditions",
+            "value": "Docker-based; intended for reproducible evaluation with consistent results",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 516,
+            "end": 598,
+            "quote": "✅ Reproducible evaluation - Docker-based evaluation harness for consistent results",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.825Z",
+        "extractionJobId": "878e8183-3c64-49f6-81d8-31aaf5d1458e",
+        "digest": "c4efd32d4be5deb6f6efbcb7a320c4a35edc36cb3f3cc0c648bcb30b772759df"
+      },
+      {
+        "id": "revision_99ef52c8b43443f791f4040ac3468a4c",
+        "factId": "fact_caf451adee3d4df9be554e99b1748e3f",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The documentation lists SWE-bench Lite as one of the SWE-bench project’s datasets.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_39b9b41706084c12834eff2486b83f54"
+          },
+          {
+            "role": "conditions",
+            "value": "one of the SWE-bench project’s datasets",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 599,
+            "end": 692,
+            "quote": "✅ Multiple datasets - SWE-bench, SWE-bench Lite, SWE-bench Verified, and SWE-bench Multimodal",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.825Z",
+        "extractionJobId": "878e8183-3c64-49f6-81d8-31aaf5d1458e",
+        "digest": "89193a8e2f40b0ff48cbfe42afa2e9145018b69ea3d0b1120b1a2141734caee9"
+      },
+      {
+        "id": "revision_8b93fcd8cfc54b028584599f6962cbca",
+        "factId": "fact_004e98876f2e4aaa97400f512d51faab",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The documentation lists SWE-bench Verified as one of the SWE-bench project’s datasets.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_f03ebc05f8da416ead771c0a65e9dbf9"
+          },
+          {
+            "role": "conditions",
+            "value": "one of the SWE-bench project’s datasets",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 599,
+            "end": 692,
+            "quote": "✅ Multiple datasets - SWE-bench, SWE-bench Lite, SWE-bench Verified, and SWE-bench Multimodal",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.826Z",
+        "extractionJobId": "878e8183-3c64-49f6-81d8-31aaf5d1458e",
+        "digest": "0714487c513c621e600eeb3bf1fbdc712c2f58b82d51f1cc8174f3ca78770ff8"
+      },
+      {
+        "id": "revision_70819586f8ac4af489eee8df47260cc9",
+        "factId": "fact_654507da483a4b9d9751074af5ef66da",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The documentation lists SWE-bench Multimodal as one of the SWE-bench project’s datasets.",
+        "predicate": "describes",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_3fcc8aa95ddd4550802e5f3c262f6901"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_9fc189763cb248f4b3d89c7909a965cb"
+          },
+          {
+            "role": "conditions",
+            "value": "one of the SWE-bench project’s datasets",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 599,
+            "end": 692,
+            "quote": "✅ Multiple datasets - SWE-bench, SWE-bench Lite, SWE-bench Verified, and SWE-bench Multimodal",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.826Z",
+        "extractionJobId": "878e8183-3c64-49f6-81d8-31aaf5d1458e",
+        "digest": "520d63d42733c60ed2f89ac783336dee6e529b113861da9ee7532f38eecd12ba"
+      },
+      {
+        "id": "revision_30cfc4903401429b83cc35a1863083bc",
+        "factId": "fact_74d2331cf8424101ba155ab97ca84a62",
+        "subjectId": "ai",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "statement": "The project documentation reports SWE-bench Multimodal integration with private-test-split evaluation on January 13, 2025.",
+        "predicate": "uses",
+        "arguments": [
+          {
+            "role": "subject",
+            "entityId": "entity_9fc189763cb248f4b3d89c7909a965cb"
+          },
+          {
+            "role": "object",
+            "entityId": "entity_04d2b7615ec14174a3965bb7456aad8a"
+          },
+          {
+            "role": "conditions",
+            "value": "integration with private-test-split evaluation",
+            "valueType": "text"
+          }
+        ],
+        "modality": "reported",
+        "attribution": "SWE-bench project documentation",
+        "time": {
+          "start": "2025-01-13",
+          "precision": "day",
+          "basis": "[Jan. 13, 2025]: SWE-bench Multimodal integration with private test split evaluation"
+        },
+        "evidence": [
+          {
+            "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+            "start": 708,
+            "end": 792,
+            "quote": "[Jan. 13, 2025]: SWE-bench Multimodal integration with private test split evaluation",
+            "stance": "supports"
+          }
+        ],
+        "conflictsWith": [],
+        "uncertainties": [],
+        "createdAt": "2026-10-05T21:56:41.826Z",
+        "extractionJobId": "878e8183-3c64-49f6-81d8-31aaf5d1458e",
+        "digest": "c846818de76abf3d1ce8e7ba03ac7836d5cb2f0ede7d4502516ebc148a808dfe"
+      }
+    ],
+    "audits": [
+      {
+        "revisionId": "revision_110bce8156294537b2add4e7099c6960",
+        "outcome": "supported",
+        "reason": "The authors' original abstract qualifies as primary evidence. It defines SWE-bench as an evaluation framework using real GitHub issues and corresponding pull requests; the surrounding text establishes language-model evaluation. The definition field expresses that same assertion.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_2ec6338c984b45e399d7c896b3cc459a",
+        "outcome": "supported",
+        "reason": "The introducing abstract explicitly gives 2,294 software engineering problems. The numeric problem_count and count unit match the statement about the benchmark described there; this is a dataset description, not an experimental performance result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_249f3e5dc09e45349a94087bec8af52f",
+        "outcome": "supported",
+        "reason": "The quote explicitly specifies 12 popular Python repositories. The numeric count, unit, and conditions preserve both the repository qualification and their relationship to the benchmark's problems.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_39135e549495466ea54ab245f01175f6",
+        "outcome": "supported",
+        "reason": "The abstract describes the task input as a codebase together with an issue description. The task_input field faithfully represents that general task specification.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_2e39a3a66c1f4e7e89ec867271e12567",
+        "outcome": "supported",
+        "reason": "The paper's own abstract introduces and describes SWE-bench. The paper and benchmark entities are identifiable in the capture, and the describes relation matches the sentence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_e6a37d1cd5464747897392dad777de6f",
+        "outcome": "supported",
+        "reason": "The submission history gives v1 as October 10, 2023, and the header explicitly calls this the submission date. The version, submission status, and day-precision date agree without asserting a public posting time.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_f4740ba759174d679d7a312966ad6eb3",
+        "outcome": "supported",
+        "reason": "The authors call real-world software engineering a rich, sustainable, challenging evaluation testbed and immediately introduce SWE-bench 'To this end.' Together these passages support the attributed evaluation purpose, including its qualifications, as represented in both sentence and fields.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:42:47.079Z"
+      },
+      {
+        "revisionId": "revision_8f8ed1cfc4574801961a93538332d95d",
+        "outcome": "supported",
+        "reason": "The abstract explicitly tasks the model with editing the supplied codebase to address the issue. The task_output value describes those required edits, not an observed success, and matches the statement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:44:59.211Z"
+      },
+      {
+        "revisionId": "revision_24778f3f7d8e489daef5f987053e2486",
+        "outcome": "supported",
+        "reason": "The authors explicitly report evaluations involving 'our fine-tuned model SWE-Llama'; the surrounding abstract identifies SWE-bench issue resolution as the task. The revision asserts evaluation participation, not a performance result requiring a specified experimental protocol.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:44:59.211Z"
+      },
+      {
+        "revisionId": "revision_9e57a8323ce64f838cce019f8ffabb31",
+        "outcome": "supported",
+        "reason": "In the context of the authors' SWE-bench evaluations, Claude 2 is identified as the best-performing evaluated model. This supports its participation in those issue-resolution experiments without endorsing a score or general capability claim.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:44:59.211Z"
+      },
+      {
+        "revisionId": "revision_cc62ce8ed7784f2699e2bf024bf9de64",
+        "outcome": "supported",
+        "reason": "The official repository documentation is primary project evidence. Its opening definition directly describes SWE-bench, supporting the documentation-to-benchmark relationship without asserting a measured result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_893b5a2a3b76462ba7cbf13f230c3533",
+        "outcome": "supported",
+        "reason": "The news entry explicitly reports acceptance to ICLR 2024 as an oral presentation. The captured citation identifies the SWE-bench paper and conference, supporting the paper identity and attributed publication-status assertion. No acceptance date is asserted.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_54b7f7ffb3a14e3fb51ec7aca3539298",
+        "outcome": "supported",
+        "reason": "The June 27 news entry explicitly describes a fully containerized evaluation harness using Docker. The attributed sentence and property value express that narrower status assertion. They do not assert a release date.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_543ca04c71d0456693e151dd1fc310c2",
+        "outcome": "supported",
+        "reason": "The news entry explicitly reports cloud-based evaluations via Modal, supporting Modal as the service used under the stated evaluation condition. The sentence preserves project attribution and does not claim a dated introduction.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_b7e9d6e8a77f4e72a33d4f29a3b89312",
+        "outcome": "supported",
+        "reason": "The documentation structure explicitly lists Installation as setup instructions for local and cloud environments. This supports the identified guide, its described scope, and the attributed documentation relationship.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_e6e07ad02b1d4ac886e56ff82c103cad",
+        "outcome": "supported",
+        "reason": "The official project documentation explicitly directs readers to the full leaderboard at swebench.com. The attributed availability assertion matches that passage without claiming independent verification of the website.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_2c58b5dbe6754914b7f3e13955930e7b",
+        "outcome": "supported",
+        "reason": "The release note explicitly reports 500 engineer-confirmed solvable problems. The sentence preserves project attribution, and the structure includes the numeric count, count unit, and engineer-confirmed-solvable qualification. It does not independently certify solvability.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_83d6d17556954b0381b8d435488d59a5",
+        "outcome": "supported",
+        "reason": "The dated news entry explicitly identifies a SWE-bench Verified release on August 13, 2024. The attributed release-status assertion and day-precision time field match the sentence and evidence.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:50:51.637Z"
+      },
+      {
+        "revisionId": "revision_7321965dbcee40b19291f2a6b2b3041a",
+        "outcome": "supported",
+        "reason": "The quoted primary abstract explicitly states that resolving issues frequently requires coordinating simultaneous changes across functions, classes and files. The revision retains the frequency qualification and attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_c2f3a0de71614c379db7571521401c7e",
+        "outcome": "supported",
+        "reason": "The primary abstract states that language models have outpaced the authors’ ability to evaluate them effectively. The revision represents this as an attributed qualitative characterization, not a measured result.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_c476e7ac712c4a22a11fc34e716fbc1f",
+        "outcome": "supported",
+        "reason": "The authors explicitly say their evaluations show SWE-Llama can resolve only the simplest issues. The revision accurately encodes an attributed qualitative limitation without inventing a difficulty threshold, numeric measurement or replication.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_3ae70e9ab0f145fc954b060bed99883c",
+        "outcome": "supported",
+        "reason": "The same primary passage explicitly applies the simplest-issues characterization to the evaluated state-of-the-art proprietary models. The revision preserves the evaluation scope and qualitative attribution.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.788Z"
+      },
+      {
+        "revisionId": "revision_a919ef9fb8e147c3bdeeae699df326cd",
+        "outcome": "supported",
+        "reason": "The firsthand project documentation explicitly defines the task as generating a patch resolving the described problem given a codebase and issue. The task_output property directly represents that output rather than masking another relationship.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.801Z"
+      },
+      {
+        "revisionId": "revision_0e20898f4e1c4977b78f5258456851aa",
+        "outcome": "supported",
+        "reason": "The official documentation explicitly advertises reproducible evaluation and a Docker-based harness for consistent results. The revision appropriately records this as the project’s stated intent, not independently demonstrated reproducibility.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.801Z"
+      },
+      {
+        "revisionId": "revision_99ef52c8b43443f791f4040ac3468a4c",
+        "outcome": "supported",
+        "reason": "The firsthand documentation explicitly lists SWE-bench Lite under multiple datasets, supporting its identity and attributed dataset characterization.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.801Z"
+      },
+      {
+        "revisionId": "revision_8b93fcd8cfc54b028584599f6962cbca",
+        "outcome": "supported",
+        "reason": "The firsthand documentation explicitly lists SWE-bench Verified under multiple datasets, supporting the complete attributed statement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.801Z"
+      },
+      {
+        "revisionId": "revision_70819586f8ac4af489eee8df47260cc9",
+        "outcome": "supported",
+        "reason": "The firsthand documentation explicitly lists SWE-bench Multimodal under multiple datasets, supporting the complete attributed statement.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.801Z"
+      },
+      {
+        "revisionId": "revision_30cfc4903401429b83cc35a1863083bc",
+        "outcome": "supported",
+        "reason": "The official dated project entry explicitly records SWE-bench Multimodal integration with private test-split evaluation on January 13, 2025, supporting the relationship, conditions, attribution and day-level date.",
+        "model": "gpt-6-astra",
+        "createdAt": "2026-10-05T21:57:24.801Z"
+      }
+    ],
+    "approvals": []
+  },
+  "articles": [
+    {
+      "id": "knowledge-entity_4fb81f339c804ecbb97a28ea23b76ba2",
+      "title": "SWE-bench",
+      "topic": "SWE-bench",
+      "subjectId": "ai",
+      "philosophy": {
+        "id": "schematic",
+        "version": 2,
+        "name": "Schematic primary evidence",
+        "description": "Every article claim is a typed factoid with exact original evidence.",
+        "sourceMode": "reference",
+        "rules": "Use primary sources or original reporting only. Every factual line in an article must render from a schematic factoid, never free-form uncatalogued prose. Each factoid must use the versioned ontology: stable typed entities, a permitted predicate with its required argument roles and entity types, typed literals and explicit units for numbers, modality and attribution, and evidenced conditions, dates and locations where applicable. Bind the entire claim and every structured field to exact quoted passages from captured original evidence. A separate audit must check both meaning and structure; uncertain or unsupported claims cannot enter articles. Preserve contradictions, qualifications and source assertions rather than declaring reports to be independently established truth. Company claims and experimental results require attribution. Classify each source from its actual content as primary evidence or firsthand original reporting; aggregation, commentary, encyclopedia summaries and press-release rewrites do not qualify. Seek material counterevidence without manufacturing balance. Do not infer identities from similar names, geocode place names or invent missing conditions. Human approval of exact content remains mandatory before publication."
+      },
+      "markdown": "SWE-bench is an evaluation framework for language models built around software engineering problems drawn from real GitHub issues and their corresponding pull requests [1](#source-1). The benchmark described in its research paper contains 2,294 problems from 12 popular Python repositories [1](#source-1). Each task asks a model to edit a supplied codebase to address an issue described alongside it [1](#source-1). Its authors present real-world software engineering as a challenging testbed for language models, motivated by their concern that model development had outpaced effective evaluation [1](#source-1).\n\n## Issue-resolution tasks\n\nThe project documentation describes the expected model output as a patch that resolves the supplied issue [2](#source-2). According to the paper's authors, resolving these issues frequently requires understanding and coordinating simultaneous changes across multiple functions, classes, and files [1](#source-1).\n\n## Research and initial evaluations\n\nThe paper's first arXiv version was submitted on October 10, 2023, and the project documentation reports its acceptance for an oral presentation at ICLR 2024 [1](#source-1) [2](#source-2). In the paper's evaluations, the authors tested proprietary models, including Claude 2, alongside their own fine-tuned model, SWE-Llama [1](#source-1). They characterized both SWE-Llama and the evaluated proprietary models as able to resolve only the simplest issues in those original evaluations [1](#source-1).\n\n## Evaluation infrastructure\n\nThe project documentation describes a fully Docker-containerized evaluation harness intended to support reproducible evaluation with consistent results [2](#source-2). It also reports cloud-based evaluations through Modal and provides setup guidance for both local and cloud environments [2](#source-2). According to the documentation, the project website hosts the full SWE-bench leaderboard [2](#source-2).\n\n## Additional datasets\n\nThe documentation identifies SWE-bench Lite, SWE-bench Verified, and SWE-bench Multimodal as additional project datasets [2](#source-2). The project reports that SWE-bench Verified was released on August 13, 2024, with 500 problems confirmed by engineers to be solvable [2](#source-2). For SWE-bench Multimodal, the documentation reports integration with private-test-split evaluation on January 13, 2025 [2](#source-2).",
+      "sources": [
+        {
+          "id": 1,
+          "captureId": "capture_359b458084d2075454f04afae82b9cb1a77f4705729d35bcff98fc2e36212281",
+          "url": "https://arxiv.org/abs/2310.06770",
+          "title": "[2310.06770] SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+          "extract": ""
+        },
+        {
+          "id": 2,
+          "captureId": "capture_d176c08e0e6619661b96a301cbdb3a98a0a3d2e5f310213a46d1f6e46d0f09eb",
+          "url": "https://github.com/SWE-bench/SWE-bench/blob/main/docs/index.md",
+          "title": "SWE-bench/docs/index.md at main · SWE-bench/SWE-bench · GitHub",
+          "extract": ""
+        }
+      ],
+      "createdAt": "2026-10-06T00:18:58.587Z",
+      "model": "gpt-6-astra",
+      "knowledge": {
+        "ontologyVersion": 1,
+        "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2",
+        "policyKey": "schematic@2:a03d324da4918f92",
+        "mode": "preview",
+        "dependencies": [
+          {
+            "factId": "fact_2e713ce38b304ceeb071e71d5c09402c",
+            "revisionId": "revision_110bce8156294537b2add4e7099c6960",
+            "digest": "2bd742e781e3fd17453d6e834be7885d9e32b2db6ad2d0575be067ff87ecad82"
+          },
+          {
+            "factId": "fact_bd07403c50d941db876e577c36ccb157",
+            "revisionId": "revision_2ec6338c984b45e399d7c896b3cc459a",
+            "digest": "7ce0e5afae04677d3dd9ed8b09116a90b7d60a020dbf66f8e652a339dafd43ca"
+          },
+          {
+            "factId": "fact_00a373cd184c49c993fe540df9a1e82b",
+            "revisionId": "revision_249f3e5dc09e45349a94087bec8af52f",
+            "digest": "a536b044e0a2563ea651ebc1af33fdac39002154d743a2bf0cfba1f2765abe74"
+          },
+          {
+            "factId": "fact_6bfa1db451684441b6f06ef095085926",
+            "revisionId": "revision_39135e549495466ea54ab245f01175f6",
+            "digest": "518ddb4f70575164f29903a036510e54d20654e7bed56f7260b2f769b65e5e3d"
+          },
+          {
+            "factId": "fact_4bce266e68aa4abfb2bc86ab05a0deca",
+            "revisionId": "revision_7321965dbcee40b19291f2a6b2b3041a",
+            "digest": "89430ccd21e151dca4c9b2f5148ddd248d0238877e69255db19a5c5b1cdc555c"
+          },
+          {
+            "factId": "fact_9e3068dc932e45c595f9669c881745a7",
+            "revisionId": "revision_e6a37d1cd5464747897392dad777de6f",
+            "digest": "04aed77569323d05ffb47b65bad232151971ff4c57a985f7b3d2fa6fe7f37b9f"
+          },
+          {
+            "factId": "fact_33c91a432106450abb317a30d7584527",
+            "revisionId": "revision_893b5a2a3b76462ba7cbf13f230c3533",
+            "digest": "305e713524a3e9ac0233dd7b33feab11b3e93b6932da270017393529f3c96b9b"
+          },
+          {
+            "factId": "fact_4a5f188d1acb4bc7a94eef976a87c7a5",
+            "revisionId": "revision_f4740ba759174d679d7a312966ad6eb3",
+            "digest": "469293c1c1cd8511f7890f776f0faabca5fafe2ecc49838484ebd9f6826218e8"
+          },
+          {
+            "factId": "fact_0abd692fb62e40bfaefba42f8947cb22",
+            "revisionId": "revision_c2f3a0de71614c379db7571521401c7e",
+            "digest": "f531e3fb26038f39356cbcbc50acf212d55b08b5d0e03c5ec909467ef58a2ba9"
+          },
+          {
+            "factId": "fact_5a57262ec70545918275cea71ab45521",
+            "revisionId": "revision_a919ef9fb8e147c3bdeeae699df326cd",
+            "digest": "66b5d60e1af117711338ac6024701c70e0038f63d4667d6153d2d6bf09e70aac"
+          },
+          {
+            "factId": "fact_a0f505a310e24d20876ff7f240f58557",
+            "revisionId": "revision_8f8ed1cfc4574801961a93538332d95d",
+            "digest": "5153f679db96876da4a41cc9a067ca799a6f1783fea2fe03063ce523329a4bac"
+          },
+          {
+            "factId": "fact_6ede9a68187c4743974091062329cff5",
+            "revisionId": "revision_0e20898f4e1c4977b78f5258456851aa",
+            "digest": "c4efd32d4be5deb6f6efbcb7a320c4a35edc36cb3f3cc0c648bcb30b772759df"
+          },
+          {
+            "factId": "fact_a8e331478f5d464b8f0b1ca0be45c404",
+            "revisionId": "revision_54b7f7ffb3a14e3fb51ec7aca3539298",
+            "digest": "825eae2b2e9ba7aa40ef80b8d06f29b8732f884010ac06fc1563530e749c3b65"
+          },
+          {
+            "factId": "fact_0a76711760164929a8a5528ba8bd54c6",
+            "revisionId": "revision_543ca04c71d0456693e151dd1fc310c2",
+            "digest": "4936a5e32b1427349b426a619417b8b595b1222e9880cff6e3607e02b7ea7844"
+          },
+          {
+            "factId": "fact_636dfeb472684606b6bc2e60cc641183",
+            "revisionId": "revision_b7e9d6e8a77f4e72a33d4f29a3b89312",
+            "digest": "8511590f2c38c56654d907b001a1c2b6964592df13313dac67c2ee98218a1873"
+          },
+          {
+            "factId": "fact_7b916d2e97274c4fb827616f249125a6",
+            "revisionId": "revision_e6e07ad02b1d4ac886e56ff82c103cad",
+            "digest": "ed77dd11ddc62c8f46f2fc76e7cff35b14d5cd2ff19d63e66e5c3fdd85eba0ba"
+          },
+          {
+            "factId": "fact_1a55f9e95448438d81b68846a6f6674f",
+            "revisionId": "revision_24778f3f7d8e489daef5f987053e2486",
+            "digest": "8c9524ceac554a84686695908862fd0efe195dde65e2de44ca575fdb6b75d9f2"
+          },
+          {
+            "factId": "fact_721b39c4a29c4c72aecca841d1407850",
+            "revisionId": "revision_9e57a8323ce64f838cce019f8ffabb31",
+            "digest": "3c6393eb8de85d85069391e85b4ebcf0d946647e9071414f89da57ac2ec345fc"
+          },
+          {
+            "factId": "fact_efad801c673648acbf3bed1dba5d612d",
+            "revisionId": "revision_c476e7ac712c4a22a11fc34e716fbc1f",
+            "digest": "e121813943acf75e2efdea0bb0ef9e687eeccea1b0523bf7f3793964022b7d8b"
+          },
+          {
+            "factId": "fact_570d0c0259d14011a2c915ff7ae6433e",
+            "revisionId": "revision_3ae70e9ab0f145fc954b060bed99883c",
+            "digest": "98810b2043800c5b3243485eb2c56b24f64112fc400899195241a5c95fd85da6"
+          },
+          {
+            "factId": "fact_caf451adee3d4df9be554e99b1748e3f",
+            "revisionId": "revision_99ef52c8b43443f791f4040ac3468a4c",
+            "digest": "89193a8e2f40b0ff48cbfe42afa2e9145018b69ea3d0b1120b1a2141734caee9"
+          },
+          {
+            "factId": "fact_004e98876f2e4aaa97400f512d51faab",
+            "revisionId": "revision_8b93fcd8cfc54b028584599f6962cbca",
+            "digest": "0714487c513c621e600eeb3bf1fbdc712c2f58b82d51f1cc8174f3ca78770ff8"
+          },
+          {
+            "factId": "fact_654507da483a4b9d9751074af5ef66da",
+            "revisionId": "revision_70819586f8ac4af489eee8df47260cc9",
+            "digest": "520d63d42733c60ed2f89ac783336dee6e529b113861da9ee7532f38eecd12ba"
+          },
+          {
+            "factId": "fact_bf5ecde5a93e4a3ab7d8eb5f9342c93f",
+            "revisionId": "revision_2c58b5dbe6754914b7f3e13955930e7b",
+            "digest": "4ac1ea1e6fce29b0dd3024d61d860ec8a2f739a5feeef289d4c2d75e4f2104a1"
+          },
+          {
+            "factId": "fact_f1f14ec0a5d74795b5e39946b05b2392",
+            "revisionId": "revision_83d6d17556954b0381b8d435488d59a5",
+            "digest": "11ce52abdee7cdb9b4c9ece634f35d138c7bbbfc02b22f05bded9641a2aa5182"
+          },
+          {
+            "factId": "fact_74d2331cf8424101ba155ab97ca84a62",
+            "revisionId": "revision_30cfc4903401429b83cc35a1863083bc",
+            "digest": "c846818de76abf3d1ce8e7ba03ac7836d5cb2f0ede7d4502516ebc148a808dfe"
+          }
+        ],
+        "scope": [
+          {
+            "factId": "fact_9a6fa87ead82455fa29545d2b6d1ecd9",
+            "revisionId": "revision_2e39a3a66c1f4e7e89ec867271e12567",
+            "digest": "8ad0eb9381b3f2baff32ce53068293c1f46a22989f4a80b031a5ab201a2e543d"
+          },
+          {
+            "factId": "fact_8c6c630f27f647428a1cddfedbce4353",
+            "revisionId": "revision_cc62ce8ed7784f2699e2bf024bf9de64",
+            "digest": "5c88c0fb8c67a0239250f04e4414d21464fcc23cd9f00d4d4b5f865344511e92"
+          }
+        ],
+        "narrative": {
+          "version": 1,
+          "entityId": "entity_4fb81f339c804ecbb97a28ea23b76ba2",
+          "sentences": [
+            {
+              "id": "s1",
+              "text": "SWE-bench is an evaluation framework for language models built around software engineering problems drawn from real GitHub issues and their corresponding pull requests.",
+              "revisionIds": [
+                "revision_110bce8156294537b2add4e7099c6960"
+              ],
+              "section": "",
+              "paragraph": 0,
+              "sourceIds": [
+                1
+              ]
+            },
+            {
+              "id": "s2",
+              "text": "The benchmark described in its research paper contains 2,294 problems from 12 popular Python repositories.",
+              "revisionIds": [
+                "revision_2ec6338c984b45e399d7c896b3cc459a",
+                "revision_249f3e5dc09e45349a94087bec8af52f"
+              ],
+              "section": "",
+              "paragraph": 0,
+              "sourceIds": [
+                1
+              ]
+            },
+            {
+              "id": "s3",
+              "text": "Each task asks a model to edit a supplied codebase to address an issue described alongside it.",
+              "revisionIds": [
+                "revision_39135e549495466ea54ab245f01175f6",
+                "revision_8f8ed1cfc4574801961a93538332d95d"
+              ],
+              "section": "",
+              "paragraph": 0,
+              "sourceIds": [
+                1
+              ]
+            },
+            {
+              "id": "s4",
+              "text": "Its authors present real-world software engineering as a challenging testbed for language models, motivated by their concern that model development had outpaced effective evaluation.",
+              "revisionIds": [
+                "revision_f4740ba759174d679d7a312966ad6eb3",
+                "revision_c2f3a0de71614c379db7571521401c7e"
+              ],
+              "section": "",
+              "paragraph": 0,
+              "sourceIds": [
+                1
+              ]
+            },
+            {
+              "id": "s5",
+              "text": "The project documentation describes the expected model output as a patch that resolves the supplied issue.",
+              "revisionIds": [
+                "revision_a919ef9fb8e147c3bdeeae699df326cd"
+              ],
+              "section": "Issue-resolution tasks",
+              "paragraph": 1,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s6",
+              "text": "According to the paper's authors, resolving these issues frequently requires understanding and coordinating simultaneous changes across multiple functions, classes, and files.",
+              "revisionIds": [
+                "revision_7321965dbcee40b19291f2a6b2b3041a"
+              ],
+              "section": "Issue-resolution tasks",
+              "paragraph": 1,
+              "sourceIds": [
+                1
+              ]
+            },
+            {
+              "id": "s7",
+              "text": "The paper's first arXiv version was submitted on October 10, 2023, and the project documentation reports its acceptance for an oral presentation at ICLR 2024.",
+              "revisionIds": [
+                "revision_e6a37d1cd5464747897392dad777de6f",
+                "revision_893b5a2a3b76462ba7cbf13f230c3533"
+              ],
+              "section": "Research and initial evaluations",
+              "paragraph": 2,
+              "sourceIds": [
+                1,
+                2
+              ]
+            },
+            {
+              "id": "s8",
+              "text": "In the paper's evaluations, the authors tested proprietary models, including Claude 2, alongside their own fine-tuned model, SWE-Llama.",
+              "revisionIds": [
+                "revision_24778f3f7d8e489daef5f987053e2486",
+                "revision_9e57a8323ce64f838cce019f8ffabb31"
+              ],
+              "section": "Research and initial evaluations",
+              "paragraph": 2,
+              "sourceIds": [
+                1
+              ]
+            },
+            {
+              "id": "s9",
+              "text": "They characterized both SWE-Llama and the evaluated proprietary models as able to resolve only the simplest issues in those original evaluations.",
+              "revisionIds": [
+                "revision_c476e7ac712c4a22a11fc34e716fbc1f",
+                "revision_3ae70e9ab0f145fc954b060bed99883c"
+              ],
+              "section": "Research and initial evaluations",
+              "paragraph": 2,
+              "sourceIds": [
+                1
+              ]
+            },
+            {
+              "id": "s10",
+              "text": "The project documentation describes a fully Docker-containerized evaluation harness intended to support reproducible evaluation with consistent results.",
+              "revisionIds": [
+                "revision_54b7f7ffb3a14e3fb51ec7aca3539298",
+                "revision_0e20898f4e1c4977b78f5258456851aa"
+              ],
+              "section": "Evaluation infrastructure",
+              "paragraph": 3,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s11",
+              "text": "It also reports cloud-based evaluations through Modal and provides setup guidance for both local and cloud environments.",
+              "revisionIds": [
+                "revision_543ca04c71d0456693e151dd1fc310c2",
+                "revision_b7e9d6e8a77f4e72a33d4f29a3b89312"
+              ],
+              "section": "Evaluation infrastructure",
+              "paragraph": 3,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s12",
+              "text": "According to the documentation, the project website hosts the full SWE-bench leaderboard.",
+              "revisionIds": [
+                "revision_e6e07ad02b1d4ac886e56ff82c103cad"
+              ],
+              "section": "Evaluation infrastructure",
+              "paragraph": 3,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s13",
+              "text": "The documentation identifies SWE-bench Lite, SWE-bench Verified, and SWE-bench Multimodal as additional project datasets.",
+              "revisionIds": [
+                "revision_99ef52c8b43443f791f4040ac3468a4c",
+                "revision_8b93fcd8cfc54b028584599f6962cbca",
+                "revision_70819586f8ac4af489eee8df47260cc9"
+              ],
+              "section": "Additional datasets",
+              "paragraph": 4,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s14",
+              "text": "The project reports that SWE-bench Verified was released on August 13, 2024, with 500 problems confirmed by engineers to be solvable.",
+              "revisionIds": [
+                "revision_83d6d17556954b0381b8d435488d59a5",
+                "revision_2c58b5dbe6754914b7f3e13955930e7b"
+              ],
+              "section": "Additional datasets",
+              "paragraph": 4,
+              "sourceIds": [
+                2
+              ]
+            },
+            {
+              "id": "s15",
+              "text": "For SWE-bench Multimodal, the documentation reports integration with private-test-split evaluation on January 13, 2025.",
+              "revisionIds": [
+                "revision_30cfc4903401429b83cc35a1863083bc"
+              ],
+              "section": "Additional datasets",
+              "paragraph": 4,
+              "sourceIds": [
+                2
+              ]
+            }
+          ],
+          "factStatements": {
+            "revision_110bce8156294537b2add4e7099c6960": "SWE-bench is an evaluation framework for language models using software engineering problems drawn from real GitHub issues and corresponding pull requests.",
+            "revision_2ec6338c984b45e399d7c896b3cc459a": "The SWE-bench benchmark described in the paper contains 2,294 software engineering problems.",
+            "revision_249f3e5dc09e45349a94087bec8af52f": "The SWE-bench benchmark described in the paper draws its problems from 12 popular Python repositories.",
+            "revision_39135e549495466ea54ab245f01175f6": "Each SWE-bench task provides a codebase and a description of an issue to be resolved.",
+            "revision_e6a37d1cd5464747897392dad777de6f": "The SWE-bench paper's first arXiv version was submitted on October 10, 2023.",
+            "revision_f4740ba759174d679d7a312966ad6eb3": "The authors frame SWE-bench as using real-world software engineering as a rich, sustainable, and challenging testbed for evaluating the next generation of language models.",
+            "revision_8f8ed1cfc4574801961a93538332d95d": "SWE-bench tasks require editing the supplied codebase to address the issue.",
+            "revision_24778f3f7d8e489daef5f987053e2486": "The authors report evaluating their fine-tuned model SWE-Llama on SWE-bench.",
+            "revision_9e57a8323ce64f838cce019f8ffabb31": "Claude 2 was evaluated on SWE-bench in the experiments reported by the authors.",
+            "revision_893b5a2a3b76462ba7cbf13f230c3533": "The project documentation reports the SWE-bench paper as accepted for an oral presentation at ICLR 2024.",
+            "revision_54b7f7ffb3a14e3fb51ec7aca3539298": "The project documentation reports the evaluation harness as fully containerized using Docker.",
+            "revision_543ca04c71d0456693e151dd1fc310c2": "The documentation reports SWE-bench cloud-based evaluations via Modal.",
+            "revision_b7e9d6e8a77f4e72a33d4f29a3b89312": "SWE-bench documentation lists its installation guide as a guide for local and cloud setup.",
+            "revision_e6e07ad02b1d4ac886e56ff82c103cad": "The documentation reports a full SWE-bench leaderboard on the project website.",
+            "revision_2c58b5dbe6754914b7f3e13955930e7b": "The project reports 500 engineer-confirmed solvable problems in SWE-bench Verified.",
+            "revision_83d6d17556954b0381b8d435488d59a5": "The project reports SWE-bench Verified as released on August 13, 2024.",
+            "revision_7321965dbcee40b19291f2a6b2b3041a": "According to the paper authors, resolving SWE-bench issues frequently requires understanding and coordinating simultaneous changes across functions, classes, and files.",
+            "revision_c2f3a0de71614c379db7571521401c7e": "The SWE-bench authors describe effective language-model evaluation as outpaced by language models.",
+            "revision_c476e7ac712c4a22a11fc34e716fbc1f": "The paper qualitatively describes SWE-Llama as resolving only the simplest issues in its original SWE-bench evaluations.",
+            "revision_3ae70e9ab0f145fc954b060bed99883c": "The paper qualitatively describes the evaluated state-of-the-art proprietary models as resolving only the simplest issues in its original SWE-bench evaluations.",
+            "revision_a919ef9fb8e147c3bdeeae699df326cd": "The project documentation describes SWE-bench’s expected model output, given a codebase and an issue, as a patch resolving that issue.",
+            "revision_0e20898f4e1c4977b78f5258456851aa": "The project documentation describes the Docker-based SWE-bench evaluation harness as intended for reproducible evaluation with consistent results.",
+            "revision_99ef52c8b43443f791f4040ac3468a4c": "The documentation lists SWE-bench Lite as one of the SWE-bench project’s datasets.",
+            "revision_8b93fcd8cfc54b028584599f6962cbca": "The documentation lists SWE-bench Verified as one of the SWE-bench project’s datasets.",
+            "revision_70819586f8ac4af489eee8df47260cc9": "The documentation lists SWE-bench Multimodal as one of the SWE-bench project’s datasets.",
+            "revision_30cfc4903401429b83cc35a1863083bc": "The project documentation reports SWE-bench Multimodal integration with private-test-split evaluation on January 13, 2025."
+          },
+          "audit": {
+            "model": "gpt-6-astra",
+            "createdAt": "2026-10-06T00:15:10.284Z",
+            "decisions": [
+              {
+                "sentenceId": "s1",
+                "outcome": "supported",
+                "reason": "The bound paper quote defines SWE-bench as an evaluation framework of software engineering problems drawn from real GitHub issues and corresponding pull requests; its language-model purpose matches the supplied facts.",
+                "textDigest": "5d5b6b4517d8ac4986db11b3035d749ad9c26e4306190de0423788e82b8e2056"
+              },
+              {
+                "sentenceId": "s2",
+                "outcome": "supported",
+                "reason": "The bound quote explicitly specifies 2,294 problems across 12 popular Python repositories. The sentence appropriately limits these counts to the benchmark described in the paper.",
+                "textDigest": "714817ebd93814b0c85d6981981c105e4a12be32b36f5870d64f1fa4cf6a24ab"
+              },
+              {
+                "sentenceId": "s3",
+                "outcome": "supported",
+                "reason": "The bound quote states that a language model receives a codebase and an issue description and is tasked with editing that codebase to address the issue.",
+                "textDigest": "965198845aa0f105b0b1fc6bdf4ed048edb781a9c70a47054fbf38d5bd72a7da"
+              },
+              {
+                "sentenceId": "s4",
+                "outcome": "supported",
+                "reason": "The bound quotes describe real-world software engineering as a challenging testbed and state that language models have outpaced effective evaluation. The sentence preserves author attribution and accurately connects these statements as the benchmark's motivation.",
+                "textDigest": "194f06732ade7e7d34598d8f8b2fcb0b7b6c75edfa27c4de9eb2631dc35acb96"
+              },
+              {
+                "sentenceId": "s5",
+                "outcome": "supported",
+                "reason": "The documentation quote explicitly tasks the model with generating a patch resolving the described problem, given a codebase and an issue. The sentence preserves documentation attribution.",
+                "textDigest": "520fe8daf05ac6de77cd42c0a6dce9dd382114a455a4e3714104fc0a0b9b39d0"
+              },
+              {
+                "sentenceId": "s6",
+                "outcome": "supported",
+                "reason": "The paper quote explicitly says resolution frequently requires understanding and coordinating simultaneous changes across multiple functions, classes, and files. The sentence retains both the frequency qualification and author attribution.",
+                "textDigest": "b2d63853e15f36bc4b96ba60523182f264a1ee04dfd1179910c5c55a275a4171"
+              },
+              {
+                "sentenceId": "s7",
+                "outcome": "supported",
+                "reason": "The arXiv history identifies v1 as submitted October 10, 2023; the documentation explicitly reports acceptance to ICLR 2024 as an oral presentation. Both clauses preserve the respective evidence and attribution.",
+                "textDigest": "b543ad7e1c3fde9d2aa4a0c1c406762e30cb78fdb4ca78f2c17879350a61daf2"
+              },
+              {
+                "sentenceId": "s8",
+                "outcome": "supported",
+                "reason": "The bound quotes report evaluations of proprietary models and the authors' fine-tuned SWE-Llama, identifying Claude 2 as the best-performing evaluated model. The sentence confines the claim to the paper's evaluations without asserting a particular protocol.",
+                "textDigest": "4a40496aa67f5e5e0b9255b10aac7c4396c5a3b736196c977e495f8389c9ec09"
+              },
+              {
+                "sentenceId": "s9",
+                "outcome": "supported",
+                "reason": "The bound quote characterizes both proprietary models and SWE-Llama as resolving only the simplest issues. 'They' refers to the authors in s8, and 'characterized' preserves this as their qualitative assessment of the original evaluations rather than an independently established limitation.",
+                "textDigest": "3425ef622e41ec639f0bfb73baa47383751777375a227ac91005a3a1ba791a19"
+              },
+              {
+                "sentenceId": "s10",
+                "outcome": "supported",
+                "reason": "The documentation explicitly reports a fully Docker-containerized evaluation harness and describes reproducible evaluation with consistent results. The sentence presents this as its intended function, not an independently verified guarantee.",
+                "textDigest": "00112f7834728118c9a55fbbf0b0a11c276140b18f7764ef49183d009782b31d"
+              },
+              {
+                "sentenceId": "s11",
+                "outcome": "supported",
+                "reason": "The bound documentation quotes report cloud-based evaluations via Modal and installation instructions for local and cloud environments. 'It' refers to the project documentation in s10.",
+                "textDigest": "723c6d587b7a8ff49e5015c0ca2e8e794964bbf1c5b591952a139a8c2be4d907"
+              },
+              {
+                "sentenceId": "s12",
+                "outcome": "supported",
+                "reason": "The documentation says the full leaderboard can be found at swebench.com, supporting the attributed statement that it is on the project website.",
+                "textDigest": "5cda979cf2f682c4a20cfe8990115db5d952c42dd87bba54eac16f03786ddfcb"
+              },
+              {
+                "sentenceId": "s13",
+                "outcome": "supported",
+                "reason": "The bound documentation quote lists SWE-bench Lite, SWE-bench Verified, and SWE-bench Multimodal alongside SWE-bench under 'Multiple datasets,' supporting their identification as additional project datasets.",
+                "textDigest": "bd592682ae6d0a210ab36151e862a7e816f9178a0d1260ad5823ade7c6a56b52"
+              },
+              {
+                "sentenceId": "s14",
+                "outcome": "supported",
+                "reason": "The documentation explicitly reports an August 13, 2024 SWE-bench Verified release with 500 engineer-confirmed solvable problems. The sentence retains project attribution for both the release and solvability claim.",
+                "textDigest": "3872ee8cf68a59b8ad0c4f242bc2e77848cf75b25b07a5b4a4fbdca0f106522b"
+              },
+              {
+                "sentenceId": "s15",
+                "outcome": "supported",
+                "reason": "The bound documentation entry explicitly dates SWE-bench Multimodal integration with private test split evaluation to January 13, 2025. The sentence matches the event and date without extending it to a dataset release claim.",
+                "textDigest": "201c09abeae7bd4b3d8dea4a4e669fadee52d1079a2ebde91522ea8b56111745"
+              }
+            ]
+          },
+          "digest": "05000022c6fdaefa82ff8228e9dcc0e479ffe02c75780bce9b01cc66a684ffcd"
+        }
+      }
+    }
+  ]
+}
